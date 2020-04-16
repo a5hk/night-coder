@@ -1,0 +1,38 @@
+{
+  "name": "night-coder",
+  "displayName": "Night Coder",
+  "description": "Dark theme based on One Dark Pro and Darker One",
+  "version": "0.0.1",
+  "publisher": "a5hk",
+  "icon": "icon.png",
+  "keywords": [
+    "NightCoder",
+    "Night Coder",
+    "Dark",
+    "Borderless"
+  ],
+  "galleryBanner": {
+    "color": "080800",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.44.0"
+  },
+  "homepage": "https://github.com/a5hk/night-coder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a5hk/night-coder"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Night Coder",
+        "uiTheme": "vs-dark",
+        "path": "./themes/night-coder-color-theme.json"
+      }
+    ]
+  }
+}
