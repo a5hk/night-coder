@@ -1,6 +1,6 @@
 # Night Coder
 
-A dark theme based on [One Dark Pro](https://github.com/Binaryify/OneDark-Pro) and [One Dark Pro](https://github.com/a5hk/darker-one)l
+A dark theme based on [One Dark Pro](https://github.com/Binaryify/OneDark-Pro) and [Darker One](https://github.com/a5hk/darker-one)l
 
 ## Screenshots
 
