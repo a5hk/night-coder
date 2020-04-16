@@ -1,20 +1,32 @@
 # Night Coder
 
-A dark theme based on [One Dark Pro](https://github.com/Binaryify/OneDark-Pro) and [Darker One](https://github.com/a5hk/darker-one)l
+A dark theme based on [One Dark Pro](https://github.com/Binaryify/OneDark-Pro) and [Darker One](https://github.com/a5hk/darker-one)
 
 ## Screenshots
 
+### HTML
+
 ![html screenshot](screenshot/html.png)
+
+### Elixir
 
 ![elixir screenshot](screenshot/elixir.png)
 
+### Go
+
 ![go screenshot](screenshot/go.png)
 
-![bash screenshot](screenshot/bash.png)
+### Javascript
 
 ![javascript screenshot](screenshot/javascript.png)
 
+### Bash
+
+![bash screenshot](screenshot/bash.png)
+
 <br>Modification indicators with `"workbench.editor.highlightModifiedTabs": true`.
+
+### Markdown
 
 ![modified tab indicators](screenshot/modified.png)
 
