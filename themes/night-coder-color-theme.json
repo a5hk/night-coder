@@ -1577,6 +1577,12 @@
       "settings": {
         "foreground": "#444444"
       }
+    },
+    {
+      "scope": "entity.name.function-call.elixir",
+      "settings": {
+        "foreground": "#0AA8BD"
+      }
     }
   ]
 }
