@@ -821,6 +821,49 @@
     },
 
     {
+      "scope": [
+        "source.json meta.structure.array.json > value.json > string.quoted.json > punctuation",
+        "source.json meta.structure.array.json > value.json > string.quoted.json",
+        "source.json meta.structure.dictionary.json > value.json > string.quoted.json > punctuation",
+        "source.json meta.structure.dictionary.json > value.json > string.quoted.json"
+      ],
+      "settings": {
+        "foreground": "#77B34D"
+      }
+    },
+    {
+      "scope": [
+        "source.java",
+        "source.json meta.structure.dictionary.json > string.quoted.json > punctuation.string",
+        "source.json meta.structure.dictionary.json > string.quoted.json"
+      ],
+      "settings": {
+        "foreground": "#E08D52"
+      }
+    },
+    {
+      "scope": [
+        "source.json meta.structure.array.json > constant.language.json",
+        "source.json meta.structure.dictionary.json > constant.language.json"
+      ],
+      "settings": {
+        "foreground": "#0AA8BD"
+      }
+    },
+    {
+      "scope": ["source.makefile"],
+      "settings": {
+        "foreground": "#D98197"
+      }
+    },
+    {
+      "scope": ["source.ini"],
+      "settings": {
+        "foreground": "#77B34D"
+      }
+    },
+
+    {
       "scope": ["todo.bold"],
       "settings": {
         "foreground": "#CABD2B",
@@ -879,18 +922,6 @@
       "scope": ["storage.modifier.import.groovy"],
       "settings": {
         "foreground": "#D98197"
-      }
-    },
-    {
-      "scope": ["source.makefile"],
-      "settings": {
-        "foreground": "#D98197"
-      }
-    },
-    {
-      "scope": ["source.ini"],
-      "settings": {
-        "foreground": "#77B34D"
       }
     },
     {
@@ -993,30 +1024,6 @@
       "scope": "text.html.laravel-blade source.php.embedded.line.html entity.name.tag.laravel-blade",
       "settings": {
         "foreground": "#B285E0"
-      }
-    },
-    {
-      "scope": "source.json meta.structure.dictionary.json > constant.language.json,source.json meta.structure.array.json > constant.language.json",
-      "settings": {
-        "foreground": "#0AA8BD"
-      }
-    },
-    {
-      "scope": "source.json meta.structure.dictionary.json > value.json > string.quoted.json,source.json meta.structure.array.json > value.json > string.quoted.json,source.json meta.structure.dictionary.json > value.json > string.quoted.json > punctuation,source.json meta.structure.array.json > value.json > string.quoted.json > punctuation",
-      "settings": {
-        "foreground": "#77B34D"
-      }
-    },
-    {
-      "scope": "source.json meta.structure.dictionary.json > string.quoted.json > punctuation.string",
-      "settings": {
-        "foreground": "#E08D52"
-      }
-    },
-    {
-      "scope": "source.json meta.structure.dictionary.json > string.quoted.json",
-      "settings": {
-        "foreground": "#E08D52"
       }
     },
     {
@@ -1125,12 +1132,6 @@
       "scope": "storage.modifier.import.java,storage.type.java,storage.type.generic.java",
       "settings": {
         "foreground": "#D98197"
-      }
-    },
-    {
-      "scope": "source.java",
-      "settings": {
-        "foreground": "#E08D52"
       }
     },
     {
