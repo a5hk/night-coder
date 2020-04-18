@@ -649,9 +649,53 @@
     },
 
     {
-      "scope": "control.elements",
+      "scope": [
+        "variable.interpolation",
+        "variable.parameter.function.coffee",
+        "variable.parameter.function.js",
+        "variable.other.class.php",
+        "variable",
+        "variable.other.readwrite",
+        "variable.language.rust"
+      ],
+      "settings": {
+        "foreground": "#E08D52"
+      }
+    },
+    {
+      "scope": [
+        "variable.other.class.js",
+        "variable.other.class.ts",
+        "variable.language",
+        "variable.other.constant",
+        "variable.parameter.function.language.special.self.python"
+      ],
+      "settings": {
+        "foreground": "#D98197"
+      }
+    },
+    {
+      "scope": ["variable.function"],
+      "settings": {
+        "foreground": "#19AE70"
+      }
+    },
+    {
+      "scope": ["variable.parameter.function.language.python", "variable.parameter.function.python"],
       "settings": {
         "foreground": "#CABD2B"
+      }
+    },
+    {
+      "scope": "variable.parameter.function",
+      "settings": {
+        "foreground": "#BBBBBB"
+      }
+    },
+    {
+      "scope": "variable.other.generic-type.haskell",
+      "settings": {
+        "foreground": "#B285E0"
       }
     },
     {
@@ -660,10 +704,11 @@
         "fontStyle": "italic"
       }
     },
+
     {
-      "scope": "variable.interpolation",
+      "scope": "control.elements",
       "settings": {
-        "foreground": "#E08D52"
+        "foreground": "#CABD2B"
       }
     },
     {
@@ -757,12 +802,6 @@
       }
     },
     {
-      "scope": ["variable.parameter.function.coffee"],
-      "settings": {
-        "foreground": "#E08D52"
-      }
-    },
-    {
       "scope": ["constant.keyword.clojure"],
       "settings": {
         "foreground": "#0AA8BD"
@@ -770,12 +809,6 @@
     },
     {
       "scope": ["constant.character.entity"],
-      "settings": {
-        "foreground": "#E08D52"
-      }
-    },
-    {
-      "scope": ["variable.parameter.function.js"],
       "settings": {
         "foreground": "#E08D52"
       }
@@ -1071,24 +1104,6 @@
       }
     },
     {
-      "scope": "variable.other.class.php",
-      "settings": {
-        "foreground": "#E08D52"
-      }
-    },
-    {
-      "scope": ["variable.other.class.js", "variable.other.class.ts"],
-      "settings": {
-        "foreground": "#D98197"
-      }
-    },
-    {
-      "scope": ["variable.function"],
-      "settings": {
-        "foreground": "#19AE70"
-      }
-    },
-    {
       "scope": "token.package",
       "settings": {
         "foreground": "#BBBBBB"
@@ -1113,39 +1128,9 @@
       }
     },
     {
-      "scope": "variable.language",
-      "settings": {
-        "foreground": "#D98197"
-      }
-    },
-    {
-      "scope": "variable",
-      "settings": {
-        "foreground": "#E08D52"
-      }
-    },
-    {
       "scope": "constant.character.format.placeholder.other.python",
       "settings": {
         "foreground": "#CABD2B"
-      }
-    },
-    {
-      "scope": "variable.parameter.function.python",
-      "settings": {
-        "foreground": "#CABD2B"
-      }
-    },
-    {
-      "scope": "variable.parameter.function.language.python",
-      "settings": {
-        "foreground": "#CABD2B"
-      }
-    },
-    {
-      "scope": ["variable.other.readwrite"],
-      "settings": {
-        "foreground": "#E08D52"
       }
     },
     {
@@ -1162,12 +1147,6 @@
     },
     {
       "scope": ["storage.type.annotation.java", "storage.type.object.array.java"],
-      "settings": {
-        "foreground": "#D98197"
-      }
-    },
-    {
-      "scope": "variable.other.constant",
       "settings": {
         "foreground": "#D98197"
       }
@@ -1197,19 +1176,7 @@
       }
     },
     {
-      "scope": "variable.parameter.function",
-      "settings": {
-        "foreground": "#BBBBBB"
-      }
-    },
-    {
       "scope": "constant.other.character-class.regexp",
-      "settings": {
-        "foreground": "#E08D52"
-      }
-    },
-    {
-      "scope": "variable.language.rust",
       "settings": {
         "foreground": "#E08D52"
       }
@@ -1221,21 +1188,9 @@
       }
     },
     {
-      "scope": "variable.parameter.function.language.special.self.python",
-      "settings": {
-        "foreground": "#D98197"
-      }
-    },
-    {
       "scope": "storage.type.haskell",
       "settings": {
         "foreground": "#CABD2B"
-      }
-    },
-    {
-      "scope": "variable.other.generic-type.haskell",
-      "settings": {
-        "foreground": "#B285E0"
       }
     },
     {
