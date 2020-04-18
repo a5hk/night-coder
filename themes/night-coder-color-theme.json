@@ -898,6 +898,43 @@
     },
 
     {
+      "scope": ["token.debug-token", "token.package.keyword", "token.storage"],
+      "settings": {
+        "foreground": "#B285E0"
+      }
+    },
+    {
+      "scope": ["token.package", "token.variable.parameter.java"],
+      "settings": {
+        "foreground": "#BBBBBB"
+      }
+    },
+    {
+      "scope": ["token.error-token"],
+      "settings": {
+        "foreground": "#F44747"
+      }
+    },
+    {
+      "scope": ["token.warn-token"],
+      "settings": {
+        "foreground": "#CABD2B"
+      }
+    },
+    {
+      "scope": ["token.info-token"],
+      "settings": {
+        "foreground": "#19AE70"
+      }
+    },
+    {
+      "scope": ["token.storage.type.java"],
+      "settings": {
+        "foreground": "#D98197"
+      }
+    },
+
+    {
       "scope": ["todo.bold"],
       "settings": {
         "foreground": "#CABD2B",
@@ -950,30 +987,6 @@
       "scope": ["text.variable", "text.bracketed"],
       "settings": {
         "foreground": "#E08D52"
-      }
-    },
-    {
-      "scope": "token.debug-token",
-      "settings": {
-        "foreground": "#B285E0"
-      }
-    },
-    {
-      "scope": "token.error-token",
-      "settings": {
-        "foreground": "#F44747"
-      }
-    },
-    {
-      "scope": "token.warn-token",
-      "settings": {
-        "foreground": "#CABD2B"
-      }
-    },
-    {
-      "scope": "token.info-token",
-      "settings": {
-        "foreground": "#19AE70"
       }
     },
     {
@@ -1103,39 +1116,9 @@
       }
     },
     {
-      "scope": "token.storage.type.java",
-      "settings": {
-        "foreground": "#D98197"
-      }
-    },
-    {
-      "scope": "token.storage",
-      "settings": {
-        "foreground": "#B285E0"
-      }
-    },
-    {
-      "scope": "token.package",
-      "settings": {
-        "foreground": "#BBBBBB"
-      }
-    },
-    {
-      "scope": "token.package.keyword",
-      "settings": {
-        "foreground": "#B285E0"
-      }
-    },
-    {
       "scope": "import.storage.java",
       "settings": {
         "foreground": "#D98197"
-      }
-    },
-    {
-      "scope": "token.variable.parameter.java",
-      "settings": {
-        "foreground": "#BBBBBB"
       }
     },
     {
