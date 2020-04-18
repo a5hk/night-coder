@@ -935,6 +935,25 @@
     },
 
     {
+      "scope": ["invalid.unimplemented", "invalid.deprecated", "invalid.broken", "invalid.illegal"],
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "scope": ["invalid.xi", "invalid.illegal.bad-ampersand.html"],
+      "settings": {
+        "foreground": "#BBBBBB"
+      }
+    },
+    {
+      "scope": ["invalid.illegal.non-null-typehinted.php"],
+      "settings": {
+        "foreground": "#F44747"
+      }
+    },
+
+    {
       "scope": ["todo.bold"],
       "settings": {
         "foreground": "#CABD2B",
@@ -975,12 +994,6 @@
       "scope": ["beginning.punctuation.definition.quote.markdown.xi"],
       "settings": {
         "foreground": "#77B34D"
-      }
-    },
-    {
-      "scope": ["invalid.xi"],
-      "settings": {
-        "foreground": "#BBBBBB"
       }
     },
     {
@@ -1038,12 +1051,6 @@
       }
     },
     {
-      "scope": "invalid.illegal.non-null-typehinted.php",
-      "settings": {
-        "foreground": "#F44747"
-      }
-    },
-    {
       "scope": "text.html.laravel-blade source.php.embedded.line.html support.constant.laravel-blade",
       "settings": {
         "foreground": "#B285E0"
@@ -1053,36 +1060,6 @@
       "scope": "text.html.laravel-blade source.php.embedded.line.html entity.name.tag.laravel-blade",
       "settings": {
         "foreground": "#B285E0"
-      }
-    },
-    {
-      "scope": "invalid.unimplemented",
-      "settings": {
-        "foreground": "#FFFFFF"
-      }
-    },
-    {
-      "scope": "invalid.deprecated",
-      "settings": {
-        "foreground": "#FFFFFF"
-      }
-    },
-    {
-      "scope": "invalid.broken",
-      "settings": {
-        "foreground": "#FFFFFF"
-      }
-    },
-    {
-      "scope": "invalid.illegal.bad-ampersand.html",
-      "settings": {
-        "foreground": "#BBBBBB"
-      }
-    },
-    {
-      "scope": "invalid.illegal",
-      "settings": {
-        "foreground": "#FFFFFF"
       }
     },
     {
