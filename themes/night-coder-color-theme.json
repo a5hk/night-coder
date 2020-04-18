@@ -254,7 +254,7 @@
       }
     },
     {
-      "scope": ["punctuation.definition.comment", "comment"],
+      "scope": ["punctuation.definition.comment"],
       "settings": {
         "foreground": "#444444",
         "fontStyle": "italic"
@@ -970,6 +970,26 @@
     },
 
     {
+      "scope": ["comment"],
+      "settings": {
+        "foreground": "#444444",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["comment markup.link"],
+      "settings": {
+        "foreground": "#5C6370"
+      }
+    },
+    {
+      "scope": ["comment.line.double-slash", "comment.block.documentation"],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+
+    {
       "scope": ["todo.bold"],
       "settings": {
         "foreground": "#CABD2B",
@@ -1094,18 +1114,6 @@
       "scope": "import.storage.java",
       "settings": {
         "foreground": "#D98197"
-      }
-    },
-    {
-      "scope": "comment markup.link",
-      "settings": {
-        "foreground": "#5C6370"
-      }
-    },
-    {
-      "scope": "comment.line.double-slash,comment.block.documentation",
-      "settings": {
-        "fontStyle": "italic"
       }
     }
   ]
