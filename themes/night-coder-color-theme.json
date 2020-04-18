@@ -954,6 +954,22 @@
     },
 
     {
+      "scope": ["text.variable", "text.bracketed"],
+      "settings": {
+        "foreground": "#E08D52"
+      }
+    },
+    {
+      "scope": [
+        "text.html.laravel-blade source.php.embedded.line.html support.constant.laravel-blade",
+        "text.html.laravel-blade source.php.embedded.line.html entity.name.tag.laravel-blade"
+      ],
+      "settings": {
+        "foreground": "#B285E0"
+      }
+    },
+
+    {
       "scope": ["todo.bold"],
       "settings": {
         "foreground": "#CABD2B",
@@ -994,12 +1010,6 @@
       "scope": ["beginning.punctuation.definition.quote.markdown.xi"],
       "settings": {
         "foreground": "#77B34D"
-      }
-    },
-    {
-      "scope": ["text.variable", "text.bracketed"],
-      "settings": {
-        "foreground": "#E08D52"
       }
     },
     {
@@ -1048,18 +1058,6 @@
       "scope": "function.parameter",
       "settings": {
         "foreground": "#BBBBBB"
-      }
-    },
-    {
-      "scope": "text.html.laravel-blade source.php.embedded.line.html support.constant.laravel-blade",
-      "settings": {
-        "foreground": "#B285E0"
-      }
-    },
-    {
-      "scope": "text.html.laravel-blade source.php.embedded.line.html entity.name.tag.laravel-blade",
-      "settings": {
-        "foreground": "#B285E0"
       }
     },
     {
