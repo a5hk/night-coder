@@ -479,7 +479,7 @@
       }
     },
     {
-      "scope": "meta.function.decorator.identifier.python",
+      "scope": ["meta.function.decorator.identifier.python"],
       "settings": {
         "foreground": "#0AA8BD"
       }
@@ -1047,8 +1047,22 @@
         "foreground": "#B285E0"
       }
     },
+
     {
-      "scope": "control.elements",
+      "scope": ["emphasis md"],
+      "settings": {
+        "foreground": "#B285E0"
+      }
+    },
+    {
+      "scope": ["block.scope.end", "block.scope.begin"],
+      "settings": {
+        "foreground": "#BBBBBB"
+      }
+    },
+
+    {
+      "scope": ["control.elements"],
       "settings": {
         "foreground": "#CABD2B"
       }
@@ -1066,43 +1080,31 @@
       }
     },
     {
-      "scope": "block.scope.end,block.scope.begin",
-      "settings": {
-        "foreground": "#BBBBBB"
-      }
-    },
-    {
-      "scope": "selector.sass",
+      "scope": ["selector.sass"],
       "settings": {
         "foreground": "#E08D52"
       }
     },
     {
-      "scope": "less rgb-value",
-      "settings": {
-        "foreground": "#CABD2B"
-      }
-    },
-    {
-      "scope": "inline-color-decoration rgb-value",
-      "settings": {
-        "foreground": "#CABD2B"
-      }
-    },
-    {
-      "scope": "rgb-value",
+      "scope": ["rgb-value"],
       "settings": {
         "foreground": "#0AA8BD"
       }
     },
     {
-      "scope": "emphasis md",
+      "scope": ["less rgb-value"],
       "settings": {
-        "foreground": "#B285E0"
+        "foreground": "#CABD2B"
       }
     },
     {
-      "scope": "import.storage.java",
+      "scope": ["inline-color-decoration rgb-value"],
+      "settings": {
+        "foreground": "#CABD2B"
+      }
+    },
+    {
+      "scope": ["import.storage.java"],
       "settings": {
         "foreground": "#D98197"
       }
