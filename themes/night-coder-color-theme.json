@@ -1016,6 +1016,25 @@
     },
 
     {
+      "scope": ["string.other.link.title.markdown", "string.other.link.description.markdown"],
+      "settings": {
+        "foreground": "#19AE70"
+      }
+    },
+    {
+      "scope": ["string.regexp"],
+      "settings": {
+        "foreground": "#0AA8BD"
+      }
+    },
+    {
+      "scope": ["string"],
+      "settings": {
+        "foreground": "#77B34D"
+      }
+    },
+
+    {
       "scope": ["todo.bold"],
       "settings": {
         "foreground": "#CABD2B",
@@ -1077,27 +1096,9 @@
       }
     },
     {
-      "scope": "string.regexp",
-      "settings": {
-        "foreground": "#0AA8BD"
-      }
-    },
-    {
-      "scope": "string.other.link.title.markdown,string.other.link.description.markdown",
-      "settings": {
-        "foreground": "#19AE70"
-      }
-    },
-    {
       "scope": "emphasis md",
       "settings": {
         "foreground": "#B285E0"
-      }
-    },
-    {
-      "scope": "string",
-      "settings": {
-        "foreground": "#77B34D"
       }
     },
     {
