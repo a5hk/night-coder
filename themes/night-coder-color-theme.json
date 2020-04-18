@@ -651,12 +651,12 @@
     {
       "scope": [
         "variable.interpolation",
+        "variable.language.rust",
+        "variable.other.class.php",
+        "variable.other.readwrite",
         "variable.parameter.function.coffee",
         "variable.parameter.function.js",
-        "variable.other.class.php",
-        "variable",
-        "variable.other.readwrite",
-        "variable.language.rust"
+        "variable"
       ],
       "settings": {
         "foreground": "#E08D52"
@@ -664,20 +664,14 @@
     },
     {
       "scope": [
+        "variable.language",
         "variable.other.class.js",
         "variable.other.class.ts",
-        "variable.language",
         "variable.other.constant",
         "variable.parameter.function.language.special.self.python"
       ],
       "settings": {
         "foreground": "#D98197"
-      }
-    },
-    {
-      "scope": ["variable.function"],
-      "settings": {
-        "foreground": "#19AE70"
       }
     },
     {
@@ -687,15 +681,21 @@
       }
     },
     {
-      "scope": "variable.parameter.function",
+      "scope": ["variable.parameter.function"],
       "settings": {
         "foreground": "#BBBBBB"
       }
     },
     {
-      "scope": "variable.other.generic-type.haskell",
+      "scope": ["variable.other.generic-type.haskell"],
       "settings": {
         "foreground": "#B285E0"
+      }
+    },
+    {
+      "scope": ["variable.function"],
+      "settings": {
+        "foreground": "#19AE70"
       }
     },
     {
