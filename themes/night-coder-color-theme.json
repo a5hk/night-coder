@@ -990,6 +990,13 @@
     },
 
     {
+      "scope": ["function.parameter.ruby", "function.parameter.cs", "function.brace", "function.parameter"],
+      "settings": {
+        "foreground": "#BBBBBB"
+      }
+    },
+
+    {
       "scope": ["todo.bold"],
       "settings": {
         "foreground": "#CABD2B",
@@ -1060,24 +1067,6 @@
       "scope": "rgb-value",
       "settings": {
         "foreground": "#0AA8BD"
-      }
-    },
-    {
-      "scope": "function.parameter.ruby, function.parameter.cs",
-      "settings": {
-        "foreground": "#BBBBBB"
-      }
-    },
-    {
-      "scope": "function.brace",
-      "settings": {
-        "foreground": "#BBBBBB"
-      }
-    },
-    {
-      "scope": "function.parameter",
-      "settings": {
-        "foreground": "#BBBBBB"
       }
     },
     {
