@@ -864,6 +864,40 @@
     },
 
     {
+      "scope": [
+        "storage.modifier.import.java",
+        "storage.type.java",
+        "storage.type.generic.java",
+        "storage.type.annotation.java",
+        "storage.type.object.array.java",
+        "storage.modifier.import.groovy",
+        "storage.type.cs",
+        "storage.type.php"
+      ],
+      "settings": {
+        "foreground": "#D98197"
+      }
+    },
+    {
+      "scope": ["storage"],
+      "settings": {
+        "foreground": "#B285E0"
+      }
+    },
+    {
+      "scope": ["storage.modifier.lifetime.rust"],
+      "settings": {
+        "foreground": "#BBBBBB"
+      }
+    },
+    {
+      "scope": ["storage.type.haskell"],
+      "settings": {
+        "foreground": "#CABD2B"
+      }
+    },
+
+    {
       "scope": ["todo.bold"],
       "settings": {
         "foreground": "#CABD2B",
@@ -919,12 +953,6 @@
       }
     },
     {
-      "scope": ["storage.modifier.import.groovy"],
-      "settings": {
-        "foreground": "#D98197"
-      }
-    },
-    {
       "scope": "token.debug-token",
       "settings": {
         "foreground": "#B285E0"
@@ -946,12 +974,6 @@
       "scope": "token.info-token",
       "settings": {
         "foreground": "#19AE70"
-      }
-    },
-    {
-      "scope": "storage.type.cs",
-      "settings": {
-        "foreground": "#D98197"
       }
     },
     {
@@ -1000,12 +1022,6 @@
       "scope": "function.parameter",
       "settings": {
         "foreground": "#BBBBBB"
-      }
-    },
-    {
-      "scope": "storage.type.php",
-      "settings": {
-        "foreground": "#D98197"
       }
     },
     {
@@ -1099,12 +1115,6 @@
       }
     },
     {
-      "scope": "storage",
-      "settings": {
-        "foreground": "#B285E0"
-      }
-    },
-    {
       "scope": "token.package",
       "settings": {
         "foreground": "#BBBBBB"
@@ -1129,33 +1139,9 @@
       }
     },
     {
-      "scope": "storage.modifier.import.java,storage.type.java,storage.type.generic.java",
-      "settings": {
-        "foreground": "#D98197"
-      }
-    },
-    {
-      "scope": ["storage.type.annotation.java", "storage.type.object.array.java"],
-      "settings": {
-        "foreground": "#D98197"
-      }
-    },
-    {
       "scope": "comment markup.link",
       "settings": {
         "foreground": "#5C6370"
-      }
-    },
-    {
-      "scope": "storage.modifier.lifetime.rust",
-      "settings": {
-        "foreground": "#BBBBBB"
-      }
-    },
-    {
-      "scope": "storage.type.haskell",
-      "settings": {
-        "foreground": "#CABD2B"
       }
     },
     {
