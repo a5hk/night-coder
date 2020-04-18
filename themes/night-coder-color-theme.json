@@ -105,13 +105,13 @@
     "terminal.ansiBlue": "#19AE70",
     "terminal.ansiBrightBlack": "#7f848e",
     "terminal.ansiBrightBlue": "#528bff",
-    "terminal.ansiBrightCyan": "#0AA8BD",
+    "terminal.ansiBrightCyan": "#0FA5D7",
     "terminal.ansiBrightGreen": "#77B34D",
     "terminal.ansiBrightMagenta": "#7e0097",
     "terminal.ansiBrightRed": "#f44747",
     "terminal.ansiBrightWhite": "#d7dae0",
     "terminal.ansiBrightYellow": "#D98197",
-    "terminal.ansiCyan": "#0AA8BD",
+    "terminal.ansiCyan": "#0FA5D7",
     "terminal.ansiGreen": "#77B34D",
     "terminal.ansiMagenta": "#B285E0",
     "terminal.ansiRed": "#E08D52",
@@ -342,7 +342,7 @@
         "support.type.vendored.property-name.css"
       ],
       "settings": {
-        "foreground": "#0AA8BD"
+        "foreground": "#0FA5D7"
       }
     },
     {
@@ -410,7 +410,7 @@
         "entity.other.attribute-name.pseudo-element"
       ],
       "settings": {
-        "foreground": "#0AA8BD"
+        "foreground": "#0FA5D7"
       }
     },
     {
@@ -479,7 +479,7 @@
     {
       "scope": ["meta.function.decorator.identifier.python"],
       "settings": {
-        "foreground": "#0AA8BD"
+        "foreground": "#0FA5D7"
       }
     },
     {
@@ -588,7 +588,7 @@
         "keyword.operator.scss"
       ],
       "settings": {
-        "foreground": "#0AA8BD"
+        "foreground": "#0FA5D7"
       }
     },
     {
@@ -709,7 +709,7 @@
         "constant.other.symbol"
       ],
       "settings": {
-        "foreground": "#0AA8BD"
+        "foreground": "#0FA5D7"
       }
     },
     {
@@ -843,7 +843,7 @@
         "source.json meta.structure.dictionary.json > constant.language.json"
       ],
       "settings": {
-        "foreground": "#0AA8BD"
+        "foreground": "#0FA5D7"
       }
     },
     {
@@ -1020,7 +1020,7 @@
     {
       "scope": ["string.regexp"],
       "settings": {
-        "foreground": "#0AA8BD"
+        "foreground": "#0FA5D7"
       }
     },
     {
@@ -1084,7 +1084,7 @@
     {
       "scope": ["rgb-value"],
       "settings": {
-        "foreground": "#0AA8BD"
+        "foreground": "#0FA5D7"
       }
     },
     {
