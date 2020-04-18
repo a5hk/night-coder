@@ -706,6 +706,52 @@
     },
 
     {
+      "scope": [
+        "constant.character.escape",
+        "constant.keyword.clojure",
+        "constant.language.symbol.ruby",
+        "constant.other.symbol"
+      ],
+      "settings": {
+        "foreground": "#0AA8BD"
+      }
+    },
+    {
+      "scope": [
+        "constant.character.character-class.regexp.xi",
+        "constant.character.entity",
+        "constant.other.character-class.regexp"
+      ],
+      "settings": {
+        "foreground": "#E08D52"
+      }
+    },
+    {
+      "scope": ["constant", "constant.numeric", "constant.character.format.placeholder.other.python"],
+      "settings": {
+        "foreground": "#CABD2B"
+      }
+    },
+    {
+      "scope": ["constant.other.color.rgb-value.xi"],
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "scope": ["constant.character.xi"],
+      "settings": {
+        "foreground": "#19AE70"
+      }
+    },
+    {
+      "scope": ["constant.regexp.xi"],
+      "settings": {
+        "foreground": "#B285E0"
+      }
+    },
+
+    {
       "scope": "control.elements",
       "settings": {
         "foreground": "#CABD2B"
@@ -724,12 +770,6 @@
       }
     },
     {
-      "scope": ["constant.other.color.rgb-value.xi"],
-      "settings": {
-        "foreground": "#FFFFFF"
-      }
-    },
-    {
       "scope": ["wikiword.xi"],
       "settings": {
         "foreground": "#CABD2B"
@@ -737,12 +777,6 @@
     },
     {
       "scope": ["accent.xi"],
-      "settings": {
-        "foreground": "#19AE70"
-      }
-    },
-    {
-      "scope": ["constant.character.xi"],
       "settings": {
         "foreground": "#19AE70"
       }
@@ -763,18 +797,6 @@
       "scope": ["invalid.xi"],
       "settings": {
         "foreground": "#BBBBBB"
-      }
-    },
-    {
-      "scope": ["constant.regexp.xi"],
-      "settings": {
-        "foreground": "#B285E0"
-      }
-    },
-    {
-      "scope": ["constant.character.character-class.regexp.xi"],
-      "settings": {
-        "foreground": "#E08D52"
       }
     },
     {
@@ -799,18 +821,6 @@
       "scope": ["source.ini"],
       "settings": {
         "foreground": "#77B34D"
-      }
-    },
-    {
-      "scope": ["constant.keyword.clojure"],
-      "settings": {
-        "foreground": "#0AA8BD"
-      }
-    },
-    {
-      "scope": ["constant.character.entity"],
-      "settings": {
-        "foreground": "#E08D52"
       }
     },
     {
@@ -869,12 +879,6 @@
     },
     {
       "scope": "rgb-value",
-      "settings": {
-        "foreground": "#0AA8BD"
-      }
-    },
-    {
-      "scope": "constant.language.symbol.ruby",
       "settings": {
         "foreground": "#0AA8BD"
       }
@@ -976,12 +980,6 @@
       }
     },
     {
-      "scope": "constant.character.escape",
-      "settings": {
-        "foreground": "#0AA8BD"
-      }
-    },
-    {
       "scope": "string.regexp",
       "settings": {
         "foreground": "#0AA8BD"
@@ -1062,24 +1060,6 @@
       }
     },
     {
-      "scope": "constant",
-      "settings": {
-        "foreground": "#CABD2B"
-      }
-    },
-    {
-      "scope": "constant.numeric",
-      "settings": {
-        "foreground": "#CABD2B"
-      }
-    },
-    {
-      "scope": "constant.other.symbol",
-      "settings": {
-        "foreground": "#0AA8BD"
-      }
-    },
-    {
       "scope": "string",
       "settings": {
         "foreground": "#77B34D"
@@ -1128,12 +1108,6 @@
       }
     },
     {
-      "scope": "constant.character.format.placeholder.other.python",
-      "settings": {
-        "foreground": "#CABD2B"
-      }
-    },
-    {
       "scope": "storage.modifier.import.java,storage.type.java,storage.type.generic.java",
       "settings": {
         "foreground": "#D98197"
@@ -1173,12 +1147,6 @@
       "scope": "comment markup.link",
       "settings": {
         "foreground": "#5C6370"
-      }
-    },
-    {
-      "scope": "constant.other.character-class.regexp",
-      "settings": {
-        "foreground": "#E08D52"
       }
     },
     {
