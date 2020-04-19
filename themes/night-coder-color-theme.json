@@ -213,7 +213,8 @@
         "punctuation.operator.assignment.as.unison",
         "punctuation.separator.pipe.unison",
         "punctuation.separator.delimiter.unison",
-        "punctuation.definition.hash.unison"
+        "punctuation.definition.hash.unison",
+        "punctuation.definition.variable.elixir"
       ],
       "settings": {
         "foreground": "#E08D52"
@@ -405,9 +406,9 @@
     {
       "scope": [
         "entity.name.class.xi",
-        "entity.name.function-call.elixir",
         "entity.other.attribute-name.pseudo-class",
-        "entity.other.attribute-name.pseudo-element"
+        "entity.other.attribute-name.pseudo-element",
+        "entity.name.type.module.elixir"
       ],
       "settings": {
         "foreground": "#0FA5D7"
@@ -418,7 +419,8 @@
         "entity.name.label.cs",
         "entity.name.section.markdown",
         "entity.name.tag",
-        "entity.name.variable.local.cs"
+        "entity.name.variable.local.cs",
+        "entity.name.function.elixir"
       ],
       "settings": {
         "foreground": "#E08D52"
@@ -429,7 +431,8 @@
         "entity.name.function",
         "entity.name.goto-label.php",
         "entity.name.section",
-        "entity.other.attribute-name.id"
+        "entity.other.attribute-name.id",
+        "entity.name.function-call.elixir"
       ],
       "settings": {
         "foreground": "#19AE70"
@@ -596,7 +599,8 @@
         "keyword.operator.address.go",
         "keyword.operator.assignment.go",
         "keyword.other.array.phpdoc.php",
-        "keyword.other.type.php"
+        "keyword.other.type.php",
+        "keyword.operator.other.elixir"
       ],
       "settings": {
         "foreground": "#D98197"
@@ -683,7 +687,7 @@
       }
     },
     {
-      "scope": ["variable.other.generic-type.haskell"],
+      "scope": ["variable.other.generic-type.haskell", "constant.other.symbol.elixir"],
       "settings": {
         "foreground": "#B285E0"
       }
@@ -692,6 +696,12 @@
       "scope": ["variable.function"],
       "settings": {
         "foreground": "#19AE70"
+      }
+    },
+    {
+      "scope": ["variable.other.constant.elixir"],
+      "settings": {
+        "foreground": "#0FA5D7"
       }
     },
     {
