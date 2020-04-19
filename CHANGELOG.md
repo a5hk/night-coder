@@ -4,6 +4,7 @@
 
 - modified blue color
 - changed elixir hilighting
+- corrected terminal colors
 
 ## [0.1.3]
 
