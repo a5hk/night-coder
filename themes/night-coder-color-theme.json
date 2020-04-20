@@ -128,11 +128,7 @@
   "tokenColors": [
     {
       "name": "Function call and variable declaration",
-      "scope": [
-        "punctuation.definition.variable.elixir",
-        "variable.other.readwrite.module.elixir",
-        "entity.name.function-call.elixir"
-      ],
+      "scope": ["entity.name.function-call.elixir"],
       "settings": {
         "foreground": "#E08D52"
       }
@@ -140,6 +136,7 @@
     {
       "name": "Keyword",
       "scope": [
+        "keyword",
         "keyword.control.module.elixir",
         "constant.other.symbol.elixir",
         "keyword.control.elixir",
@@ -151,7 +148,7 @@
     },
     {
       "name": "Module",
-      "scope": ["entity.name.type.module.elixir", "variable.other.constant.elixir"],
+      "scope": ["entity", "entity.name.type.module.elixir", "variable.other.constant.elixir"],
       "settings": {
         "foreground": "#0FA5D7"
       }
@@ -164,39 +161,52 @@
       }
     },
     {
-      "scope": ["punctuation.section.embedded.elixir"],
+      "name": "Variable",
+      "scope": [
+        "variable",
+        "punctuation.section.embedded.elixir",
+        "punctuation.definition.variable.elixir",
+        "variable.other.readwrite.module.elixir"
+      ],
       "settings": {
         "foreground": "#D98197"
       }
     },
     {
+      "name": "Parameter",
+      "scope": ["parameter", "parameter.variable.function.elixir"],
+      "settings": {
+        "foreground": "#f76e6e"
+      }
+    },
+    {
       "name": "String",
-      "scope": ["string.quoted.double.elixir", "source.elixir.embedded.source"],
+      "scope": ["string", "string.quoted.double.elixir", "source.elixir.embedded.source"],
       "settings": {
         "foreground": "#77B34D"
       }
     },
     {
       "name": "Constant",
-      "scope": ["constant.language.elixir"],
+      "scope": ["constant", "constant.language.elixir"],
       "settings": {
         "foreground": "#CABD2B"
       }
     },
     {
-      "scope": ["source.elixir"],
+      "scope": ["source", "source.elixir", "keyword.operator", "keyword.operator.other.elixir"],
       "settings": {
         "foreground": "#B5B5B5"
       }
     },
     {
-      "scope": ["punctuation.section.function.elixir"],
+      "scope": ["punctuation", "punctuation.section.function.elixir"],
       "settings": {
         "foreground": "#a5a5a5"
       }
     },
     {
-      "scope": ["comment"],
+      "scope": ["comment", "punctuation.definition.comment.elixir"],
       "settings": {
         "foreground": "#444444",
         "fontStyle": "italic"
