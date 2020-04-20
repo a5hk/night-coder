@@ -127,6 +127,7 @@
   },
   "tokenColors": [
     {
+      "name": "Function call",
       "scope": [
         "punctuation.definition.variable.elixir",
         "variable.other.readwrite.module.elixir",
@@ -137,6 +138,7 @@
       }
     },
     {
+      "name": "Keyword",
       "scope": [
         "keyword.control.module.elixir",
         "constant.other.symbol.elixir",
@@ -148,12 +150,14 @@
       }
     },
     {
+      "name": "Module",
       "scope": ["entity.name.type.module.elixir", "variable.other.constant.elixir"],
       "settings": {
         "foreground": "#0FA5D7"
       }
     },
     {
+      "name": "Function declaration and definition",
       "scope": ["entity.name.function.elixir"],
       "settings": {
         "foreground": "#19AE70"
@@ -166,12 +170,14 @@
       }
     },
     {
+      "name": "String",
       "scope": ["string.quoted.double.elixir", "source.elixir.embedded.source"],
       "settings": {
         "foreground": "#77B34D"
       }
     },
     {
+      "name": "Constant",
       "scope": ["constant.language.elixir"],
       "settings": {
         "foreground": "#CABD2B"
