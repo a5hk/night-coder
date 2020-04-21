@@ -128,9 +128,16 @@
   "tokenColors": [
     {
       "name": "Function call and variable declaration",
-      "scope": ["entity.name.function-call.elixir"],
+      "scope": ["entity.name.function-call.elixir", "support.function.go"],
       "settings": {
         "foreground": "#E08D52"
+      }
+    },
+    {
+      "name": "Variables",
+      "scope": ["variable"],
+      "settings": {
+        "foreground": "#0fb3b3"
       }
     },
     {
@@ -147,54 +154,67 @@
       }
     },
     {
+      "name": "embedded punctuations",
+      "scope": ["punctuation.section.embedded.elixir"],
+      "settings": {
+        "foreground": "#ffbb99"
+      }
+    },
+    {
       "name": "Module",
-      "scope": ["entity", "entity.name.type.module.elixir", "variable.other.constant.elixir"],
+      "scope": ["entity", "storage.type", "entity.name.type.module.elixir", "variable.other.constant.elixir"],
       "settings": {
         "foreground": "#0FA5D7"
       }
     },
     {
       "name": "Function declaration and definition",
-      "scope": ["entity.name.function.elixir"],
+      "scope": ["entity.name.function.elixir", "entity.name.function.go"],
       "settings": {
         "foreground": "#19AE70"
       }
     },
     {
-      "name": "Variable",
+      "name": "Variable, parameter, seperator, Built-in functons",
       "scope": [
-        "variable",
-        "punctuation.section.embedded.elixir",
         "punctuation.definition.variable.elixir",
-        "variable.other.readwrite.module.elixir"
+        "variable.other.readwrite.module.elixir",
+        "punctuation.separator.object.elixir",
+        "support.function.builtin.go"
       ],
       "settings": {
-        "foreground": "#D98197"
+        "foreground": "#f075b3"
       }
     },
     {
-      "name": "Parameter",
-      "scope": ["parameter", "parameter.variable.function.elixir"],
+      "name": "Comparison and logical operators",
+      "scope": ["keyword.operator.comparison"],
       "settings": {
         "foreground": "#f76e6e"
       }
     },
     {
       "name": "String",
-      "scope": ["string", "string.quoted.double.elixir", "source.elixir.embedded.source"],
+      "scope": [
+        "string",
+        "punctuation.definition.string",
+        "string.quoted.double.elixir",
+        "source.elixir.embedded.source",
+        "entity.name.import.go"
+      ],
       "settings": {
-        "foreground": "#77B34D"
+        "foreground": "#99b34d"
       }
     },
     {
       "name": "Constant",
       "scope": ["constant", "constant.language.elixir"],
       "settings": {
-        "foreground": "#CABD2B"
+        "foreground": "#d2b72d"
       }
     },
     {
-      "scope": ["source", "source.elixir", "keyword.operator", "keyword.operator.other.elixir"],
+      "scope": ["source", "keyword.operator", "keyword.operator.other.elixir"],
       "settings": {
         "foreground": "#B5B5B5"
       }
