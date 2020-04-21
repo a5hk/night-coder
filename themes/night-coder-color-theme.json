@@ -128,14 +128,14 @@
   "tokenColors": [
     {
       "name": "Function call and variable declaration",
-      "scope": ["entity.name.function-call.elixir", "support.function.go"],
+      "scope": ["entity.name.function-call", "support.function"],
       "settings": {
         "foreground": "#E08D52"
       }
     },
     {
       "name": "Variables",
-      "scope": ["variable"],
+      "scope": ["variable", "variable.other.assignment"],
       "settings": {
         "foreground": "#0fb3b3"
       }
@@ -144,10 +144,10 @@
       "name": "Keyword",
       "scope": [
         "keyword",
-        "keyword.control.module.elixir",
-        "constant.other.symbol.elixir",
-        "keyword.control.elixir",
-        "keyword.other.special-method.elixir"
+        "keyword.control.module",
+        "constant.other.symbol",
+        "keyword.control",
+        "keyword.other.special-method"
       ],
       "settings": {
         "foreground": "#B285E0"
@@ -155,21 +155,21 @@
     },
     {
       "name": "embedded punctuations",
-      "scope": ["punctuation.section.embedded.elixir"],
+      "scope": ["punctuation.section.embedded"],
       "settings": {
         "foreground": "#ffbb99"
       }
     },
     {
       "name": "Module",
-      "scope": ["entity", "storage.type", "entity.name.type.module.elixir", "variable.other.constant.elixir"],
+      "scope": ["entity", "storage.type", "entity.name.type.module", "variable.other.constant"],
       "settings": {
         "foreground": "#0FA5D7"
       }
     },
     {
       "name": "Function declaration and definition",
-      "scope": ["entity.name.function.elixir", "entity.name.function.go"],
+      "scope": ["entity.name.function", "entity.name.function"],
       "settings": {
         "foreground": "#19AE70"
       }
@@ -177,10 +177,10 @@
     {
       "name": "Variable, parameter, seperator, Built-in functons",
       "scope": [
-        "punctuation.definition.variable.elixir",
-        "variable.other.readwrite.module.elixir",
-        "punctuation.separator.object.elixir",
-        "support.function.builtin.go"
+        "punctuation.definition.variable",
+        "variable.other.readwrite.module",
+        "punctuation.separator.object",
+        "support.function.builtin"
       ],
       "settings": {
         "foreground": "#f075b3"
@@ -198,9 +198,9 @@
       "scope": [
         "string",
         "punctuation.definition.string",
-        "string.quoted.double.elixir",
+        "string.quoted.double",
         "source.elixir.embedded.source",
-        "entity.name.import.go"
+        "entity.name.import"
       ],
       "settings": {
         "foreground": "#99b34d"
@@ -208,25 +208,25 @@
     },
     {
       "name": "Constant",
-      "scope": ["constant", "constant.language.elixir"],
+      "scope": ["constant", "constant.language"],
       "settings": {
         "foreground": "#d2b72d"
       }
     },
     {
-      "scope": ["source", "keyword.operator", "keyword.operator.other.elixir"],
+      "scope": ["source", "keyword.operator", "keyword.operator.other"],
       "settings": {
         "foreground": "#B5B5B5"
       }
     },
     {
-      "scope": ["punctuation", "punctuation.section.function.elixir"],
+      "scope": ["punctuation", "punctuation.section.function"],
       "settings": {
         "foreground": "#a5a5a5"
       }
     },
     {
-      "scope": ["comment", "punctuation.definition.comment.elixir"],
+      "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
         "foreground": "#444444",
         "fontStyle": "italic"
