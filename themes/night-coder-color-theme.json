@@ -128,7 +128,7 @@
   "tokenColors": [
     {
       "name": "Function call and variable declaration",
-      "scope": ["entity.name.function-call", "support.function"],
+      "scope": ["entity.name.function-call", "support.function", "entity.other.attribute-name"],
       "settings": {
         "foreground": "#E08D52"
       }
@@ -147,7 +147,8 @@
         "keyword.control.module",
         "constant.other.symbol",
         "keyword.control",
-        "keyword.other.special-method"
+        "keyword.other.special-method",
+        "meta.tag.metadata"
       ],
       "settings": {
         "foreground": "#B285E0"
@@ -155,21 +156,21 @@
     },
     {
       "name": "embedded punctuations",
-      "scope": ["punctuation.section.embedded"],
+      "scope": ["punctuation.section.embedded", "meta.tag.metadata.link"],
       "settings": {
         "foreground": "#ffbb99"
       }
     },
     {
       "name": "Module",
-      "scope": ["entity", "storage.type", "entity.name.type.module", "variable.other.constant"],
+      "scope": ["storage.type", "entity.name.type.module", "variable.other.constant", "meta.tag.metadata.style"],
       "settings": {
         "foreground": "#0FA5D7"
       }
     },
     {
       "name": "Function declaration and definition",
-      "scope": ["entity.name.function", "entity.name.function"],
+      "scope": ["entity.name.function", "entity.name.function", "meta.tag.metadata.title"],
       "settings": {
         "foreground": "#19AE70"
       }
@@ -188,7 +189,7 @@
     },
     {
       "name": "Comparison and logical operators",
-      "scope": ["keyword.operator.comparison"],
+      "scope": ["keyword.operator.comparison", "meta.tag.structure"],
       "settings": {
         "foreground": "#f76e6e"
       }
@@ -208,7 +209,7 @@
     },
     {
       "name": "Constant",
-      "scope": ["constant", "constant.language"],
+      "scope": ["constant", "constant.language", "meta.tag.metadata.script"],
       "settings": {
         "foreground": "#d2b72d"
       }
@@ -223,6 +224,13 @@
       "scope": ["punctuation", "punctuation.section.function"],
       "settings": {
         "foreground": "#a5a5a5"
+      }
+    },
+    {
+      "name": "Less important punctuations",
+      "scope": ["punctuation.definition.tag"],
+      "settings": {
+        "foreground": "#999999"
       }
     },
     {
