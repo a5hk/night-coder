@@ -151,7 +151,9 @@
         "variable.other.assignment",
         "variable.other.declaration",
         "meta.object-literal.key",
-        "punctuation.separator.key-value.js"
+        "punctuation.separator.key-value.js",
+        "variable.other.block.ruby",
+        "variable.other.ruby"
       ],
       "settings": {
         "foreground": "#0fb3b3"
@@ -179,7 +181,7 @@
     },
     {
       "name": "embedded punctuations",
-      "scope": ["punctuation.section.embedded"],
+      "scope": ["punctuation.section.embedded", "keyword.control.pseudo-method"],
       "settings": {
         "foreground": "#ffbb99"
       }
@@ -228,7 +230,15 @@
     },
     {
       "name": "Comparison and logical operators",
-      "scope": ["keyword.operator.comparison", "meta.tag.structure", "keyword.operator.logical", "entity.alias.import"],
+      "scope": [
+        "keyword.operator.comparison",
+        "meta.tag.structure",
+        "keyword.operator.logical",
+        "entity.alias.import",
+        "variable.other.readwrite.instance.ruby",
+        "variable.other.readwrite.class.ruby",
+        "punctuation.definition.variable.ruby"
+      ],
       "settings": {
         "foreground": "#f76e6e"
       }
@@ -283,7 +293,8 @@
         "punctuation.separator.key-value.css",
         "punctuation.definition.parameters",
         "punctuation.definition.block",
-        "meta.brace"
+        "meta.brace",
+        "punctuation.separator"
       ],
       "settings": {
         "foreground": "#a0a0a0"
