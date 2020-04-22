@@ -4,6 +4,7 @@
   "description": "Dark theme based on One Dark Pro and Darker One",
   "version": "0.3.0",
   "publisher": "a5hk",
+  "preview": true,
   "icon": "icon.png",
   "keywords": [
     "NightCoder",

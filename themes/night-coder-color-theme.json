@@ -139,7 +139,8 @@
         "variable.other.readwrite",
         "variable.other.property",
         "variable.other.object",
-        "support.type.property-name.json"
+        "support.type.property-name.json",
+        "meta.function-call.generic"
       ],
       "settings": {
         "foreground": "#E08D52"
@@ -181,7 +182,12 @@
     },
     {
       "name": "embedded punctuations",
-      "scope": ["punctuation.section.embedded", "keyword.control.pseudo-method"],
+      "scope": [
+        "punctuation.section.embedded",
+        "keyword.control.pseudo-method",
+        "meta.member.access",
+        "meta.item-access"
+      ],
       "settings": {
         "foreground": "#ffbb99"
       }
@@ -198,6 +204,7 @@
         "entity.name.type",
         "support.class",
         "variable.language.this",
+        "punctuation.section.class",
         "entity.other.inherited-class"
       ],
       "settings": {
@@ -222,7 +229,9 @@
         "punctuation.definition.variable",
         "variable.other.readwrite.module",
         "support.function.builtin",
-        "variable.object.property"
+        "variable.object.property",
+        "punctuation.definition.decorator.python",
+        "support.type.python"
       ],
       "settings": {
         "foreground": "#f075b3"
@@ -237,7 +246,9 @@
         "entity.alias.import",
         "variable.other.readwrite.instance.ruby",
         "variable.other.readwrite.class.ruby",
-        "punctuation.definition.variable.ruby"
+        "punctuation.definition.variable.ruby",
+        "variable.parameter.function.language.special.self",
+        "variable.language.special.self"
       ],
       "settings": {
         "foreground": "#f76e6e"
@@ -294,7 +305,10 @@
         "punctuation.definition.parameters",
         "punctuation.definition.block",
         "meta.brace",
-        "punctuation.separator"
+        "punctuation.separator",
+        "punctuation.definition.arguments",
+        "punctuation.definition.list",
+        "punctuation.parenthesis"
       ],
       "settings": {
         "foreground": "#a0a0a0"
