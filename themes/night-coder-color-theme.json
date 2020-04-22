@@ -138,7 +138,8 @@
         "variable.other.object.property",
         "variable.other.readwrite",
         "variable.other.property",
-        "variable.other.object"
+        "variable.other.object",
+        "support.type.property-name.json"
       ],
       "settings": {
         "foreground": "#E08D52"
@@ -247,7 +248,14 @@
     },
     {
       "name": "Constant",
-      "scope": ["constant", "constant.language", "meta.tag.metadata.script", "keyword.other.unit", "support.constant"],
+      "scope": [
+        "constant",
+        "constant.language",
+        "meta.tag.metadata.script",
+        "keyword.other.unit",
+        "support.constant",
+        "punctuation.definition.template-expression"
+      ],
       "settings": {
         "foreground": "#d2b72d"
       }
