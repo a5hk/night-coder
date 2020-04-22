@@ -196,7 +196,7 @@
       "scope": [
         "punctuation.definition.variable",
         "variable.other.readwrite.module",
-        "punctuation.separator.object",
+
         "support.function.builtin",
         "meta.tag.metadata.title"
       ],
@@ -232,22 +232,28 @@
       }
     },
     {
-      "scope": ["source", "keyword.operator", "keyword.operator.other"],
+      "scope": ["keyword.operator", "keyword.operator.other", "comment.wildcard"],
       "settings": {
-        "foreground": "#B5B5B5"
+        "foreground": "#BBBBBB"
       }
     },
     {
-      "scope": ["punctuation.section.function"],
+      "scope": [
+        "punctuation.section.function",
+        "punctuation.section.array",
+        "punctuation.section.scope",
+        "punctuation.separator.object",
+        "punctuation.definition.begin.bracket.round",
+        "punctuation.definition.end.bracket.round",
+        "punctuation.definition.bracket.square",
+        "punctuation.definition.begin.bracket",
+        "punctuation.definition.end.bracket",
+        "punctuation.other",
+        "punctuation.separator.list",
+        "punctuation.section.property-list"
+      ],
       "settings": {
-        "foreground": "#a5a5a5"
-      }
-    },
-    {
-      "name": "Less important punctuations",
-      "scope": ["punctuation.definition.tag"],
-      "settings": {
-        "foreground": "#999999"
+        "foreground": "#a0a0a0"
       }
     },
     {
