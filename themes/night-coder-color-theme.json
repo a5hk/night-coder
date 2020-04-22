@@ -128,14 +128,21 @@
   "tokenColors": [
     {
       "name": "Function call and variable declaration",
-      "scope": ["entity.name.function-call", "support.function", "entity.other.attribute-name"],
+      "scope": [
+        "entity.name.function-call",
+        "support.function",
+        "entity.other.attribute-name",
+        "punctuation.definition.entity",
+        "punctuation.separator.key-value",
+        "meta.selector"
+      ],
       "settings": {
         "foreground": "#E08D52"
       }
     },
     {
       "name": "Variables",
-      "scope": ["variable", "variable.other.assignment"],
+      "scope": ["variable", "variable.other.assignment", "meta.property-value"],
       "settings": {
         "foreground": "#0fb3b3"
       }
@@ -148,7 +155,9 @@
         "constant.other.symbol",
         "keyword.control",
         "keyword.other.special-method",
-        "meta.tag.metadata"
+        "meta.tag.metadata",
+        "support.type.property-name",
+        "punctuation.separator.key-value.css"
       ],
       "settings": {
         "foreground": "#B285E0"
@@ -156,7 +165,7 @@
     },
     {
       "name": "embedded punctuations",
-      "scope": ["punctuation.section.embedded", "meta.tag.metadata.link"],
+      "scope": ["punctuation.section.embedded"],
       "settings": {
         "foreground": "#ffbb99"
       }
@@ -170,7 +179,14 @@
     },
     {
       "name": "Function declaration and definition",
-      "scope": ["entity.name.function", "entity.name.function", "meta.tag.metadata.title"],
+      "scope": [
+        "entity.name.function",
+        "entity.name.function",
+
+        "support.constant.property-value",
+        "support.constant.color.w3c-standard-color-name",
+        "meta.tag.metadata.link"
+      ],
       "settings": {
         "foreground": "#19AE70"
       }
@@ -181,7 +197,8 @@
         "punctuation.definition.variable",
         "variable.other.readwrite.module",
         "punctuation.separator.object",
-        "support.function.builtin"
+        "support.function.builtin",
+        "meta.tag.metadata.title"
       ],
       "settings": {
         "foreground": "#f075b3"
@@ -209,7 +226,7 @@
     },
     {
       "name": "Constant",
-      "scope": ["constant", "constant.language", "meta.tag.metadata.script"],
+      "scope": ["constant", "constant.language", "meta.tag.metadata.script", "keyword.other.unit"],
       "settings": {
         "foreground": "#d2b72d"
       }
@@ -221,7 +238,7 @@
       }
     },
     {
-      "scope": ["punctuation", "punctuation.section.function"],
+      "scope": ["punctuation.section.function"],
       "settings": {
         "foreground": "#a5a5a5"
       }
