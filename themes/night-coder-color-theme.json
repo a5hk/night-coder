@@ -134,7 +134,11 @@
         "entity.other.attribute-name",
         "punctuation.definition.entity",
         "punctuation.separator.key-value",
-        "meta.selector"
+        "meta.selector",
+        "variable.other.object.property",
+        "variable.other.readwrite",
+        "variable.other.property",
+        "variable.other.object"
       ],
       "settings": {
         "foreground": "#E08D52"
@@ -142,7 +146,12 @@
     },
     {
       "name": "Variables",
-      "scope": ["variable", "variable.other.assignment", "meta.property-value"],
+      "scope": [
+        "variable.other.assignment",
+        "variable.other.declaration",
+        "meta.object-literal.key",
+        "punctuation.separator.key-value.js"
+      ],
       "settings": {
         "foreground": "#0fb3b3"
       }
@@ -156,8 +165,12 @@
         "keyword.control",
         "keyword.other.special-method",
         "meta.tag.metadata",
-        "support.type.property-name",
-        "punctuation.separator.key-value.css"
+        "storage.type.class",
+        "storage.type.js",
+        "storage.modifier",
+        "keyword.operator.expression.of",
+        "keyword.operator.new",
+        "storage.type.function"
       ],
       "settings": {
         "foreground": "#B285E0"
@@ -171,8 +184,19 @@
       }
     },
     {
-      "name": "Module",
-      "scope": ["storage.type", "entity.name.type.module", "variable.other.constant", "meta.tag.metadata.style"],
+      "name": "Module, class, package",
+      "scope": [
+        "storage.type",
+        "variable.other.constant",
+        "meta.tag.metadata.style",
+        "support.constant.property-value",
+        "meta.property-value",
+        "entity.name.package",
+        "entity.name.type",
+        "support.class",
+        "variable.language.this",
+        "entity.other.inherited-class"
+      ],
       "settings": {
         "foreground": "#0FA5D7"
       }
@@ -182,8 +206,6 @@
       "scope": [
         "entity.name.function",
         "entity.name.function",
-
-        "support.constant.property-value",
         "support.constant.color.w3c-standard-color-name",
         "meta.tag.metadata.link"
       ],
@@ -196,9 +218,8 @@
       "scope": [
         "punctuation.definition.variable",
         "variable.other.readwrite.module",
-
         "support.function.builtin",
-        "meta.tag.metadata.title"
+        "variable.object.property"
       ],
       "settings": {
         "foreground": "#f075b3"
@@ -206,7 +227,7 @@
     },
     {
       "name": "Comparison and logical operators",
-      "scope": ["keyword.operator.comparison", "meta.tag.structure"],
+      "scope": ["keyword.operator.comparison", "meta.tag.structure", "keyword.operator.logical", "entity.alias.import"],
       "settings": {
         "foreground": "#f76e6e"
       }
@@ -226,13 +247,13 @@
     },
     {
       "name": "Constant",
-      "scope": ["constant", "constant.language", "meta.tag.metadata.script", "keyword.other.unit"],
+      "scope": ["constant", "constant.language", "meta.tag.metadata.script", "keyword.other.unit", "support.constant"],
       "settings": {
         "foreground": "#d2b72d"
       }
     },
     {
-      "scope": ["keyword.operator", "keyword.operator.other", "comment.wildcard"],
+      "scope": ["keyword.operator", "keyword.operator.other", "comment.wildcard", "support.type.property-name"],
       "settings": {
         "foreground": "#BBBBBB"
       }
@@ -250,7 +271,11 @@
         "punctuation.definition.end.bracket",
         "punctuation.other",
         "punctuation.separator.list",
-        "punctuation.section.property-list"
+        "punctuation.section.property-list",
+        "punctuation.separator.key-value.css",
+        "punctuation.definition.parameters",
+        "punctuation.definition.block",
+        "meta.brace"
       ],
       "settings": {
         "foreground": "#a0a0a0"
