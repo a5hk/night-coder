@@ -188,7 +188,7 @@
     },
     {
       "name": "embedded punctuations",
-      "scope": ["punctuation.section.embedded", "keyword.control.pseudo-method"],
+      "scope": ["punctuation.section.embedded", "keyword.control.pseudo-method", "entity.other.inherited-class"],
       "settings": {
         "foreground": "#ffbb99"
       }
@@ -204,9 +204,7 @@
         "entity.name.package",
         "entity.name.type",
         "support.class",
-        "variable.language.this",
         "punctuation.section.class",
-        "entity.other.inherited-class",
         "string.other.link.description.markdown"
       ],
       "settings": {
@@ -236,7 +234,8 @@
         "punctuation.definition.decorator.python",
         "support.type.python",
         "fenced_code.block.language",
-        "markup.fenced_code.block"
+        "markup.fenced_code.block",
+        "variable.language.super"
       ],
       "settings": {
         "foreground": "#f075b3"
@@ -254,7 +253,9 @@
         "variable.other.readwrite.class.ruby",
         "punctuation.definition.variable.ruby",
         "variable.parameter.function.language.special.self",
-        "variable.language.special.self"
+        "variable.language.special.self",
+        "variable.language.self",
+        "variable.language.this"
       ],
       "settings": {
         "foreground": "#f76e6e"
