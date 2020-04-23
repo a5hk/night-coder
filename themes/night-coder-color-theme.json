@@ -154,7 +154,8 @@
         "meta.object-literal.key",
         "punctuation.separator.key-value.js",
         "variable.other.block.ruby",
-        "variable.other.ruby"
+        "variable.other.ruby",
+        "keyword.operator"
       ],
       "settings": {
         "foreground": "#0fb3b3"
@@ -182,12 +183,7 @@
     },
     {
       "name": "embedded punctuations",
-      "scope": [
-        "punctuation.section.embedded",
-        "keyword.control.pseudo-method",
-        "meta.member.access",
-        "meta.item-access"
-      ],
+      "scope": ["punctuation.section.embedded", "keyword.control.pseudo-method"],
       "settings": {
         "foreground": "#ffbb99"
       }
@@ -282,7 +278,7 @@
       }
     },
     {
-      "scope": ["keyword.operator", "keyword.operator.other", "comment.wildcard", "support.type.property-name"],
+      "scope": ["comment.wildcard", "support.type.property-name"],
       "settings": {
         "foreground": "#BBBBBB"
       }
