@@ -141,7 +141,9 @@
         "variable.other.object",
         "support.type.property-name.json",
         "meta.function-call.generic",
-        "heading"
+        "heading",
+        "punctuation.definition.string.begin.markdown",
+        "punctuation.definition.string.end.markdown"
       ],
       "settings": {
         "foreground": "#E08D52"
@@ -178,7 +180,6 @@
         "keyword.operator.expression.of",
         "keyword.operator.new",
         "storage.type.function",
-
         "markup.underline.link"
       ],
       "settings": {
@@ -205,7 +206,8 @@
         "support.class",
         "variable.language.this",
         "punctuation.section.class",
-        "entity.other.inherited-class"
+        "entity.other.inherited-class",
+        "string.other.link.description.markdown"
       ],
       "settings": {
         "foreground": "#0FA5D7"
@@ -218,7 +220,7 @@
         "entity.name.function",
         "support.constant.color.w3c-standard-color-name",
         "meta.tag.metadata.link",
-        "markup.bold"
+        "string.other.link.title.markdown"
       ],
       "settings": {
         "foreground": "#19AE70"
@@ -313,7 +315,8 @@
         "punctuation.separator",
         "punctuation.definition.arguments",
         "punctuation.definition.list",
-        "punctuation.parenthesis"
+        "punctuation.parenthesis",
+        "markup.bold"
       ],
       "settings": {
         "foreground": "#a0a0a0"
