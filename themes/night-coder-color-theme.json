@@ -227,7 +227,7 @@
       }
     },
     {
-      "name": "Variable, parameter, seperator, Built-in functons",
+      "name": "Variable, parameter, separator, Built-in functions",
       "scope": [
         "punctuation.definition.variable",
         "variable.other.readwrite.module",
