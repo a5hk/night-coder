@@ -101,24 +101,24 @@
     "tab.inactiveBackground": "#080800",
     "tab.inactiveModifiedBorder": "#9b2c2c",
     "tab.unfocusedHoverBackground": "#323842",
-    "terminal.ansiBlack": "#2d3139",
-    "terminal.ansiBlue": "#528bff",
-    "terminal.ansiBrightBlack": "#7f848e",
-    "terminal.ansiBrightBlue": "#528bff",
+    "terminal.ansiBlack": "#333333",
+    "terminal.ansiBlue": "#0f66d7",
+    "terminal.ansiBrightBlack": "#888888",
+    "terminal.ansiBrightBlue": "#0f66d7",
     "terminal.ansiBrightCyan": "#0FA5D7",
-    "terminal.ansiBrightGreen": "#77B34D",
-    "terminal.ansiBrightMagenta": "#7e0097",
-    "terminal.ansiBrightRed": "#f44747",
-    "terminal.ansiBrightWhite": "#d7dae0",
+    "terminal.ansiBrightGreen": "#30AE40",
+    "terminal.ansiBrightMagenta": "#f075b3",
+    "terminal.ansiBrightRed": "#E08D52",
+    "terminal.ansiBrightWhite": "#bbbbbb",
     "terminal.ansiBrightYellow": "#CABD2B",
-    "terminal.ansiCyan": "#0FA5D7",
-    "terminal.ansiGreen": "#77B34D",
+    "terminal.ansiCyan": "#0f66d7",
+    "terminal.ansiGreen": "#30AE40",
     "terminal.ansiMagenta": "#B285E0",
-    "terminal.ansiRed": "#f44747",
-    "terminal.ansiWhite": "#d7dae0",
+    "terminal.ansiRed": "#f76e6e",
+    "terminal.ansiWhite": "#a0a0a0",
     "terminal.ansiYellow": "#CABD2B",
     "terminal.foreground": "#c8c8c8",
-    "textLink.foreground": "#19AE70",
+    "textLink.foreground": "#30AE40",
     "titleBar.activeBackground": "#080800",
     "titleBar.activeForeground": "#aaaaaa",
     "titleBar.inactiveBackground": "#080800",
@@ -140,7 +140,8 @@
         "variable.other.property",
         "variable.other.object",
         "support.type.property-name.json",
-        "meta.function-call.generic"
+        "meta.function-call.generic",
+        "heading"
       ],
       "settings": {
         "foreground": "#E08D52"
@@ -155,7 +156,8 @@
         "punctuation.separator.key-value.js",
         "variable.other.block.ruby",
         "variable.other.ruby",
-        "keyword.operator"
+        "keyword.operator",
+        "markup.list"
       ],
       "settings": {
         "foreground": "#0fb3b3"
@@ -175,7 +177,9 @@
         "storage.modifier",
         "keyword.operator.expression.of",
         "keyword.operator.new",
-        "storage.type.function"
+        "storage.type.function",
+
+        "markup.underline.link"
       ],
       "settings": {
         "foreground": "#B285E0"
@@ -213,7 +217,8 @@
         "entity.name.function",
         "entity.name.function",
         "support.constant.color.w3c-standard-color-name",
-        "meta.tag.metadata.link"
+        "meta.tag.metadata.link",
+        "markup.bold"
       ],
       "settings": {
         "foreground": "#19AE70"
@@ -227,7 +232,9 @@
         "support.function.builtin",
         "variable.object.property",
         "punctuation.definition.decorator.python",
-        "support.type.python"
+        "support.type.python",
+        "fenced_code.block.language",
+        "markup.fenced_code.block"
       ],
       "settings": {
         "foreground": "#f075b3"
@@ -238,6 +245,7 @@
       "scope": [
         "keyword.operator.comparison",
         "meta.tag.structure",
+        "meta.tag.inline",
         "keyword.operator.logical",
         "entity.alias.import",
         "variable.other.readwrite.instance.ruby",
@@ -271,7 +279,8 @@
         "meta.tag.metadata.script",
         "keyword.other.unit",
         "support.constant",
-        "punctuation.definition.template-expression"
+        "punctuation.definition.template-expression",
+        "markup.italic"
       ],
       "settings": {
         "foreground": "#d2b72d"
@@ -315,6 +324,18 @@
       "settings": {
         "foreground": "#444444",
         "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["markup.italic", "punctuation.definition.italic"],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["punctuation.definition.bold", "markup.bold"],
+      "settings": {
+        "fontStyle": "bold"
       }
     }
   ]
