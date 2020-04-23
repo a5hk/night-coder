@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.4.1]
+
+- Edited workbench colors
+
 ## [0.4.0]
 
 - Complete rewrite of token color rules from scratch
