@@ -11,7 +11,7 @@
 ## [0.3.0]
 
 - modified blue color
-- changed elixir hilighting
+- changed elixir highlighting
 - corrected terminal colors
 
 ## [0.1.3]
