@@ -30,6 +30,18 @@ A dark theme based on [Darker One](https://github.com/a5hk/darker-one)
 
 ![modified tab indicators](screenshot/modified.png)
 
+#### Currently supports:
+
+- CSS
+- Elixir
+- Go
+- HTML
+- Javascript
+- Json
+- Markdown
+- Python
+- Ruby
+
 ## License
 
 [MIT License](LICENSE)

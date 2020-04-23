@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.4.0]
+
+- Complete rewrite of token color rules from scratch
+
 ## [0.3.0]
 
 - modified blue color
