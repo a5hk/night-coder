@@ -238,7 +238,9 @@
         "fenced_code.block.language",
         "markup.fenced_code.block",
         "variable.language.super",
-        "support.type.primitive"
+        "support.type.primitive",
+        "storage.type.annotation",
+        "punctuation.definition.annotation"
       ],
       "settings": {
         "foreground": "#f075b3"
@@ -273,7 +275,8 @@
         "punctuation.definition.string",
         "string.quoted.double",
         "source.elixir.embedded.source",
-        "entity.name.import"
+        "entity.name.import",
+        "storage.modifier.import"
       ],
       "settings": {
         "foreground": "#99b34d"

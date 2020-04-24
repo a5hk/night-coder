@@ -41,6 +41,7 @@ A new dark theme fro Night Coders.
 - Elixir
 - Go
 - HTML
+- Java
 - JavaScript
 - Json
 - Markdown

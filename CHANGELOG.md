@@ -1,6 +1,10 @@
 # Change Log
 
-# [0.4.6]
+## [0.4.7]
+
+- Java
+
+## [0.4.6]
 
 - TypeScript
 
