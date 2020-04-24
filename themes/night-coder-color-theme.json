@@ -188,7 +188,13 @@
     },
     {
       "name": "embedded punctuations",
-      "scope": ["punctuation.section.embedded", "keyword.control.pseudo-method", "entity.other.inherited-class"],
+      "scope": [
+        "punctuation.section.embedded",
+        "keyword.control.pseudo-method",
+        "entity.other.inherited-class",
+        "markup.inline.raw.string",
+        "markup.raw.block"
+      ],
       "settings": {
         "foreground": "#ffbb99"
       }
@@ -227,7 +233,6 @@
     {
       "name": "Variable, parameter, separator, Built-in functions",
       "scope": [
-        "punctuation.definition.variable",
         "variable.other.readwrite.module",
         "support.function.builtin",
         "variable.object.property",
@@ -251,7 +256,7 @@
         "entity.alias.import",
         "variable.other.readwrite.instance.ruby",
         "variable.other.readwrite.class.ruby",
-        "punctuation.definition.variable.ruby",
+        "punctuation.definition.template-expression",
         "variable.parameter.function.language.special.self",
         "variable.language.special.self",
         "variable.language.self",
@@ -282,7 +287,7 @@
         "meta.tag.metadata.script",
         "keyword.other.unit",
         "support.constant",
-        "punctuation.definition.template-expression",
+
         "markup.italic"
       ],
       "settings": {
@@ -290,7 +295,7 @@
       }
     },
     {
-      "scope": ["comment.wildcard", "support.type.property-name"],
+      "scope": ["comment.wildcard", "support.type.property-name", "variable.other.php"],
       "settings": {
         "foreground": "#BBBBBB"
       }
@@ -331,7 +336,13 @@
       }
     },
     {
-      "scope": ["markup.italic", "punctuation.definition.italic"],
+      "scope": ["punctuation"],
+      "settings": {
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["markup.italic", "punctuation.definition.italic", "markup.quote.markdown"],
       "settings": {
         "fontStyle": "italic"
       }

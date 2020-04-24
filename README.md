@@ -4,7 +4,7 @@
 
 # Night Coder
 
-A dark theme based on [Darker One](https://github.com/a5hk/darker-one)
+A new dark theme fro Night Coders.
 
 ## Screenshots
 
@@ -12,17 +12,21 @@ A dark theme based on [Darker One](https://github.com/a5hk/darker-one)
 
 ![html screenshot](screenshot/html.png)
 
-### Elixir
+### Javascript
 
-![elixir screenshot](screenshot/elixir.png)
+![javascript screenshot](screenshot/javascript.png)
+
+### Python
+
+![python screenshot](screenshot/python.png)
 
 ### Go
 
 ![go screenshot](screenshot/go.png)
 
-### Javascript
+### Ruby
 
-![javascript screenshot](screenshot/javascript.png)
+![ruby screenshot](screenshot/ruby.png)
 
 <br>Modification indicators with `"workbench.editor.highlightModifiedTabs": true`.
 
@@ -39,6 +43,7 @@ A dark theme based on [Darker One](https://github.com/a5hk/darker-one)
 - Javascript
 - Json
 - Markdown
+- PHP
 - Python
 - Ruby
 

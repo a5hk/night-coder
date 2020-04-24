@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.4.2]
+
+- PHP support
+- Fixes
+
 ## [0.4.1]
 
 - Edited workbench colors
