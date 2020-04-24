@@ -50,7 +50,3 @@ A new dark theme fro Night Coders.
 ## License
 
 [MIT License](LICENSE)
-
-## Acknowledgments
-
-- [Open Window and Google Fonts](https://fonts.google.com/specimen/Caesar+Dressing)
