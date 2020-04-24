@@ -41,12 +41,13 @@ A new dark theme fro Night Coders.
 - Elixir
 - Go
 - HTML
-- Javascript
+- JavaScript
 - Json
 - Markdown
 - PHP
 - Python
 - Ruby
+- TypeScript
 
 ## License
 

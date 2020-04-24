@@ -154,8 +154,6 @@
       "scope": [
         "variable.other.assignment",
         "variable.other.declaration",
-        "meta.object-literal.key",
-        "punctuation.separator.key-value.js",
         "variable.other.block.ruby",
         "variable.other.ruby",
         "markup.list"
@@ -239,7 +237,8 @@
         "support.type.python",
         "fenced_code.block.language",
         "markup.fenced_code.block",
-        "variable.language.super"
+        "variable.language.super",
+        "support.type.primitive"
       ],
       "settings": {
         "foreground": "#f075b3"
@@ -260,7 +259,8 @@
         "variable.language.special.self",
         "variable.language.self",
         "variable.language.this",
-        "entity.name.type.cpp"
+        "entity.name.type.cpp",
+        "support.variable.object.node"
       ],
       "settings": {
         "foreground": "#f76e6e"
@@ -295,7 +295,13 @@
     },
     {
       "name": "Other",
-      "scope": ["entity.name.function.member.cpp", "keyword.operator"],
+      "scope": [
+        "entity.name.function.member.cpp",
+        "keyword.operator",
+        "meta.object-literal.key",
+        "punctuation.separator.key-value.js",
+        "punctuation.separator.key-value.ts"
+      ],
       "settings": {
         "foreground": "#75bfff"
       }
