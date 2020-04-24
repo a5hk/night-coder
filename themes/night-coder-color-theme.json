@@ -158,7 +158,6 @@
         "punctuation.separator.key-value.js",
         "variable.other.block.ruby",
         "variable.other.ruby",
-        "keyword.operator",
         "markup.list"
       ],
       "settings": {
@@ -260,7 +259,8 @@
         "variable.parameter.function.language.special.self",
         "variable.language.special.self",
         "variable.language.self",
-        "variable.language.this"
+        "variable.language.this",
+        "entity.name.type.cpp"
       ],
       "settings": {
         "foreground": "#f76e6e"
@@ -287,11 +287,17 @@
         "meta.tag.metadata.script",
         "keyword.other.unit",
         "support.constant",
-
         "markup.italic"
       ],
       "settings": {
         "foreground": "#d2b72d"
+      }
+    },
+    {
+      "name": "Other",
+      "scope": ["entity.name.function.member.cpp", "keyword.operator"],
+      "settings": {
+        "foreground": "#75bfff"
       }
     },
     {
