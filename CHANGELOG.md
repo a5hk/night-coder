@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.4.5]
+
+- C++
+
 ## [0.4.4]
 
 - Edited logo
