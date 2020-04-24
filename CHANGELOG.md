@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.4.4]
+
+- Edited logo
+
 ## [0.4.3]
 
 - New logo
