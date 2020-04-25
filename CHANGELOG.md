@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.6.1]
+
+- C#
+
 ## [0.6.0]
 
 - Fixed a color

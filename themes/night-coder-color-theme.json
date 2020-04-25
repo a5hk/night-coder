@@ -207,7 +207,8 @@
         "entity.name.type",
         "support.class",
         "punctuation.section.class",
-        "string.other.link.description.markdown"
+        "string.other.link.description.markdown",
+        "constant.language.symbol"
       ],
       "settings": {
         "foreground": "#859dc3"
@@ -239,7 +240,8 @@
         "support.type.primitive",
         "storage.type.annotation",
         "punctuation.definition.annotation",
-        "meta.tag.structure"
+        "meta.tag.structure",
+        "entity.name.tag.localname.cs"
       ],
       "settings": {
         "foreground": "#e7955a"
@@ -342,7 +344,15 @@
       }
     },
     {
-      "scope": ["markup.italic", "punctuation.definition.italic", "markup.quote.markdown"],
+      "scope": [
+        "markup.italic",
+        "punctuation.definition.italic",
+        "markup.quote.markdown",
+        "variable.parameter.function.language.special.self",
+        "variable.language.special.self",
+        "variable.language.self",
+        "variable.language.this"
+      ],
       "settings": {
         "fontStyle": "italic"
       }
