@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.6.0]
+
+- Fixed a color
+- Improvements on ruby
+
 ## [0.5.0]
 
 - New color palette, easier on the eyes

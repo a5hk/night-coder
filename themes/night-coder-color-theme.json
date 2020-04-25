@@ -151,15 +151,9 @@
     },
     {
       "name": "Variables",
-      "scope": [
-        "variable.other.assignment",
-        "variable.other.declaration",
-        "variable.other.block.ruby",
-        "variable.other.ruby",
-        "markup.list"
-      ],
+      "scope": ["variable.other.assignment", "variable.other.declaration", "variable.other.block.ruby", "markup.list"],
       "settings": {
-        "foreground": "#99b9e6"
+        "foreground": "#f28ca6"
       }
     },
     {
@@ -301,7 +295,7 @@
       }
     },
     {
-      "scope": ["comment.wildcard", "support.type.property-name", "variable.other.php"],
+      "scope": ["comment.wildcard", "support.type.property-name", "variable.other.php", "variable.other.ruby"],
       "settings": {
         "foreground": "#C5c5c5"
       }
