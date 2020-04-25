@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.5.0]
+
+- New color palette, easier on the eyes
+
 ## [0.4.8]
 
 - Slightly modified a color
