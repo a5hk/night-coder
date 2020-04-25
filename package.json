@@ -2,7 +2,7 @@
   "name": "night-coder",
   "displayName": "Night Coder",
   "description": "Dark theme based on Darker One",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "publisher": "a5hk",
   "preview": true,
   "icon": "icon.png",
@@ -10,6 +10,7 @@
     "NightCoder",
     "Night Coder",
     "Dark",
+    "Darker",
     "Borderless"
   ],
   "galleryBanner": {

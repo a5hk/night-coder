@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.6.2]
+
+- Updated terminal colors
+
 ## [0.6.1]
 
 - C#
