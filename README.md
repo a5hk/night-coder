@@ -37,6 +37,7 @@ A new dark theme fro Night Coders.
 #### Currently supports:
 
 - C++
+- C#
 - CSS
 - Elixir
 - Go
