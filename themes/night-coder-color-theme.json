@@ -140,6 +140,7 @@
         "variable.other.property",
         "variable.other.object",
         "support.type.property-name.json",
+        "entity.name.tag.yaml",
         "meta.function-call.generic",
         "heading",
         "punctuation.definition.string.begin.markdown",
@@ -151,7 +152,13 @@
     },
     {
       "name": "Variables",
-      "scope": ["variable.other.assignment", "variable.other.declaration", "variable.other.block.ruby", "markup.list"],
+      "scope": [
+        "variable.other.assignment",
+        "variable.other.declaration",
+        "variable.other.block.ruby",
+        "markup.list",
+        "variable.other.alias.yaml"
+      ],
       "settings": {
         "foreground": "#f28ca6"
       }
@@ -262,7 +269,9 @@
         "variable.language.self",
         "variable.language.this",
         "entity.name.type.cpp",
-        "support.variable.object.node"
+        "support.variable.object.node",
+
+        "invalid.illegal.tag-handle.yaml"
       ],
       "settings": {
         "foreground": "#ef7b6d"

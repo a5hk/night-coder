@@ -50,6 +50,7 @@ A new dark theme fro Night Coders.
 - Python
 - Ruby
 - TypeScript
+- YAML
 
 ## License
 
