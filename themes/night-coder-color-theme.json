@@ -188,7 +188,6 @@
       "name": "embedded punctuations",
       "scope": [
         "punctuation.section.embedded",
-        "keyword.control.pseudo-method",
         "entity.other.inherited-class",
         "markup.inline.raw.string",
         "markup.raw.block",
@@ -240,18 +239,27 @@
         "support.function.builtin",
         "variable.object.property",
         "punctuation.definition.decorator.python",
-        "support.type.python",
         "fenced_code.block.language",
         "markup.fenced_code.block",
-        "variable.language.super",
         "support.type.primitive",
         "storage.type.annotation",
         "punctuation.definition.annotation",
-        "meta.tag.structure",
-        "entity.name.tag.localname.cs"
+        "meta.tag.structure"
       ],
       "settings": {
         "foreground": "#e7955a"
+      }
+    },
+    {
+      "scope": [
+        "meta.tag.metadata.script",
+        "keyword.control.pseudo-method",
+        "support.type.python",
+        "variable.language.super",
+        "entity.name.tag.localname.cs"
+      ],
+      "settings": {
+        "foreground": "#d0b425"
       }
     },
     {
@@ -293,14 +301,7 @@
     },
     {
       "name": "Constant",
-      "scope": [
-        "constant",
-        "constant.language",
-        "meta.tag.metadata.script",
-        "keyword.other.unit",
-        "support.constant",
-        "markup.italic"
-      ],
+      "scope": ["constant", "constant.language", "keyword.other.unit", "support.constant", "markup.italic"],
       "settings": {
         "foreground": "#e5b148"
       }
@@ -349,7 +350,7 @@
     {
       "scope": ["punctuation"],
       "settings": {
-        "fontStyle": ""
+        // "fontStyle": ""
       }
     },
     {
