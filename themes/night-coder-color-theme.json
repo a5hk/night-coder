@@ -278,7 +278,7 @@
         "variable.language.this",
         "entity.name.type.cpp",
         "support.variable.object.node",
-
+        "source.css support.function",
         "invalid.illegal.tag-handle.yaml"
       ],
       "settings": {
