@@ -44,7 +44,7 @@ A new dark theme fro Night Coders.
 - HTML
 - Java
 - JavaScript
-- Json
+- JSON
 - Markdown
 - PHP
 - Python

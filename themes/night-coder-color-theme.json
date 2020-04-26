@@ -130,21 +130,21 @@
       "name": "Function call and variable declaration",
       "scope": [
         "entity.name.function-call",
-        "support.function",
-        "entity.other.attribute-name",
-        "punctuation.definition.entity",
-        "punctuation.separator.key-value",
-        "meta.selector",
-        "variable.other.object.property",
-        "variable.other.readwrite",
-        "variable.other.property",
-        "variable.other.object",
-        "support.type.property-name.json",
         "entity.name.tag.yaml",
-        "meta.function-call.generic",
+        "entity.other.attribute-name",
         "heading",
+        "meta.function-call.generic",
+        "meta.selector",
+        "punctuation.definition.entity",
         "punctuation.definition.string.begin.markdown",
-        "punctuation.definition.string.end.markdown"
+        "punctuation.definition.string.end.markdown",
+        "punctuation.separator.key-value",
+        "support.function",
+        "support.type.property-name.json",
+        "variable.other.object.property",
+        "variable.other.object",
+        "variable.other.property",
+        "variable.other.readwrite"
       ],
       "settings": {
         "foreground": "#c3ab85"
@@ -153,11 +153,11 @@
     {
       "name": "Variables",
       "scope": [
-        "variable.other.assignment",
-        "variable.other.declaration",
-        "variable.other.block.ruby",
         "markup.list",
-        "variable.other.alias.yaml"
+        "variable.other.alias.yaml",
+        "variable.other.assignment",
+        "variable.other.block.ruby",
+        "variable.other.declaration"
       ],
       "settings": {
         "foreground": "#f28ca6"
@@ -166,55 +166,38 @@
     {
       "name": "Keyword",
       "scope": [
-        "keyword",
-        "keyword.control.module",
         "constant.other.symbol",
+        "keyword.control.module",
         "keyword.control",
-        "keyword.other.special-method",
-        "meta.tag.metadata",
-        "storage.type.class",
-        "storage.type.js",
-        "storage.modifier",
         "keyword.operator.expression.of",
         "keyword.operator.new",
+        "keyword.other.special-method",
+        "keyword",
+        "markup.underline.link",
+        "meta.tag.metadata",
+        "storage.modifier",
+        "storage.type.class",
         "storage.type.function",
-        "markup.underline.link"
+        "storage.type.js"
       ],
       "settings": {
         "foreground": "#c385bc"
       }
     },
     {
-      "name": "embedded punctuations",
-      "scope": [
-        "punctuation.section.embedded",
-        "entity.other.inherited-class",
-        "markup.inline.raw.string",
-        "markup.raw.block",
-        "meta.object-literal.key",
-        "punctuation.separator.key-value.js",
-        "punctuation.separator.key-value.ts",
-        "entity.name.function.member.cpp",
-        "keyword.operator"
-      ],
-      "settings": {
-        "foreground": "#e7955a"
-      }
-    },
-    {
       "name": "Module, class, package",
       "scope": [
-        "storage.type",
-        "variable.other.constant",
-        "meta.tag.metadata.style",
-        "support.constant.property-value",
-        "meta.property-value",
+        "constant.language.symbol",
         "entity.name.package",
         "entity.name.type",
-        "support.class",
+        "meta.property-value",
+        "meta.tag.metadata.style",
         "punctuation.section.class",
+        "storage.type",
         "string.other.link.description.markdown",
-        "constant.language.symbol"
+        "support.class",
+        "support.constant.property-value",
+        "variable.other.constant"
       ],
       "settings": {
         "foreground": "#859dc3"
@@ -224,27 +207,36 @@
       "name": "Function declaration and definition",
       "scope": [
         "entity.name.function",
-        "support.constant.color.w3c-standard-color-name",
         "meta.tag.metadata.link",
-        "string.other.link.title.markdown"
+        "string.other.link.title.markdown",
+        "support.constant.color.w3c-standard-color-name"
       ],
       "settings": {
         "foreground": "#85c3ab"
       }
     },
     {
-      "name": "Variable, parameter, separator, Built-in functions",
+      "name": "Variable, parameter, separator, Built-in functions, embedded punctuations",
       "scope": [
-        "variable.other.readwrite.module",
-        "support.function.builtin",
-        "variable.object.property",
-        "punctuation.definition.decorator.python",
+        "entity.name.function.member.cpp",
+        "entity.other.inherited-class",
         "fenced_code.block.language",
+        "keyword.operator",
         "markup.fenced_code.block",
-        "support.type.primitive",
-        "storage.type.annotation",
+        "markup.inline.raw.string",
+        "markup.raw.block",
+        "meta.object-literal.key",
+        "meta.tag.structure",
         "punctuation.definition.annotation",
-        "meta.tag.structure"
+        "punctuation.definition.decorator.python",
+        "punctuation.section.embedded",
+        "punctuation.separator.key-value.js",
+        "punctuation.separator.key-value.ts",
+        "storage.type.annotation",
+        "support.function.builtin",
+        "support.type.primitive",
+        "variable.object.property",
+        "variable.other.readwrite.module"
       ],
       "settings": {
         "foreground": "#e7955a"
@@ -252,11 +244,11 @@
     },
     {
       "scope": [
-        "meta.tag.metadata.script",
+        "entity.name.tag.localname.cs",
         "keyword.control.pseudo-method",
+        "meta.tag.metadata.script",
         "support.type.python",
-        "variable.language.super",
-        "entity.name.tag.localname.cs"
+        "variable.language.super"
       ],
       "settings": {
         "foreground": "#d0b425"
@@ -265,21 +257,21 @@
     {
       "name": "Comparison and logical operators",
       "scope": [
-        "keyword.operator.comparison",
-        "meta.tag.inline",
-        "keyword.operator.logical",
         "entity.alias.import",
-        "variable.other.readwrite.instance.ruby",
-        "variable.other.readwrite.class.ruby",
-        "punctuation.definition.template-expression",
-        "variable.parameter.function.language.special.self",
-        "variable.language.special.self",
-        "variable.language.self",
-        "variable.language.this",
         "entity.name.type.cpp",
-        "support.variable.object.node",
+        "invalid.illegal.tag-handle.yaml",
+        "keyword.operator.comparison",
+        "keyword.operator.logical",
+        "meta.tag.inline",
+        "punctuation.definition.template-expression",
         "source.css support.function",
-        "invalid.illegal.tag-handle.yaml"
+        "support.variable.object.node",
+        "variable.language.self",
+        "variable.language.special.self",
+        "variable.language.this",
+        "variable.other.readwrite.class.ruby",
+        "variable.other.readwrite.instance.ruby",
+        "variable.parameter.function.language.special.self"
       ],
       "settings": {
         "foreground": "#ef7b6d"
@@ -288,12 +280,12 @@
     {
       "name": "String",
       "scope": [
-        "string",
-        "punctuation.definition.string",
-        "string.quoted.double",
-        "source.elixir.embedded.source",
         "entity.name.import",
-        "storage.modifier.import"
+        "punctuation.definition.string",
+        "source.elixir.embedded.source",
+        "storage.modifier.import",
+        "string.quoted.double",
+        "string"
       ],
       "settings": {
         "foreground": "#89B971"
@@ -314,27 +306,27 @@
     },
     {
       "scope": [
-        "punctuation.section.function",
-        "punctuation.section.array",
-        "punctuation.section.scope",
-        "punctuation.separator.object",
-        "punctuation.definition.begin.bracket.round",
-        "punctuation.definition.end.bracket.round",
-        "punctuation.definition.bracket.square",
-        "punctuation.definition.begin.bracket",
-        "punctuation.definition.end.bracket",
-        "punctuation.other",
-        "punctuation.separator.list",
-        "punctuation.section.property-list",
-        "punctuation.separator.key-value.css",
-        "punctuation.definition.parameters",
-        "punctuation.definition.block",
+        "markup.bold",
         "meta.brace",
-        "punctuation.separator",
         "punctuation.definition.arguments",
+        "punctuation.definition.begin.bracket.round",
+        "punctuation.definition.begin.bracket",
+        "punctuation.definition.block",
+        "punctuation.definition.bracket.square",
+        "punctuation.definition.end.bracket.round",
+        "punctuation.definition.end.bracket",
         "punctuation.definition.list",
+        "punctuation.definition.parameters",
+        "punctuation.other",
         "punctuation.parenthesis",
-        "markup.bold"
+        "punctuation.section.array",
+        "punctuation.section.function",
+        "punctuation.section.property-list",
+        "punctuation.section.scope",
+        "punctuation.separator.key-value.css",
+        "punctuation.separator.list",
+        "punctuation.separator.object",
+        "punctuation.separator"
       ],
       "settings": {
         "foreground": "#aaaaaa"
@@ -356,12 +348,12 @@
     {
       "scope": [
         "markup.italic",
-        "punctuation.definition.italic",
         "markup.quote.markdown",
-        "variable.parameter.function.language.special.self",
-        "variable.language.special.self",
+        "punctuation.definition.italic",
         "variable.language.self",
-        "variable.language.this"
+        "variable.language.special.self",
+        "variable.language.this",
+        "variable.parameter.function.language.special.self"
       ],
       "settings": {
         "fontStyle": "italic"
