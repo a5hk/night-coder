@@ -1,7 +1,3 @@
-[![installs](https://vsmarketplacebadge.apphb.com/installs/a5hk.night-coder.svg?style=for-the-badge&color=006600&labelColor=080800)](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
-[![downloads](https://vsmarketplacebadge.apphb.com/downloads/a5hk.night-coder.svg?style=for-the-badge&color=006600&labelColor=080800)](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
-[![ratings](https://vsmarketplacebadge.apphb.com/rating-star/a5hk.night-coder.svg?style=for-the-badge&color=006600&labelColor=080800)](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
-
 # Night Coder
 
 A new dark theme fro Night Coders.
@@ -49,6 +45,7 @@ A new dark theme fro Night Coders.
 - PHP
 - Python
 - Ruby
+- Rust
 - TypeScript
 - YAML
 

@@ -157,7 +157,8 @@
         "variable.other.alias.yaml",
         "variable.other.assignment",
         "variable.other.block.ruby",
-        "variable.other.declaration"
+        "variable.other.declaration",
+        "entity.name.type.template"
       ],
       "settings": {
         "foreground": "#f28ca6"
@@ -197,7 +198,8 @@
         "string.other.link.description.markdown",
         "support.class",
         "support.constant.property-value",
-        "variable.other.constant"
+        "variable.other.constant",
+        "support.other.namespace"
       ],
       "settings": {
         "foreground": "#859dc3"
@@ -236,7 +238,8 @@
         "support.function.builtin",
         "support.type.primitive",
         "variable.object.property",
-        "variable.other.readwrite.module"
+        "variable.other.readwrite.module",
+        "meta.attribute"
       ],
       "settings": {
         "foreground": "#e7955a"
@@ -271,10 +274,17 @@
         "variable.language.this",
         "variable.other.readwrite.class.ruby",
         "variable.other.readwrite.instance.ruby",
-        "variable.parameter.function.language.special.self"
+        "variable.parameter.function.language.special.self",
+        "meta.type_params"
       ],
       "settings": {
         "foreground": "#ef7b6d"
+      }
+    },
+    {
+      "scope": ["storage.class.std", "entity.name.scope-resolution"],
+      "settings": {
+        "foreground": "#99bfe6"
       }
     },
     {

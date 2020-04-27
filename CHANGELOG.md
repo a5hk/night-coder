@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.6.8]
+
+- Rust support
+- Improvements on php and c++
+
 ## [0.6.5]
 
 - Improvements on CSS
