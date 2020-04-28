@@ -144,7 +144,8 @@
         "variable.other.object.property",
         "variable.other.object",
         "variable.other.property",
-        "variable.other.readwrite"
+        "variable.other.readwrite",
+        "variable.other.bracket.shell"
       ],
       "settings": {
         "foreground": "#c3ab85"
@@ -276,7 +277,9 @@
         "variable.other.readwrite.instance.ruby",
         "variable.parameter.function.language.special.self",
         "meta.type_params",
-        "variable.other.readwrite.instance.crystal"
+        "variable.other.readwrite.instance.crystal",
+        "variable.other.positional.shell",
+        "variable.other.normal.shell"
       ],
       "settings": {
         "foreground": "#ef7b6d"

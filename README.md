@@ -4,10 +4,6 @@ A new dark theme fro Night Coders.
 
 ## Screenshots
 
-### HTML
-
-![html screenshot](screenshot/html.png)
-
 ### Javascript
 
 ![javascript screenshot](screenshot/javascript.png)
@@ -15,6 +11,10 @@ A new dark theme fro Night Coders.
 ### Python
 
 ![python screenshot](screenshot/python.png)
+
+### HTML
+
+![html screenshot](screenshot/html.png)
 
 ### Go
 
@@ -47,6 +47,7 @@ A new dark theme fro Night Coders.
 - Python
 - Ruby
 - Rust
+- Shell/Bash
 - TypeScript
 - YAML
 
