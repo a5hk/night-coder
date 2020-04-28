@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.6.11]
+
+- Haskell support
+
 ## [0.6.10]
 
 - Shell support

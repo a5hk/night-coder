@@ -38,6 +38,7 @@ A new dark theme fro Night Coders.
 - CSS
 - Elixir
 - Go
+- Haskell
 - HTML
 - Java
 - JavaScript

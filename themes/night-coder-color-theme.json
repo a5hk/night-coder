@@ -200,7 +200,8 @@
         "support.class",
         "support.constant.property-value",
         "variable.other.constant",
-        "support.other.namespace"
+        "support.other.namespace",
+        "entity.name.namespace"
       ],
       "settings": {
         "foreground": "#859dc3"
