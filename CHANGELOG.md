@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.6.9]
+
+- Crystal support
+
 ## [0.6.8]
 
 - Rust support
