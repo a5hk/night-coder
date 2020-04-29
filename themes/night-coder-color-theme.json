@@ -201,7 +201,8 @@
         "support.constant.property-value",
         "variable.other.constant",
         "support.other.namespace",
-        "entity.name.namespace"
+        "entity.name.namespace",
+        "source.vue entity.name.tag.style.html"
       ],
       "settings": {
         "foreground": "#859dc3"
@@ -242,7 +243,8 @@
         "variable.object.property",
         "variable.other.readwrite.module",
         "meta.attribute",
-        "source.vue entity.name.tag"
+        "meta.tag",
+        "entity.name.tag.localname.cs"
       ],
       "settings": {
         "foreground": "#e7955a"
@@ -250,9 +252,9 @@
     },
     {
       "scope": [
-        "entity.name.tag.localname.cs",
         "keyword.control.pseudo-method",
         "meta.tag.metadata.script",
+        "source.vue entity.name.tag.script.html",
         "support.type.python",
         "variable.language.super"
       ],
@@ -268,7 +270,8 @@
         "invalid.illegal.tag-handle.yaml",
         "keyword.operator.comparison",
         "keyword.operator.logical",
-        "meta.tag.inline",
+        "text.html.markdown entity.name.tag.html",
+        "text.html.markdown punctuation.definition.tag",
         "punctuation.definition.template-expression",
         "source.css support.function",
         "support.variable.object.node",
@@ -282,7 +285,7 @@
         "variable.other.readwrite.instance.crystal",
         "variable.other.positional.shell",
         "variable.other.normal.shell",
-        "source.vue entity.name.tag.template"
+        "entity.name.tag.template.html"
       ],
       "settings": {
         "foreground": "#ef7b6d"
