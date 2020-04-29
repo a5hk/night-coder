@@ -36,20 +36,29 @@ A new dark theme fro Night Coders.
 - C++
 - Crystal
 - CSS
+- Dart
 - Elixir
 - Go
+- GraphQL
 - Haskell
 - HTML
 - Java
 - JavaScript
+- JavaScript React (JSX)
 - JSON
+- Kotlin
 - Markdown
 - PHP
 - Python
 - Ruby
 - Rust
+- SCSS
 - Shell/Bash
+- Swift
+- TOML
 - TypeScript
+- TypeScript React (TSX)
+- Vue
 - YAML
 
 ## License

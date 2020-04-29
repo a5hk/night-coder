@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.7.0]
+
+- Swift, Kotlin, JSX, TSX, SCSS, TOML, Dart, GraphQL, Vue
+
 ## [0.6.11]
 
 - Haskell support
