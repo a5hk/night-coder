@@ -159,7 +159,9 @@
         "variable.other.assignment",
         "variable.other.block",
         "variable.other.declaration",
-        "entity.name.type.template"
+        "entity.name.type.template",
+        "variable.other.object.js.jsx",
+        "variable.other.object.tsx"
       ],
       "settings": {
         "foreground": "#f28ca6"
@@ -241,6 +243,7 @@
         "support.function.builtin",
         "support.type.primitive",
         "variable.object.property",
+
         "variable.other.readwrite.module",
         "meta.attribute",
         "meta.tag",
@@ -324,7 +327,9 @@
         "support.type.property-name",
         "variable.other.php",
         "variable.other.ruby",
-        "variable.other.block.crystal"
+        "variable.other.block.crystal",
+        "variable.other.property.js.jsx",
+        "variable.other.property.tsx"
       ],
       "settings": {
         "foreground": "#C5c5c5"
