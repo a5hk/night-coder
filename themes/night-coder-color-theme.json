@@ -194,6 +194,7 @@
         "constant.language.symbol",
         "entity.name.package",
         "entity.name.type",
+        "entity.name.class",
         "meta.property-value",
         "meta.tag.metadata.style",
         "punctuation.section.class",
