@@ -133,7 +133,7 @@
         "entity.name.tag.yaml",
         "entity.other.attribute-name",
         "heading",
-        "meta.function-call.generic",
+        "meta.function-call",
         "meta.selector",
         "punctuation.definition.entity",
         "punctuation.definition.string.begin.markdown",
@@ -261,7 +261,8 @@
         "meta.tag.metadata.script",
         "source.vue entity.name.tag.script.html",
         "support.type.python",
-        "variable.language.super"
+        "variable.language.super",
+        "meta.generic-where-clause.swift"
       ],
       "settings": {
         "foreground": "#d0b425"
@@ -290,14 +291,15 @@
         "variable.other.readwrite.instance.crystal",
         "variable.other.positional.shell",
         "variable.other.normal.shell",
-        "entity.name.tag.template.html"
+        "entity.name.tag.template.html",
+        "meta.inheritance-clause"
       ],
       "settings": {
         "foreground": "#ef7b6d"
       }
     },
     {
-      "scope": ["storage.class.std", "entity.name.scope-resolution"],
+      "scope": ["storage.class.std", "entity.name.scope-resolution", "support.type.swift"],
       "settings": {
         "foreground": "#99bfe6"
       }
@@ -331,7 +333,8 @@
         "variable.other.ruby",
         "variable.other.block.crystal",
         "variable.other.property.js.jsx",
-        "variable.other.property.tsx"
+        "variable.other.property.tsx",
+        "variable.other"
       ],
       "settings": {
         "foreground": "#C5c5c5"
