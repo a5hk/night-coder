@@ -8,13 +8,13 @@ A new dark theme fro Night Coders.
 
 ![javascript screenshot](screenshot/javascript.png)
 
-### Python
-
-![python screenshot](screenshot/python.png)
-
 ### HTML
 
 ![html screenshot](screenshot/html.png)
+
+### Python
+
+![python screenshot](screenshot/python.png)
 
 ### Go
 
