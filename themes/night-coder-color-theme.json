@@ -204,7 +204,8 @@
         "variable.other.constant",
         "support.other.namespace",
         "entity.name.namespace",
-        "source.vue entity.name.tag.style.html"
+        "source.vue entity.name.tag.style.html",
+        "source.graphql support.type"
       ],
       "settings": {
         "foreground": "#859dc3"
@@ -243,7 +244,7 @@
         "support.function.builtin",
         "support.type.primitive",
         "variable.object.property",
-
+        "variable.graphql",
         "variable.other.readwrite.module",
         "meta.attribute",
         "meta.tag",
