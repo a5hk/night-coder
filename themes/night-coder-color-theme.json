@@ -241,7 +241,8 @@
         "support.type.primitive",
         "variable.object.property",
         "variable.other.readwrite.module",
-        "meta.attribute"
+        "meta.attribute",
+        "source.vue entity.name.tag"
       ],
       "settings": {
         "foreground": "#e7955a"
@@ -280,7 +281,8 @@
         "meta.type_params",
         "variable.other.readwrite.instance.crystal",
         "variable.other.positional.shell",
-        "variable.other.normal.shell"
+        "variable.other.normal.shell",
+        "source.vue entity.name.tag.template"
       ],
       "settings": {
         "foreground": "#ef7b6d"
