@@ -145,7 +145,8 @@
         "variable.other.object",
         "variable.other.property",
         "variable.other.readwrite",
-        "variable.other.bracket.shell"
+        "variable.other.bracket.shell",
+        "source.css.scss entity.name.tag.css"
       ],
       "settings": {
         "foreground": "#c3ab85"
@@ -292,7 +293,8 @@
         "variable.other.positional.shell",
         "variable.other.normal.shell",
         "entity.name.tag.template.html",
-        "meta.inheritance-clause"
+        "meta.inheritance-clause",
+        "variable.scss"
       ],
       "settings": {
         "foreground": "#ef7b6d"
