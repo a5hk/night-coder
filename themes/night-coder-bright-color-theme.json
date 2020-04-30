@@ -334,7 +334,8 @@
         "support.function.builtin"
       ],
       "settings": {
-        "foreground": "#ff9966"
+        "foreground": "#ffa375"
+        // "foreground": "#ff9966"
       }
     },
     {
