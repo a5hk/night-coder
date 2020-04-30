@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.8.0]
+
+- Bright version
+
 ## [0.7.0]
 
 - Swift, Kotlin, JSX, TSX, SCSS, TOML, Dart, GraphQL, Vue
