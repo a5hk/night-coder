@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.8.1]
+
+- Color improvement
+
 ## [0.8.0]
 
 - Bright version

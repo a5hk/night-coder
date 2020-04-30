@@ -136,7 +136,8 @@
         "variable.other.alias.yaml",
         "meta.method-call entity.name.function",
         "meta.function-call entity.name.function",
-        "markup.italic"
+        "markup.italic",
+        "punctuation.separator.key-value"
       ],
       "settings": {
         "foreground": "#f6dd93"
