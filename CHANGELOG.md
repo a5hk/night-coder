@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.8.5]
+
+- Minor color improvement - bright version
+
 ## [0.8.4]
 
 - more html colors - bright version

@@ -180,22 +180,21 @@
     {
       "name": "Module, class, package",
       "scope": [
-        "constant.language.symbol",
         "entity.name.package",
         "entity.name.type",
         "entity.name.class",
         "meta.property-value",
+        "support.constant.property-value",
         "meta.tag.metadata.style",
         "punctuation.section.class",
-        "storage.type",
         "string.other.link.description.markdown",
         "support.class",
-        "support.constant.property-value",
         "variable.other.constant",
         "support.other.namespace",
         "entity.name.namespace",
         "source.vue entity.name.tag.style.html",
-        "source.graphql support.type"
+        "source.graphql support.type",
+        "storage.class.std"
       ],
       "settings": {
         "foreground": "#859dc3"
@@ -291,9 +290,10 @@
       "scope": [
         "meta.tag.object",
         "heading",
-        "storage.class.std",
         "entity.name.scope-resolution",
-        "support.type.swift"
+        "support.type.swift",
+        "storage.type",
+        "constant.language.symbol"
       ],
       "settings": {
         "foreground": "#80bfff"
