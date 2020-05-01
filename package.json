@@ -2,7 +2,7 @@
   "name": "night-coder",
   "displayName": "Night Coder",
   "description": "A dark theme for Night Coders",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "publisher": "a5hk",
   "icon": "icon.png",
   "keywords": [
@@ -35,7 +35,7 @@
         "path": "./themes/night-coder-bright-color-theme.json"
       },
       {
-        "label": "Night Coder",
+        "label": "Night Coder Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/night-coder-dark-color-theme.json"
       }

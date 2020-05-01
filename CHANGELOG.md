@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.8.3]
+
+- Bug fix
+
 ## [0.8.1]
 
 - Color improvement
