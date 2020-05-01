@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Night Coder",
+  "name": "Night Coder Dark",
   "type": "dark",
   "colors": {
     "activityBar.activeBorder": "#080800",

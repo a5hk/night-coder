@@ -1,28 +1,30 @@
 # Night Coder
 
-A new dark theme fro Night Coders.
+A dark theme for Night Coders. There are two versions: _dark_ and _bright_.
+
+![demo](screenshot/night-coder.gif)
 
 ## Screenshots
 
 ### Javascript
 
-![javascript screenshot](screenshot/javascript.png)
+![javascript screenshot](screenshot/javascript-bright.png)
 
 ### HTML
 
-![html screenshot](screenshot/html.png)
+![html screenshot](screenshot/html-bright.png)
 
 ### Python
 
-![python screenshot](screenshot/python.png)
+![python screenshot](screenshot/python-bright.png)
 
 ### Go
 
-![go screenshot](screenshot/go.png)
+![go screenshot](screenshot/go-bright.png)
 
 ### Ruby
 
-![ruby screenshot](screenshot/ruby.png)
+![ruby screenshot](screenshot/ruby-bright.png)
 
 <br>Modification indicators with `"workbench.editor.highlightModifiedTabs": true`.
 
