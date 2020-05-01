@@ -2,9 +2,10 @@
   "name": "night-coder",
   "displayName": "Night Coder",
   "description": "A dark theme for Night Coders",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "publisher": "a5hk",
   "icon": "icon.png",
+  "preview": true,
   "keywords": [
     "NightCoder",
     "Night Coder",

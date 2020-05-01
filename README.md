@@ -6,13 +6,13 @@ A dark theme for Night Coders. There are two versions: _dark_ and _bright_.
 
 ## Screenshots
 
+### HTML
+
+![html screenshot](screenshot/html-bright2.png)
+
 ### Javascript
 
 ![javascript screenshot](screenshot/javascript-bright.png)
-
-### HTML
-
-![html screenshot](screenshot/html-bright.png)
 
 ### Python
 

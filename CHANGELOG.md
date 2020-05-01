@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.8.4]
+
+- more html colors - bright version
+- replaced a blue color - bright version
+
 ## [0.8.3]
 
 - Bug fix

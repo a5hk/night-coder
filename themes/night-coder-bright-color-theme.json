@@ -149,7 +149,8 @@
         "variable.other.declaration",
         "entity.name.type.template",
         "support.type.primitive",
-        "variable.other.php"
+        "variable.other.php",
+        "meta.tag.object"
       ],
       "settings": {
         "foreground": "#ff99b3"
@@ -252,18 +253,14 @@
         "variable.other.normal.shell",
         "entity.name.tag.template.html",
         "meta.inheritance-clause",
-        "variable.scss"
+        "variable.scss",
+        "meta.tag.other.unrecognized"
       ],
       "settings": {
         "foreground": "#ff7575"
       }
     },
-    {
-      "scope": ["storage.class.std", "entity.name.scope-resolution", "support.type.swift", "heading"],
-      "settings": {
-        "foreground": "#99bfe6"
-      }
-    },
+
     {
       "name": "String",
       "scope": [
@@ -285,9 +282,27 @@
       }
     },
     {
-      "scope": ["keyword.operator.comparison", "keyword.operator.logical"],
+      "scope": ["meta.tag.custom"],
       "settings": {
-        "foreground": "#baf7e3"
+        "foreground": "#e5aaf8"
+      }
+    },
+    {
+      "scope": [
+        "meta.tag.object",
+        "heading",
+        "storage.class.std",
+        "entity.name.scope-resolution",
+        "support.type.swift"
+      ],
+      "settings": {
+        "foreground": "#80bfff"
+      }
+    },
+    {
+      "scope": ["keyword.operator.comparison", "keyword.operator.logical", "meta.tag.inline"],
+      "settings": {
+        "foreground": "#70dbc1"
       }
     },
     {
