@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.9.0]
+
+- New workbench colors for bright version
+
 ## [0.8.5]
 
 - Minor color improvement - bright version
