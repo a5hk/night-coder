@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.10.0]
+
+- New theme
+
 ## [0.9.0]
 
 - New workbench colors for bright version
