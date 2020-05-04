@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.11.0]
+
+- Changed custom html element's color in bright and blue version
+
 ## [0.10.0]
 
 - New theme

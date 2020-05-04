@@ -274,17 +274,17 @@
       }
     },
     {
-      "scope": ["keyword.operator", "heading"],
+      "scope": ["keyword.operator", "heading", "meta.tag.custom"],
       "settings": {
         "foreground": "#f2f28c"
       }
     },
-    {
-      "scope": ["meta.tag.custom"],
-      "settings": {
-        "foreground": "#e5aaf8"
-      }
-    },
+    // {
+    //   "scope": ["meta.tag.custom"],
+    //   "settings": {
+    //     "foreground": "#e5aaf8"
+    //   }
+    // },
     {
       "scope": [
         "meta.tag.object",
