@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.12.0]
+
+- Terminal colors
+- Some fixes
+
 ## [0.11.0]
 
 - Changed custom html element's color in bright and blue version
