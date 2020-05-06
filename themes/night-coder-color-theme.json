@@ -229,8 +229,6 @@
       ],
       "settings": {
         "foreground": "#c3a822"
-        // "foreground": "#d9bb26"
-        // "foreground": "#d0b425"
       }
     },
     {
@@ -275,8 +273,6 @@
         "string"
       ],
       "settings": {
-        // "foreground": "#89B971"
-        // "foreground": "#a2c01b"
         "foreground": "#8cb319"
       }
     },
@@ -290,8 +286,6 @@
       "scope": ["meta.tag.custom"],
       "settings": {
         "foreground": "#d9d326"
-        // "foreground": "#d6d926"
-        // "foreground": "#ffbf00"
       }
     },
     {
@@ -358,7 +352,6 @@
         "support.function.builtin"
       ],
       "settings": {
-        // "foreground": "#ffa375"
         "foreground": "#ffa666"
       }
     },

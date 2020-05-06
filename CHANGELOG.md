@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.13.1]
+
+- Minor color changes
+
 ## [0.13.0]
 
 - Removed unsupported themes
