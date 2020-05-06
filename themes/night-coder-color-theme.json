@@ -111,13 +111,13 @@
     "terminal.ansiBrightMagenta": "#F28CA6",
     "terminal.ansiBrightRed": "#EF7B6D",
     "terminal.ansiBrightWhite": "#c5c6c9",
-    "terminal.ansiBrightYellow": "#F6DD93",
+    "terminal.ansiBrightYellow": "#f5d780",
     "terminal.ansiCyan": "#0FA5D7",
     "terminal.ansiGreen": "#85C3AB",
     "terminal.ansiMagenta": "#C385BC",
     "terminal.ansiRed": "#FF7575",
     "terminal.ansiWhite": "#acaeb3",
-    "terminal.ansiYellow": "#d6d926",
+    "terminal.ansiYellow": "#d9d326",
     "terminal.foreground": "#acaeb3",
     "textLink.foreground": "#89B971",
     "titleBar.activeBackground": "#030917",
@@ -141,7 +141,8 @@
         "heading"
       ],
       "settings": {
-        "foreground": "#f6dd93"
+        "foreground": "#f5d780"
+        // "foreground": "#f6dd93"
       }
     },
     {
@@ -227,7 +228,8 @@
         "keyword.other.unit"
       ],
       "settings": {
-        "foreground": "#d9bb26"
+        "foreground": "#c3a822"
+        // "foreground": "#d9bb26"
         // "foreground": "#d0b425"
       }
     },
@@ -274,7 +276,8 @@
       ],
       "settings": {
         // "foreground": "#89B971"
-        "foreground": "#a2c01b"
+        // "foreground": "#a2c01b"
+        "foreground": "#8cb319"
       }
     },
     {
@@ -286,7 +289,8 @@
     {
       "scope": ["meta.tag.custom"],
       "settings": {
-        "foreground": "#d6d926"
+        "foreground": "#d9d326"
+        // "foreground": "#d6d926"
         // "foreground": "#ffbf00"
       }
     },
