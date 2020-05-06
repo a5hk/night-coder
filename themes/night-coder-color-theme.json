@@ -273,6 +273,7 @@
         "string"
       ],
       "settings": {
+        // "foreground": "#a2c01b"
         "foreground": "#8cb319"
       }
     },
@@ -312,7 +313,8 @@
         "variable.other.global.safer.php",
         "variable.other.class.php",
         "variable.other.assignment",
-        "markup.italic"
+        "markup.italic",
+        "support.type.property-name.json"
       ],
       "settings": {
         "foreground": "#93ecb8"
@@ -329,7 +331,6 @@
         "variable.other.bracket.shell",
         "variable.other.object.js.jsx",
         "variable.other.object.tsx",
-        "support.type.property-name.json",
         "entity.name.tag.yaml",
         "entity.name.tag.css",
         "source.css entity.other.attribute-name",

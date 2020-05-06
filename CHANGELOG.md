@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.14.0]
+
+- Made JSON coloring consistent with JavaScript
+
 ## [0.13.1]
 
 - Minor color changes
