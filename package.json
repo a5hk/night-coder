@@ -2,7 +2,7 @@
   "name": "night-coder",
   "displayName": "Night Coder",
   "description": "A dark theme for Night Coders",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "publisher": "a5hk",
   "icon": "icon.png",
   "preview": true,
@@ -33,19 +33,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Night Coder Blue",
+        "label": "Night Coder",
         "uiTheme": "vs-dark",
-        "path": "./themes/night-coder-blue-color-theme.json"
-      },
-      {
-        "label": "Night Coder Bright",
-        "uiTheme": "vs-dark",
-        "path": "./themes/night-coder-bright-color-theme.json"
-      },
-      {
-        "label": "Night Coder Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/night-coder-dark-color-theme.json"
+        "path": "./themes/night-coder-color-theme.json"
       }
     ]
   }

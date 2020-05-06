@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.13.0]
+
+- Removed unsupported themes
+- Some color modifications
+
 ## [0.12.0]
 
 - Terminal colors
