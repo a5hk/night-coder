@@ -273,6 +273,7 @@
         "string"
       ],
       "settings": {
+        // "foreground": "#9ed279"
         // "foreground": "#66cc66"
         "foreground": "#40bf6a"
       }
