@@ -273,8 +273,9 @@
         "string"
       ],
       "settings": {
-        // "foreground": "#a2c01b"
-        "foreground": "#8cb319"
+        "foreground": "#40bf6a"
+        // "foreground": "#96c653"
+        // "foreground": "#8cb319"
       }
     },
     {
