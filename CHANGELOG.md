@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.16.1]
+
+- New logo
+
 ## [0.16.0]
 
 - Modified string color
