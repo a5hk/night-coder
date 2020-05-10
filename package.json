@@ -2,7 +2,7 @@
   "name": "night-coder",
   "displayName": "Night Coder",
   "description": "A dark theme for Night Coders",
-  "version": "0.16.1",
+  "version": "0.16.2",
   "publisher": "a5hk",
   "icon": "icon.png",
   "preview": true,
@@ -16,7 +16,7 @@
     "Blue"
   ],
   "galleryBanner": {
-    "color": "080800",
+    "color": "030917",
     "theme": "dark"
   },
   "engines": {

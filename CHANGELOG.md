@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.16.2]
+
+- New gallery banner color
+
 ## [0.16.1]
 
 - New logo
