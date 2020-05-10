@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.16.0]
+
+- Modified string color
+
 ## [0.15.0]
 
 - Modified string color
