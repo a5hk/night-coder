@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.17.0]
+
+- Made JSON, YAML, and TOML consistent
+- Improvements on Markdown
+
 ## [0.16.2]
 
 - New gallery banner color
