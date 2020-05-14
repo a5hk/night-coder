@@ -30,6 +30,7 @@ A dark theme for Night Coders.
 - CSS
 - Dart
 - Elixir
+- Gettext
 - Go
 - GraphQL
 - Haskell

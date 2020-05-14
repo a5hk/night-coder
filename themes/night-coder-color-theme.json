@@ -232,7 +232,6 @@
       }
     },
     {
-      "name": "Comparison and logical operators",
       "scope": [
         "entity.alias.import",
         "entity.name.type.cpp",
@@ -255,13 +254,13 @@
         "entity.name.tag.template.html",
         "meta.inheritance-clause",
         "variable.scss",
-        "meta.tag.other.unrecognized"
+        "meta.tag.other.unrecognized",
+        "storage.type.class.po"
       ],
       "settings": {
         "foreground": "#ff7575"
       }
     },
-
     {
       "name": "String",
       "scope": [

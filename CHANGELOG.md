@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.18.0]
+
+- Added support for .po (gettext) files
+
 ## [0.17.0]
 
 - Made JSON, YAML, and TOML consistent
