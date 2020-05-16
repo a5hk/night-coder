@@ -1,4 +1,4 @@
-# Night Coder
+# [Night Coder](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
 
 A dark theme for Night Coders.
 

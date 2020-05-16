@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.18.1]
+
+- Updated readme
+
 ## [0.18.0]
 
 - Added support for .po (gettext) files
