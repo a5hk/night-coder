@@ -1,4 +1,8 @@
-# Change Log
+# Changelog
+
+## [0.18.2]
+
+- Minor modifications in warning, error, and progressbar colors
 
 ## [0.18.1]
 
