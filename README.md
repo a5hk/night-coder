@@ -1,6 +1,6 @@
 # [Night Coder](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
 
-A dark theme for Night Coders.
+A dark theme for Night Coders. It has two versions: Night Coder and Night Coder Contrast. [Comparison](#Comparison)
 
 ## Screenshots
 
@@ -21,6 +21,12 @@ A dark theme for Night Coders.
 ### Markdown
 
 ![modified tab indicators](screenshot/modified.png)
+
+### Comparison
+
+![regular](screenshot/regular.png)
+
+![contrast](screenshot/contrast.png)
 
 #### Currently supports:
 

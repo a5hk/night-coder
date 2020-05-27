@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.19.0]
+
+- Night Coder Contrast
+
 ## [0.18.2]
 
 - Minor modifications in warning, error, and progressbar colors
