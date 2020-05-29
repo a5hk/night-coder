@@ -360,6 +360,7 @@
     {
       "scope": [
         "comment.wildcard",
+        "meta.jsx.children",
         "support.type.property-name",
         "variable.other.ruby",
         "variable.other.block.crystal",

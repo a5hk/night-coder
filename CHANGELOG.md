@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.20.0]
+
+- Addressed JSX and empty page issues [#3](https://github.com/a5hk/night-coder/issues/3)
+
 ## [0.19.0]
 
 - Night Coder Contrast
