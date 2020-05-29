@@ -315,6 +315,8 @@
         "support.type.property-name.json",
         "entity.name.tag.yaml",
         "meta.tag.inline",
+        "entity.name.tag.js.jsx",
+        "entity.name.tag.tsx",
         "keyword.key.toml"
       ],
       "settings": {
@@ -400,7 +402,7 @@
       }
     },
     {
-      "scope": ["text.html punctuation.definition.tag"],
+      "scope": ["punctuation.definition.tag"],
       "settings": {
         "foreground": "#7a7d84"
       }

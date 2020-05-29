@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.20.1]
+
+- Improvements on JSX on TSX
+
 ## [0.20.0]
 
 - Addressed JSX and empty page issues [#3](https://github.com/a5hk/night-coder/issues/3)
