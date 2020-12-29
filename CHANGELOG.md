@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.0]
+
+- Error, warning, and info colors
+
 ## [0.20.1]
 
 - Improvements on JSX on TSX
