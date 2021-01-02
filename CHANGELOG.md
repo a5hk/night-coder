@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.1.0]
+
+- Background color for folded ranges
+
 ## [1.0.0]
 
 - Error, warning, and info colors
