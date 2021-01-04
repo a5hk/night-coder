@@ -40,6 +40,11 @@
         "label": "Night Coder Contrast",
         "uiTheme": "vs-dark",
         "path": "./themes/night-coder-contrast-color-theme.json"
+      },
+      {
+        "label": "Night Coder Italic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/night-coder-italic-color-theme.json"
       }
     ]
   }
