@@ -146,7 +146,6 @@
       ],
       "settings": {
         "foreground": "#f5d780"
-        // "foreground": "#f6dd93"
       }
     },
     {
@@ -269,7 +268,6 @@
       "name": "String",
       "scope": [
         "entity.name.import",
-        // "punctuation.definition.string",
         "source.elixir.embedded.source",
         "storage.modifier.import",
         "string.quoted.double",
@@ -307,7 +305,6 @@
     {
       "scope": ["keyword.operator.comparison", "keyword.operator.logical", "markup.italic"],
       "settings": {
-        // "foreground": "#70dbc1"
         "foreground": "#93ecb8"
       }
     },
@@ -325,7 +322,6 @@
         "keyword.key.toml"
       ],
       "settings": {
-        // "foreground": "#93ecb8"
         "foreground": "#70dbc1"
       }
     },
@@ -400,7 +396,6 @@
         "punctuation.separator.key-value.css",
         "punctuation.separator.list",
         "punctuation.separator.object"
-        // "punctuation.separator"
       ],
       "settings": {
         "foreground": "#acaeb3"
