@@ -179,7 +179,8 @@
         "variable.other.global.safer.php",
         "variable.other.readwrite.class.ruby",
         "variable.other.readwrite.instance.ruby",
-        "variable.parameter.function.language.special.self"
+        "variable.parameter.function.language.special.self",
+        "support.constant.property-value" // TODO check this later (css)
       ],
       "settings": {
         "foreground": "#FF7575"
@@ -187,18 +188,22 @@
     },
     {
       "name": "default library",
-      "scope": ["support.variable.object.node"],
+      "scope": [
+        "support.variable.object.node",
+        "meta.property-value" // TODO check this later (css)
+      ],
       "settings": {
         "foreground": "#ACA3DC"
       }
     },
     {
-      "name": "property",
+      "name": "property, key",
       "scope": [
         "meta.object-literal.key",
         "support.type.property-name.json",
         "variable.other.property.js.jsx",
-        "variable.other.property.tsx"
+        "variable.other.property.tsx",
+        "support.type.property-name"
       ],
       "settings": {
         "foreground": "#70DBC1"
@@ -260,8 +265,6 @@
         "entity.name.package",
         "entity.name.type",
         "entity.name.class",
-        "meta.property-value",
-        "support.constant.property-value",
         "meta.tag.metadata.style",
         "punctuation.section.class",
         "string.other.link.description.markdown",
@@ -406,7 +409,7 @@
       }
     },
     {
-      "scope": ["comment.wildcard", "meta.jsx.children", "support.type.property-name"],
+      "scope": ["comment.wildcard", "meta.jsx.children"],
       "settings": {
         "foreground": "#c5c6c9"
       }
