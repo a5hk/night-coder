@@ -133,8 +133,17 @@
   "semanticTokenColors": {
     "variable": "#FFA666",
     "variable.readonly": "#ff7575",
-    "variable.defaultLibrary": "#ACA3DC",
-    "property": "#70DBC1"
+    "variable.defaultLibrary": "#ffd3b3",
+    "property": "#70DBC1",
+    "function": "#85C3AB",
+    "method": "#85C3AB",
+    "keyword": "#C385BC",
+    "namespace": "#859DC3",
+    "type": "#859DC3",
+    "class": "#859DC3",
+    "struct": "#859DC3",
+    "operator": "#F2F28C"
+    // "variable.defaultLibrary": "#ACA3DC",
     // "variable.readonly": "#aca3dc",
   },
   "tokenColors": [
@@ -193,7 +202,7 @@
         "meta.property-value" // TODO check this later (css)
       ],
       "settings": {
-        "foreground": "#ACA3DC"
+        "foreground": "#FFD3B3"
       }
     },
     {
@@ -207,6 +216,54 @@
       ],
       "settings": {
         "foreground": "#70DBC1"
+      }
+    },
+    {
+      "name": "function, method",
+      "scope": ["entity.name.function"],
+      "settings": {
+        "foreground": "#85C3AB"
+      }
+    },
+    {
+      "name": "keyword",
+      "scope": [
+        "keyword.control.module",
+        "keyword.control",
+        "keyword.operator.expression.of",
+        "keyword.operator.new",
+        "keyword.other.special-method",
+        "keyword"
+      ],
+      "settings": {
+        "foreground": "#C385BC"
+      }
+    },
+    {
+      "name": "namespace, type, struct, class, module",
+      "scope": [
+        "entity.name.package",
+        "entity.name.type",
+        "entity.name.class",
+        "entity.name.namespace",
+        "entity.name.type.cpp"
+      ],
+      "settings": {
+        "foreground": "#859dc3"
+      }
+    },
+    {
+      "name": "logical and comparison operators",
+      "scope": ["keyword.operator.comparison", "keyword.operator.logical"],
+      "settings": {
+        "foreground": "#93ecb8"
+      }
+    },
+    {
+      "name": "operators",
+      "scope": ["keyword.operator"],
+      "settings": {
+        "foreground": "#f2f28c"
       }
     },
 
@@ -242,12 +299,6 @@
       "name": "Keyword",
       "scope": [
         "constant.other.symbol",
-        "keyword.control.module",
-        "keyword.control",
-        "keyword.operator.expression.of",
-        "keyword.operator.new",
-        "keyword.other.special-method",
-        "keyword",
         "markup.underline.link",
         "meta.tag.metadata",
         "storage.modifier",
@@ -262,15 +313,11 @@
     {
       "name": "Module, class, package",
       "scope": [
-        "entity.name.package",
-        "entity.name.type",
-        "entity.name.class",
         "meta.tag.metadata.style",
         "punctuation.section.class",
         "string.other.link.description.markdown",
         "support.class",
         "support.other.namespace",
-        "entity.name.namespace",
         "source.vue entity.name.tag.style.html",
         "source.graphql support.type",
         "storage.class.std"
@@ -282,7 +329,6 @@
     {
       "name": "Function declaration and definition",
       "scope": [
-        "entity.name.function",
         "meta.tag.metadata.link",
         "string.other.link.title.markdown",
         "support.constant.color.w3c-standard-color-name"
@@ -310,7 +356,6 @@
     {
       "scope": [
         "entity.alias.import",
-        "entity.name.type.cpp",
         "invalid.illegal.tag-handle.yaml",
         "text.html.markdown entity.name.tag.html",
         "text.html.markdown punctuation.definition.tag",
@@ -340,12 +385,6 @@
       }
     },
     {
-      "scope": ["keyword.operator"],
-      "settings": {
-        "foreground": "#f2f28c"
-      }
-    },
-    {
       "scope": ["meta.tag.custom"],
       "settings": {
         "foreground": "#d9d326"
@@ -365,7 +404,7 @@
       }
     },
     {
-      "scope": ["keyword.operator.comparison", "keyword.operator.logical", "markup.italic"],
+      "scope": ["markup.italic"],
       "settings": {
         "foreground": "#93ecb8"
       }
