@@ -131,18 +131,22 @@
     "widget.shadow": "#151a2700"
   },
   "semanticTokenColors": {
-    "variable": "#FFA666",
-    "variable.readonly": "#ff7575",
-    "variable.defaultLibrary": "#ffd3b3",
-    "property": "#70DBC1",
-    "function": "#85C3AB",
-    "method": "#85C3AB",
+    // "variable": "#FFA666",
+    "variable": "#C5C6C9",
+    "variable.readonly": "#FF7575",
+    // "variable.defaultLibrary": "#ffd3b3",
+    "variable.defaultLibrary": "#FF99B3",
+    "property": "#FFA666",
+    // "property": "#70DBC1",
+    "function.declaration": "#85C3AB",
+    "method.declaration": "#85C3AB",
     "keyword": "#C385BC",
     "namespace": "#859DC3",
-    "type": "#859DC3",
     "class": "#859DC3",
     "struct": "#859DC3",
-    "operator": "#F2F28C"
+    "type": "#80BFFF",
+    "operator": "#F2F28C",
+    "string": "#9ED279"
     // "variable.defaultLibrary": "#ACA3DC",
     // "variable.readonly": "#aca3dc",
   },
@@ -172,7 +176,8 @@
         "variable.scss"
       ],
       "settings": {
-        "foreground": "#FFA666"
+        "foreground": "#C5C6C9"
+        // "foreground": "#FFA666"
       }
     },
     {
@@ -189,7 +194,7 @@
         "variable.other.readwrite.class.ruby",
         "variable.other.readwrite.instance.ruby",
         "variable.parameter.function.language.special.self",
-        "support.constant.property-value" // TODO check this later (css)
+        "variable.other.readwrite.instance.crystal"
       ],
       "settings": {
         "foreground": "#FF7575"
@@ -199,10 +204,27 @@
       "name": "default library",
       "scope": [
         "support.variable.object.node",
-        "meta.property-value" // TODO check this later (css)
+        "meta.property-value", // TODO check this later (css)
+        "support.constant.color.w3c-standard-color-name",
+        "support.type.python"
+        // "punctuation.definition.decorator.python"
       ],
       "settings": {
-        "foreground": "#FFD3B3"
+        "foreground": "#FF99B3"
+      }
+    },
+    {
+      "name": "non variable constant",
+      "scope": [
+        // "support.constant.property-value", // TODO check this later (css)
+        "constant",
+        // "constant.language",
+        "support.constant",
+        "keyword.other.unit"
+      ],
+      "settings": {
+        // "foreground": "#ACA3DC"
+        "foreground": "#AF8FEF"
       }
     },
     {
@@ -215,7 +237,8 @@
         "support.type.property-name"
       ],
       "settings": {
-        "foreground": "#70DBC1"
+        "foreground": "#FFA666"
+        // "foreground": "#70DBC1"
       }
     },
     {
@@ -233,7 +256,11 @@
         "keyword.operator.expression.of",
         "keyword.operator.new",
         "keyword.other.special-method",
-        "keyword"
+        "keyword",
+        "storage.modifier",
+        "storage.type.class",
+        "storage.type.function",
+        "storage.type.js"
       ],
       "settings": {
         "foreground": "#C385BC"
@@ -246,7 +273,8 @@
         "entity.name.type",
         "entity.name.class",
         "entity.name.namespace",
-        "entity.name.type.cpp"
+        "entity.name.type.cpp",
+        "storage.modifier.package.java"
       ],
       "settings": {
         "foreground": "#859dc3"
@@ -260,10 +288,50 @@
       }
     },
     {
+      "name": "types",
+      "scope": [
+        // "support.type.swift",
+        "storage.type",
+        "keyword.type"
+      ],
+      "settings": {
+        "foreground": "#80BFFF"
+      }
+    },
+    {
       "name": "operators",
       "scope": ["keyword.operator"],
       "settings": {
         "foreground": "#f2f28c"
+      }
+    },
+    {
+      "name": "String",
+      "scope": ["source.elixir.embedded.source", "storage.modifier.import.java", "string.quoted.double", "string"],
+      "settings": {
+        "foreground": "#9ED279"
+      }
+    },
+
+    // markup languages
+
+    {
+      "scope": ["meta.tag.metadata", "markup.underline.link"],
+      "settings": {
+        "foreground": "#C385BC"
+      }
+    },
+    {
+      "scope": ["meta.tag.metadata.link", "string.other.link.title.markdown"],
+      "settings": {
+        "foreground": "#85c3ab"
+      }
+    },
+    {
+      "scope": ["markup.italic"],
+      "settings": {
+        "foreground": "#93ecb8",
+        "fontStyle": "italic"
       }
     },
 
@@ -296,21 +364,6 @@
       }
     },
     {
-      "name": "Keyword",
-      "scope": [
-        "constant.other.symbol",
-        "markup.underline.link",
-        "meta.tag.metadata",
-        "storage.modifier",
-        "storage.type.class",
-        "storage.type.function",
-        "storage.type.js"
-      ],
-      "settings": {
-        "foreground": "#c385bc"
-      }
-    },
-    {
       "name": "Module, class, package",
       "scope": [
         "meta.tag.metadata.style",
@@ -327,29 +380,14 @@
       }
     },
     {
-      "name": "Function declaration and definition",
-      "scope": [
-        "meta.tag.metadata.link",
-        "string.other.link.title.markdown",
-        "support.constant.color.w3c-standard-color-name"
-      ],
-      "settings": {
-        "foreground": "#85c3ab"
-      }
-    },
-    {
       "scope": [
         "keyword.control.pseudo-method",
         "meta.tag.metadata.script",
         "source.vue entity.name.tag.script.html",
-        "support.type.python",
-        "meta.generic-where-clause.swift",
-        "constant",
-        "constant.language",
-        "support.constant",
-        "keyword.other.unit"
+        "meta.generic-where-clause.swift" // TODO swift
       ],
       "settings": {
+        // "foreground": "#ACA3DC"
         "foreground": "#c3a822"
       }
     },
@@ -372,19 +410,6 @@
       }
     },
     {
-      "name": "String",
-      "scope": [
-        "entity.name.import",
-        "source.elixir.embedded.source",
-        "storage.modifier.import",
-        "string.quoted.double",
-        "string"
-      ],
-      "settings": {
-        "foreground": "#9ed279"
-      }
-    },
-    {
       "scope": ["meta.tag.custom"],
       "settings": {
         "foreground": "#d9d326"
@@ -395,18 +420,11 @@
         "meta.tag.object",
         "entity.name.scope-resolution",
         "support.type.swift",
-        "storage.type",
-        "constant.language.symbol",
+        // "constant.language.symbol",
         "markup.bold"
       ],
       "settings": {
         "foreground": "#80bfff"
-      }
-    },
-    {
-      "scope": ["markup.italic"],
-      "settings": {
-        "foreground": "#93ecb8"
       }
     },
     {
@@ -474,6 +492,7 @@
         "punctuation.separator.key-value.css",
         "punctuation.separator.list",
         "punctuation.separator.object"
+        // "punctuation"
       ],
       "settings": {
         "foreground": "#acaeb3"
@@ -486,28 +505,14 @@
       }
     },
     {
-      "scope": ["comment", "punctuation.definition.comment"],
+      "scope": ["comment", "punctuation.definition.comment", "string.quoted.docstring.multi.python"],
       "settings": {
         "foreground": "#474c56",
         "fontStyle": "italic"
       }
     },
     {
-      "scope": ["punctuation"],
-      "settings": {
-        // "fontStyle": ""
-      }
-    },
-    {
-      "scope": [
-        "markup.italic",
-        "markup.quote.markdown",
-        "punctuation.definition.italic"
-        // "variable.language.self",
-        // "variable.language.special.self",
-        // "variable.language.this",
-        // "variable.parameter.function.language.special.self"
-      ],
+      "scope": ["markup.quote.markdown", "punctuation.definition.italic"],
       "settings": {
         "fontStyle": "italic"
       }
