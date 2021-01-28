@@ -176,7 +176,6 @@
       ],
       "settings": {
         "foreground": "#C5C6C9"
-        // "foreground": "#FFA666"
       }
     },
     {
@@ -208,10 +207,23 @@
         "support.type",
         "support.class",
         "support.other.namespace"
-        // "punctuation.definition.decorator.python"
       ],
       "settings": {
         "foreground": "#FF99B3"
+      }
+    },
+    {
+      "name": "default library functions and methods",
+      "scope": ["meta.method.declaration.js storage.type.js", "support.function"],
+      "settings": {
+        "foreground": "#70dbc1"
+      }
+    },
+    {
+      "name": "undecided",
+      "scope": ["meta.generic-where-clause.swift", "meta.definition.type.body.swift", "meta.arguments.attribute.swift"],
+      "settings": {
+        "foreground": "#c3ab85"
       }
     },
     {
@@ -219,7 +231,6 @@
       "scope": [
         // "support.constant.property-value", // TODO check this later (css)
         "constant",
-        // "constant.language",
         "support.constant",
         "keyword.other.unit"
       ],
@@ -241,7 +252,6 @@
       ],
       "settings": {
         "foreground": "#FFA666"
-        // "foreground": "#70DBC1"
       }
     },
     {
@@ -263,8 +273,7 @@
         "keyword",
         "storage.modifier",
         "storage.type.class",
-        "storage.type.function",
-        "storage.type.js"
+        "storage.type.function"
       ],
       "settings": {
         "foreground": "#C385BC"
@@ -279,7 +288,8 @@
         "entity.name.namespace",
         "entity.name.type.cpp",
         "entity.name.scope-resolution",
-        "storage.modifier.package.java"
+        "storage.modifier.package.java",
+        "storage.type.class.po"
       ],
       "settings": {
         "foreground": "#859dc3"
@@ -333,7 +343,12 @@
       }
     },
     {
-      "scope": ["comment", "punctuation.definition.comment", "string.quoted.docstring.multi.python"],
+      "scope": [
+        "comment",
+        "punctuation.definition.comment",
+        "string.quoted.docstring.multi.python",
+        "punctuation.whitespace.comment.leading.graphql"
+      ],
       "settings": {
         "foreground": "#474c56",
         "fontStyle": "italic"
@@ -454,7 +469,6 @@
         "entity.name.function-call",
         "entity.name.function.call",
         "meta.function-call",
-        "support.function",
         "entity.other.attribute-name",
         "meta.method-call entity.name.function",
         "meta.function-call entity.name.function",
@@ -465,33 +479,12 @@
       }
     },
     {
-      "name": "Module, class, package",
-      "scope": ["source.graphql support.type", "storage.class.std"],
-      "settings": {
-        "foreground": "#859dc3"
-      }
-    },
-    {
-      "scope": [
-        "keyword.control.pseudo-method",
-        // "meta.tag.metadata.script",
-        // "source.vue entity.name.tag.script.html",
-        "meta.generic-where-clause.swift" // TODO swift
-      ],
-      "settings": {
-        "foreground": "#d9d326"
-        // "foreground": "#c3a822"
-      }
-    },
-    {
       "scope": [
         "entity.alias.import",
-        "source.css support.function",
         "meta.type_params",
         "entity.name.tag.template.html",
         "meta.inheritance-clause",
-        "meta.tag.other.unrecognized",
-        "storage.type.class.po"
+        "meta.tag.other.unrecognized"
       ],
       "settings": {
         "foreground": "#ff7575"
@@ -512,8 +505,7 @@
         "entity.name.tag.localname.cs",
         "storage.type.annotation",
         "entity.name.function.member.cpp",
-        "meta.attribute",
-        "support.function.builtin"
+        "meta.attribute"
       ],
       "settings": {
         "foreground": "#ffa666"
