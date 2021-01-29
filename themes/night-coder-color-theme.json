@@ -192,8 +192,15 @@
         "variable.other.readwrite.class.ruby",
         "variable.other.readwrite.instance.ruby",
         "variable.parameter.function.language.special.self",
-        "variable.other.readwrite.instance.crystal"
+        "variable.other.readwrite.instance.crystal",
+        "variable.other.readwrite.module"
       ],
+      "settings": {
+        "foreground": "#FF7575"
+      }
+    },
+    {
+      "scope": ["entity.alias.import"],
       "settings": {
         "foreground": "#FF7575"
       }
@@ -221,9 +228,14 @@
     },
     {
       "name": "undecided",
-      "scope": ["meta.generic-where-clause.swift", "meta.definition.type.body.swift", "meta.arguments.attribute.swift"],
+      "scope": [
+        "meta.generic-where-clause.swift",
+        "meta.arguments.attribute.swift",
+        "storage.type.annotation", // java
+        "meta.attribute.rust"
+      ],
       "settings": {
-        "foreground": "#c3ab85"
+        "foreground": "#d2c0a3"
       }
     },
     {
@@ -262,6 +274,20 @@
       }
     },
     {
+      "name": "function call",
+      "scope": [
+        "entity.name.function-call",
+        "entity.name.function.call",
+        "meta.function-call",
+        "meta.method-call entity.name.function",
+        "meta.function-call entity.name.function",
+        "meta.function.call entity.name.function"
+      ],
+      "settings": {
+        "foreground": "#f5d780"
+      }
+    },
+    {
       "name": "keyword",
       "scope": [
         "keyword.control.module",
@@ -289,7 +315,9 @@
         "entity.name.type.cpp",
         "entity.name.scope-resolution",
         "storage.modifier.package.java",
-        "storage.type.class.po"
+        "storage.type.class.po",
+        "meta.inheritance-clause", // swift
+        "entity.other.inherited-class"
       ],
       "settings": {
         "foreground": "#859dc3"
@@ -329,13 +357,6 @@
       }
     },
     {
-      "name": "punctuation",
-      "scope": ["meta.brace", "punctuation"],
-      "settings": {
-        "foreground": "#acaeb3"
-      }
-    },
-    {
       "name": "embedded punctuation",
       "scope": ["punctuation.definition.template-expression", "punctuation.section.embedded"],
       "settings": {
@@ -343,12 +364,26 @@
       }
     },
     {
+      "name": "punctuation",
+      "scope": ["meta.brace", "punctuation"],
+      "settings": {
+        "foreground": "#acaeb3"
+      }
+    },
+    {
+      "name": "documentation comments",
       "scope": [
-        "comment",
-        "punctuation.definition.comment",
+        "comment.documentation",
+        "comment.block.documentation",
         "string.quoted.docstring.multi.python",
-        "punctuation.whitespace.comment.leading.graphql"
+        "comment.block.documentation punctuation.definition.comment"
       ],
+      "settings": {
+        "foreground": "#acaeb3"
+      }
+    },
+    {
+      "scope": ["comment", "punctuation.definition.comment", "punctuation.whitespace.comment.leading.graphql"],
       "settings": {
         "foreground": "#474c56",
         "fontStyle": "italic"
@@ -429,16 +464,33 @@
       }
     },
     {
-      "scope": ["meta.tag.structure", "meta.tag", "entity.name.tag.yaml", "keyword.key.toml"],
+      "scope": [
+        "meta.tag.structure",
+        "meta.tag",
+        "entity.name.tag.yaml",
+        "keyword.key.toml",
+        "markup.fenced_code.block",
+        "markup.inline.raw.string",
+        "fenced_code.block.language",
+        "markup.raw.block"
+      ],
       "settings": {
         "foreground": "#ffa666"
+      }
+    },
+    {
+      "scope": ["entity.other.attribute-name", "heading", "meta.selector.css", "source.css.scss entity.name.tag.css"],
+      "settings": {
+        "foreground": "#f5d780"
       }
     },
     {
       "scope": [
         "invalid.illegal.tag-handle.yaml",
         "text.html.markdown entity.name.tag.html",
-        "text.html.markdown punctuation.definition.tag"
+        "text.html.markdown punctuation.definition.tag",
+        "meta.tag.other.unrecognized",
+        "source.vue entity.name.tag.template.html"
       ],
       "settings": {
         "foreground": "#ff7575"
@@ -454,61 +506,6 @@
       "scope": ["markup.italic", "punctuation.definition.italic", "markup.quote.markdown"],
       "settings": {
         "fontStyle": "italic"
-      }
-    },
-
-    // ####################################################################################################################################
-    // ####################################################################################################################################
-    // ####################################################################################################################################
-    // ####################################################################################################################################
-    // ####################################################################################################################################
-
-    {
-      "name": "function call",
-      "scope": [
-        "entity.name.function-call",
-        "entity.name.function.call",
-        "meta.function-call",
-        "entity.other.attribute-name",
-        "meta.method-call entity.name.function",
-        "meta.function-call entity.name.function",
-        "heading"
-      ],
-      "settings": {
-        "foreground": "#f5d780"
-      }
-    },
-    {
-      "scope": [
-        "entity.alias.import",
-        "meta.type_params",
-        "entity.name.tag.template.html",
-        "meta.inheritance-clause",
-        "meta.tag.other.unrecognized"
-      ],
-      "settings": {
-        "foreground": "#ff7575"
-      }
-    },
-    {
-      "scope": [
-        "variable.other.readwrite.module",
-        "entity.name.tag.css",
-        "source.css entity.other.attribute-name",
-        "meta.selector.css",
-        "source.css.scss entity.name.tag.css",
-        "markup.fenced_code.block",
-        "markup.inline.raw.string",
-        "markup.raw.block",
-        "entity.other.inherited-class",
-        "fenced_code.block.language",
-        "entity.name.tag.localname.cs",
-        "storage.type.annotation",
-        "entity.name.function.member.cpp",
-        "meta.attribute"
-      ],
-      "settings": {
-        "foreground": "#ffa666"
       }
     }
   ]
