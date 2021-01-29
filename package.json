@@ -2,7 +2,7 @@
   "name": "night-coder",
   "displayName": "Night Coder",
   "description": "A dark theme for Night Coders",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "publisher": "a5hk",
   "icon": "icon.png",
   "keywords": [
@@ -12,7 +12,9 @@
     "Darker",
     "Borderless",
     "Bright",
-    "Blue"
+    "Blue",
+    "Italic",
+    "Contrast"
   ],
   "galleryBanner": {
     "color": "#030917",
@@ -40,6 +42,16 @@
         "label": "Night Coder Contrast",
         "uiTheme": "vs-dark",
         "path": "./themes/night-coder-contrast-color-theme.json"
+      },
+      {
+        "label": "Night Coder Italic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/night-coder-italic-color-theme.json"
+      },
+      {
+        "label": "Night Coder Contrast Italic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/night-coder-contrast-italic-color-theme.json"
       }
     ]
   }

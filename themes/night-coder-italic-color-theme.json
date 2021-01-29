@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Night Coder",
+  "name": "Night Coder Italic",
   "type": "dark",
   "semanticHighlighting": true,
   "colors": {
@@ -134,20 +134,20 @@
     "variable": "#C5C6C9",
     "variable.readonly": "#FF7575",
     "variable.defaultLibrary": "#FF99B3",
-    "property": "#FFA666",
-    "parameter": "#c3ab85",
+    "property": { "foreground": "#FFA666", "fontStyle": "italic" },
+    "parameter": { "foreground": "#c3ab85", "fontStyle": "italic" },
     "function.declaration": "#85C3AB",
-    "function.defaultLibrary": "#70dbc1",
+    "function.defaultLibrary": { "foreground": "#70dbc1", "fontStyle": "italic" },
     "method.declaration": "#85C3AB",
-    "method.defaultLibrary": "#70dbc1",
+    "method.defaultLibrary": { "foreground": "#70dbc1", "fontStyle": "italic" },
     "keyword": "#C385BC",
-    "namespace": "#859DC3",
-    "namespace.defaultLibrary": "#FF99B3",
-    "class": "#859DC3",
-    "class.defaultLibrary": "#FF99B3",
-    "struct": "#859DC3",
+    "namespace": { "foreground": "#859DC3", "fontStyle": "italic" },
+    "namespace.defaultLibrary": { "foreground": "#FF99B3", "fontStyle": "italic" },
+    "class": { "foreground": "#859DC3", "fontStyle": "italic" },
+    "class.defaultLibrary": { "foreground": "#FF99B3", "fontStyle": "italic" },
+    "struct": { "foreground": "#859DC3", "fontStyle": "italic" },
     "type": "#02cad4",
-    "type.defaultLibrary": "#FF99B3",
+    "type.defaultLibrary": { "foreground": "#FF99B3", "fontStyle": "italic" },
     "operator": "#F2F28C",
     "string": "#9ED279"
   },
@@ -196,7 +196,8 @@
         "variable.other.readwrite.module"
       ],
       "settings": {
-        "foreground": "#FF7575"
+        "foreground": "#FF7575",
+        "fontStyle": "italic"
       }
     },
     {
@@ -215,14 +216,16 @@
         "support.other.namespace"
       ],
       "settings": {
-        "foreground": "#FF99B3"
+        "foreground": "#FF99B3",
+        "fontStyle": "italic"
       }
     },
     {
       "name": "default library functions and methods",
       "scope": ["meta.method.declaration.js storage.type.js", "support.function"],
       "settings": {
-        "foreground": "#70dbc1"
+        "foreground": "#70dbc1",
+        "fontStyle": "italic"
       }
     },
     {
@@ -256,14 +259,16 @@
         "support.type.property-name"
       ],
       "settings": {
-        "foreground": "#FFA666"
+        "foreground": "#FFA666",
+        "fontStyle": "italic"
       }
     },
     {
       "name": "parameter",
       "scope": ["meta.function-call.arguments", "variable.parameter"],
       "settings": {
-        "foreground": "#c3ab85"
+        "foreground": "#c3ab85",
+        "fontStyle": "italic"
       }
     },
     {
@@ -284,7 +289,8 @@
         "meta.function.call entity.name.function"
       ],
       "settings": {
-        "foreground": "#f5d780"
+        "foreground": "#f5d780",
+        "fontStyle": "italic"
       }
     },
     {
@@ -319,7 +325,8 @@
         "entity.other.inherited-class"
       ],
       "settings": {
-        "foreground": "#859dc3"
+        "foreground": "#859dc3",
+        "fontStyle": "italic"
       }
     },
     {
@@ -354,7 +361,8 @@
       "name": "embedded punctuation",
       "scope": ["punctuation.definition.template-expression", "punctuation.section.embedded"],
       "settings": {
-        "foreground": "#FF7575"
+        "foreground": "#FF7575",
+        "fontStyle": "italic"
       }
     },
     {
@@ -469,7 +477,14 @@
       }
     },
     {
-      "scope": ["entity.other.attribute-name", "heading", "meta.selector.css", "source.css.scss entity.name.tag.css"],
+      "scope": ["entity.other.attribute-name", "meta.selector.css", "source.css.scss entity.name.tag.css"],
+      "settings": {
+        "foreground": "#f5d780",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["heading"],
       "settings": {
         "foreground": "#f5d780"
       }
