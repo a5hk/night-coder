@@ -319,7 +319,6 @@
         "entity.name.type",
         "entity.name.class",
         "entity.name.namespace",
-        "entity.name.type.cpp",
         "entity.name.scope-resolution",
         "storage.modifier.package.java",
         "storage.type.class.po",
@@ -339,14 +338,9 @@
     },
     {
       "name": "types",
-      "scope": [
-        // "support.type.swift",
-        "storage.type",
-        "keyword.type"
-      ],
+      "scope": ["storage.type", "keyword.type"],
       "settings": {
         "foreground": "#02cad4"
-        // "foreground": "#80BFFF"
       }
     },
     {
@@ -406,7 +400,6 @@
       }
     },
 
-    // ####################################################################################################################################
     // markup languages
 
     {
