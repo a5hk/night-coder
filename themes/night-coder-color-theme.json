@@ -131,24 +131,25 @@
     "widget.shadow": "#151a2700"
   },
   "semanticTokenColors": {
-    // "variable": "#FFA666",
     "variable": "#C5C6C9",
     "variable.readonly": "#FF7575",
-    // "variable.defaultLibrary": "#ffd3b3",
     "variable.defaultLibrary": "#FF99B3",
     "property": "#FFA666",
-    // "property": "#70DBC1",
+    "parameter": "#c3ab85",
     "function.declaration": "#85C3AB",
+    "function.defaultLibrary": "#70dbc1",
     "method.declaration": "#85C3AB",
+    "method.defaultLibrary": "#70dbc1",
     "keyword": "#C385BC",
     "namespace": "#859DC3",
+    "namespace.defaultLibrary": "#FF99B3",
     "class": "#859DC3",
+    "class.defaultLibrary": "#FF99B3",
     "struct": "#859DC3",
     "type": "#02cad4",
+    "type.defaultLibrary": "#FF99B3",
     "operator": "#F2F28C",
     "string": "#9ED279"
-    // "variable.defaultLibrary": "#ACA3DC",
-    // "variable.readonly": "#aca3dc",
   },
   "tokenColors": [
     {
@@ -171,8 +172,7 @@
         "variable.other.readwrite",
         "variable.other.ruby",
         "variable.other",
-        "variable.scss",
-        "meta.function-call.arguments" // TODO python
+        "variable.scss"
       ],
       "settings": {
         "foreground": "#C5C6C9"
@@ -209,7 +209,6 @@
       "name": "default library",
       "scope": [
         "support.variable.object.node",
-        "meta.property-value", // TODO check this later (css)
         "support.constant.color.w3c-standard-color-name",
         "support.type",
         "support.class",
@@ -240,14 +239,8 @@
     },
     {
       "name": "non variable constant",
-      "scope": [
-        // "support.constant.property-value", // TODO check this later (css)
-        "constant",
-        "support.constant",
-        "keyword.other.unit"
-      ],
+      "scope": ["constant", "support.constant", "keyword.other.unit"],
       "settings": {
-        // "foreground": "#ACA3DC"
         "foreground": "#bfa6f2"
       }
     },
@@ -264,6 +257,13 @@
       ],
       "settings": {
         "foreground": "#FFA666"
+      }
+    },
+    {
+      "name": "parameter",
+      "scope": ["meta.function-call.arguments", "variable.parameter"],
+      "settings": {
+        "foreground": "#c3ab85"
       }
     },
     {
@@ -389,9 +389,6 @@
         "fontStyle": "italic"
       }
     },
-
-    // ####################################################################################################################################
-
     {
       "scope": [
         "comment.wildcard", // elixir _
