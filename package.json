@@ -2,8 +2,10 @@
   "name": "night-coder",
   "displayName": "Night Coder",
   "description": "A dark theme for Night Coders",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "publisher": "a5hk",
+  "author": "a5hk",
+  "license": "MIT",
   "icon": "icon.png",
   "keywords": [
     "NightCoder",
@@ -54,5 +56,23 @@
         "path": "./themes/night-coder-contrast-italic-color-theme.json"
       }
     ]
+  },
+  "type": "module",
+  "scripts": {
+    "lint": "eslint ./src/** --ext .ts",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean && rm -f ./themes/*",
+    "format": "prettier --write ./themes/*.json",
+    "gen": "npm run lint && npm run clean && npm run build && node ./dist/index.js && npm run format",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.22",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "prettier": "2.2.1",
+    "typescript": "^4.1.3"
   }
 }
