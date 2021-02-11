@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.1
+
+- Improved list backgrounds / foregrounds
+
 ## 2.2.0
 
 - Changed parameter color to be more consistent with variables
