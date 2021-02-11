@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.0
+
+- Changed parameter color to be more consistent with variables
+
 ## 2.1.0
 
 - Implemented a theme generator #7
