@@ -9,7 +9,7 @@ export const semanticRules: semanticRule = {
   "variable.readonly": /* .......... */ { foreground: color.Bittersweet },
   "variable.defaultLibrary": /* .... */ { foreground: color.PinkSalmon },
   property: /* ..................... */ { foreground: color.AtomicTangerine, __italic: true },
-  parameter: /* .................... */ { foreground: color.IndianKhaki, __italic: true },
+  parameter: /* .................... */ { foreground: color.Iron, __italic: true },
   "function.declaration": /* ....... */ { foreground: color.MonteCarlo },
   "function.defaultLibrary": /* .... */ { foreground: color.Bermuda, __italic: true },
   "method.declaration": /* ......... */ { foreground: color.MonteCarlo },

@@ -1,3 +1,13 @@
+import chroma from "chroma-js";
+
+function hexAlphaToDec(alpha: string): number {
+  return parseInt(alpha, 16) / 255;
+}
+
+function mix(alpha: string): string {
+  return chroma.mix("#030917", "#ffffff", hexAlphaToDec(alpha), "rgb").toString();
+}
+
 // color names by
 // https://chir.ag/projects/name-that-color/
 // https://www.color-blindness.com/color-name-hue/
@@ -8,13 +18,14 @@ export const tokenColorCode = {
   Bittersweet: /* .......... */ "#ff7575",
   DarkTurquoise: /* ........ */ "#02cad4",
   Feijoa: /* ............... */ "#9ed279",
-  FrenchGray: /* ........... */ "#c5c6c9",
+  FrenchGray: /* ........... */ mix("c5"),
   GoldenSand: /* ........... */ "#f5d780",
   IndianKhaki: /* .......... */ "#c3ab85",
+  Iron: /* ................. */ mix("e5"),
   Jonquil: /* .............. */ "#f2f28c",
   MagicMint: /* ............ */ "#93ecb8",
-  Mako: /* ................. */ "#474c56",
-  Mischka: /* .............. */ "#acaeb3",
+  Mako: /* ................. */ mix("44"),
+  Mischka: /* .............. */ mix("aa"),
   MonteCarlo: /* ........... */ "#85c3ab",
   PaleCornflowerBlue: /* ... */ "#bfa6f2",
   PinkSalmon: /* ........... */ "#ff99b3",
@@ -25,23 +36,25 @@ export const tokenColorCode = {
 };
 
 export const workbenchColors = {
-  background: "#030917",
-  background11: "#151a27",
-  background22: "#242935",
-  background25: "#272c38",
-  background33: "#353a45",
-  background44: "#474c56",
-  background55: "#565a63",
-  background66: "#686b74",
-  background77: "#7a7d84",
-  background88: "#888b92",
-  background99: "#9a9da2",
-  backgroundaa: "#acaeb3",
-  backgroundbb: "#bbbcc0",
-  backgroundc5: "#c5c6c9",
-  backgroundcc: "#cdced1",
-  backgrounddd: "#dedfe1",
-  backgroundee: "#edeeef",
+  background: mix("0"),
+  background11: mix("11"),
+  background22: mix("22"),
+  background25: mix("25"),
+  background33: mix("33"),
+  background44: mix("44"),
+  background55: mix("55"),
+  background66: mix("66"),
+  background77: mix("77"),
+  background88: mix("88"),
+  background99: mix("99"),
+  backgroundaa: mix("aa"),
+  backgroundbb: mix("bb"),
+  backgroundc5: mix("c5"),
+  backgroundcc: mix("cc"),
+  backgrounddd: mix("dd"),
+  backgrounde5: mix("e5"),
+  backgroundee: mix("ee"),
+
   contrastBackground: "#02050e",
 
   activeIndentGuideBackground: /* .... */ "#53ac53",

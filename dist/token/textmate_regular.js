@@ -115,7 +115,7 @@ export const textmateRules = [
         name: "parameter",
         scope: ["meta.function-call.arguments", "variable.parameter"],
         settings: {
-            foreground: color.IndianKhaki,
+            foreground: color.Iron,
             __italic: true,
         },
     },
