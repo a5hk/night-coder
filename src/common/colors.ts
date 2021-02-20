@@ -17,7 +17,7 @@ export const tokenColorCode = {
   Bermuda: /* .............. */ "#70dbc1",
   Bittersweet: /* .......... */ "#ff7575",
   DarkTurquoise: /* ........ */ "#02cad4",
-  Feijoa: /* ............... */ "#9ed279",
+  Olivine: /* .............. */ "#9ec78a",
   FrenchGray: /* ........... */ mix("c5"),
   GoldenSand: /* ........... */ "#f5d780",
   IndianKhaki: /* .......... */ "#c3ab85",

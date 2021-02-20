@@ -213,7 +213,7 @@ export const textmateRules: textmateRule[] = [
     name: "String",
     scope: ["source.elixir.embedded.source", "storage.modifier.import.java", "string.quoted.double", "string"],
     settings: {
-      foreground: color.Feijoa,
+      foreground: color.Olivine,
     },
   },
   {

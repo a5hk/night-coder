@@ -18,5 +18,5 @@ export const semanticRules = {
     type: { foreground: color.DarkTurquoise },
     "type.defaultLibrary": { foreground: color.PinkSalmon, __italic: true },
     operator: { foreground: color.Jonquil },
-    string: { foreground: color.Feijoa },
+    string: { foreground: color.Olivine },
 };
