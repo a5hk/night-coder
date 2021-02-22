@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.3.1
+
+- Fixed button colors
+
 ## 2.3.0
 
 - A slightly different and more readable color for strings
