@@ -1,6 +1,6 @@
 import { workbenchColors as uiColor, terminalColors as termColor } from "../common/colors.js";
 export const commonWorkbenchColors = {
-    "activityBar.activeBorder": uiColor.background,
+    "activityBar.activeBorder": uiColor.statusBarBackground,
     "activityBar.foreground": uiColor.backgroundaa,
     "activityBarBadge.background": uiColor.statusBarBackground,
     "activityBarBadge.foreground": uiColor.statusBarForeground,

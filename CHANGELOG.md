@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.3.2
+
+- Changed activity bar border when it is active
+
 ## 2.3.1
 
 - Fixed button colors

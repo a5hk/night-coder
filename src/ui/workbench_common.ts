@@ -5,7 +5,7 @@ export interface workbenchColor {
 }
 
 export const commonWorkbenchColors: workbenchColor = {
-  "activityBar.activeBorder": /* .................. */ uiColor.background,
+  "activityBar.activeBorder": /* .................. */ uiColor.statusBarBackground,
   "activityBar.foreground": /* .................... */ uiColor.backgroundaa,
   "activityBarBadge.background": /* ............... */ uiColor.statusBarBackground,
   "activityBarBadge.foreground": /* ............... */ uiColor.statusBarForeground,
