@@ -1,6 +1,10 @@
 # Changelog
 
-## 2.3.2
+## 2.3.4
+
+- Updated color palette
+
+## 2.3.3
 
 - Fixed semantic highlighting for function calls
 - Added color palette
