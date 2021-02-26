@@ -145,11 +145,13 @@
     "variable.defaultLibrary": { "foreground": "#ff99b3" },
     "property": { "foreground": "#ffa666", "fontStyle": "italic" },
     "parameter": { "foreground": "#e5e6e7", "fontStyle": "italic" },
+    "function": { "foreground": "#f5d780", "fontStyle": "italic" },
     "function.declaration": { "foreground": "#85c3ab" },
     "function.defaultLibrary": {
       "foreground": "#70dbc1",
       "fontStyle": "italic"
     },
+    "method": { "foreground": "#f5d780", "fontStyle": "italic" },
     "method.declaration": { "foreground": "#85c3ab" },
     "method.defaultLibrary": { "foreground": "#70dbc1", "fontStyle": "italic" },
     "keyword": { "foreground": "#c385bc" },
