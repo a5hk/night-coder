@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.3.5
+
+- Updated readme
+
 ## 2.3.4
 
 - Updated color palette
