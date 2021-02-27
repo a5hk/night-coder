@@ -5,7 +5,7 @@ A dark theme for Night Coders. Contrast and italic variants are also available.
 ## Color Palette
 
 | Scope                                         | Color                                                     | Hex     |
-|-----------------------------------------------|-----------------------------------------------------------|---------|
+|:----------------------------------------------|:---------------------------------------------------------:|:--------|
 | Keyword, HTML meta tag                        | ![#c385bc](https://via.placeholder.com/23/c385bc/?text=+) | #c385bc |
 | Property, Tag                                 | ![#ffa666](https://via.placeholder.com/23/ffa666/?text=+) | #ffa666 |
 | Foreground, Variable                          | ![#c6c7ca](https://via.placeholder.com/23/c6c7ca/?text=+) | #c6c7ca |
