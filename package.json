@@ -2,7 +2,7 @@
   "name": "night-coder",
   "displayName": "Night Coder",
   "description": "A dark theme for Night Coders",
-  "version": "2.3.5",
+  "version": "2.4.0",
   "publisher": "a5hk",
   "author": "a5hk",
   "license": "MIT",
@@ -20,7 +20,7 @@
     "theme": "dark"
   },
   "engines": {
-    "vscode": "^1.52.0"
+    "vscode": "^1.54.0"
   },
   "homepage": "https://github.com/a5hk/night-coder",
   "repository": {

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.4.0
+
+- Hover border color for draggable sashes
+- Fixed list focus background
+
 ## 2.3.5
 
 - Updated readme
