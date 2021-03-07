@@ -6,12 +6,12 @@ function mix(alpha) {
     return chroma.mix("#030917", "#ffffff", hexAlphaToDec(alpha), "rgb").toString();
 }
 export const tokenColorCode = {
-    AtomicTangerine: "#ffa666",
+    DarkSalmon: "#eca979",
     Bermuda: "#70dbc1",
     Bittersweet: "#ff7575",
     DarkTurquoise: "#02cad4",
     FrenchGray: mix("c5"),
-    GoldenSand: "#f5d780",
+    Flax: "#eed487",
     IndianKhaki: "#c3ab85",
     Iron: mix("e5"),
     Jonquil: "#f2f28c",

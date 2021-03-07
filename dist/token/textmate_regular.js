@@ -107,7 +107,7 @@ export const textmateRules = [
             "support.type.property-name",
         ],
         settings: {
-            foreground: color.AtomicTangerine,
+            foreground: color.DarkSalmon,
             __italic: true,
         },
     },
@@ -137,7 +137,7 @@ export const textmateRules = [
             "meta.function.call entity.name.function",
         ],
         settings: {
-            foreground: color.GoldenSand,
+            foreground: color.Flax,
             __italic: true,
         },
     },
@@ -318,20 +318,20 @@ export const textmateRules = [
             "markup.raw.block",
         ],
         settings: {
-            foreground: color.AtomicTangerine,
+            foreground: color.DarkSalmon,
         },
     },
     {
         scope: ["entity.other.attribute-name", "meta.selector.css", "source.css.scss entity.name.tag.css"],
         settings: {
-            foreground: color.GoldenSand,
+            foreground: color.Flax,
             __italic: true,
         },
     },
     {
         scope: ["heading"],
         settings: {
-            foreground: color.GoldenSand,
+            foreground: color.Flax,
         },
     },
     {

@@ -144,15 +144,15 @@
     "variable": { "foreground": "#c6c7ca" },
     "variable.readonly": { "foreground": "#ff7575" },
     "variable.defaultLibrary": { "foreground": "#ff99b3" },
-    "property": { "foreground": "#ffa666", "fontStyle": "italic" },
+    "property": { "foreground": "#eca979", "fontStyle": "italic" },
     "parameter": { "foreground": "#e5e6e7", "fontStyle": "italic" },
-    "function": { "foreground": "#f5d780", "fontStyle": "italic" },
+    "function": { "foreground": "#eed487", "fontStyle": "italic" },
     "function.declaration": { "foreground": "#85c3ab" },
     "function.defaultLibrary": {
       "foreground": "#70dbc1",
       "fontStyle": "italic"
     },
-    "method": { "foreground": "#f5d780", "fontStyle": "italic" },
+    "method": { "foreground": "#eed487", "fontStyle": "italic" },
     "method.declaration": { "foreground": "#85c3ab" },
     "method.defaultLibrary": { "foreground": "#70dbc1", "fontStyle": "italic" },
     "keyword": { "foreground": "#c385bc" },
@@ -262,7 +262,7 @@
         "variable.other.property",
         "support.type.property-name"
       ],
-      "settings": { "foreground": "#ffa666", "fontStyle": "italic" }
+      "settings": { "foreground": "#eca979", "fontStyle": "italic" }
     },
     {
       "name": "parameter",
@@ -284,7 +284,7 @@
         "meta.function-call entity.name.function",
         "meta.function.call entity.name.function"
       ],
-      "settings": { "foreground": "#f5d780", "fontStyle": "italic" }
+      "settings": { "foreground": "#eed487", "fontStyle": "italic" }
     },
     {
       "name": "keyword",
@@ -426,7 +426,7 @@
         "fenced_code.block.language",
         "markup.raw.block"
       ],
-      "settings": { "foreground": "#ffa666" }
+      "settings": { "foreground": "#eca979" }
     },
     {
       "scope": [
@@ -434,9 +434,9 @@
         "meta.selector.css",
         "source.css.scss entity.name.tag.css"
       ],
-      "settings": { "foreground": "#f5d780", "fontStyle": "italic" }
+      "settings": { "foreground": "#eed487", "fontStyle": "italic" }
     },
-    { "scope": ["heading"], "settings": { "foreground": "#f5d780" } },
+    { "scope": ["heading"], "settings": { "foreground": "#eed487" } },
     {
       "scope": [
         "invalid.illegal.tag-handle.yaml",

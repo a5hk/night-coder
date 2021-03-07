@@ -137,12 +137,12 @@
     "variable": { "foreground": "#c6c7ca" },
     "variable.readonly": { "foreground": "#ff7575" },
     "variable.defaultLibrary": { "foreground": "#ff99b3" },
-    "property": { "foreground": "#ffa666" },
+    "property": { "foreground": "#eca979" },
     "parameter": { "foreground": "#e5e6e7" },
-    "function": { "foreground": "#f5d780" },
+    "function": { "foreground": "#eed487" },
     "function.declaration": { "foreground": "#85c3ab" },
     "function.defaultLibrary": { "foreground": "#70dbc1" },
-    "method": { "foreground": "#f5d780" },
+    "method": { "foreground": "#eed487" },
     "method.declaration": { "foreground": "#85c3ab" },
     "method.defaultLibrary": { "foreground": "#70dbc1" },
     "keyword": { "foreground": "#c385bc" },
@@ -249,7 +249,7 @@
         "variable.other.property",
         "support.type.property-name"
       ],
-      "settings": { "foreground": "#ffa666" }
+      "settings": { "foreground": "#eca979" }
     },
     {
       "name": "parameter",
@@ -271,7 +271,7 @@
         "meta.function-call entity.name.function",
         "meta.function.call entity.name.function"
       ],
-      "settings": { "foreground": "#f5d780" }
+      "settings": { "foreground": "#eed487" }
     },
     {
       "name": "keyword",
@@ -413,7 +413,7 @@
         "fenced_code.block.language",
         "markup.raw.block"
       ],
-      "settings": { "foreground": "#ffa666" }
+      "settings": { "foreground": "#eca979" }
     },
     {
       "scope": [
@@ -421,9 +421,9 @@
         "meta.selector.css",
         "source.css.scss entity.name.tag.css"
       ],
-      "settings": { "foreground": "#f5d780" }
+      "settings": { "foreground": "#eed487" }
     },
-    { "scope": ["heading"], "settings": { "foreground": "#f5d780" } },
+    { "scope": ["heading"], "settings": { "foreground": "#eed487" } },
     {
       "scope": [
         "invalid.illegal.tag-handle.yaml",

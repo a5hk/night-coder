@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.5.0
+
+- Lowered contrast ratios for function calls and properties a bit.
+
 ## 2.4.0
 
 - Hover border color for draggable sashes

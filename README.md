@@ -7,10 +7,10 @@ A dark theme for Night Coders. Contrast and italic variants are also available.
 | Scope                                         | Color                                                     | Hex     |
 |:----------------------------------------------|:---------------------------------------------------------:|:--------|
 | Keyword, HTML meta tag                        | ![#c385bc](https://via.placeholder.com/23/c385bc/?text=+) | #c385bc |
-| Property, Tag                                 | ![#ffa666](https://via.placeholder.com/23/ffa666/?text=+) | #ffa666 |
+| Property, Tag                                 | ![#eca979](https://via.placeholder.com/23/eca979/?text=+) | #eca979 |
 | Foreground, Variable                          | ![#c6c7ca](https://via.placeholder.com/23/c6c7ca/?text=+) | #c6c7ca |
 | Parameter, Argument                           | ![#e5e6e7](https://via.placeholder.com/23/e5e6e7/?text=+) | #e5e6e7 |
-| Function call, Attribute name                 | ![#f5d780](https://via.placeholder.com/23/f5d780/?text=+) | #f5d780 |
+| Function call, Attribute name                 | ![#eed487](https://via.placeholder.com/23/eed487/?text=+) | #eed487 |
 | Function declaration, HTML link tag           | ![#85c3ab](https://via.placeholder.com/23/85c3ab/?text=+) | #85c3ab |
 | Default library function, HTML inline tag     | ![#70dbc1](https://via.placeholder.com/23/70dbc1/?text=+) | #70dbc1 |
 | Type                                          | ![#02cad4](https://via.placeholder.com/23/02cad4/?text=+) | #02cad4 |
