@@ -2,7 +2,7 @@
 
 A dark theme for Night Coders. Contrast and italic variants are also available.
 
-All tokens in this theme have contrast ratio of at least 7 (except some comments and punctuations).
+All tokens in this theme have a contrast ratio of at least 7 (except some comments and punctuations).
 
 ## Color Palette
 
