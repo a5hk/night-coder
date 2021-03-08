@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.6.0
+
+- Lower contrast for strings
+
 ## 2.5.0
 
 - Lowered contrast ratios for function calls and properties a bit.

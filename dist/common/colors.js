@@ -19,7 +19,7 @@ export const tokenColorCode = {
     Mako: mix("44"),
     Mischka: mix("aa"),
     MonteCarlo: "#85c3ab",
-    Olivine: "#9ec78a",
+    SwampGreen: "#9ebc8f",
     PaleCornflowerBlue: "#bfa6f2",
     PinkSalmon: "#ff99b3",
     PoloBlue: "#859dc3",

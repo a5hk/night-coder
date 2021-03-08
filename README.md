@@ -2,6 +2,8 @@
 
 A dark theme for Night Coders. Contrast and italic variants are also available.
 
+All tokens in this theme have contrast ratio of at least 7 (except some comments and punctuations).
+
 ## Color Palette
 
 | Scope                                         | Color                                                     | Hex     |
@@ -18,7 +20,7 @@ A dark theme for Night Coders. Contrast and italic variants are also available.
 | Namespace/Class/Struct, HTML style tag        | ![#859dc3](https://via.placeholder.com/23/859dc3/?text=+) | #859dc3 |
 | Constant, HTML unrecognized tag               | ![#ff7575](https://via.placeholder.com/23/ff7575/?text=+) | #ff7575 |
 | Non variable constant, HTML custom tag        | ![#bfa6f2](https://via.placeholder.com/23/bfa6f2/?text=+) | #bfa6f2 |
-| String                                        | ![#9ec78a](https://via.placeholder.com/23/9ec78a/?text=+) | #9ec78a |
+| String                                        | ![#9ebc8f](https://via.placeholder.com/23/9ebc8f/?text=+) | #9ebc8f |
 | Operator                                      | ![#f2f28c](https://via.placeholder.com/23/f2f28c/?text=+) | #f2f28c |
 | Comparison/Logical operator                   | ![#93ecb8](https://via.placeholder.com/23/93ecb8/?text=+) | #93ecb8 |
 | Script tag                                    | ![#d9d326](https://via.placeholder.com/23/d9d326/?text=+) | #d9d326 |
