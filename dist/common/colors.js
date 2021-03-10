@@ -6,12 +6,12 @@ function mix(alpha) {
     return chroma.mix("#030917", "#ffffff", hexAlphaToDec(alpha), "rgb").toString();
 }
 export const tokenColorCode = {
-    DarkSalmon: "#eca979",
     Bermuda: "#70dbc1",
     Bittersweet: "#ff7575",
+    DarkSalmon: "#eca979",
     DarkTurquoise: "#02cad4",
-    FrenchGray: mix("c5"),
     Flax: "#eed487",
+    FrenchGray: mix("c5"),
     IndianKhaki: "#c3ab85",
     Iron: mix("e5"),
     Jonquil: "#f2f28c",
@@ -19,12 +19,12 @@ export const tokenColorCode = {
     Mako: mix("44"),
     Mischka: mix("aa"),
     MonteCarlo: "#85c3ab",
-    SwampGreen: "#9ebc8f",
     PaleCornflowerBlue: "#bfa6f2",
     PinkSalmon: "#ff99b3",
     PoloBlue: "#859dc3",
     StormGrey: "#7a7d84",
     Sunflower: "#d9d326",
+    SwampGreen: "#9ebc8f",
     Viola: "#c385bc",
 };
 export const workbenchColors = {

@@ -259,6 +259,102 @@ export const textmateRules: textmateRule[] = [
       foreground: color.FrenchGray,
     },
   },
+  {
+    name: "l2 json",
+    scope: ["meta.structure.dictionary.value support.type.property-name.json"],
+    settings: {
+      foreground: color.Viola,
+      __italic: true,
+    },
+  },
+  {
+    name: "l3 json",
+    scope: ["meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"],
+    settings: {
+      foreground: color.DarkTurquoise,
+      __italic: true,
+    },
+  },
+  {
+    name: "l4 json",
+    scope: [
+      "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
+    ],
+    settings: {
+      foreground: color.Flax,
+      __italic: true,
+    },
+  },
+  {
+    name: "l5 json",
+    scope: [
+      "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
+    ],
+    settings: {
+      foreground: color.PinkSalmon,
+      __italic: true,
+    },
+  },
+  {
+    name: "l6 json",
+    scope: [
+      "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
+    ],
+    settings: {
+      foreground: color.Bermuda,
+      __italic: true,
+    },
+  },
+  {
+    name: "l7 json",
+    scope: [
+      "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
+    ],
+    settings: {
+      foreground: color.PoloBlue,
+      __italic: true,
+    },
+  },
+  {
+    name: "l8 json",
+    scope: [
+      "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
+    ],
+    settings: {
+      foreground: color.Bittersweet,
+      __italic: true,
+    },
+  },
+  {
+    name: "l9 json",
+    scope: [
+      "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
+    ],
+    settings: {
+      foreground: color.IndianKhaki,
+      __italic: true,
+    },
+  },
+  {
+    name: "l10 json",
+    scope: [
+      "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
+    ],
+    settings: {
+      foreground: color.Sunflower,
+      __italic: true,
+    },
+  },
+  {
+    name: "l11 json",
+    scope: [
+      "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
+    ],
+    settings: {
+      foreground: color.DarkSalmon,
+      __italic: true,
+    },
+  },
 
   // markup languages
 

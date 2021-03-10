@@ -378,6 +378,76 @@
       "settings": { "foreground": "#c6c7ca" }
     },
     {
+      "name": "l2 json",
+      "scope": [
+        "meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#c385bc", "fontStyle": "italic" }
+    },
+    {
+      "name": "l3 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#02cad4", "fontStyle": "italic" }
+    },
+    {
+      "name": "l4 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#eed487", "fontStyle": "italic" }
+    },
+    {
+      "name": "l5 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#ff99b3", "fontStyle": "italic" }
+    },
+    {
+      "name": "l6 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#70dbc1", "fontStyle": "italic" }
+    },
+    {
+      "name": "l7 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#859dc3", "fontStyle": "italic" }
+    },
+    {
+      "name": "l8 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#ff7575", "fontStyle": "italic" }
+    },
+    {
+      "name": "l9 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#c3ab85", "fontStyle": "italic" }
+    },
+    {
+      "name": "l10 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#d9d326", "fontStyle": "italic" }
+    },
+    {
+      "name": "l11 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#eca979", "fontStyle": "italic" }
+    },
+    {
       "scope": ["meta.tag.metadata", "markup.underline.link"],
       "settings": { "foreground": "#c385bc" }
     },

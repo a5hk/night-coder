@@ -372,6 +372,76 @@
       "settings": { "foreground": "#c6c7ca" }
     },
     {
+      "name": "l2 json",
+      "scope": [
+        "meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#c385bc" }
+    },
+    {
+      "name": "l3 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#02cad4" }
+    },
+    {
+      "name": "l4 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#eed487" }
+    },
+    {
+      "name": "l5 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#ff99b3" }
+    },
+    {
+      "name": "l6 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#70dbc1" }
+    },
+    {
+      "name": "l7 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#859dc3" }
+    },
+    {
+      "name": "l8 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#ff7575" }
+    },
+    {
+      "name": "l9 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#c3ab85" }
+    },
+    {
+      "name": "l10 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#d9d326" }
+    },
+    {
+      "name": "l11 json",
+      "scope": [
+        "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
+      ],
+      "settings": { "foreground": "#eca979" }
+    },
+    {
       "scope": ["meta.tag.metadata", "markup.underline.link"],
       "settings": { "foreground": "#c385bc" }
     },
