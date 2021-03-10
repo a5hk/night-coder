@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.7.0
+
+- Multi level json coloring
+
 ## 2.6.0
 
 - Lower contrast for strings
