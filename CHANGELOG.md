@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.7.1
+
+- Optimizations
+
+
 ## 2.7.0
 
 - Multi level json coloring

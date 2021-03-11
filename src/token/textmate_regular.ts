@@ -259,6 +259,8 @@ export const textmateRules: textmateRule[] = [
       foreground: color.FrenchGray,
     },
   },
+
+  // JSON
   {
     name: "l2 json",
     scope: ["meta.structure.dictionary.value support.type.property-name.json"],
