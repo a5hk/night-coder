@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.7.2
+
+- Fixed default library colors
+
 ## 2.7.1
 
 - Optimizations

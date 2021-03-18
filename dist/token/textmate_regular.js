@@ -57,7 +57,7 @@ export const textmateRules = [
     {
         name: "default library",
         scope: [
-            "support.variable.object.node",
+            "support.variable",
             "support.constant.color.w3c-standard-color-name",
             "support.type",
             "support.class",
