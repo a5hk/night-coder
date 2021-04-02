@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.8.0
+
+- Fixed module syntax highlighting
+
 ## 2.7.2
 
 - Fixed default library colors

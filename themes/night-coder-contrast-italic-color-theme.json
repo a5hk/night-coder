@@ -309,6 +309,7 @@
         "entity.name.type",
         "entity.name.class",
         "entity.name.namespace",
+        "\tentity.name.module",
         "entity.name.scope-resolution",
         "storage.modifier.package.java",
         "storage.type.class.po",
