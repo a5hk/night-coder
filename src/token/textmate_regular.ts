@@ -177,7 +177,7 @@ export const textmateRules: textmateRule[] = [
       "entity.name.type",
       "entity.name.class",
       "entity.name.namespace",
-      "	entity.name.module",
+      "entity.name.module",
       "entity.name.scope-resolution",
       "storage.modifier.package.java",
       "storage.type.class.po",
