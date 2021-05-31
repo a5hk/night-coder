@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.9.0
+
+- Secondary button style
+
 ## 2.8.0
 
 - Fixed module syntax highlighting
