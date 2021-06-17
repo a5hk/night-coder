@@ -162,6 +162,7 @@ export const textmateRules: textmateRule[] = [
       "keyword.other.special-method",
       "keyword.type.go",
       "keyword",
+      "keyword storage.type",
       "storage.modifier",
       "storage.type.class",
       "storage.type.function",

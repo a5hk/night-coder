@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.10.0
+
+- Slightly less saturated colors
+- New highlighting rule (thanks to [@dustypomerlea](https://github.com/dustypomerlea)) to better support rust and probably other languages.
+
 ## 2.9.0
 
 - Secondary button style
