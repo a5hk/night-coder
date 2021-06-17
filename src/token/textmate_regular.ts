@@ -55,14 +55,14 @@ export const textmateRules: textmateRule[] = [
       "variable.other.readwrite.module",
     ],
     settings: {
-      foreground: color.Bittersweet,
+      foreground: color.Geraldine,
       __italic: true,
     },
   },
   {
     scope: ["entity.alias.import"],
     settings: {
-      foreground: color.Bittersweet,
+      foreground: color.Geraldine,
     },
   },
   {
@@ -118,7 +118,7 @@ export const textmateRules: textmateRule[] = [
       "support.type.property-name",
     ],
     settings: {
-      foreground: color.DarkSalmon,
+      foreground: color.TonysPink,
       __italic: true,
     },
   },
@@ -148,7 +148,7 @@ export const textmateRules: textmateRule[] = [
       "meta.function.call entity.name.function",
     ],
     settings: {
-      foreground: color.Flax,
+      foreground: color.Calico,
       __italic: true,
     },
   },
@@ -200,7 +200,7 @@ export const textmateRules: textmateRule[] = [
     name: "types",
     scope: ["storage.type", "keyword.type"],
     settings: {
-      foreground: color.DarkTurquoise,
+      foreground: color.IrisBlue,
     },
   },
   {
@@ -221,7 +221,7 @@ export const textmateRules: textmateRule[] = [
     name: "embedded punctuation",
     scope: ["punctuation.definition.template-expression", "punctuation.section.embedded"],
     settings: {
-      foreground: color.Bittersweet,
+      foreground: color.Geraldine,
       __italic: true,
     },
   },
@@ -274,7 +274,7 @@ export const textmateRules: textmateRule[] = [
     name: "l3 json",
     scope: ["meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"],
     settings: {
-      foreground: color.DarkTurquoise,
+      foreground: color.IrisBlue,
       __italic: true,
     },
   },
@@ -284,7 +284,7 @@ export const textmateRules: textmateRule[] = [
       "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
     ],
     settings: {
-      foreground: color.Flax,
+      foreground: color.Calico,
       __italic: true,
     },
   },
@@ -324,7 +324,7 @@ export const textmateRules: textmateRule[] = [
       "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
     ],
     settings: {
-      foreground: color.Bittersweet,
+      foreground: color.Geraldine,
       __italic: true,
     },
   },
@@ -354,7 +354,7 @@ export const textmateRules: textmateRule[] = [
       "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
     ],
     settings: {
-      foreground: color.DarkSalmon,
+      foreground: color.TonysPink,
       __italic: true,
     },
   },
@@ -431,20 +431,20 @@ export const textmateRules: textmateRule[] = [
       "markup.raw.block",
     ],
     settings: {
-      foreground: color.DarkSalmon,
+      foreground: color.TonysPink,
     },
   },
   {
     scope: ["entity.other.attribute-name", "meta.selector.css", "source.css.scss entity.name.tag.css"],
     settings: {
-      foreground: color.Flax,
+      foreground: color.Calico,
       __italic: true,
     },
   },
   {
     scope: ["heading"],
     settings: {
-      foreground: color.Flax,
+      foreground: color.Calico,
     },
   },
   {
@@ -456,7 +456,7 @@ export const textmateRules: textmateRule[] = [
       "source.vue entity.name.tag.template.html",
     ],
     settings: {
-      foreground: color.Bittersweet,
+      foreground: color.Geraldine,
     },
   },
   {
