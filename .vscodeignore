@@ -1,10 +1,9 @@
-# *
-# */**
-# !themes/*
-# !screenshot/*
-# !package.json
-# !icon.png
-# !icon.svg
-# !README.md
-# !CHANGELOG.md
-# !LICENSE
+.vscode/**
+dist/**
+node_modules/**
+screenshot/**
+src/**
+.eslintrc.json
+.gitignore
+*.vsix
+tsconfig.json
