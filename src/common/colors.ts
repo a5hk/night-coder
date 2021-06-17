@@ -1,5 +1,11 @@
 import chroma from "chroma-js";
 
+export interface Color {
+  // name: string;
+  code: string;
+  description: string;
+}
+
 function hexAlphaToDec(alpha: string): number {
   return parseInt(alpha, 16) / 255;
 }
@@ -12,27 +18,50 @@ function mix(alpha: string): string {
 // https://chir.ag/projects/name-that-color/
 // https://www.color-blindness.com/color-name-hue/
 
+// export const tokenColorCode = {
+//   Bermuda: /* .............. */ "#70dbc1",
+//   Calico: /* ............... */ "#e0cd94",
+//   FrenchGray: /* ........... */ mix("c5"),
+//   Geraldine: /* ............ */ "#ff7979",
+//   IndianKhaki: /* .......... */ "#c3ab85",
+//   IrisBlue: /* ............. */ "#0bc2cb",
+//   Iron: /* ................. */ mix("e5"),
+//   Jonquil: /* .............. */ "#f2f28c",
+//   MagicMint: /* ............ */ "#93ecb8",
+//   Mako: /* ................. */ mix("44"),
+//   Mischka: /* .............. */ mix("aa"),
+//   MonteCarlo: /* ........... */ "#85c3ab",
+//   PaleCornflowerBlue: /* ... */ "#bfa6f2",
+//   PinkSalmon: /* ........... */ "#ff99b3",
+//   PoloBlue: /* ............. */ "#859dc3",
+//   StormGrey: /* ............ */ "#7a7d84",
+//   Sunflower: /* ............ */ "#d9d326",
+//   SwampGreen: /* ........... */ "#9ebc8f",
+//   TonysPink: /* ............ */ "#e4aa81",
+//   Viola: /* ................ */ "#c385bc",
+// };
+
 export const tokenColorCode = {
-  Bermuda: /* .............. */ "#70dbc1",
-  Calico: /* ............... */ "#e0cd94",
-  FrenchGray: /* ........... */ mix("c5"),
-  Geraldine: /* ............ */ "#ff7979",
-  IndianKhaki: /* .......... */ "#c3ab85",
-  IrisBlue: /* ............. */ "#0bc2cb",
-  Iron: /* ................. */ mix("e5"),
-  Jonquil: /* .............. */ "#f2f28c",
-  MagicMint: /* ............ */ "#93ecb8",
-  Mako: /* ................. */ mix("44"),
-  Mischka: /* .............. */ mix("aa"),
-  MonteCarlo: /* ........... */ "#85c3ab",
-  PaleCornflowerBlue: /* ... */ "#bfa6f2",
-  PinkSalmon: /* ........... */ "#ff99b3",
-  PoloBlue: /* ............. */ "#859dc3",
-  StormGrey: /* ............ */ "#7a7d84",
-  Sunflower: /* ............ */ "#d9d326",
-  SwampGreen: /* ........... */ "#9ebc8f",
-  TonysPink: /* ............ */ "#e4aa81",
-  Viola: /* ................ */ "#c385bc",
+  Bermuda: /* .............. */ { code: "#70dbc1", description: "Default library function, HTML inline tag" },
+  Calico: /* ............... */ { code: "#e0cd94", description: "Function call, Attribute name" },
+  FrenchGray: /* ........... */ { code: mix("c5"), description: "Foreground, Variable" },
+  Geraldine: /* ............ */ { code: "#ff7979", description: "Constant, HTML unrecognized tag" },
+  IndianKhaki: /* .......... */ { code: "#c3ab85", description: "Miscellaneous" },
+  IrisBlue: /* ............. */ { code: "#0bc2cb", description: "Type" },
+  Iron: /* ................. */ { code: mix("e5"), description: "Parameter, Argument" },
+  Jonquil: /* .............. */ { code: "#f2f28c", description: "Operator" },
+  MagicMint: /* ............ */ { code: "#93ecb8", description: "Comparison/Logical operator" },
+  Mako: /* ................. */ { code: mix("44"), description: "Comment" },
+  Mischka: /* .............. */ { code: mix("aa"), description: "Documentation comment" },
+  MonteCarlo: /* ........... */ { code: "#85c3ab", description: "Function declaration, HTML link tag" },
+  PaleCornflowerBlue: /* ... */ { code: "#bfa6f2", description: "Non variable constant, HTML custom tag" },
+  PinkSalmon: /* ........... */ { code: "#ff99b3", description: "Default library class/type, HTML object tag" },
+  PoloBlue: /* ............. */ { code: "#859dc3", description: "Namespace/Class/Struct, HTML style tag" },
+  StormGrey: /* ............ */ { code: "#7a7d84", description: "Tag punctuation" },
+  Sunflower: /* ............ */ { code: "#d9d326", description: "Script tag" },
+  SwampGreen: /* ........... */ { code: "#9ebc8f", description: "String" },
+  TonysPink: /* ............ */ { code: "#e4aa81", description: "Property, Tag " },
+  Viola: /* ................ */ { code: "#c385bc", description: "Keyword, HTML meta tag" },
 };
 
 export const workbenchColors = {
