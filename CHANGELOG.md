@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.10.1
+
+- Bugfix
+
 ## 2.10.0
 
 - Slightly less saturated colors

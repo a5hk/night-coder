@@ -1,10 +1,10 @@
-*
-*/**
-!themes/*
-!screenshot/*
-!package.json
-!icon.png
-!icon.svg
-!README.md
-!CHANGELOG.md
-!LICENSE
+# *
+# */**
+# !themes/*
+# !screenshot/*
+# !package.json
+# !icon.png
+# !icon.svg
+# !README.md
+# !CHANGELOG.md
+# !LICENSE
