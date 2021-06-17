@@ -137,14 +137,14 @@
   },
   "semanticTokenColors": {
     "variable": { "foreground": "#c6c7ca" },
-    "variable.readonly": { "foreground": "#ff7575" },
+    "variable.readonly": { "foreground": "#ff7979" },
     "variable.defaultLibrary": { "foreground": "#ff99b3" },
-    "property": { "foreground": "#eca979" },
+    "property": { "foreground": "#e4aa81" },
     "parameter": { "foreground": "#e5e6e7" },
-    "function": { "foreground": "#eed487" },
+    "function": { "foreground": "#e0cd94" },
     "function.declaration": { "foreground": "#85c3ab" },
     "function.defaultLibrary": { "foreground": "#70dbc1" },
-    "method": { "foreground": "#eed487" },
+    "method": { "foreground": "#e0cd94" },
     "method.declaration": { "foreground": "#85c3ab" },
     "method.defaultLibrary": { "foreground": "#70dbc1" },
     "keyword": { "foreground": "#c385bc" },
@@ -153,7 +153,7 @@
     "class": { "foreground": "#859dc3" },
     "class.defaultLibrary": { "foreground": "#ff99b3" },
     "struct": { "foreground": "#859dc3" },
-    "type": { "foreground": "#02cad4" },
+    "type": { "foreground": "#0bc2cb" },
     "type.defaultLibrary": { "foreground": "#ff99b3" },
     "operator": { "foreground": "#f2f28c" },
     "string": { "foreground": "#9ebc8f" }
@@ -200,11 +200,11 @@
         "variable.other.readwrite.instance.crystal",
         "variable.other.readwrite.module"
       ],
-      "settings": { "foreground": "#ff7575" }
+      "settings": { "foreground": "#ff7979" }
     },
     {
       "scope": ["entity.alias.import"],
-      "settings": { "foreground": "#ff7575" }
+      "settings": { "foreground": "#ff7979" }
     },
     {
       "name": "default library",
@@ -251,7 +251,7 @@
         "variable.other.property",
         "support.type.property-name"
       ],
-      "settings": { "foreground": "#eca979" }
+      "settings": { "foreground": "#e4aa81" }
     },
     {
       "name": "parameter",
@@ -273,7 +273,7 @@
         "meta.function-call entity.name.function",
         "meta.function.call entity.name.function"
       ],
-      "settings": { "foreground": "#eed487" }
+      "settings": { "foreground": "#e0cd94" }
     },
     {
       "name": "keyword",
@@ -285,6 +285,7 @@
         "keyword.other.special-method",
         "keyword.type.go",
         "keyword",
+        "keyword storage.type",
         "storage.modifier",
         "storage.type.class",
         "storage.type.function"
@@ -315,7 +316,7 @@
     {
       "name": "types",
       "scope": ["storage.type", "keyword.type"],
-      "settings": { "foreground": "#02cad4" }
+      "settings": { "foreground": "#0bc2cb" }
     },
     {
       "name": "operators",
@@ -338,7 +339,7 @@
         "punctuation.definition.template-expression",
         "punctuation.section.embedded"
       ],
-      "settings": { "foreground": "#ff7575" }
+      "settings": { "foreground": "#ff7979" }
     },
     {
       "name": "punctuation",
@@ -379,14 +380,14 @@
       "scope": [
         "meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
       ],
-      "settings": { "foreground": "#02cad4" }
+      "settings": { "foreground": "#0bc2cb" }
     },
     {
       "name": "l4 json",
       "scope": [
         "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
       ],
-      "settings": { "foreground": "#eed487" }
+      "settings": { "foreground": "#e0cd94" }
     },
     {
       "name": "l5 json",
@@ -414,7 +415,7 @@
       "scope": [
         "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
       ],
-      "settings": { "foreground": "#ff7575" }
+      "settings": { "foreground": "#ff7979" }
     },
     {
       "name": "l9 json",
@@ -435,7 +436,7 @@
       "scope": [
         "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
       ],
-      "settings": { "foreground": "#eca979" }
+      "settings": { "foreground": "#e4aa81" }
     },
     {
       "scope": ["meta.tag.metadata", "markup.underline.link"],
@@ -486,7 +487,7 @@
         "fenced_code.block.language",
         "markup.raw.block"
       ],
-      "settings": { "foreground": "#eca979" }
+      "settings": { "foreground": "#e4aa81" }
     },
     {
       "scope": [
@@ -494,9 +495,9 @@
         "meta.selector.css",
         "source.css.scss entity.name.tag.css"
       ],
-      "settings": { "foreground": "#eed487" }
+      "settings": { "foreground": "#e0cd94" }
     },
-    { "scope": ["heading"], "settings": { "foreground": "#eed487" } },
+    { "scope": ["heading"], "settings": { "foreground": "#e0cd94" } },
     {
       "scope": [
         "invalid.illegal.tag-handle.yaml",
@@ -505,7 +506,7 @@
         "meta.tag.other.unrecognized",
         "source.vue entity.name.tag.template.html"
       ],
-      "settings": { "foreground": "#ff7575" }
+      "settings": { "foreground": "#ff7979" }
     },
     {
       "scope": ["markup.bold", "punctuation.definition.bold"],

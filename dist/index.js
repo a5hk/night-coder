@@ -1,4 +1,5 @@
 import fs from "fs";
+import { tokenColorCode as color } from "./common/colors.js";
 import { textmateRules } from "./token/textmate_regular.js";
 import { semanticRules } from "./token/semantic_regular.js";
 import { commonWorkbenchColors as commonColors } from "./ui/workbench_common.js";
@@ -61,7 +62,62 @@ function nightCoderContrast() {
 function nightCoderContrastItalic() {
     themeWriter("Night Coder Contrast Italic", Object.assign(Object.assign({}, commonColors), contrastColors), semanticItalic(semanticRules), textmateItalic(textmateRules));
 }
+function generateReadme() {
+    const filepath = "./README.md";
+    const intro = `# [Night Coder](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
+
+A dark theme for Night Coders. Contrast and italic variants are also available.
+
+All tokens in this theme have a contrast ratio of at least 7 (except some comments and punctuations).
+
+## Color Palette
+
+| Scope | Color | Hex |
+|:------|:-----:|:----|
+`;
+    fs.writeFile(filepath, intro, (err) => {
+        if (err) {
+            throw err;
+        }
+        console.log(`Writing intro.`);
+    });
+    fs.appendFile(filepath, Object.values(color)
+        .map((v) => `|${v.description}|![${v.code}](https://via.placeholder.com/23/${v.code.replace("#", "")}/?text=+)|${v.code}|`)
+        .join("\n"), (err) => {
+        if (err) {
+            throw err;
+        }
+        console.log(`Color map appended.`);
+    });
+    const end = `
+
+## Screenshots
+
+### HTML
+
+![html](screenshot/html.png)
+
+### JavaScript
+
+![javascript](screenshot/javascript.png)
+
+### Python
+
+![python](screenshot/python.png)
+
+## License
+
+[MIT License](LICENSE)
+`;
+    fs.appendFile(filepath, end, (err) => {
+        if (err) {
+            throw err;
+        }
+        console.log(`Appended bottom section of readme.`);
+    });
+}
 nightCoderRegular();
 nightCoderContrast();
 nightCoderRegularItalic();
 nightCoderContrastItalic();
+generateReadme();

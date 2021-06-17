@@ -1,7 +1,6 @@
 import chroma from "chroma-js";
 
 export interface Color {
-  // name: string;
   code: string;
   description: string;
 }

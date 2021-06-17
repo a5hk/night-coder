@@ -23,7 +23,7 @@ export const textmateRules = [
             "variable.scss",
         ],
         settings: {
-            foreground: color.FrenchGray,
+            foreground: color.FrenchGray.code,
         },
     },
     {
@@ -44,14 +44,14 @@ export const textmateRules = [
             "variable.other.readwrite.module",
         ],
         settings: {
-            foreground: color.Bittersweet,
+            foreground: color.Geraldine.code,
             __italic: true,
         },
     },
     {
         scope: ["entity.alias.import"],
         settings: {
-            foreground: color.Bittersweet,
+            foreground: color.Geraldine.code,
         },
     },
     {
@@ -64,7 +64,7 @@ export const textmateRules = [
             "support.other.namespace",
         ],
         settings: {
-            foreground: color.PinkSalmon,
+            foreground: color.PinkSalmon.code,
             __italic: true,
         },
     },
@@ -72,7 +72,7 @@ export const textmateRules = [
         name: "default library functions and methods",
         scope: ["meta.method.declaration.js storage.type.js", "support.function"],
         settings: {
-            foreground: color.Bermuda,
+            foreground: color.Bermuda.code,
             __italic: true,
         },
     },
@@ -85,14 +85,14 @@ export const textmateRules = [
             "meta.attribute.rust",
         ],
         settings: {
-            foreground: color.IndianKhaki,
+            foreground: color.IndianKhaki.code,
         },
     },
     {
         name: "non variable constant",
         scope: ["constant", "support.constant", "keyword.other.unit"],
         settings: {
-            foreground: color.PaleCornflowerBlue,
+            foreground: color.PaleCornflowerBlue.code,
         },
     },
     {
@@ -107,7 +107,7 @@ export const textmateRules = [
             "support.type.property-name",
         ],
         settings: {
-            foreground: color.DarkSalmon,
+            foreground: color.TonysPink.code,
             __italic: true,
         },
     },
@@ -115,7 +115,7 @@ export const textmateRules = [
         name: "parameter",
         scope: ["meta.function-call.arguments", "variable.parameter"],
         settings: {
-            foreground: color.Iron,
+            foreground: color.Iron.code,
             __italic: true,
         },
     },
@@ -123,7 +123,7 @@ export const textmateRules = [
         name: "function, method",
         scope: ["entity.name.function"],
         settings: {
-            foreground: color.MonteCarlo,
+            foreground: color.MonteCarlo.code,
         },
     },
     {
@@ -137,7 +137,7 @@ export const textmateRules = [
             "meta.function.call entity.name.function",
         ],
         settings: {
-            foreground: color.Flax,
+            foreground: color.Calico.code,
             __italic: true,
         },
     },
@@ -151,12 +151,13 @@ export const textmateRules = [
             "keyword.other.special-method",
             "keyword.type.go",
             "keyword",
+            "keyword storage.type",
             "storage.modifier",
             "storage.type.class",
             "storage.type.function",
         ],
         settings: {
-            foreground: color.Viola,
+            foreground: color.Viola.code,
         },
     },
     {
@@ -174,7 +175,7 @@ export const textmateRules = [
             "entity.other.inherited-class",
         ],
         settings: {
-            foreground: color.PoloBlue,
+            foreground: color.PoloBlue.code,
             __italic: true,
         },
     },
@@ -182,35 +183,35 @@ export const textmateRules = [
         name: "logical and comparison operators",
         scope: ["keyword.operator.comparison", "keyword.operator.logical"],
         settings: {
-            foreground: color.MagicMint,
+            foreground: color.MagicMint.code,
         },
     },
     {
         name: "types",
         scope: ["storage.type", "keyword.type"],
         settings: {
-            foreground: color.DarkTurquoise,
+            foreground: color.IrisBlue.code,
         },
     },
     {
         name: "operators",
         scope: ["keyword.operator"],
         settings: {
-            foreground: color.Jonquil,
+            foreground: color.Jonquil.code,
         },
     },
     {
         name: "String",
         scope: ["source.elixir.embedded.source", "storage.modifier.import.java", "string.quoted.double", "string"],
         settings: {
-            foreground: color.SwampGreen,
+            foreground: color.SwampGreen.code,
         },
     },
     {
         name: "embedded punctuation",
         scope: ["punctuation.definition.template-expression", "punctuation.section.embedded"],
         settings: {
-            foreground: color.Bittersweet,
+            foreground: color.Geraldine.code,
             __italic: true,
         },
     },
@@ -218,7 +219,7 @@ export const textmateRules = [
         name: "punctuation",
         scope: ["meta.brace", "punctuation"],
         settings: {
-            foreground: color.Mischka,
+            foreground: color.Mischka.code,
         },
     },
     {
@@ -230,13 +231,13 @@ export const textmateRules = [
             "comment.block.documentation punctuation.definition.comment",
         ],
         settings: {
-            foreground: color.Mischka,
+            foreground: color.Mischka.code,
         },
     },
     {
         scope: ["comment", "punctuation.definition.comment", "punctuation.whitespace.comment.leading.graphql"],
         settings: {
-            foreground: color.Mako,
+            foreground: color.Mako.code,
             fontStyle: "italic",
         },
     },
@@ -246,14 +247,14 @@ export const textmateRules = [
             "meta.jsx.children",
         ],
         settings: {
-            foreground: color.FrenchGray,
+            foreground: color.FrenchGray.code,
         },
     },
     {
         name: "l2 json",
         scope: ["meta.structure.dictionary.value support.type.property-name.json"],
         settings: {
-            foreground: color.Viola,
+            foreground: color.Viola.code,
             __italic: true,
         },
     },
@@ -261,7 +262,7 @@ export const textmateRules = [
         name: "l3 json",
         scope: ["meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"],
         settings: {
-            foreground: color.DarkTurquoise,
+            foreground: color.IrisBlue.code,
             __italic: true,
         },
     },
@@ -271,7 +272,7 @@ export const textmateRules = [
             "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
         ],
         settings: {
-            foreground: color.Flax,
+            foreground: color.Calico.code,
             __italic: true,
         },
     },
@@ -281,7 +282,7 @@ export const textmateRules = [
             "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
         ],
         settings: {
-            foreground: color.PinkSalmon,
+            foreground: color.PinkSalmon.code,
             __italic: true,
         },
     },
@@ -291,7 +292,7 @@ export const textmateRules = [
             "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
         ],
         settings: {
-            foreground: color.Bermuda,
+            foreground: color.Bermuda.code,
             __italic: true,
         },
     },
@@ -301,7 +302,7 @@ export const textmateRules = [
             "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
         ],
         settings: {
-            foreground: color.PoloBlue,
+            foreground: color.PoloBlue.code,
             __italic: true,
         },
     },
@@ -311,7 +312,7 @@ export const textmateRules = [
             "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
         ],
         settings: {
-            foreground: color.Bittersweet,
+            foreground: color.Geraldine.code,
             __italic: true,
         },
     },
@@ -321,7 +322,7 @@ export const textmateRules = [
             "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
         ],
         settings: {
-            foreground: color.IndianKhaki,
+            foreground: color.IndianKhaki.code,
             __italic: true,
         },
     },
@@ -331,7 +332,7 @@ export const textmateRules = [
             "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
         ],
         settings: {
-            foreground: color.Sunflower,
+            foreground: color.Sunflower.code,
             __italic: true,
         },
     },
@@ -341,44 +342,44 @@ export const textmateRules = [
             "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
         ],
         settings: {
-            foreground: color.DarkSalmon,
+            foreground: color.TonysPink.code,
             __italic: true,
         },
     },
     {
         scope: ["meta.tag.metadata", "markup.underline.link"],
         settings: {
-            foreground: color.Viola,
+            foreground: color.Viola.code,
         },
     },
     {
         scope: ["meta.tag.metadata.link", "string.other.link.title.markdown"],
         settings: {
-            foreground: color.MonteCarlo,
+            foreground: color.MonteCarlo.code,
         },
     },
     {
         scope: ["markup.italic"],
         settings: {
-            foreground: color.MagicMint,
+            foreground: color.MagicMint.code,
         },
     },
     {
         scope: ["punctuation.definition.tag"],
         settings: {
-            foreground: color.StormGrey,
+            foreground: color.StormGrey.code,
         },
     },
     {
         scope: ["meta.tag.inline", "entity.name.tag.js.jsx", "entity.name.tag.tsx"],
         settings: {
-            foreground: color.Bermuda,
+            foreground: color.Bermuda.code,
         },
     },
     {
         scope: ["meta.tag.object"],
         settings: {
-            foreground: color.PinkSalmon,
+            foreground: color.PinkSalmon.code,
         },
     },
     {
@@ -388,19 +389,19 @@ export const textmateRules = [
             "string.other.link.description.markdown",
         ],
         settings: {
-            foreground: color.PoloBlue,
+            foreground: color.PoloBlue.code,
         },
     },
     {
         scope: ["meta.tag.metadata.script", "source.vue entity.name.tag.script.html"],
         settings: {
-            foreground: color.Sunflower,
+            foreground: color.Sunflower.code,
         },
     },
     {
         scope: ["meta.tag.custom"],
         settings: {
-            foreground: color.PaleCornflowerBlue,
+            foreground: color.PaleCornflowerBlue.code,
         },
     },
     {
@@ -415,20 +416,20 @@ export const textmateRules = [
             "markup.raw.block",
         ],
         settings: {
-            foreground: color.DarkSalmon,
+            foreground: color.TonysPink.code,
         },
     },
     {
         scope: ["entity.other.attribute-name", "meta.selector.css", "source.css.scss entity.name.tag.css"],
         settings: {
-            foreground: color.Flax,
+            foreground: color.Calico.code,
             __italic: true,
         },
     },
     {
         scope: ["heading"],
         settings: {
-            foreground: color.Flax,
+            foreground: color.Calico.code,
         },
     },
     {
@@ -440,7 +441,7 @@ export const textmateRules = [
             "source.vue entity.name.tag.template.html",
         ],
         settings: {
-            foreground: color.Bittersweet,
+            foreground: color.Geraldine.code,
         },
     },
     {
