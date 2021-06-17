@@ -17,29 +17,6 @@ function mix(alpha: string): string {
 // https://chir.ag/projects/name-that-color/
 // https://www.color-blindness.com/color-name-hue/
 
-// export const tokenColorCode = {
-//   Bermuda: /* .............. */ "#70dbc1",
-//   Calico: /* ............... */ "#e0cd94",
-//   FrenchGray: /* ........... */ mix("c5"),
-//   Geraldine: /* ............ */ "#ff7979",
-//   IndianKhaki: /* .......... */ "#c3ab85",
-//   IrisBlue: /* ............. */ "#0bc2cb",
-//   Iron: /* ................. */ mix("e5"),
-//   Jonquil: /* .............. */ "#f2f28c",
-//   MagicMint: /* ............ */ "#93ecb8",
-//   Mako: /* ................. */ mix("44"),
-//   Mischka: /* .............. */ mix("aa"),
-//   MonteCarlo: /* ........... */ "#85c3ab",
-//   PaleCornflowerBlue: /* ... */ "#bfa6f2",
-//   PinkSalmon: /* ........... */ "#ff99b3",
-//   PoloBlue: /* ............. */ "#859dc3",
-//   StormGrey: /* ............ */ "#7a7d84",
-//   Sunflower: /* ............ */ "#d9d326",
-//   SwampGreen: /* ........... */ "#9ebc8f",
-//   TonysPink: /* ............ */ "#e4aa81",
-//   Viola: /* ................ */ "#c385bc",
-// };
-
 export const tokenColorCode = {
   Bermuda: /* .............. */ { code: "#70dbc1", description: "Default library function, HTML inline tag" },
   Calico: /* ............... */ { code: "#e0cd94", description: "Function call, Attribute name" },
