@@ -14,12 +14,11 @@ function mix(alpha: string): string {
 
 export const tokenColorCode = {
   Bermuda: /* .............. */ "#70dbc1",
-  Geraldine: /* ............ */ "#ff7979",
-  TonysPink: /* ............ */ "#e4aa81",
-  IrisBlue: /* ............. */ "#0bc2cb",
   Calico: /* ............... */ "#e0cd94",
   FrenchGray: /* ........... */ mix("c5"),
+  Geraldine: /* ............ */ "#ff7979",
   IndianKhaki: /* .......... */ "#c3ab85",
+  IrisBlue: /* ............. */ "#0bc2cb",
   Iron: /* ................. */ mix("e5"),
   Jonquil: /* .............. */ "#f2f28c",
   MagicMint: /* ............ */ "#93ecb8",
@@ -32,6 +31,7 @@ export const tokenColorCode = {
   StormGrey: /* ............ */ "#7a7d84",
   Sunflower: /* ............ */ "#d9d326",
   SwampGreen: /* ........... */ "#9ebc8f",
+  TonysPink: /* ............ */ "#e4aa81",
   Viola: /* ................ */ "#c385bc",
 };
 
