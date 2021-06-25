@@ -7,4 +7,5 @@ True color support is required.
 ### Ruby
 
 Screenshot of Windows Terminal (and WSL)
+
 ![html](/screenshot/vim.png)
