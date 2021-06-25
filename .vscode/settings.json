@@ -1,6 +1,7 @@
 {
   "cSpell.words": [
     "backgrounde",
+    "cterm",
     "ctermfg",
     "feijoa",
     "guibg",
@@ -8,6 +9,7 @@
     "mischka",
     "nightcoder",
     "pink",
+    "termguicolors",
     "tonys",
     "vim"
   ],

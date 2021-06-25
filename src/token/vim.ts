@@ -3,12 +3,17 @@ import { tokenColorCode as color } from "../common/colors.js";
 export interface vimRule {
   groups: string[];
   fg: string;
+  style?: string;
 }
 
 export function vimColoring(): string {
   const head = `highlight clear
 if exists("syntax_on")
   syntax reset
+endif
+
+if has("termguicolors")
+  set termguicolors
 endif
 
 set background=dark
@@ -21,20 +26,22 @@ highlight Normal guifg=${color.FrenchGray.code} guibg=#030917
     head +
     vRules
       .map((r) => {
-        return r.groups.map((g) => `highlight ${g} guifg=${r.fg}`).join("\n");
+        return r.groups
+          .map((g) => `highlight ${g} ${r.style ? "cterm=" + r.style + " gui=" + r.style : ""} guifg=${r.fg}`)
+          .join("\n");
       })
       .join("\n")
   );
 }
 
 const vRules: vimRule[] = [
-  { groups: ["Comment"], fg: color.Mako.code },
+  { groups: ["Comment"], fg: color.Mako.code, style: "italic" },
   { groups: ["String", "Character"], fg: color.SwampGreen.code },
   { groups: ["Number", "Boolean", "Float"], fg: color.PaleCornflowerBlue.code },
   { groups: ["Constant"], fg: color.Geraldine.code },
   { groups: ["Function"], fg: color.Calico.code },
   { groups: ["Identifier"], fg: color.PoloBlue.code },
-  { groups: ["Operator"], fg: color.Jonquil.code },
+  { groups: ["Operator"], fg: color.MagicMint.code },
   { groups: ["Statement", "PreProc"], fg: color.Viola.code },
   { groups: ["Type"], fg: color.IrisBlue.code },
   { groups: ["Tag"], fg: color.TonysPink.code },
