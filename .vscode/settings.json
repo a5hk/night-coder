@@ -1,10 +1,17 @@
 {
   "cSpell.words": [
     "backgrounde",
+    "cterm",
+    "ctermfg",
     "feijoa",
+    "guibg",
+    "guifg",
     "mischka",
+    "nightcoder",
     "pink",
-    "tonys"
+    "termguicolors",
+    "tonys",
+    "vim"
   ],
   "cSpell.ignoreWords": [
     "backgroundaa",
