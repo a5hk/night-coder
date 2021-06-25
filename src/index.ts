@@ -6,6 +6,7 @@ import { semanticRules, semanticRule } from "./token/semantic_regular.js";
 import { commonWorkbenchColors as commonColors, workbenchColor } from "./ui/workbench_common.js";
 import { regularWorkbenchColors as regularColors } from "./ui/workbench_regular.js";
 import { contrastWorkbenchColors as contrastColors } from "./ui/workbench_contrast.js";
+import { vimColoring } from "./token/vim.js";
 
 function themePath(name: string): string {
   return "./themes/" + name.toLowerCase().replace(/ /g, "-") + "-color-theme.json";
@@ -150,8 +151,18 @@ All tokens in this theme have a contrast ratio of at least 7 (except some commen
   });
 }
 
+function vimColorScheme() {
+  fs.writeFile("./vim/colors/nightcoder.vim", vimColoring(), (err) => {
+    if (err) {
+      throw err;
+    }
+    console.log(`Vim color scheme generated.`);
+  });
+}
+
 nightCoderRegular();
 nightCoderContrast();
 nightCoderRegularItalic();
 nightCoderContrastItalic();
+vimColorScheme();
 generateReadme();
