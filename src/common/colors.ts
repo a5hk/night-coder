@@ -63,9 +63,9 @@ export const workbenchColors = {
   contrastBackground: "#02050e",
 
   activeIndentGuideBackground: /* .... */ "#53ac53",
-  editorErrorForeground: /* .......... */ "#ff7575", // bittersweet
-  editorInfoForeground: /* ........... */ "#02cad4", // DarkTurquoise
-  progressBarBackground: /* .......... */ "#d9d326", // Sunflower
+  editorErrorForeground: /* .......... */ "#ff7575",
+  editorInfoForeground: /* ........... */ "#02cad4",
+  progressBarBackground: /* .......... */ "#d9d326",
   statusBarBackground: /* ............ */ "#006600",
   statusBarDebuggingBackground: /* ... */ "#9b2c2c",
   statusBarDebuggingBorder: /* ....... */ "#770000",
@@ -76,6 +76,8 @@ export const workbenchColors = {
   statusBarRemoteBackground: /* ...... */ "#660066",
   statusBarRemoteForeground: /* ...... */ "#fff5ff",
   textLinkForeground: /* ............. */ "#89b971",
+  inlineValuesBackground: /* ......... */ "#c3ab8555",
+  inlineValuesForeground: /* ......... */ mix("cc"),
 };
 
 export const terminalColors = {

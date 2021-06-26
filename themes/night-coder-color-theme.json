@@ -23,6 +23,8 @@
     "editor.findMatchHighlightBackground": "#353a4577",
     "editor.foldBackground": "#0066001f",
     "editor.foreground": "#c6c7ca",
+    "editor.inlineValuesBackground": "#c3ab8555",
+    "editor.inlineValuesForeground": "#cdced1",
     "editor.lineHighlightBackground": "#353a4577",
     "editor.selectionBackground": "#353a4599",
     "editor.selectionHighlightBackground": "#353a4577",

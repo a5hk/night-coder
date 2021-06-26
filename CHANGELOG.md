@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.11.0
+
+- Added support for [debugger inline values](https://code.visualstudio.com/updates/v1_57#_new-theme-colors-for-inline-values).
+
 ## 2.10.1
 
 - Bugfix

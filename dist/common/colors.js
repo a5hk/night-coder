@@ -61,6 +61,8 @@ export const workbenchColors = {
     statusBarRemoteBackground: "#660066",
     statusBarRemoteForeground: "#fff5ff",
     textLinkForeground: "#89b971",
+    inlineValuesBackground: "#c3ab8555",
+    inlineValuesForeground: mix("cc"),
 };
 export const terminalColors = {
     ansiBrightBlack: "#888b92",

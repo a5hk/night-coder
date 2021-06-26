@@ -24,6 +24,8 @@ export const commonWorkbenchColors: workbenchColor = {
   "editor.findMatchHighlightBackground": /* ....... */ `${uiColor.background33}77`,
   "editor.foldBackground": /* ..................... */ `${uiColor.statusBarBackground}1f`,
   "editor.foreground": /* ......................... */ uiColor.backgroundc5,
+  "editor.inlineValuesBackground": /* ............. */ uiColor.inlineValuesBackground,
+  "editor.inlineValuesForeground": /* ............. */ uiColor.inlineValuesForeground,
   "editor.lineHighlightBackground": /* ............ */ `${uiColor.background33}77`,
   "editor.selectionBackground": /* ................ */ `${uiColor.background33}99`,
   "editor.selectionHighlightBackground": /* ....... */ `${uiColor.background33}77`,
