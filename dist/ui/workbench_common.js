@@ -69,7 +69,7 @@ export const commonWorkbenchColors = {
     "list.warningForeground": uiColor.progressBarBackground,
     "menu.background": uiColor.background11,
     "menu.foreground": uiColor.backgroundaa,
-    "minimap.selectionHighlight": uiColor.statusBarBackground,
+    "minimap.selectionHighlight": `${uiColor.statusBarBackground}66`,
     "peekView.border": uiColor.statusBarBackground,
     "peekViewEditor.background": uiColor.background11,
     "peekViewEditor.matchHighlightBackground": uiColor.background33,

@@ -73,7 +73,7 @@
     "list.warningForeground": "#d9d326",
     "menu.background": "#141926",
     "menu.foreground": "#abadb2",
-    "minimap.selectionHighlight": "#006600",
+    "minimap.selectionHighlight": "#00660066",
     "peekView.border": "#006600",
     "peekViewEditor.background": "#141926",
     "peekViewEditor.matchHighlightBackground": "#353a45",

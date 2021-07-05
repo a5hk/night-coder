@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.12..
+
+- Transparent minimap highlight color
+
 ## 2.11.1
 
 - New icon
