@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.12..
+## 2.12.0
 
 - Transparent minimap highlight color
 
