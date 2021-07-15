@@ -1,3 +1,15 @@
+var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
+};
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+};
+var _TokenColor_colorMap;
 import chroma from "chroma-js";
 function hexAlphaToDec(alpha) {
     return parseInt(alpha, 16) / 255;
@@ -5,28 +17,124 @@ function hexAlphaToDec(alpha) {
 function mix(alpha) {
     return chroma.mix("#030917", "#ffffff", hexAlphaToDec(alpha), "rgb").toString();
 }
-export const tokenColorCode = {
-    Bermuda: { code: "#8cd4c2", description: "Default library function, HTML inline tag" },
-    Calico: { code: "#e3d7b5", description: "Function call, Attribute name" },
-    FrenchGray: { code: mix("c5"), description: "Foreground, Variable" },
-    Geraldine: { code: "#dd8888", description: "Constant, HTML unrecognized tag" },
-    IndianKhaki: { code: "#d9c9af", description: "Miscellaneous" },
-    IrisBlue: { code: "#a3d9dc", description: "Type" },
-    Iron: { code: mix("e5"), description: "Parameter, Argument" },
-    Jonquil: { code: "#e0e0b8", description: "Operator" },
-    MagicMint: { code: "#b8e0c8", description: "Comparison/Logical operator" },
-    Mako: { code: mix("44"), description: "Comment" },
-    Mischka: { code: mix("aa"), description: "Documentation comment" },
-    MonteCarlo: { code: "#a9d6c4", description: "Function declaration, HTML link tag" },
-    PaleCornflowerBlue: { code: "#c5b8e0", description: "Non variable constant, HTML custom tag" },
-    PinkSalmon: { code: "#d9a6b3", description: "Default library class/type, HTML object tag" },
-    PoloBlue: { code: "#bdc8db", description: "Namespace/Class/Struct, HTML style tag" },
-    StormGrey: { code: mix("77"), description: "Tag punctuation" },
-    Sunflower: { code: "#dfdd9f", description: "Script tag" },
-    SwampGreen: { code: "#adc2a3", description: "String" },
-    TonysPink: { code: "#dcbaa3", description: "Property, Tag " },
-    Viola: { code: "#d9a6d3", description: "Keyword, HTML meta tag" },
-};
+class TokenColor {
+    constructor() {
+        _TokenColor_colorMap.set(this, void 0);
+        __classPrivateFieldSet(this, _TokenColor_colorMap, new Map(), "f");
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("Bermuda", {
+            code: "#70dbc1",
+            pastelCode: "#8cd4c2",
+            description: "Default library function, HTML inline tag",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("Calico", {
+            code: "#e0cd94",
+            pastelCode: "#e3d7b5",
+            description: "Function call, Attribute name",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("FrenchGray", {
+            code: mix("c5"),
+            pastelCode: mix("c5"),
+            description: "Foreground, Variable",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("Geraldine", {
+            code: "#ff7979",
+            pastelCode: "#dd8888",
+            description: "Constant, HTML unrecognized tag",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("IndianKhaki", {
+            code: "#c3ab85",
+            pastelCode: "#d9c9af",
+            description: "Miscellaneous",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("IrisBlue", {
+            code: "#0bc2cb",
+            pastelCode: "#a3d9dc",
+            description: "Type",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("Iron", {
+            code: mix("e5"),
+            pastelCode: mix("e5"),
+            description: "Parameter, Argument",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("Jonquil", {
+            code: "#f2f28c",
+            pastelCode: "#e0e0b8",
+            description: "Operator",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("MagicMint", {
+            code: "#93ecb8",
+            pastelCode: "#b8e0c8",
+            description: "Comparison/Logical operator",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("Mako", {
+            code: mix("44"),
+            pastelCode: mix("44"),
+            description: "Comment",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("Mischka", {
+            code: mix("aa"),
+            pastelCode: mix("aa"),
+            description: "Documentation comment",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("MonteCarlo", {
+            code: "#85c3ab",
+            pastelCode: "#a9d6c4",
+            description: "Function declaration, HTML link tag",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("PaleCornflowerBlue", {
+            code: "#bfa6f2",
+            pastelCode: "#c5b8e0",
+            description: "Non variable constant, HTML custom tag",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("PinkSalmon", {
+            code: "#ff99b3",
+            pastelCode: "#d9a6b3",
+            description: "Default library class/type, HTML object tag",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("PoloBlue", {
+            code: "#859dc3",
+            pastelCode: "#bdc8db",
+            description: "Namespace/Class/Struct, HTML style tag",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("StormGrey", {
+            code: mix("77"),
+            pastelCode: mix("77"),
+            description: "Tag punctuation",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("Sunflower", {
+            code: "#d9d326",
+            pastelCode: "#dfdd9f",
+            description: "Script tag",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("SwampGreen", {
+            code: "#9ebc8f",
+            pastelCode: "#adc2a3",
+            description: "String",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("TonysPink", {
+            code: "#e4aa81",
+            pastelCode: "#dcbaa3",
+            description: "Property, Tag ",
+        });
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("Viola", {
+            code: "#c385bc",
+            pastelCode: "#d9a6d3",
+            description: "Keyword, HTML meta tag",
+        });
+    }
+    getColor(name, palette) {
+        const c = __classPrivateFieldGet(this, _TokenColor_colorMap, "f").get(name);
+        if (c) {
+            return palette == "regular" ? c.code : c.pastelCode;
+        }
+        return mix("c5");
+    }
+    getMap() {
+        return __classPrivateFieldGet(this, _TokenColor_colorMap, "f");
+    }
+}
+_TokenColor_colorMap = new WeakMap();
+export const tokenColorPalette = new TokenColor();
 export const workbenchColors = {
     background: mix("0"),
     background11: mix("11"),

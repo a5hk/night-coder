@@ -1,5 +1,5 @@
 import fs from "fs";
-import { tokenColorCode as color } from "./common/colors.js";
+import { tokenColorPalette } from "./common/colors.js";
 import { textmateRules } from "./token/textmate_regular.js";
 import { semanticRules } from "./token/semantic_regular.js";
 import { commonWorkbenchColors as commonColors } from "./ui/workbench_common.js";
@@ -52,16 +52,36 @@ function themeWriter(name, ui, semantic, textmate) {
     });
 }
 function nightCoderRegular() {
-    themeWriter("Night Coder", Object.assign(Object.assign({}, commonColors), regularColors), semanticRules, textmateRules);
+    const palette = "regular";
+    themeWriter("Night Coder", Object.assign(Object.assign({}, commonColors), regularColors), semanticRules(palette), textmateRules(palette));
+}
+function nightCoderPastelRegular() {
+    const palette = "pastel";
+    themeWriter("Night Coder Pastel", Object.assign(Object.assign({}, commonColors), regularColors), semanticRules(palette), textmateRules(palette));
 }
 function nightCoderRegularItalic() {
-    themeWriter("Night Coder Italic", Object.assign(Object.assign({}, commonColors), regularColors), semanticItalic(semanticRules), textmateItalic(textmateRules));
+    const palette = "regular";
+    themeWriter("Night Coder Italic", Object.assign(Object.assign({}, commonColors), regularColors), semanticItalic(semanticRules(palette)), textmateItalic(textmateRules(palette)));
+}
+function nightCoderPastelRegularItalic() {
+    const palette = "pastel";
+    themeWriter("Night Coder Pastel Italic", Object.assign(Object.assign({}, commonColors), regularColors), semanticItalic(semanticRules(palette)), textmateItalic(textmateRules(palette)));
 }
 function nightCoderContrast() {
-    themeWriter("Night Coder Contrast", Object.assign(Object.assign({}, commonColors), contrastColors), semanticRules, textmateRules);
+    const palette = "regular";
+    themeWriter("Night Coder Contrast", Object.assign(Object.assign({}, commonColors), contrastColors), semanticRules(palette), textmateRules(palette));
+}
+function nightCoderPastelContrast() {
+    const palette = "pastel";
+    themeWriter("Night Coder Pastel Contrast", Object.assign(Object.assign({}, commonColors), contrastColors), semanticRules(palette), textmateRules(palette));
 }
 function nightCoderContrastItalic() {
-    themeWriter("Night Coder Contrast Italic", Object.assign(Object.assign({}, commonColors), contrastColors), semanticItalic(semanticRules), textmateItalic(textmateRules));
+    const palette = "regular";
+    themeWriter("Night Coder Contrast Italic", Object.assign(Object.assign({}, commonColors), contrastColors), semanticItalic(semanticRules(palette)), textmateItalic(textmateRules(palette)));
+}
+function nightCoderPastelContrastItalic() {
+    const palette = "pastel";
+    themeWriter("Night Coder Pastel Contrast Italic", Object.assign(Object.assign({}, commonColors), contrastColors), semanticItalic(semanticRules(palette)), textmateItalic(textmateRules(palette)));
 }
 function generateReadme() {
     const filepath = "./README.md";
@@ -84,7 +104,7 @@ A dark theme for Night Coders. Contrast and italic variants are also available.
         }
         console.log(`Writing intro.`);
     });
-    fs.appendFile(filepath, Object.values(color)
+    fs.appendFile(filepath, Object.values(tokenColorPalette.getMap())
         .map((v) => `|${v.description}|![${v.code}](https://via.placeholder.com/23/${v.code.replace("#", "")}/?text=+)|${v.code}|`)
         .join("\n"), (err) => {
         if (err) {
@@ -131,5 +151,9 @@ nightCoderRegular();
 nightCoderContrast();
 nightCoderRegularItalic();
 nightCoderContrastItalic();
+nightCoderPastelRegular();
+nightCoderPastelContrast();
+nightCoderPastelRegularItalic();
+nightCoderPastelContrastItalic();
 vimColorScheme();
 generateReadme();
