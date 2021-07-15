@@ -193,9 +193,10 @@ A dark theme for Night Coders. Contrast and italic variants are also available.
     Array.from(tokenColorPalette.getMap().values())
       .map(
         (v) =>
-          `|${v.description}|![${v.pastelCode}](https://via.placeholder.com/23/${v.code.replace("#", "")}/?text=+)|${
-            v.pastelCode
-          }|`
+          `|${v.description}|![${v.pastelCode}](https://via.placeholder.com/23/${v.pastelCode.replace(
+            "#",
+            ""
+          )}/?text=+)|${v.pastelCode}|`
       )
       .join("\n"),
     (err) => {

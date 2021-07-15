@@ -126,7 +126,7 @@ A dark theme for Night Coders. Contrast and italic variants are also available.
         console.log(`Appending pastel pastel`);
     });
     fs.appendFile(filepath, Array.from(tokenColorPalette.getMap().values())
-        .map((v) => `|${v.description}|![${v.pastelCode}](https://via.placeholder.com/23/${v.code.replace("#", "")}/?text=+)|${v.pastelCode}|`)
+        .map((v) => `|${v.description}|![${v.pastelCode}](https://via.placeholder.com/23/${v.pastelCode.replace("#", "")}/?text=+)|${v.pastelCode}|`)
         .join("\n"), (err) => {
         if (err) {
             throw err;
