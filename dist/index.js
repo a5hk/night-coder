@@ -104,7 +104,7 @@ A dark theme for Night Coders. Contrast and italic variants are also available.
         }
         console.log(`Writing intro.`);
     });
-    fs.appendFile(filepath, Object.values(tokenColorPalette.getMap())
+    fs.appendFile(filepath, Array.from(tokenColorPalette.getMap().values())
         .map((v) => `|${v.description}|![${v.code}](https://via.placeholder.com/23/${v.code.replace("#", "")}/?text=+)|${v.code}|`)
         .join("\n"), (err) => {
         if (err) {

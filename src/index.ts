@@ -159,7 +159,7 @@ A dark theme for Night Coders. Contrast and italic variants are also available.
 
   fs.appendFile(
     filepath,
-    Object.values(tokenColorPalette.getMap())
+    Array.from(tokenColorPalette.getMap().values())
       .map(
         (v) =>
           `|${v.description}|![${v.code}](https://via.placeholder.com/23/${v.code.replace("#", "")}/?text=+)|${v.code}|`
