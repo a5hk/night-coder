@@ -93,7 +93,7 @@ A dark theme for Night Coders. Contrast and italic variants are also available.
 
 - Vim: [/vim/colors/](/vim/colors/)
 
-## Color Palette
+## Regular Color Palette
 
 | Scope | Color | Hex |
 |:------|:-----:|:----|
@@ -111,6 +111,27 @@ A dark theme for Night Coders. Contrast and italic variants are also available.
             throw err;
         }
         console.log(`Color map appended.`);
+    });
+    const pastelPalette = `
+
+## Pastel Color Palette
+
+| Scope | Color | Hex |
+|:------|:-----:|:----|
+`;
+    fs.appendFile(filepath, pastelPalette, (err) => {
+        if (err) {
+            throw err;
+        }
+        console.log(`Appending pastel pastel`);
+    });
+    fs.appendFile(filepath, Array.from(tokenColorPalette.getMap().values())
+        .map((v) => `|${v.description}|![${v.pastelCode}](https://via.placeholder.com/23/${v.code.replace("#", "")}/?text=+)|${v.pastelCode}|`)
+        .join("\n"), (err) => {
+        if (err) {
+            throw err;
+        }
+        console.log(`Pastel color map appended.`);
     });
     const end = `
 
