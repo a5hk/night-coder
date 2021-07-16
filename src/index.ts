@@ -1,8 +1,8 @@
 import fs from "fs";
 
-import { tokenColorCode as color } from "./common/colors.js";
-import { textmateRules, textmateRule } from "./token/textmate_regular.js";
-import { semanticRules, semanticRule } from "./token/semantic_regular.js";
+import { tokenColorPalette } from "./common/colors.js";
+import { textmateTheme, textmateRule } from "./token/textmate_regular.js";
+import { semanticTheme, semanticRule } from "./token/semantic_regular.js";
 import { commonWorkbenchColors as commonColors, workbenchColor } from "./ui/workbench_common.js";
 import { regularWorkbenchColors as regularColors } from "./ui/workbench_regular.js";
 import { contrastWorkbenchColors as contrastColors } from "./ui/workbench_contrast.js";
@@ -20,24 +20,6 @@ function __italicReject(theme: any): string {
     }
     return v;
   });
-}
-
-function textmateItalic(theme: textmateRule[]): textmateRule[] {
-  return theme.map((r) => {
-    if (r.settings.__italic) {
-      r.settings.fontStyle = "italic";
-    }
-    return r;
-  });
-}
-
-function semanticItalic(theme: semanticRule): semanticRule {
-  for (const k in theme) {
-    if (theme[k]?.__italic) {
-      theme[k] = { ...theme[k], fontStyle: "italic" };
-    }
-  }
-  return theme;
 }
 
 function themeWriter(name: string, ui: workbenchColor, semantic: semanticRule, textmate: textmateRule[]) {
@@ -59,30 +41,26 @@ function themeWriter(name: string, ui: workbenchColor, semantic: semanticRule, t
   });
 }
 
-function nightCoderRegular() {
-  themeWriter("Night Coder", { ...commonColors, ...regularColors }, semanticRules, textmateRules);
-}
+function generateThemes() {
+  const palettes = ["", "Pastel"];
+  const styles = ["", "Italic"];
+  const contrasts = ["", "Contrast"];
+  let uiColors: workbenchColor;
 
-function nightCoderRegularItalic() {
-  themeWriter(
-    "Night Coder Italic",
-    { ...commonColors, ...regularColors },
-    semanticItalic(semanticRules),
-    textmateItalic(textmateRules)
-  );
-}
+  for (const s of styles) {
+    for (const p of palettes) {
+      for (const c of contrasts) {
+        uiColors = c === "contrast" ? contrastColors : regularColors;
 
-function nightCoderContrast() {
-  themeWriter("Night Coder Contrast", { ...commonColors, ...contrastColors }, semanticRules, textmateRules);
-}
-
-function nightCoderContrastItalic() {
-  themeWriter(
-    "Night Coder Contrast Italic",
-    { ...commonColors, ...contrastColors },
-    semanticItalic(semanticRules),
-    textmateItalic(textmateRules)
-  );
+        themeWriter(
+          `Night Coder ${p} ${c} ${s}`.replace(/ +/g, " ").trim(),
+          { ...commonColors, ...uiColors },
+          semanticTheme.getPaletteRules(s, p),
+          textmateTheme.getRules(s, p)
+        );
+      }
+    }
+  }
 }
 
 function generateReadme() {
@@ -95,7 +73,7 @@ A dark theme for Night Coders. Contrast and italic variants are also available.
 
 - Vim: [/vim/colors/](/vim/colors/)
 
-## Color Palette
+## Regular Color Palette
 
 | Scope | Color | Hex |
 |:------|:-----:|:----|
@@ -110,7 +88,7 @@ A dark theme for Night Coders. Contrast and italic variants are also available.
 
   fs.appendFile(
     filepath,
-    Object.values(color)
+    Array.from(tokenColorPalette.getMap().values())
       .map(
         (v) =>
           `|${v.description}|![${v.code}](https://via.placeholder.com/23/${v.code.replace("#", "")}/?text=+)|${v.code}|`
@@ -121,6 +99,40 @@ A dark theme for Night Coders. Contrast and italic variants are also available.
         throw err;
       }
       console.log(`Color map appended.`);
+    }
+  );
+
+  const pastelPalette = `
+
+## Pastel Color Palette
+
+| Scope | Color | Hex |
+|:------|:-----:|:----|
+`;
+
+  fs.appendFile(filepath, pastelPalette, (err) => {
+    if (err) {
+      throw err;
+    }
+    console.log(`Appending pastel pastel`);
+  });
+
+  fs.appendFile(
+    filepath,
+    Array.from(tokenColorPalette.getMap().values())
+      .map(
+        (v) =>
+          `|${v.description}|![${v.pastelCode}](https://via.placeholder.com/23/${v.pastelCode.replace(
+            "#",
+            ""
+          )}/?text=+)|${v.pastelCode}|`
+      )
+      .join("\n"),
+    (err) => {
+      if (err) {
+        throw err;
+      }
+      console.log(`Pastel color map appended.`);
     }
   );
 
@@ -162,9 +174,6 @@ function vimColorScheme() {
   });
 }
 
-nightCoderRegular();
-nightCoderContrast();
-nightCoderRegularItalic();
-nightCoderContrastItalic();
+generateThemes();
 vimColorScheme();
 generateReadme();
