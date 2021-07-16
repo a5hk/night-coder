@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.13.0
+
+- Added pastel color palette (preview)
+
 ## 2.12.0
 
 - Transparent minimap highlight color

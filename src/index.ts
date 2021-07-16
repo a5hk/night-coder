@@ -67,7 +67,15 @@ function generateReadme() {
   const filepath = "./README.md";
   const intro = `# [Night Coder](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
 
-A dark theme for Night Coders. Contrast and italic variants are also available.
+A dark theme for Night Coders. It has eight variants with different color palettes, text styles, and UI colors.
+
+### Regular color palette
+
+![html](screenshot/html.png)
+
+### Pastel color palette
+
+![html](screenshot/pastel.png)
 
 ## Other versions
 
@@ -140,13 +148,13 @@ A dark theme for Night Coders. Contrast and italic variants are also available.
 
 ## Screenshots
 
-### HTML
-
-![html](screenshot/html.png)
-
 ### JavaScript
 
 ![javascript](screenshot/javascript.png)
+
+### JSON
+
+![javascript](screenshot/json.png)
 
 ### Python
 
