@@ -14,11 +14,6 @@ function mix(alpha: string): string {
   return chroma.mix("#030917", "#ffffff", hexAlphaToDec(alpha), "rgb").toString();
 }
 
-// function hexToPastel(hex: string): string {
-//   const color = chroma(hex).hsv();
-//   return chroma.hsv(color[0], color[1] * 0.6, 0.85).hex();
-// }
-
 // color names by
 // https://chir.ag/projects/name-that-color/
 // https://www.color-blindness.com/color-name-hue/
