@@ -9,7 +9,7 @@ import { contrastWorkbenchColors as contrastColors } from "./ui/workbench_contra
 import { vimColoring } from "./token/vim.js";
 
 function themePath(name: string): string {
-  return "./themes/" + name.toLowerCase().replace(/ +/g, "-") + "color-theme.json";
+  return "./themes/" + name.toLowerCase().replace(/ /g, "-") + "-color-theme.json";
 }
 
 /* eslint-disable-next-line  @typescript-eslint/no-explicit-any */
@@ -42,9 +42,9 @@ function themeWriter(name: string, ui: workbenchColor, semantic: semanticRule, t
 }
 
 function generateThemes() {
-  const palettes = ["", "pastel"];
-  const styles = ["", "italic"];
-  const contrasts = ["", "contrast"];
+  const palettes = ["", "Pastel"];
+  const styles = ["", "Italic"];
+  const contrasts = ["", "Contrast"];
   let uiColors: workbenchColor;
 
   for (const s of styles) {
@@ -53,7 +53,7 @@ function generateThemes() {
         uiColors = c === "contrast" ? contrastColors : regularColors;
 
         themeWriter(
-          `Night Coder ${p} ${c} ${s} `,
+          `Night Coder ${p} ${c} ${s}`.replace(/ +/g, " ").trim(),
           { ...commonColors, ...uiColors },
           semanticTheme.getPaletteRules(s, p),
           textmateTheme.getRules(s, p)

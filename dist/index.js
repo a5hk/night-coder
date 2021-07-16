@@ -7,7 +7,7 @@ import { regularWorkbenchColors as regularColors } from "./ui/workbench_regular.
 import { contrastWorkbenchColors as contrastColors } from "./ui/workbench_contrast.js";
 import { vimColoring } from "./token/vim.js";
 function themePath(name) {
-    return "./themes/" + name.toLowerCase().replace(/ +/g, "-") + "color-theme.json";
+    return "./themes/" + name.toLowerCase().replace(/ /g, "-") + "-color-theme.json";
 }
 function __italicReject(theme) {
     return JSON.stringify(theme, (k, v) => {
@@ -35,15 +35,15 @@ function themeWriter(name, ui, semantic, textmate) {
     });
 }
 function generateThemes() {
-    const palettes = ["", "pastel"];
-    const styles = ["", "italic"];
-    const contrasts = ["", "contrast"];
+    const palettes = ["", "Pastel"];
+    const styles = ["", "Italic"];
+    const contrasts = ["", "Contrast"];
     let uiColors;
     for (const s of styles) {
         for (const p of palettes) {
             for (const c of contrasts) {
                 uiColors = c === "contrast" ? contrastColors : regularColors;
-                themeWriter(`Night Coder ${p} ${c} ${s} `, Object.assign(Object.assign({}, commonColors), uiColors), semanticTheme.getPaletteRules(s, p), textmateTheme.getRules(s, p));
+                themeWriter(`Night Coder ${p} ${c} ${s}`.replace(/ +/g, " ").trim(), Object.assign(Object.assign({}, commonColors), uiColors), semanticTheme.getPaletteRules(s, p), textmateTheme.getRules(s, p));
             }
         }
     }

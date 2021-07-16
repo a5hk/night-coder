@@ -15,6 +15,8 @@ export class semanticTheme {
   }
 
   static getPaletteRules(style: string, palette: string): semanticRule {
+    palette = palette.toLowerCase();
+
     const rules: semanticRule = {
       variable: {
         foreground: tokenColorPalette.getColor("FrenchGray", palette),
@@ -93,7 +95,7 @@ export class semanticTheme {
       },
     };
 
-    if (style === "italic") {
+    if (style.toLowerCase() === "italic") {
       return this.italic(rules);
     }
     return rules;

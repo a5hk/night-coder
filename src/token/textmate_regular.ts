@@ -21,6 +21,8 @@ export class textmateTheme {
   }
 
   static getRules(style: string, palette: string): textmateRule[] {
+    palette = palette.toLowerCase();
+
     const rules: textmateRule[] = [
       {
         name: "variable",
@@ -485,7 +487,7 @@ export class textmateTheme {
       },
     ];
 
-    if (style === "italic") {
+    if (style.toLowerCase() === "italic") {
       return this.italic(rules);
     }
     return rules;
