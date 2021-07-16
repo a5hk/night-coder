@@ -53,22 +53,22 @@
         "path": "./themes/night-coder-contrast-italic-color-theme.json"
       },
       {
-        "label": "Night Coder Pastel",
+        "label": "Night Coder Pastel (Preview)",
         "uiTheme": "vs-dark",
         "path": "./themes/night-coder-pastel-color-theme.json"
       },
       {
-        "label": "Night Coder Pastel Contrast",
+        "label": "Night Coder Pastel Contrast (Preview)",
         "uiTheme": "vs-dark",
         "path": "./themes/night-coder-pastel-contrast-color-theme.json"
       },
       {
-        "label": "Night Coder Pastel Italic",
+        "label": "Night Coder Pastel Italic (Preview)",
         "uiTheme": "vs-dark",
         "path": "./themes/night-coder-pastel-italic-color-theme.json"
       },
       {
-        "label": "Night Coder Pastel Contrast Italic",
+        "label": "Night Coder Pastel Contrast Italic (Preview)",
         "uiTheme": "vs-dark",
         "path": "./themes/night-coder-pastel-contrast-italic-color-theme.json"
       }
