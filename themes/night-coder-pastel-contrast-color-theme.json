@@ -2,7 +2,7 @@
   "$schema": "vscode://schemas/color-theme",
   "type": "dark",
   "semanticHighlighting": true,
-  "name": "Night Coder Pastel Contrast",
+  "name": "Night Coder pastel contrast  ",
   "colors": {
     "activityBar.activeBorder": "#006600",
     "activityBar.foreground": "#abadb2",

@@ -122,10 +122,10 @@ class TokenColor {
             description: "Keyword, HTML meta tag",
         });
     }
-    getColor(name, palette) {
+    getColor(name, palette = "") {
         const c = __classPrivateFieldGet(this, _TokenColor_colorMap, "f").get(name);
         if (c) {
-            return palette == "regular" ? c.code : c.pastelCode;
+            return palette == "pastel" ? c.pastelCode : c.code;
         }
         return mix("c5");
     }

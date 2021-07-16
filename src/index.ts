@@ -1,15 +1,15 @@
 import fs from "fs";
 
 import { tokenColorPalette } from "./common/colors.js";
-import { textmateRules, textmateRule } from "./token/textmate_regular.js";
-import { semanticRules, semanticRule } from "./token/semantic_regular.js";
+import { textmateTheme, textmateRule } from "./token/textmate_regular.js";
+import { semanticTheme, semanticRule } from "./token/semantic_regular.js";
 import { commonWorkbenchColors as commonColors, workbenchColor } from "./ui/workbench_common.js";
 import { regularWorkbenchColors as regularColors } from "./ui/workbench_regular.js";
 import { contrastWorkbenchColors as contrastColors } from "./ui/workbench_contrast.js";
 import { vimColoring } from "./token/vim.js";
 
 function themePath(name: string): string {
-  return "./themes/" + name.toLowerCase().replace(/ /g, "-") + "-color-theme.json";
+  return "./themes/" + name.toLowerCase().replace(/ +/g, "-") + "color-theme.json";
 }
 
 /* eslint-disable-next-line  @typescript-eslint/no-explicit-any */
@@ -20,24 +20,6 @@ function __italicReject(theme: any): string {
     }
     return v;
   });
-}
-
-function textmateItalic(theme: textmateRule[]): textmateRule[] {
-  return theme.map((r) => {
-    if (r.settings.__italic) {
-      r.settings.fontStyle = "italic";
-    }
-    return r;
-  });
-}
-
-function semanticItalic(theme: semanticRule): semanticRule {
-  for (const k in theme) {
-    if (theme[k]?.__italic) {
-      theme[k] = { ...theme[k], fontStyle: "italic" };
-    }
-  }
-  return theme;
 }
 
 function themeWriter(name: string, ui: workbenchColor, semantic: semanticRule, textmate: textmateRule[]) {
@@ -59,79 +41,26 @@ function themeWriter(name: string, ui: workbenchColor, semantic: semanticRule, t
   });
 }
 
-function nightCoderRegular() {
-  const palette = "regular";
-  themeWriter("Night Coder", { ...commonColors, ...regularColors }, semanticRules(palette), textmateRules(palette));
-}
+function generateThemes() {
+  const palettes = ["", "pastel"];
+  const styles = ["", "italic"];
+  const contrasts = ["", "contrast"];
+  let uiColors: workbenchColor;
 
-function nightCoderPastelRegular() {
-  const palette = "pastel";
-  themeWriter(
-    "Night Coder Pastel",
-    { ...commonColors, ...regularColors },
-    semanticRules(palette),
-    textmateRules(palette)
-  );
-}
+  for (const s of styles) {
+    for (const p of palettes) {
+      for (const c of contrasts) {
+        uiColors = c === "contrast" ? contrastColors : regularColors;
 
-function nightCoderRegularItalic() {
-  const palette = "regular";
-  themeWriter(
-    "Night Coder Italic",
-    { ...commonColors, ...regularColors },
-    semanticItalic(semanticRules(palette)),
-    textmateItalic(textmateRules(palette))
-  );
-}
-
-function nightCoderPastelRegularItalic() {
-  const palette = "pastel";
-  themeWriter(
-    "Night Coder Pastel Italic",
-    { ...commonColors, ...regularColors },
-    semanticItalic(semanticRules(palette)),
-    textmateItalic(textmateRules(palette))
-  );
-}
-
-function nightCoderContrast() {
-  const palette = "regular";
-  themeWriter(
-    "Night Coder Contrast",
-    { ...commonColors, ...contrastColors },
-    semanticRules(palette),
-    textmateRules(palette)
-  );
-}
-
-function nightCoderPastelContrast() {
-  const palette = "pastel";
-  themeWriter(
-    "Night Coder Pastel Contrast",
-    { ...commonColors, ...contrastColors },
-    semanticRules(palette),
-    textmateRules(palette)
-  );
-}
-
-function nightCoderContrastItalic() {
-  const palette = "regular";
-  themeWriter(
-    "Night Coder Contrast Italic",
-    { ...commonColors, ...contrastColors },
-    semanticItalic(semanticRules(palette)),
-    textmateItalic(textmateRules(palette))
-  );
-}
-
-function nightCoderPastelContrastItalic() {
-  const palette = "pastel";
-  themeWriter(
-    "Night Coder Pastel Contrast Italic",
-    { ...commonColors, ...contrastColors },
-    semanticItalic(semanticRules(palette)),
-    textmateItalic(textmateRules(palette))
-  );
+        themeWriter(
+          `Night Coder ${p} ${c} ${s} `,
+          { ...commonColors, ...uiColors },
+          semanticTheme.getPaletteRules(s, p),
+          textmateTheme.getRules(s, p)
+        );
+      }
+    }
+  }
 }
 
 function generateReadme() {
@@ -245,15 +174,6 @@ function vimColorScheme() {
   });
 }
 
-nightCoderRegular();
-nightCoderContrast();
-nightCoderRegularItalic();
-nightCoderContrastItalic();
-
-nightCoderPastelRegular();
-nightCoderPastelContrast();
-nightCoderPastelRegularItalic();
-nightCoderPastelContrastItalic();
-
+generateThemes();
 vimColorScheme();
 generateReadme();

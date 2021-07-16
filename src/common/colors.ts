@@ -130,11 +130,11 @@ class TokenColor {
     });
   }
 
-  getColor(name: string, palette: string): string {
+  getColor(name: string, palette = ""): string {
     const c = this.#colorMap.get(name);
 
     if (c) {
-      return palette == "regular" ? c.code : c.pastelCode;
+      return palette == "pastel" ? c.pastelCode : c.code;
     }
     return mix("c5");
   }
