@@ -37,7 +37,7 @@ export class semanticTheme {
                 foreground: tokenColorPalette.getColor("MonteCarlo", palette),
             },
             "function.defaultLibrary": {
-                foreground: tokenColorPalette.getColor("Bermuda", palette),
+                foreground: tokenColorPalette.getColor("SkyBlue", palette),
                 __italic: true,
             },
             method: {
@@ -48,7 +48,7 @@ export class semanticTheme {
                 foreground: tokenColorPalette.getColor("MonteCarlo", palette),
             },
             "method.defaultLibrary": {
-                foreground: tokenColorPalette.getColor("Bermuda", palette),
+                foreground: tokenColorPalette.getColor("SkyBlue", palette),
                 __italic: true,
             },
             keyword: {

@@ -96,7 +96,7 @@ export class textmateTheme {
         name: "default library functions and methods",
         scope: ["meta.method.declaration.js storage.type.js", "support.function"],
         settings: {
-          foreground: tokenColorPalette.getColor("Bermuda", palette),
+          foreground: tokenColorPalette.getColor("SkyBlue", palette),
           __italic: true,
         },
       },
@@ -318,7 +318,7 @@ export class textmateTheme {
           "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
         ],
         settings: {
-          foreground: tokenColorPalette.getColor("Bermuda", palette),
+          foreground: tokenColorPalette.getColor("SkyBlue", palette),
           __italic: true,
         },
       },
@@ -402,7 +402,7 @@ export class textmateTheme {
       {
         scope: ["meta.tag.inline", "entity.name.tag.js.jsx", "entity.name.tag.tsx"],
         settings: {
-          foreground: tokenColorPalette.getColor("Bermuda", palette),
+          foreground: tokenColorPalette.getColor("SkyBlue", palette),
         },
       },
       {

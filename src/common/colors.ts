@@ -23,9 +23,9 @@ class TokenColor {
 
   constructor() {
     this.#colorMap = new Map<string, Color>();
-    this.#colorMap.set("Bermuda", {
-      code: "#70dbc1",
-      pastelCode: "#8cd4c2",
+    this.#colorMap.set("SkyBlue", {
+      code: "#7dbbe8",
+      pastelCode: "#a3c4dc",
       description: "Default library function, HTML inline tag",
     });
     this.#colorMap.set("Calico", {

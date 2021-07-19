@@ -21,9 +21,9 @@ class TokenColor {
     constructor() {
         _TokenColor_colorMap.set(this, void 0);
         __classPrivateFieldSet(this, _TokenColor_colorMap, new Map(), "f");
-        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("Bermuda", {
-            code: "#70dbc1",
-            pastelCode: "#8cd4c2",
+        __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("SkyBlue", {
+            code: "#7dbbe8",
+            pastelCode: "#a3c4dc",
             description: "Default library function, HTML inline tag",
         });
         __classPrivateFieldGet(this, _TokenColor_colorMap, "f").set("Calico", {
