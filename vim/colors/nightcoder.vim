@@ -13,17 +13,17 @@ let colors_name="nightcoder"
 highlight Normal guifg=#c6c7ca guibg=#030917
 
 highlight Comment cterm=italic gui=italic guifg=#464b55
-highlight String  guifg=#adc2a3
-highlight Character  guifg=#adc2a3
-highlight Number  guifg=#c5b8e0
-highlight Boolean  guifg=#c5b8e0
-highlight Float  guifg=#c5b8e0
-highlight Constant  guifg=#dd8888
-highlight Function  guifg=#e3d7b5
-highlight Identifier  guifg=#bdc8db
-highlight Operator  guifg=#b8e0c8
-highlight Statement  guifg=#d9a6d3
-highlight PreProc  guifg=#d9a6d3
-highlight Type  guifg=#a3d9dc
-highlight Tag  guifg=#dcbaa3
-highlight Special  guifg=#d9c9af
+highlight String  guifg=#9ebc8f
+highlight Character  guifg=#9ebc8f
+highlight Number  guifg=#bfa6f2
+highlight Boolean  guifg=#bfa6f2
+highlight Float  guifg=#bfa6f2
+highlight Constant  guifg=#ff7979
+highlight Function  guifg=#e0cd94
+highlight Identifier  guifg=#859dc3
+highlight Operator  guifg=#93ecb8
+highlight Statement  guifg=#c385bc
+highlight PreProc  guifg=#c385bc
+highlight Type  guifg=#0bc2cb
+highlight Tag  guifg=#e4aa81
+highlight Special  guifg=#c3ab85

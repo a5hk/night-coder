@@ -13,79 +13,79 @@ export class SemanticTheme {
     getPaletteRules(style) {
         const rules = {
             variable: {
-                foreground: this.palette.FrenchGray.code,
+                foreground: this.palette.Color03.code,
             },
             "variable.readonly": {
-                foreground: this.palette.Geraldine.code,
+                foreground: this.palette.Color04.code,
             },
             "variable.defaultLibrary": {
-                foreground: this.palette.PinkSalmon.code,
+                foreground: this.palette.Color14.code,
             },
             property: {
-                foreground: this.palette.TonysPink.code,
+                foreground: this.palette.Color19.code,
                 __italic: true,
             },
             parameter: {
-                foreground: this.palette.Iron.code,
+                foreground: this.palette.Color07.code,
                 __italic: true,
             },
             function: {
-                foreground: this.palette.Calico.code,
+                foreground: this.palette.Color02.code,
                 __italic: true,
             },
             "function.declaration": {
-                foreground: this.palette.MonteCarlo.code,
+                foreground: this.palette.Color12.code,
             },
             "function.defaultLibrary": {
-                foreground: this.palette.SkyBlue.code,
+                foreground: this.palette.Color01.code,
                 __italic: true,
             },
             method: {
-                foreground: this.palette.Calico.code,
+                foreground: this.palette.Color02.code,
                 __italic: true,
             },
             "method.declaration": {
-                foreground: this.palette.MonteCarlo.code,
+                foreground: this.palette.Color12.code,
             },
             "method.defaultLibrary": {
-                foreground: this.palette.SkyBlue.code,
+                foreground: this.palette.Color01.code,
                 __italic: true,
             },
             keyword: {
-                foreground: this.palette.Viola.code,
+                foreground: this.palette.Color20.code,
             },
             namespace: {
-                foreground: this.palette.PoloBlue.code,
+                foreground: this.palette.Color15.code,
                 __italic: true,
             },
             "namespace.defaultLibrary": {
-                foreground: this.palette.PinkSalmon.code,
+                foreground: this.palette.Color14.code,
                 __italic: true,
             },
             class: {
-                foreground: this.palette.PoloBlue.code,
+                foreground: this.palette.Color15.code,
                 __italic: true,
             },
             "class.defaultLibrary": {
-                foreground: this.palette.PinkSalmon.code,
+                foreground: this.palette.Color14.code,
                 __italic: true,
             },
             struct: {
-                foreground: this.palette.PoloBlue.code,
+                foreground: this.palette.Color15.code,
                 __italic: true,
             },
             type: {
-                foreground: this.palette.IrisBlue.code,
+                foreground: this.palette.Color06.code,
             },
             "type.defaultLibrary": {
-                foreground: this.palette.PinkSalmon.code,
+                foreground: this.palette.Color14.code,
                 __italic: true,
             },
             operator: {
-                foreground: this.palette.Jonquil.code,
+                foreground: this.palette.Color08.code,
             },
             string: {
-                foreground: this.palette.SwampGreen.code,
+                foreground: this.palette.Color18.code,
             },
         };
         if (style.toLowerCase() === "italic") {

@@ -52,26 +52,26 @@ export class TokenColorPalette extends BaseColorPalette {
     constructor(p = "") {
         super(p);
         _TokenColorPalette_instances.add(this);
-        this.SkyBlue = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#7dbbe8", "#a3c4dc"), "Default library function, HTML inline tag");
-        this.Calico = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#e0cd94", "#e3d7b5"), "Function call, Attribute name");
-        this.FrenchGray = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, mix("c5"), mix("c5")), "Foreground, Variable");
-        this.Geraldine = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#ff7979", "#dd8888"), "Constant, HTML unrecognized tag");
-        this.IndianKhaki = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#c3ab85", "#d9c9af"), "Miscellaneous");
-        this.IrisBlue = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#0bc2cb", "#a3d9dc"), "Type");
-        this.Iron = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, mix("e5"), mix("e5")), "Parameter, Argument");
-        this.Jonquil = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#f2f28c", "#e0e0b8"), "Operator");
-        this.MagicMint = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#93ecb8", "#b8e0c8"), "Comparison/Logical operator");
-        this.Mako = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, mix("44"), mix("44")), "Comment");
-        this.Mischka = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, mix("aa"), mix("aa")), "Documentation comment");
-        this.MonteCarlo = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#85c3ab", "#a9d6c4"), "Function declaration, HTML link tag");
-        this.PaleCornflowerBlue = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#bfa6f2", "#c5b8e0"), "Non variable constant, HTML custom tag");
-        this.PinkSalmon = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#ff99b3", "#d9a6b3"), "Default library class/type, HTML object tag");
-        this.PoloBlue = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#859dc3", "#bdc8db"), "Namespace/Class/Struct, HTML style tag");
-        this.StormGrey = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, mix("77"), mix("77")), "Tag punctuation");
-        this.Sunflower = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#d9d326", "#dfdd9f"), "Script tag");
-        this.SwampGreen = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#9ebc8f", "#adc2a3"), "String");
-        this.TonysPink = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#e4aa81", "#dcbaa3"), "Property, Tag ");
-        this.Viola = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#c385bc", "#d9a6d3"), "Keyword, HTML meta tag");
+        this.Color01 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#7dbbe8", "#a3c4dc"), "Default library function, HTML inline tag");
+        this.Color02 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#e0cd94", "#e3d7b5"), "Function call, Attribute name");
+        this.Color03 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, mix("c5"), mix("c5")), "Foreground, Variable");
+        this.Color04 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#ff7979", "#dd8888"), "Constant, HTML unrecognized tag");
+        this.Color05 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#c3ab85", "#d9c9af"), "Miscellaneous");
+        this.Color06 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#0bc2cb", "#a3d9dc"), "Type");
+        this.Color07 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, mix("e5"), mix("e5")), "Parameter, Argument");
+        this.Color08 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#f2f28c", "#e0e0b8"), "Operator");
+        this.Color09 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#93ecb8", "#b8e0c8"), "Comparison/Logical operator");
+        this.Color10 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, mix("44"), mix("44")), "Comment");
+        this.Color11 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, mix("aa"), mix("aa")), "Documentation comment");
+        this.Color12 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#85c3ab", "#a9d6c4"), "Function declaration, HTML link tag");
+        this.Color13 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#bfa6f2", "#c5b8e0"), "Non variable constant, HTML custom tag");
+        this.Color14 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#ff99b3", "#d9a6b3"), "Default library class/type, HTML object tag");
+        this.Color15 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#859dc3", "#bdc8db"), "Namespace/Class/Struct, HTML style tag");
+        this.Color16 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, mix("77"), mix("77")), "Tag punctuation");
+        this.Color17 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#d9d326", "#dfdd9f"), "Script tag");
+        this.Color18 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#9ebc8f", "#adc2a3"), "String");
+        this.Color19 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#e4aa81", "#dcbaa3"), "Property, Tag ");
+        this.Color20 = new Color(__classPrivateFieldGet(this, _TokenColorPalette_instances, "m", _TokenColorPalette_setColorCode).call(this, "#c385bc", "#d9a6d3"), "Keyword, HTML meta tag");
     }
     toString() {
         return Object.values(this)
