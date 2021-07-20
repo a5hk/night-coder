@@ -17,11 +17,6 @@ export class Color {
       this.code,
       "",
     ].join("|");
-
-    // return `|${this.description}|![${this.code}](https://via.placeholder.com/23/${this.code.replace(
-    //   "#",
-    //   ""
-    // )}/?text=+)|${this.code}|`;
   }
 }
 

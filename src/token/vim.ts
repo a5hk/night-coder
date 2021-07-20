@@ -6,7 +6,7 @@ export interface vimRule {
   style?: string;
 }
 
-const palette = new TokenColorPalette("pastel");
+const palette = new TokenColorPalette();
 
 export function vimColoring(): string {
   const head = `highlight clear
