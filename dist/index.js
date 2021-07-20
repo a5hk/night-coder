@@ -1,7 +1,7 @@
 import fs from "fs";
-import { tokenColorPalette } from "./common/colors.js";
-import { textmateTheme } from "./token/textmate_regular.js";
-import { semanticTheme } from "./token/semantic_regular.js";
+import { TokenColorPalette } from "./common/colors.js";
+import { TextmateTheme } from "./token/textmate_regular.js";
+import { SemanticTheme } from "./token/semantic_regular.js";
 import { commonWorkbenchColors as commonColors } from "./ui/workbench_common.js";
 import { regularWorkbenchColors as regularColors } from "./ui/workbench_regular.js";
 import { contrastWorkbenchColors as contrastColors } from "./ui/workbench_contrast.js";
@@ -39,11 +39,13 @@ function generateThemes() {
     const styles = ["", "Italic"];
     const contrasts = ["", "Contrast"];
     let uiColors;
-    for (const s of styles) {
-        for (const p of palettes) {
+    for (const p of palettes) {
+        const textmateTheme = new TextmateTheme(p);
+        const semanticTheme = new SemanticTheme(p);
+        for (const s of styles) {
             for (const c of contrasts) {
                 uiColors = c === "contrast" ? contrastColors : regularColors;
-                themeWriter(`Night Coder ${p} ${c} ${s}`.replace(/ +/g, " ").trim(), Object.assign(Object.assign({}, commonColors), uiColors), semanticTheme.getPaletteRules(s, p), textmateTheme.getRules(s, p));
+                themeWriter(`Night Coder ${p} ${c} ${s}`.replace(/ +/g, " ").trim(), Object.assign(Object.assign({}, commonColors), uiColors), semanticTheme.getPaletteRules(s), textmateTheme.getRules(s));
             }
         }
     }
@@ -71,41 +73,33 @@ A dark theme for Night Coders. It has eight variants with different color palett
 | Scope | Color | Hex |
 |:------|:-----:|:----|
 `;
-    fs.writeFile(filepath, intro, (err) => {
-        if (err) {
-            throw err;
-        }
-        console.log(`Writing intro.`);
-    });
-    fs.appendFile(filepath, Array.from(tokenColorPalette.getMap().values())
-        .map((v) => `|${v.description}|![${v.code}](https://via.placeholder.com/23/${v.code.replace("#", "")}/?text=+)|${v.code}|`)
-        .join("\n"), (err) => {
-        if (err) {
-            throw err;
-        }
-        console.log(`Color map appended.`);
-    });
-    const pastelPalette = `
+    const regularPalette = new TokenColorPalette();
+    try {
+        fs.writeFileSync(filepath, intro);
+        console.log("Header ...");
+        fs.appendFileSync(filepath, regularPalette.toString());
+        console.log("Regular palette ...");
+    }
+    catch (error) {
+        console.error(error);
+    }
+    const pastelPaletteHeader = `
 
 ## Pastel Color Palette
 
 | Scope | Color | Hex |
 |:------|:-----:|:----|
 `;
-    fs.appendFile(filepath, pastelPalette, (err) => {
-        if (err) {
-            throw err;
-        }
-        console.log(`Appending pastel pastel`);
-    });
-    fs.appendFile(filepath, Array.from(tokenColorPalette.getMap().values())
-        .map((v) => `|${v.description}|![${v.pastelCode}](https://via.placeholder.com/23/${v.pastelCode.replace("#", "")}/?text=+)|${v.pastelCode}|`)
-        .join("\n"), (err) => {
-        if (err) {
-            throw err;
-        }
-        console.log(`Pastel color map appended.`);
-    });
+    const pastelPalette = new TokenColorPalette("pastel");
+    try {
+        fs.appendFileSync(filepath, pastelPaletteHeader);
+        console.log("Pastel table header ...");
+        fs.appendFileSync(filepath, pastelPalette.toString());
+        console.log("Pastel table ...");
+    }
+    catch (error) {
+        console.error(error);
+    }
     const end = `
 
 ## Screenshots
@@ -126,12 +120,13 @@ A dark theme for Night Coders. It has eight variants with different color palett
 
 [MIT License](LICENSE)
 `;
-    fs.appendFile(filepath, end, (err) => {
-        if (err) {
-            throw err;
-        }
-        console.log(`Appended bottom section of readme.`);
-    });
+    try {
+        fs.appendFileSync(filepath, end);
+        console.log("Bottom part ...");
+    }
+    catch (error) {
+        console.error(error);
+    }
 }
 function vimColorScheme() {
     fs.writeFile("./vim/colors/nightcoder.vim", vimColoring(), (err) => {

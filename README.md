@@ -18,7 +18,7 @@ A dark theme for Night Coders. It has eight variants with different color palett
 
 | Scope | Color | Hex |
 |:------|:-----:|:----|
-|Default library function, HTML inline tag|![#70dbc1](https://via.placeholder.com/23/70dbc1/?text=+)|#70dbc1|
+|Default library function, HTML inline tag|![#7dbbe8](https://via.placeholder.com/23/7dbbe8/?text=+)|#7dbbe8|
 |Function call, Attribute name|![#e0cd94](https://via.placeholder.com/23/e0cd94/?text=+)|#e0cd94|
 |Foreground, Variable|![#c6c7ca](https://via.placeholder.com/23/c6c7ca/?text=+)|#c6c7ca|
 |Constant, HTML unrecognized tag|![#ff7979](https://via.placeholder.com/23/ff7979/?text=+)|#ff7979|
@@ -43,7 +43,7 @@ A dark theme for Night Coders. It has eight variants with different color palett
 
 | Scope | Color | Hex |
 |:------|:-----:|:----|
-|Default library function, HTML inline tag|![#8cd4c2](https://via.placeholder.com/23/8cd4c2/?text=+)|#8cd4c2|
+|Default library function, HTML inline tag|![#a3c4dc](https://via.placeholder.com/23/a3c4dc/?text=+)|#a3c4dc|
 |Function call, Attribute name|![#e3d7b5](https://via.placeholder.com/23/e3d7b5/?text=+)|#e3d7b5|
 |Foreground, Variable|![#c6c7ca](https://via.placeholder.com/23/c6c7ca/?text=+)|#c6c7ca|
 |Constant, HTML unrecognized tag|![#dd8888](https://via.placeholder.com/23/dd8888/?text=+)|#dd8888|

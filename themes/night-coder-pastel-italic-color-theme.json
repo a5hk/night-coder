@@ -146,12 +146,12 @@
     "function": { "foreground": "#e3d7b5", "fontStyle": "italic" },
     "function.declaration": { "foreground": "#a9d6c4" },
     "function.defaultLibrary": {
-      "foreground": "#8cd4c2",
+      "foreground": "#a3c4dc",
       "fontStyle": "italic"
     },
     "method": { "foreground": "#e3d7b5", "fontStyle": "italic" },
     "method.declaration": { "foreground": "#a9d6c4" },
-    "method.defaultLibrary": { "foreground": "#8cd4c2", "fontStyle": "italic" },
+    "method.defaultLibrary": { "foreground": "#a3c4dc", "fontStyle": "italic" },
     "keyword": { "foreground": "#d9a6d3" },
     "namespace": { "foreground": "#bdc8db", "fontStyle": "italic" },
     "namespace.defaultLibrary": {
@@ -231,7 +231,7 @@
         "meta.method.declaration.js storage.type.js",
         "support.function"
       ],
-      "settings": { "foreground": "#8cd4c2", "fontStyle": "italic" }
+      "settings": { "foreground": "#a3c4dc", "fontStyle": "italic" }
     },
     {
       "name": "undecided",
@@ -409,7 +409,7 @@
       "scope": [
         "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
       ],
-      "settings": { "foreground": "#8cd4c2", "fontStyle": "italic" }
+      "settings": { "foreground": "#a3c4dc", "fontStyle": "italic" }
     },
     {
       "name": "l7 json",
@@ -465,7 +465,7 @@
         "entity.name.tag.js.jsx",
         "entity.name.tag.tsx"
       ],
-      "settings": { "foreground": "#8cd4c2" }
+      "settings": { "foreground": "#a3c4dc" }
     },
     { "scope": ["meta.tag.object"], "settings": { "foreground": "#d9a6b3" } },
     {
