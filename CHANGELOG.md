@@ -3,6 +3,8 @@
 ## 2.14.0
 
 - Changed Default library function calls and HTML inline tag color to make theme more distinguishable.
+- Fixed a bug in contrast version
+- Better support for python semantic highlighting
 
 ## 2.13.0
 
