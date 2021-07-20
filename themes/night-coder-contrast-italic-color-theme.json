@@ -149,9 +149,11 @@
       "foreground": "#7dbbe8",
       "fontStyle": "italic"
     },
+    "function.builtin": { "foreground": "#7dbbe8", "fontStyle": "italic" },
     "method": { "foreground": "#e0cd94", "fontStyle": "italic" },
     "method.declaration": { "foreground": "#85c3ab" },
     "method.defaultLibrary": { "foreground": "#7dbbe8", "fontStyle": "italic" },
+    "method.builtin": { "foreground": "#7dbbe8", "fontStyle": "italic" },
     "keyword": { "foreground": "#c385bc" },
     "namespace": { "foreground": "#859dc3", "fontStyle": "italic" },
     "namespace.defaultLibrary": {
@@ -160,6 +162,7 @@
     },
     "class": { "foreground": "#859dc3", "fontStyle": "italic" },
     "class.defaultLibrary": { "foreground": "#ff99b3", "fontStyle": "italic" },
+    "class.builtin": { "foreground": "#ff99b3", "fontStyle": "italic" },
     "struct": { "foreground": "#859dc3", "fontStyle": "italic" },
     "type": { "foreground": "#0bc2cb" },
     "type.defaultLibrary": { "foreground": "#ff99b3", "fontStyle": "italic" },

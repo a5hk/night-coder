@@ -40,6 +40,10 @@ export class SemanticTheme {
                 foreground: this.palette.Color01.code,
                 __italic: true,
             },
+            "function.builtin": {
+                foreground: this.palette.Color01.code,
+                __italic: true,
+            },
             method: {
                 foreground: this.palette.Color02.code,
                 __italic: true,
@@ -48,6 +52,10 @@ export class SemanticTheme {
                 foreground: this.palette.Color12.code,
             },
             "method.defaultLibrary": {
+                foreground: this.palette.Color01.code,
+                __italic: true,
+            },
+            "method.builtin": {
                 foreground: this.palette.Color01.code,
                 __italic: true,
             },
@@ -67,6 +75,10 @@ export class SemanticTheme {
                 __italic: true,
             },
             "class.defaultLibrary": {
+                foreground: this.palette.Color14.code,
+                __italic: true,
+            },
+            "class.builtin": {
                 foreground: this.palette.Color14.code,
                 __italic: true,
             },

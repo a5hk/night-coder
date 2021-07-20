@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.14.0
+
+- Changed Default library function calls and HTML inline tag color to make theme more distinguishable.
+
 ## 2.13.0
 
 - Added pastel color palette (preview)
