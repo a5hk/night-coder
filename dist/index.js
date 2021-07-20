@@ -44,7 +44,7 @@ function generateThemes() {
         const semanticTheme = new SemanticTheme(p);
         for (const s of styles) {
             for (const c of contrasts) {
-                uiColors = c === "contrast" ? contrastColors : regularColors;
+                uiColors = c.toLowerCase() === "contrast" ? contrastColors : regularColors;
                 themeWriter(`Night Coder ${p} ${c} ${s}`.replace(/ +/g, " ").trim(), Object.assign(Object.assign({}, commonColors), uiColors), semanticTheme.getPaletteRules(s), textmateTheme.getRules(s));
             }
         }
