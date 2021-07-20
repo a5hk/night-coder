@@ -1,11 +1,17 @@
-import { tokenColorPalette } from "../common/colors.js";
+import { TokenColorPalette } from "../common/colors.js";
 
 export interface semanticRule {
   [propName: string]: { foreground?: string; fontStyle?: string; __italic?: boolean };
 }
 
-export class semanticTheme {
-  static italic(theme: semanticRule): semanticRule {
+export class SemanticTheme {
+  palette: TokenColorPalette;
+
+  constructor(palette = "") {
+    this.palette = new TokenColorPalette(palette);
+  }
+
+  #italic(theme: semanticRule): semanticRule {
     for (const k in theme) {
       if (theme[k]?.__italic) {
         theme[k] = { ...theme[k], fontStyle: "italic" };
@@ -14,89 +20,87 @@ export class semanticTheme {
     return theme;
   }
 
-  static getPaletteRules(style: string, palette: string): semanticRule {
-    palette = palette.toLowerCase();
-
+  getPaletteRules(style: string): semanticRule {
     const rules: semanticRule = {
       variable: {
-        foreground: tokenColorPalette.getColor("FrenchGray", palette),
+        foreground: this.palette.FrenchGray.code,
       },
       "variable.readonly": {
-        foreground: tokenColorPalette.getColor("Geraldine", palette),
+        foreground: this.palette.Geraldine.code,
       },
       "variable.defaultLibrary": {
-        foreground: tokenColorPalette.getColor("PinkSalmon", palette),
+        foreground: this.palette.PinkSalmon.code,
       },
       property: {
-        foreground: tokenColorPalette.getColor("TonysPink", palette),
+        foreground: this.palette.TonysPink.code,
         __italic: true,
       },
       parameter: {
-        foreground: tokenColorPalette.getColor("Iron", palette),
+        foreground: this.palette.Iron.code,
         __italic: true,
       },
       function: {
-        foreground: tokenColorPalette.getColor("Calico", palette),
+        foreground: this.palette.Calico.code,
         __italic: true,
       },
       "function.declaration": {
-        foreground: tokenColorPalette.getColor("MonteCarlo", palette),
+        foreground: this.palette.MonteCarlo.code,
       },
       "function.defaultLibrary": {
-        foreground: tokenColorPalette.getColor("SkyBlue", palette),
+        foreground: this.palette.SkyBlue.code,
         __italic: true,
       },
       method: {
-        foreground: tokenColorPalette.getColor("Calico", palette),
+        foreground: this.palette.Calico.code,
         __italic: true,
       },
       "method.declaration": {
-        foreground: tokenColorPalette.getColor("MonteCarlo", palette),
+        foreground: this.palette.MonteCarlo.code,
       },
       "method.defaultLibrary": {
-        foreground: tokenColorPalette.getColor("SkyBlue", palette),
+        foreground: this.palette.SkyBlue.code,
         __italic: true,
       },
       keyword: {
-        foreground: tokenColorPalette.getColor("Viola", palette),
+        foreground: this.palette.Viola.code,
       },
       namespace: {
-        foreground: tokenColorPalette.getColor("PoloBlue", palette),
+        foreground: this.palette.PoloBlue.code,
         __italic: true,
       },
       "namespace.defaultLibrary": {
-        foreground: tokenColorPalette.getColor("PinkSalmon", palette),
+        foreground: this.palette.PinkSalmon.code,
         __italic: true,
       },
       class: {
-        foreground: tokenColorPalette.getColor("PoloBlue", palette),
+        foreground: this.palette.PoloBlue.code,
         __italic: true,
       },
       "class.defaultLibrary": {
-        foreground: tokenColorPalette.getColor("PinkSalmon", palette),
+        foreground: this.palette.PinkSalmon.code,
         __italic: true,
       },
       struct: {
-        foreground: tokenColorPalette.getColor("PoloBlue", palette),
+        foreground: this.palette.PoloBlue.code,
         __italic: true,
       },
       type: {
-        foreground: tokenColorPalette.getColor("IrisBlue", palette),
+        foreground: this.palette.IrisBlue.code,
       },
       "type.defaultLibrary": {
-        foreground: tokenColorPalette.getColor("PinkSalmon", palette),
+        foreground: this.palette.PinkSalmon.code,
         __italic: true,
       },
       operator: {
-        foreground: tokenColorPalette.getColor("Jonquil", palette),
+        foreground: this.palette.Jonquil.code,
       },
       string: {
-        foreground: tokenColorPalette.getColor("SwampGreen", palette),
+        foreground: this.palette.SwampGreen.code,
       },
     };
 
     if (style.toLowerCase() === "italic") {
-      return this.italic(rules);
+      return this.#italic(rules);
     }
     return rules;
   }

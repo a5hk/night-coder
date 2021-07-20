@@ -1,10 +1,12 @@
-import { tokenColorPalette } from "../common/colors.js";
+import { TokenColorPalette } from "../common/colors.js";
 
 export interface vimRule {
   groups: string[];
   fg: string;
   style?: string;
 }
+
+const palette = new TokenColorPalette("pastel");
 
 export function vimColoring(): string {
   const head = `highlight clear
@@ -19,7 +21,7 @@ endif
 set background=dark
 let colors_name="nightcoder"
 
-highlight Normal guifg=${tokenColorPalette.getColor("FrenchGray", "regular")} guibg=#030917
+highlight Normal guifg=${palette.FrenchGray.code} guibg=#030917
 
 `;
   return (
@@ -35,15 +37,15 @@ highlight Normal guifg=${tokenColorPalette.getColor("FrenchGray", "regular")} gu
 }
 
 const vRules: vimRule[] = [
-  { groups: ["Comment"], fg: tokenColorPalette.getColor("Mako", "regular"), style: "italic" },
-  { groups: ["String", "Character"], fg: tokenColorPalette.getColor("SwampGreen", "regular") },
-  { groups: ["Number", "Boolean", "Float"], fg: tokenColorPalette.getColor("PaleCornflowerBlue", "regular") },
-  { groups: ["Constant"], fg: tokenColorPalette.getColor("Geraldine", "regular") },
-  { groups: ["Function"], fg: tokenColorPalette.getColor("Calico", "regular") },
-  { groups: ["Identifier"], fg: tokenColorPalette.getColor("PoloBlue", "regular") },
-  { groups: ["Operator"], fg: tokenColorPalette.getColor("MagicMint", "regular") },
-  { groups: ["Statement", "PreProc"], fg: tokenColorPalette.getColor("Viola", "regular") },
-  { groups: ["Type"], fg: tokenColorPalette.getColor("IrisBlue", "regular") },
-  { groups: ["Tag"], fg: tokenColorPalette.getColor("TonysPink", "regular") },
-  { groups: ["Special"], fg: tokenColorPalette.getColor("IndianKhaki", "regular") },
+  { groups: ["Comment"], fg: palette.Mako.code, style: "italic" },
+  { groups: ["String", "Character"], fg: palette.SwampGreen.code },
+  { groups: ["Number", "Boolean", "Float"], fg: palette.PaleCornflowerBlue.code },
+  { groups: ["Constant"], fg: palette.Geraldine.code },
+  { groups: ["Function"], fg: palette.Calico.code },
+  { groups: ["Identifier"], fg: palette.PoloBlue.code },
+  { groups: ["Operator"], fg: palette.MagicMint.code },
+  { groups: ["Statement", "PreProc"], fg: palette.Viola.code },
+  { groups: ["Type"], fg: palette.IrisBlue.code },
+  { groups: ["Tag"], fg: palette.TonysPink.code },
+  { groups: ["Special"], fg: palette.IndianKhaki.code },
 ];

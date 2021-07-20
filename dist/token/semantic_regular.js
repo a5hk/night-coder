@@ -1,96 +1,105 @@
-import { tokenColorPalette } from "../common/colors.js";
-export class semanticTheme {
-    static italic(theme) {
-        var _a;
-        for (const k in theme) {
-            if ((_a = theme[k]) === null || _a === void 0 ? void 0 : _a.__italic) {
-                theme[k] = Object.assign(Object.assign({}, theme[k]), { fontStyle: "italic" });
-            }
-        }
-        return theme;
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+};
+var _SemanticTheme_instances, _SemanticTheme_italic;
+import { TokenColorPalette } from "../common/colors.js";
+export class SemanticTheme {
+    constructor(palette = "") {
+        _SemanticTheme_instances.add(this);
+        this.palette = new TokenColorPalette(palette);
     }
-    static getPaletteRules(style, palette) {
-        palette = palette.toLowerCase();
+    getPaletteRules(style) {
         const rules = {
             variable: {
-                foreground: tokenColorPalette.getColor("FrenchGray", palette),
+                foreground: this.palette.FrenchGray.code,
             },
             "variable.readonly": {
-                foreground: tokenColorPalette.getColor("Geraldine", palette),
+                foreground: this.palette.Geraldine.code,
             },
             "variable.defaultLibrary": {
-                foreground: tokenColorPalette.getColor("PinkSalmon", palette),
+                foreground: this.palette.PinkSalmon.code,
             },
             property: {
-                foreground: tokenColorPalette.getColor("TonysPink", palette),
+                foreground: this.palette.TonysPink.code,
                 __italic: true,
             },
             parameter: {
-                foreground: tokenColorPalette.getColor("Iron", palette),
+                foreground: this.palette.Iron.code,
                 __italic: true,
             },
             function: {
-                foreground: tokenColorPalette.getColor("Calico", palette),
+                foreground: this.palette.Calico.code,
                 __italic: true,
             },
             "function.declaration": {
-                foreground: tokenColorPalette.getColor("MonteCarlo", palette),
+                foreground: this.palette.MonteCarlo.code,
             },
             "function.defaultLibrary": {
-                foreground: tokenColorPalette.getColor("SkyBlue", palette),
+                foreground: this.palette.SkyBlue.code,
                 __italic: true,
             },
             method: {
-                foreground: tokenColorPalette.getColor("Calico", palette),
+                foreground: this.palette.Calico.code,
                 __italic: true,
             },
             "method.declaration": {
-                foreground: tokenColorPalette.getColor("MonteCarlo", palette),
+                foreground: this.palette.MonteCarlo.code,
             },
             "method.defaultLibrary": {
-                foreground: tokenColorPalette.getColor("SkyBlue", palette),
+                foreground: this.palette.SkyBlue.code,
                 __italic: true,
             },
             keyword: {
-                foreground: tokenColorPalette.getColor("Viola", palette),
+                foreground: this.palette.Viola.code,
             },
             namespace: {
-                foreground: tokenColorPalette.getColor("PoloBlue", palette),
+                foreground: this.palette.PoloBlue.code,
                 __italic: true,
             },
             "namespace.defaultLibrary": {
-                foreground: tokenColorPalette.getColor("PinkSalmon", palette),
+                foreground: this.palette.PinkSalmon.code,
                 __italic: true,
             },
             class: {
-                foreground: tokenColorPalette.getColor("PoloBlue", palette),
+                foreground: this.palette.PoloBlue.code,
                 __italic: true,
             },
             "class.defaultLibrary": {
-                foreground: tokenColorPalette.getColor("PinkSalmon", palette),
+                foreground: this.palette.PinkSalmon.code,
                 __italic: true,
             },
             struct: {
-                foreground: tokenColorPalette.getColor("PoloBlue", palette),
+                foreground: this.palette.PoloBlue.code,
                 __italic: true,
             },
             type: {
-                foreground: tokenColorPalette.getColor("IrisBlue", palette),
+                foreground: this.palette.IrisBlue.code,
             },
             "type.defaultLibrary": {
-                foreground: tokenColorPalette.getColor("PinkSalmon", palette),
+                foreground: this.palette.PinkSalmon.code,
                 __italic: true,
             },
             operator: {
-                foreground: tokenColorPalette.getColor("Jonquil", palette),
+                foreground: this.palette.Jonquil.code,
             },
             string: {
-                foreground: tokenColorPalette.getColor("SwampGreen", palette),
+                foreground: this.palette.SwampGreen.code,
             },
         };
         if (style.toLowerCase() === "italic") {
-            return this.italic(rules);
+            return __classPrivateFieldGet(this, _SemanticTheme_instances, "m", _SemanticTheme_italic).call(this, rules);
         }
         return rules;
     }
 }
+_SemanticTheme_instances = new WeakSet(), _SemanticTheme_italic = function _SemanticTheme_italic(theme) {
+    var _a;
+    for (const k in theme) {
+        if ((_a = theme[k]) === null || _a === void 0 ? void 0 : _a.__italic) {
+            theme[k] = Object.assign(Object.assign({}, theme[k]), { fontStyle: "italic" });
+        }
+    }
+    return theme;
+};

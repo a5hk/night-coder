@@ -1,8 +1,8 @@
 import fs from "fs";
 
-import { tokenColorPalette } from "./common/colors.js";
-import { textmateTheme, textmateRule } from "./token/textmate_regular.js";
-import { semanticTheme, semanticRule } from "./token/semantic_regular.js";
+import { TokenColorPalette } from "./common/colors.js";
+import { TextmateTheme, textmateRule } from "./token/textmate_regular.js";
+import { SemanticTheme, semanticRule } from "./token/semantic_regular.js";
 import { commonWorkbenchColors as commonColors, workbenchColor } from "./ui/workbench_common.js";
 import { regularWorkbenchColors as regularColors } from "./ui/workbench_regular.js";
 import { contrastWorkbenchColors as contrastColors } from "./ui/workbench_contrast.js";
@@ -47,16 +47,19 @@ function generateThemes() {
   const contrasts = ["", "Contrast"];
   let uiColors: workbenchColor;
 
-  for (const s of styles) {
-    for (const p of palettes) {
+  for (const p of palettes) {
+    const textmateTheme = new TextmateTheme(p);
+    const semanticTheme = new SemanticTheme(p);
+
+    for (const s of styles) {
       for (const c of contrasts) {
         uiColors = c === "contrast" ? contrastColors : regularColors;
 
         themeWriter(
           `Night Coder ${p} ${c} ${s}`.replace(/ +/g, " ").trim(),
           { ...commonColors, ...uiColors },
-          semanticTheme.getPaletteRules(s, p),
-          textmateTheme.getRules(s, p)
+          semanticTheme.getPaletteRules(s),
+          textmateTheme.getRules(s)
         );
       }
     }
@@ -87,30 +90,17 @@ A dark theme for Night Coders. It has eight variants with different color palett
 |:------|:-----:|:----|
 `;
 
-  fs.writeFile(filepath, intro, (err) => {
-    if (err) {
-      throw err;
-    }
-    console.log(`Writing intro.`);
-  });
+  const regularPalette = new TokenColorPalette();
+  try {
+    fs.writeFileSync(filepath, intro);
+    console.log("Header ...");
+    fs.appendFileSync(filepath, regularPalette.toString());
+    console.log("Regular palette ...");
+  } catch (error) {
+    console.error(error);
+  }
 
-  fs.appendFile(
-    filepath,
-    Array.from(tokenColorPalette.getMap().values())
-      .map(
-        (v) =>
-          `|${v.description}|![${v.code}](https://via.placeholder.com/23/${v.code.replace("#", "")}/?text=+)|${v.code}|`
-      )
-      .join("\n"),
-    (err) => {
-      if (err) {
-        throw err;
-      }
-      console.log(`Color map appended.`);
-    }
-  );
-
-  const pastelPalette = `
+  const pastelPaletteHeader = `
 
 ## Pastel Color Palette
 
@@ -118,31 +108,16 @@ A dark theme for Night Coders. It has eight variants with different color palett
 |:------|:-----:|:----|
 `;
 
-  fs.appendFile(filepath, pastelPalette, (err) => {
-    if (err) {
-      throw err;
-    }
-    console.log(`Appending pastel pastel`);
-  });
+  const pastelPalette = new TokenColorPalette("pastel");
 
-  fs.appendFile(
-    filepath,
-    Array.from(tokenColorPalette.getMap().values())
-      .map(
-        (v) =>
-          `|${v.description}|![${v.pastelCode}](https://via.placeholder.com/23/${v.pastelCode.replace(
-            "#",
-            ""
-          )}/?text=+)|${v.pastelCode}|`
-      )
-      .join("\n"),
-    (err) => {
-      if (err) {
-        throw err;
-      }
-      console.log(`Pastel color map appended.`);
-    }
-  );
+  try {
+    fs.appendFileSync(filepath, pastelPaletteHeader);
+    console.log("Pastel table header ...");
+    fs.appendFileSync(filepath, pastelPalette.toString());
+    console.log("Pastel table ...");
+  } catch (error) {
+    console.error(error);
+  }
 
   const end = `
 
@@ -165,12 +140,12 @@ A dark theme for Night Coders. It has eight variants with different color palett
 [MIT License](LICENSE)
 `;
 
-  fs.appendFile(filepath, end, (err) => {
-    if (err) {
-      throw err;
-    }
-    console.log(`Appended bottom section of readme.`);
-  });
+  try {
+    fs.appendFileSync(filepath, end);
+    console.log("Bottom part ...");
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 function vimColorScheme() {

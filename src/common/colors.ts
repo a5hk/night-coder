@@ -1,9 +1,28 @@
 import chroma from "chroma-js";
 
-export interface Color {
+export class Color {
   code: string;
-  pastelCode: string;
   description: string;
+
+  constructor(code: string, description: string) {
+    this.code = code;
+    this.description = description;
+  }
+
+  toString(): string {
+    return [
+      "",
+      this.description,
+      `![${this.code}](https://via.placeholder.com/23/${this.code.replace("#", "")}/?text=+)`,
+      this.code,
+      "",
+    ].join("|");
+
+    // return `|${this.description}|![${this.code}](https://via.placeholder.com/23/${this.code.replace(
+    //   "#",
+    //   ""
+    // )}/?text=+)|${this.code}|`;
+  }
 }
 
 function hexAlphaToDec(alpha: string): number {
@@ -18,128 +37,60 @@ function mix(alpha: string): string {
 // https://chir.ag/projects/name-that-color/
 // https://www.color-blindness.com/color-name-hue/
 
-class TokenColor {
-  #colorMap;
+class BaseColorPalette {
+  #_palette: string;
 
-  constructor() {
-    this.#colorMap = new Map<string, Color>();
-    this.#colorMap.set("SkyBlue", {
-      code: "#7dbbe8",
-      pastelCode: "#a3c4dc",
-      description: "Default library function, HTML inline tag",
-    });
-    this.#colorMap.set("Calico", {
-      code: "#e0cd94",
-      pastelCode: "#e3d7b5",
-      description: "Function call, Attribute name",
-    });
-    this.#colorMap.set("FrenchGray", {
-      code: mix("c5"),
-      pastelCode: mix("c5"),
-      description: "Foreground, Variable",
-    });
-    this.#colorMap.set("Geraldine", {
-      code: "#ff7979",
-      pastelCode: "#dd8888",
-      description: "Constant, HTML unrecognized tag",
-    });
-    this.#colorMap.set("IndianKhaki", {
-      code: "#c3ab85",
-      pastelCode: "#d9c9af",
-      description: "Miscellaneous",
-    });
-    this.#colorMap.set("IrisBlue", {
-      code: "#0bc2cb",
-      pastelCode: "#a3d9dc",
-      description: "Type",
-    });
-    this.#colorMap.set("Iron", {
-      code: mix("e5"),
-      pastelCode: mix("e5"),
-      description: "Parameter, Argument",
-    });
-    this.#colorMap.set("Jonquil", {
-      code: "#f2f28c",
-      pastelCode: "#e0e0b8",
-      description: "Operator",
-    });
-    this.#colorMap.set("MagicMint", {
-      code: "#93ecb8",
-      pastelCode: "#b8e0c8",
-      description: "Comparison/Logical operator",
-    });
-    this.#colorMap.set("Mako", {
-      code: mix("44"),
-      pastelCode: mix("44"),
-      description: "Comment",
-    });
-    this.#colorMap.set("Mischka", {
-      code: mix("aa"),
-      pastelCode: mix("aa"),
-      description: "Documentation comment",
-    });
-    this.#colorMap.set("MonteCarlo", {
-      code: "#85c3ab",
-      pastelCode: "#a9d6c4",
-      description: "Function declaration, HTML link tag",
-    });
-    this.#colorMap.set("PaleCornflowerBlue", {
-      code: "#bfa6f2",
-      pastelCode: "#c5b8e0",
-      description: "Non variable constant, HTML custom tag",
-    });
-    this.#colorMap.set("PinkSalmon", {
-      code: "#ff99b3",
-      pastelCode: "#d9a6b3",
-      description: "Default library class/type, HTML object tag",
-    });
-    this.#colorMap.set("PoloBlue", {
-      code: "#859dc3",
-      pastelCode: "#bdc8db",
-      description: "Namespace/Class/Struct, HTML style tag",
-    });
-    this.#colorMap.set("StormGrey", {
-      code: mix("77"),
-      pastelCode: mix("77"),
-      description: "Tag punctuation",
-    });
-    this.#colorMap.set("Sunflower", {
-      code: "#d9d326",
-      pastelCode: "#dfdd9f",
-      description: "Script tag",
-    });
-    this.#colorMap.set("SwampGreen", {
-      code: "#9ebc8f",
-      pastelCode: "#adc2a3",
-      description: "String",
-    });
-    this.#colorMap.set("TonysPink", {
-      code: "#e4aa81",
-      pastelCode: "#dcbaa3",
-      description: "Property, Tag ",
-    });
-    this.#colorMap.set("Viola", {
-      code: "#c385bc",
-      pastelCode: "#d9a6d3",
-      description: "Keyword, HTML meta tag",
-    });
+  get palette() {
+    return this.#_palette;
   }
 
-  getColor(name: string, palette = ""): string {
-    const c = this.#colorMap.get(name);
+  constructor(p = "") {
+    p = p.toLowerCase();
 
-    if (c) {
-      return palette == "pastel" ? c.pastelCode : c.code;
+    if (p == "pastel") {
+      this.#_palette = p;
+    } else {
+      this.#_palette = "";
     }
-    return mix("c5");
-  }
-
-  getMap() {
-    return this.#colorMap;
   }
 }
 
-export const tokenColorPalette = new TokenColor();
+export class TokenColorPalette extends BaseColorPalette {
+  SkyBlue = new Color(this.#setColorCode("#7dbbe8", "#a3c4dc"), "Default library function, HTML inline tag");
+  Calico = new Color(this.#setColorCode("#e0cd94", "#e3d7b5"), "Function call, Attribute name");
+  FrenchGray = new Color(this.#setColorCode(mix("c5"), mix("c5")), "Foreground, Variable");
+  Geraldine = new Color(this.#setColorCode("#ff7979", "#dd8888"), "Constant, HTML unrecognized tag");
+  IndianKhaki = new Color(this.#setColorCode("#c3ab85", "#d9c9af"), "Miscellaneous");
+  IrisBlue = new Color(this.#setColorCode("#0bc2cb", "#a3d9dc"), "Type");
+  Iron = new Color(this.#setColorCode(mix("e5"), mix("e5")), "Parameter, Argument");
+  Jonquil = new Color(this.#setColorCode("#f2f28c", "#e0e0b8"), "Operator");
+  MagicMint = new Color(this.#setColorCode("#93ecb8", "#b8e0c8"), "Comparison/Logical operator");
+  Mako = new Color(this.#setColorCode(mix("44"), mix("44")), "Comment");
+  Mischka = new Color(this.#setColorCode(mix("aa"), mix("aa")), "Documentation comment");
+  MonteCarlo = new Color(this.#setColorCode("#85c3ab", "#a9d6c4"), "Function declaration, HTML link tag");
+  PaleCornflowerBlue = new Color(this.#setColorCode("#bfa6f2", "#c5b8e0"), "Non variable constant, HTML custom tag");
+  PinkSalmon = new Color(this.#setColorCode("#ff99b3", "#d9a6b3"), "Default library class/type, HTML object tag");
+  PoloBlue = new Color(this.#setColorCode("#859dc3", "#bdc8db"), "Namespace/Class/Struct, HTML style tag");
+  StormGrey = new Color(this.#setColorCode(mix("77"), mix("77")), "Tag punctuation");
+  Sunflower = new Color(this.#setColorCode("#d9d326", "#dfdd9f"), "Script tag");
+  SwampGreen = new Color(this.#setColorCode("#9ebc8f", "#adc2a3"), "String");
+  TonysPink = new Color(this.#setColorCode("#e4aa81", "#dcbaa3"), "Property, Tag ");
+  Viola = new Color(this.#setColorCode("#c385bc", "#d9a6d3"), "Keyword, HTML meta tag");
+
+  constructor(p = "") {
+    super(p);
+  }
+
+  toString(): string {
+    return Object.values(this)
+      .map((c) => c.toString())
+      .join("\n");
+  }
+
+  #setColorCode(regular: string, pastel: string): string {
+    return this.palette == "pastel" ? pastel : regular;
+  }
+}
 
 export const workbenchColors = {
   background: mix("0"),
