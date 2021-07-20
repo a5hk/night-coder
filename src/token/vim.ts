@@ -21,7 +21,7 @@ endif
 set background=dark
 let colors_name="nightcoder"
 
-highlight Normal guifg=${palette.FrenchGray.code} guibg=#030917
+highlight Normal guifg=${palette.Color03.code} guibg=#030917
 
 `;
   return (
@@ -37,15 +37,15 @@ highlight Normal guifg=${palette.FrenchGray.code} guibg=#030917
 }
 
 const vRules: vimRule[] = [
-  { groups: ["Comment"], fg: palette.Mako.code, style: "italic" },
-  { groups: ["String", "Character"], fg: palette.SwampGreen.code },
-  { groups: ["Number", "Boolean", "Float"], fg: palette.PaleCornflowerBlue.code },
-  { groups: ["Constant"], fg: palette.Geraldine.code },
-  { groups: ["Function"], fg: palette.Calico.code },
-  { groups: ["Identifier"], fg: palette.PoloBlue.code },
-  { groups: ["Operator"], fg: palette.MagicMint.code },
-  { groups: ["Statement", "PreProc"], fg: palette.Viola.code },
-  { groups: ["Type"], fg: palette.IrisBlue.code },
-  { groups: ["Tag"], fg: palette.TonysPink.code },
-  { groups: ["Special"], fg: palette.IndianKhaki.code },
+  { fg: palette.Color10.code, groups: ["Comment"], style: "italic" },
+  { fg: palette.Color18.code, groups: ["String", "Character"] },
+  { fg: palette.Color13.code, groups: ["Number", "Boolean", "Float"] },
+  { fg: palette.Color04.code, groups: ["Constant"] },
+  { fg: palette.Color02.code, groups: ["Function"] },
+  { fg: palette.Color15.code, groups: ["Identifier"] },
+  { fg: palette.Color09.code, groups: ["Operator"] },
+  { fg: palette.Color20.code, groups: ["Statement", "PreProc"] },
+  { fg: palette.Color06.code, groups: ["Type"] },
+  { fg: palette.Color19.code, groups: ["Tag"] },
+  { fg: palette.Color05.code, groups: ["Special"] },
 ];

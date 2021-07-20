@@ -28,10 +28,6 @@ function mix(alpha: string): string {
   return chroma.mix("#030917", "#ffffff", hexAlphaToDec(alpha), "rgb").toString();
 }
 
-// color names by
-// https://chir.ag/projects/name-that-color/
-// https://www.color-blindness.com/color-name-hue/
-
 class BaseColorPalette {
   #_palette: string;
 
@@ -51,26 +47,26 @@ class BaseColorPalette {
 }
 
 export class TokenColorPalette extends BaseColorPalette {
-  SkyBlue = new Color(this.#setColorCode("#7dbbe8", "#a3c4dc"), "Default library function, HTML inline tag");
-  Calico = new Color(this.#setColorCode("#e0cd94", "#e3d7b5"), "Function call, Attribute name");
-  FrenchGray = new Color(this.#setColorCode(mix("c5"), mix("c5")), "Foreground, Variable");
-  Geraldine = new Color(this.#setColorCode("#ff7979", "#dd8888"), "Constant, HTML unrecognized tag");
-  IndianKhaki = new Color(this.#setColorCode("#c3ab85", "#d9c9af"), "Miscellaneous");
-  IrisBlue = new Color(this.#setColorCode("#0bc2cb", "#a3d9dc"), "Type");
-  Iron = new Color(this.#setColorCode(mix("e5"), mix("e5")), "Parameter, Argument");
-  Jonquil = new Color(this.#setColorCode("#f2f28c", "#e0e0b8"), "Operator");
-  MagicMint = new Color(this.#setColorCode("#93ecb8", "#b8e0c8"), "Comparison/Logical operator");
-  Mako = new Color(this.#setColorCode(mix("44"), mix("44")), "Comment");
-  Mischka = new Color(this.#setColorCode(mix("aa"), mix("aa")), "Documentation comment");
-  MonteCarlo = new Color(this.#setColorCode("#85c3ab", "#a9d6c4"), "Function declaration, HTML link tag");
-  PaleCornflowerBlue = new Color(this.#setColorCode("#bfa6f2", "#c5b8e0"), "Non variable constant, HTML custom tag");
-  PinkSalmon = new Color(this.#setColorCode("#ff99b3", "#d9a6b3"), "Default library class/type, HTML object tag");
-  PoloBlue = new Color(this.#setColorCode("#859dc3", "#bdc8db"), "Namespace/Class/Struct, HTML style tag");
-  StormGrey = new Color(this.#setColorCode(mix("77"), mix("77")), "Tag punctuation");
-  Sunflower = new Color(this.#setColorCode("#d9d326", "#dfdd9f"), "Script tag");
-  SwampGreen = new Color(this.#setColorCode("#9ebc8f", "#adc2a3"), "String");
-  TonysPink = new Color(this.#setColorCode("#e4aa81", "#dcbaa3"), "Property, Tag ");
-  Viola = new Color(this.#setColorCode("#c385bc", "#d9a6d3"), "Keyword, HTML meta tag");
+  Color01 = new Color(this.#setColorCode("#7dbbe8", "#a3c4dc"), "Default library function, HTML inline tag");
+  Color02 = new Color(this.#setColorCode("#e0cd94", "#e3d7b5"), "Function call, Attribute name");
+  Color03 = new Color(this.#setColorCode(mix("c5"), mix("c5")), "Foreground, Variable");
+  Color04 = new Color(this.#setColorCode("#ff7979", "#dd8888"), "Constant, HTML unrecognized tag");
+  Color05 = new Color(this.#setColorCode("#c3ab85", "#d9c9af"), "Miscellaneous");
+  Color06 = new Color(this.#setColorCode("#0bc2cb", "#a3d9dc"), "Type");
+  Color07 = new Color(this.#setColorCode(mix("e5"), mix("e5")), "Parameter, Argument");
+  Color08 = new Color(this.#setColorCode("#f2f28c", "#e0e0b8"), "Operator");
+  Color09 = new Color(this.#setColorCode("#93ecb8", "#b8e0c8"), "Comparison/Logical operator");
+  Color10 = new Color(this.#setColorCode(mix("44"), mix("44")), "Comment");
+  Color11 = new Color(this.#setColorCode(mix("aa"), mix("aa")), "Documentation comment");
+  Color12 = new Color(this.#setColorCode("#85c3ab", "#a9d6c4"), "Function declaration, HTML link tag");
+  Color13 = new Color(this.#setColorCode("#bfa6f2", "#c5b8e0"), "Non variable constant, HTML custom tag");
+  Color14 = new Color(this.#setColorCode("#ff99b3", "#d9a6b3"), "Default library class/type, HTML object tag");
+  Color15 = new Color(this.#setColorCode("#859dc3", "#bdc8db"), "Namespace/Class/Struct, HTML style tag");
+  Color16 = new Color(this.#setColorCode(mix("77"), mix("77")), "Tag punctuation");
+  Color17 = new Color(this.#setColorCode("#d9d326", "#dfdd9f"), "Script tag");
+  Color18 = new Color(this.#setColorCode("#9ebc8f", "#adc2a3"), "String");
+  Color19 = new Color(this.#setColorCode("#e4aa81", "#dcbaa3"), "Property, Tag ");
+  Color20 = new Color(this.#setColorCode("#c385bc", "#d9a6d3"), "Keyword, HTML meta tag");
 
   constructor(p = "") {
     super(p);
@@ -136,11 +132,11 @@ export const terminalColors = {
   ansiBrightRed: /* ....... */ "#ef7b6d",
   ansiBrightWhite: /* ..... */ "#c5c6c9", // backgroundc5
   ansiBlack: /* ........... */ "#353a45", // background33
-  ansiBlue: /* ............ */ "#859dc3", // polo blue
-  ansiBrightYellow: /* .... */ "#f5d780", // golden sand
-  ansiGreen: /* ........... */ "#85c3ab", // monte carlo
-  ansiMagenta: /* ......... */ "#c385bc", // viola
-  ansiRed: /* ............. */ "#ff7575", // bittersweet
-  ansiWhite: /* ........... */ "#acaeb3", // backgroundaa
-  ansiYellow: /* .......... */ "#d9d326", // sunflower
+  ansiBlue: /* ............ */ "#859dc3",
+  ansiBrightYellow: /* .... */ "#f5d780",
+  ansiGreen: /* ........... */ "#85c3ab",
+  ansiMagenta: /* ......... */ "#c385bc",
+  ansiRed: /* ............. */ "#ff7575",
+  ansiWhite: /* ........... */ "#acaeb3",
+  ansiYellow: /* .......... */ "#d9d326",
 };
