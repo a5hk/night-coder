@@ -21,7 +21,7 @@ A dark theme for Night Coders. It has eight variants with different color palett
 |Default library function, HTML inline tag|![#7dbbe8](https://via.placeholder.com/23/7dbbe8/?text=+)|#7dbbe8|
 |Function call, Attribute name|![#e0cd94](https://via.placeholder.com/23/e0cd94/?text=+)|#e0cd94|
 |Foreground, Variable|![#c6c7ca](https://via.placeholder.com/23/c6c7ca/?text=+)|#c6c7ca|
-|Constant, HTML unrecognized tag|![#ff7979](https://via.placeholder.com/23/ff7979/?text=+)|#ff7979|
+|Constant, HTML unrecognized tag|![#fc7e7e](https://via.placeholder.com/23/fc7e7e/?text=+)|#fc7e7e|
 |Miscellaneous|![#c3ab85](https://via.placeholder.com/23/c3ab85/?text=+)|#c3ab85|
 |Type|![#0bc2cb](https://via.placeholder.com/23/0bc2cb/?text=+)|#0bc2cb|
 |Parameter, Argument|![#e5e6e7](https://via.placeholder.com/23/e5e6e7/?text=+)|#e5e6e7|

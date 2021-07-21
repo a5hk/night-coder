@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.15.0
+
+- A bit less saturated red color.
+
 ## 2.14.0
 
 - Changed Default library function calls and HTML inline tag color to make theme more distinguishable.
