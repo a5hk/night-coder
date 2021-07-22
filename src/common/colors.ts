@@ -50,7 +50,7 @@ export class TokenColorPalette extends BaseColorPalette {
   Color01 = new Color(this.#setColorCode("#7dbbe8", "#a3c4dc"), "Default library function, HTML inline tag");
   Color02 = new Color(this.#setColorCode("#e0cd94", "#e3d7b5"), "Function call, Attribute name");
   Color03 = new Color(this.#setColorCode(mix("c5"), mix("c5")), "Foreground, Variable");
-  Color04 = new Color(this.#setColorCode("#fc7e7e", "#dd8888"), "Constant, HTML unrecognized tag");
+  Color04 = new Color(this.#setColorCode("#ef7762", "#d88374"), "Constant, HTML unrecognized tag");
   Color05 = new Color(this.#setColorCode("#c3ab85", "#d9c9af"), "Miscellaneous");
   Color06 = new Color(this.#setColorCode("#0bc2cb", "#a3d9dc"), "Type");
   Color07 = new Color(this.#setColorCode(mix("e5"), mix("e5")), "Parameter, Argument");

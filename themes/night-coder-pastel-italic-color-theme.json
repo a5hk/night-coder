@@ -139,7 +139,7 @@
   },
   "semanticTokenColors": {
     "variable": { "foreground": "#c6c7ca" },
-    "variable.readonly": { "foreground": "#dd8888" },
+    "variable.readonly": { "foreground": "#d88374" },
     "variable.defaultLibrary": { "foreground": "#d9a6b3" },
     "property": { "foreground": "#dcbaa3", "fontStyle": "italic" },
     "parameter": { "foreground": "#e5e6e7", "fontStyle": "italic" },
@@ -211,11 +211,11 @@
         "variable.other.readwrite.instance.crystal",
         "variable.other.readwrite.module"
       ],
-      "settings": { "foreground": "#dd8888", "fontStyle": "italic" }
+      "settings": { "foreground": "#d88374", "fontStyle": "italic" }
     },
     {
       "scope": ["entity.alias.import"],
-      "settings": { "foreground": "#dd8888" }
+      "settings": { "foreground": "#d88374" }
     },
     {
       "name": "default library",
@@ -350,7 +350,7 @@
         "punctuation.definition.template-expression",
         "punctuation.section.embedded"
       ],
-      "settings": { "foreground": "#dd8888", "fontStyle": "italic" }
+      "settings": { "foreground": "#d88374", "fontStyle": "italic" }
     },
     {
       "name": "punctuation",
@@ -426,7 +426,7 @@
       "scope": [
         "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
       ],
-      "settings": { "foreground": "#dd8888", "fontStyle": "italic" }
+      "settings": { "foreground": "#d88374", "fontStyle": "italic" }
     },
     {
       "name": "l9 json",
@@ -517,7 +517,7 @@
         "meta.tag.other.unrecognized",
         "source.vue entity.name.tag.template.html"
       ],
-      "settings": { "foreground": "#dd8888" }
+      "settings": { "foreground": "#d88374" }
     },
     {
       "scope": ["markup.bold", "punctuation.definition.bold"],
