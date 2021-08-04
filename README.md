@@ -35,7 +35,7 @@ A dark theme for Night Coders. It has eight variants with different color palett
 |Namespace/Class/Struct, HTML style tag|![#859dc3](https://via.placeholder.com/23/859dc3/?text=+)|#859dc3|
 |Tag punctuation|![#797c83](https://via.placeholder.com/23/797c83/?text=+)|#797c83|
 |Script tag|![#d9d326](https://via.placeholder.com/23/d9d326/?text=+)|#d9d326|
-|String|![#9ebc8f](https://via.placeholder.com/23/9ebc8f/?text=+)|#9ebc8f|
+|String|![#84bd7f](https://via.placeholder.com/23/84bd7f/?text=+)|#84bd7f|
 |Property, Tag |![#e4aa81](https://via.placeholder.com/23/e4aa81/?text=+)|#e4aa81|
 |Keyword, HTML meta tag|![#c385bc](https://via.placeholder.com/23/c385bc/?text=+)|#c385bc|
 
@@ -60,7 +60,7 @@ A dark theme for Night Coders. It has eight variants with different color palett
 |Namespace/Class/Struct, HTML style tag|![#bdc8db](https://via.placeholder.com/23/bdc8db/?text=+)|#bdc8db|
 |Tag punctuation|![#797c83](https://via.placeholder.com/23/797c83/?text=+)|#797c83|
 |Script tag|![#dfdd9f](https://via.placeholder.com/23/dfdd9f/?text=+)|#dfdd9f|
-|String|![#adc2a3](https://via.placeholder.com/23/adc2a3/?text=+)|#adc2a3|
+|String|![#a6c2a3](https://via.placeholder.com/23/a6c2a3/?text=+)|#a6c2a3|
 |Property, Tag |![#dcbaa3](https://via.placeholder.com/23/dcbaa3/?text=+)|#dcbaa3|
 |Keyword, HTML meta tag|![#d9a6d3](https://via.placeholder.com/23/d9a6d3/?text=+)|#d9a6d3|
 

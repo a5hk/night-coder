@@ -161,7 +161,7 @@
     "type": { "foreground": "#0bc2cb" },
     "type.defaultLibrary": { "foreground": "#ff99b3" },
     "operator": { "foreground": "#f2f28c" },
-    "string": { "foreground": "#9ebc8f" }
+    "string": { "foreground": "#84bd7f" }
   },
   "tokenColors": [
     {
@@ -336,7 +336,7 @@
         "string.quoted.double",
         "string"
       ],
-      "settings": { "foreground": "#9ebc8f" }
+      "settings": { "foreground": "#84bd7f" }
     },
     {
       "name": "embedded punctuation",

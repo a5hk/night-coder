@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.16.0
+- slightly modified color for strings, more greenish.
+
 ## 2.15.0
 
 - A bit less saturated red color.

@@ -64,7 +64,7 @@ export class TokenColorPalette extends BaseColorPalette {
   Color15 = new Color(this.#setColorCode("#859dc3", "#bdc8db"), "Namespace/Class/Struct, HTML style tag");
   Color16 = new Color(this.#setColorCode(mix("77"), mix("77")), "Tag punctuation");
   Color17 = new Color(this.#setColorCode("#d9d326", "#dfdd9f"), "Script tag");
-  Color18 = new Color(this.#setColorCode("#9ebc8f", "#adc2a3"), "String");
+  Color18 = new Color(this.#setColorCode("#84bd7f", "#a6c2a3"), "String");
   Color19 = new Color(this.#setColorCode("#e4aa81", "#dcbaa3"), "Property, Tag ");
   Color20 = new Color(this.#setColorCode("#c385bc", "#d9a6d3"), "Keyword, HTML meta tag");
 

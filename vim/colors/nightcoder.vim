@@ -13,8 +13,8 @@ let colors_name="nightcoder"
 highlight Normal guifg=#c6c7ca guibg=#030917
 
 highlight Comment cterm=italic gui=italic guifg=#464b55
-highlight String  guifg=#9ebc8f
-highlight Character  guifg=#9ebc8f
+highlight String  guifg=#84bd7f
+highlight Character  guifg=#84bd7f
 highlight Number  guifg=#bfa6f2
 highlight Boolean  guifg=#bfa6f2
 highlight Float  guifg=#bfa6f2
