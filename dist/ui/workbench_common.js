@@ -61,6 +61,7 @@ export const commonWorkbenchColors = {
     "list.activeSelectionBackground": uiColor.background33,
     "list.activeSelectionForeground": uiColor.backgroundcc,
     "quickInputList.focusBackground": uiColor.background55,
+    "list.focusBackground": uiColor.statusBarBackground,
     "list.focusForeground": uiColor.backgrounddd,
     "list.highlightForeground": uiColor.backgroundee,
     "list.hoverBackground": uiColor.background33,

@@ -1,7 +1,12 @@
 # Changelog
 
+## 2.17.0
+
+- Added `list.focusBackground`, [issue #12](https://github.com/a5hk/night-coder/issues/12)
+
 ## 2.16.0
-- slightly modified color for strings, more greenish.
+
+- Slightly modified color for strings, more greenish.
 
 ## 2.15.0
 
