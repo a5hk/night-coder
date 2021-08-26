@@ -1,8 +1,12 @@
 # Changelog
 
+## 2.18.0
+
+- Keyword punctuations are now in the same color as the keyword itself
+
 ## 2.17.0
 
-- Added `list.focusBackground`, [issue #12](https://github.com/a5hk/night-coder/issues/12)
+- Added `list.focusBackground`, [#12](https://github.com/a5hk/night-coder/issues/12)
 
 ## 2.16.0
 

@@ -353,6 +353,11 @@
       "settings": { "foreground": "#abadb2" }
     },
     {
+      "name": "punctuation keyword",
+      "scope": ["punctuation.definition.keyword"],
+      "settings": { "foreground": "#d9a6d3" }
+    },
+    {
       "name": "documentation comments",
       "scope": [
         "comment.documentation",

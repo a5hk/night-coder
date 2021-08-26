@@ -251,6 +251,13 @@ export class TextmateTheme {
         },
       },
       {
+        name: "punctuation keyword",
+        scope: ["punctuation.definition.keyword"],
+        settings: {
+          foreground: this.palette.Color20.code,
+        },
+      },
+      {
         name: "documentation comments",
         scope: [
           "comment.documentation",
