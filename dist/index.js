@@ -35,7 +35,7 @@ function themeWriter(name, ui, semantic, textmate) {
     });
 }
 function generateThemes() {
-    const palettes = ["", "Pastel"];
+    const palettes = [""];
     const styles = ["", "Italic"];
     const contrasts = ["", "Contrast"];
     let uiColors;
@@ -54,15 +54,11 @@ function generateReadme() {
     const filepath = "./README.md";
     const intro = `# [Night Coder](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
 
-A dark theme for Night Coders. It has eight variants with different color palettes, text styles, and UI colors.
+A dark theme for Night Coders. It has four variants with different text styles and UI colors.
 
 ### Regular color palette
 
 ![html](screenshot/html.png)
-
-### Pastel color palette
-
-![html](screenshot/pastel.png)
 
 ## Other versions
 
@@ -79,23 +75,6 @@ A dark theme for Night Coders. It has eight variants with different color palett
         console.log("Header ...");
         fs.appendFileSync(filepath, regularPalette.toString());
         console.log("Regular palette ...");
-    }
-    catch (error) {
-        console.error(error);
-    }
-    const pastelPaletteHeader = `
-
-## Pastel Color Palette
-
-| Scope | Color | Hex |
-|:------|:-----:|:----|
-`;
-    const pastelPalette = new TokenColorPalette("pastel");
-    try {
-        fs.appendFileSync(filepath, pastelPaletteHeader);
-        console.log("Pastel table header ...");
-        fs.appendFileSync(filepath, pastelPalette.toString());
-        console.log("Pastel table ...");
     }
     catch (error) {
         console.error(error);

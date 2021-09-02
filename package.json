@@ -2,7 +2,7 @@
   "name": "night-coder",
   "displayName": "Night Coder",
   "description": "A dark theme for Night Coders",
-  "version": "2.18.0",
+  "version": "2.19.0",
   "publisher": "a5hk",
   "author": "a5hk",
   "license": "MIT",
@@ -13,15 +13,14 @@
     "Dark",
     "Borderless",
     "Italic",
-    "Contrast",
-    "Pastel"
+    "Contrast"
   ],
   "galleryBanner": {
     "color": "#030917",
     "theme": "dark"
   },
   "engines": {
-    "vscode": "^1.57.0"
+    "vscode": "^1.60.0"
   },
   "homepage": "https://github.com/a5hk/night-coder",
   "repository": {
@@ -52,26 +51,6 @@
         "label": "Night Coder Contrast Italic",
         "uiTheme": "vs-dark",
         "path": "./themes/night-coder-contrast-italic-color-theme.json"
-      },
-      {
-        "label": "Night Coder Pastel (Preview)",
-        "uiTheme": "vs-dark",
-        "path": "./themes/night-coder-pastel-color-theme.json"
-      },
-      {
-        "label": "Night Coder Pastel Contrast (Preview)",
-        "uiTheme": "vs-dark",
-        "path": "./themes/night-coder-pastel-contrast-color-theme.json"
-      },
-      {
-        "label": "Night Coder Pastel Italic (Preview)",
-        "uiTheme": "vs-dark",
-        "path": "./themes/night-coder-pastel-italic-color-theme.json"
-      },
-      {
-        "label": "Night Coder Pastel Contrast Italic (Preview)",
-        "uiTheme": "vs-dark",
-        "path": "./themes/night-coder-pastel-contrast-italic-color-theme.json"
       }
     ]
   },

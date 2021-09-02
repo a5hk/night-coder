@@ -1,4 +1,5 @@
-import { workbenchColors as uiColor, terminalColors as termColor } from "../common/colors.js";
+import { workbenchColors as uiColor, terminalColors as termColor, TokenColorPalette } from "../common/colors.js";
+const tokenColors = new TokenColorPalette();
 export const commonWorkbenchColors = {
     "activityBar.activeBorder": uiColor.statusBarBackground,
     "activityBar.foreground": uiColor.backgroundaa,
@@ -29,6 +30,12 @@ export const commonWorkbenchColors = {
     "editor.wordHighlightBorder": uiColor.backgroundcc,
     "editor.wordHighlightStrongBackground": `${uiColor.backgroundbb}22`,
     "editor.wordHighlightStrongBorder": uiColor.backgrounddd,
+    "editorBracketHighlight.foreground1": tokenColors.Color08.code,
+    "editorBracketHighlight.foreground2": tokenColors.Color20.code,
+    "editorBracketHighlight.foreground3": tokenColors.Color09.code,
+    "editorBracketHighlight.foreground4": tokenColors.Color05.code,
+    "editorBracketHighlight.foreground5": tokenColors.Color01.code,
+    "editorBracketHighlight.foreground6": tokenColors.Color14.code,
     "editorBracketMatch.background": uiColor.background55,
     "editorBracketMatch.border": uiColor.background55,
     "editorCursor.background": uiColor.background11,

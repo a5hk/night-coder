@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.19.0
+
+- Added support for the new bracket pair colorization [see](https://code.visualstudio.com/updates/v1_60#_high-performance-bracket-pair-colorization)
+- Removed Pastel variants.
+
 ## 2.18.0
 
 - Keyword punctuations are now in the same color as the keyword itself
