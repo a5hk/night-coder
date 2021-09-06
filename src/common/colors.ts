@@ -1,12 +1,23 @@
 import chroma from "chroma-js";
 
 export class Color {
-  code: string;
+  #code: string;
   description: string;
 
   constructor(code: string, description: string) {
-    this.code = code;
+    this.#code = code;
     this.description = description;
+  }
+
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+  get code() {
+    return this.#code;
+  }
+
+  set code(hex: string) {
+    if (/^#[0-9a-f]{6}$/i.test(hex)) {
+      this.#code = hex;
+    }
   }
 
   toString(): string {
@@ -27,6 +38,40 @@ function hexAlphaToDec(alpha: string): number {
 function mix(alpha: string): string {
   return chroma.mix("#030917", "#ffffff", hexAlphaToDec(alpha), "rgb").toString();
 }
+
+function colorDescriptor(c: Color) {
+  return () => {
+    let color = c;
+    return {
+      enumerable: true,
+      get() {
+        return color;
+      },
+      set(c: Color) {
+        color = c;
+      },
+    };
+  };
+}
+
+function BasePalette<T extends Record<string, unknown>>(
+  descriptors: { [K in keyof T]: () => TypedPropertyDescriptor<T[K]> }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+): new () => any {
+  return class {
+    constructor() {
+      let k: keyof T;
+
+      for (k in descriptors) {
+        Object.defineProperty(this, k, descriptors[k]());
+      }
+    }
+  };
+}
+
+class ColorPalette extends BasePalette({
+  background: colorDescriptor(new Color(mix("0"), "")),
+}) {}
 
 class BaseColorPalette {
   #_palette: string;
