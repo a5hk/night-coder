@@ -1,6 +1,6 @@
 import fs from "fs";
 
-import { TokenColorPalette } from "./common/colors.js";
+import { ColorPalette } from "./common/colors.js";
 import { TextmateTheme, textmateRule } from "./token/textmate_regular.js";
 import { SemanticTheme, semanticRule } from "./token/semantic_regular.js";
 import { commonWorkbenchColors as commonColors, workbenchColor } from "./ui/workbench_common.js";
@@ -42,28 +42,28 @@ function themeWriter(name: string, ui: workbenchColor, semantic: semanticRule, t
 }
 
 function generateThemes() {
-  const palettes = [""];
+  // const palettes = [""];
   const styles = ["", "Italic"];
   const contrasts = ["", "Contrast"];
   let uiColors: workbenchColor;
 
-  for (const p of palettes) {
-    const textmateTheme = new TextmateTheme(p);
-    const semanticTheme = new SemanticTheme(p);
+  // for (const p of palettes) {
+  const textmateTheme = new TextmateTheme();
+  const semanticTheme = new SemanticTheme();
 
-    for (const s of styles) {
-      for (const c of contrasts) {
-        uiColors = c.toLowerCase() === "contrast" ? contrastColors : regularColors;
+  for (const s of styles) {
+    for (const c of contrasts) {
+      uiColors = c.toLowerCase() === "contrast" ? contrastColors : regularColors;
 
-        themeWriter(
-          `Night Coder ${p} ${c} ${s}`.replace(/ +/g, " ").trim(),
-          { ...commonColors, ...uiColors },
-          semanticTheme.getPaletteRules(s),
-          textmateTheme.getRules(s)
-        );
-      }
+      themeWriter(
+        `Night Coder ${c} ${s}`.replace(/ +/g, " ").trim(),
+        { ...commonColors, ...uiColors },
+        semanticTheme.getPaletteRules(s),
+        textmateTheme.getRules(s)
+      );
     }
   }
+  // }
 }
 
 function generateReadme() {
@@ -86,7 +86,7 @@ A dark theme for Night Coders. It has four variants with different text styles a
 |:------|:-----:|:----|
 `;
 
-  const regularPalette = new TokenColorPalette();
+  const regularPalette = new ColorPalette();
   try {
     fs.writeFileSync(filepath, intro);
     console.log("Header ...");

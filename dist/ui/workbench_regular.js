@@ -1,13 +1,14 @@
-import { workbenchColors as uiColor } from "../common/colors.js";
+import { ColorPalette } from "../common/colors.js";
+const palette = new ColorPalette();
 export const regularWorkbenchColors = {
-    "activityBar.background": uiColor.background,
-    "editorGroup.border": uiColor.background,
-    "editorGroupHeader.tabsBackground": uiColor.background,
-    "panel.border": uiColor.background,
-    "sideBar.background": uiColor.background,
-    "sideBarSectionHeader.background": uiColor.background11,
-    "tab.border": uiColor.background,
-    "tab.inactiveBackground": uiColor.background,
-    "titleBar.activeBackground": uiColor.background,
-    "titleBar.inactiveBackground": uiColor.background,
+    "activityBar.background": palette.background.code,
+    "editorGroup.border": palette.background.code,
+    "editorGroupHeader.tabsBackground": palette.background.code,
+    "panel.border": palette.background.code,
+    "sideBar.background": palette.background.code,
+    "sideBarSectionHeader.background": palette.background11.code,
+    "tab.border": palette.background.code,
+    "tab.inactiveBackground": palette.background.code,
+    "titleBar.activeBackground": palette.background.code,
+    "titleBar.inactiveBackground": palette.background.code,
 };

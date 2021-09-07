@@ -4,100 +4,100 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
 var _SemanticTheme_instances, _SemanticTheme_italic;
-import { TokenColorPalette } from "../common/colors.js";
+import { ColorPalette } from "../common/colors.js";
 export class SemanticTheme {
-    constructor(palette = "") {
+    constructor() {
         _SemanticTheme_instances.add(this);
-        this.palette = new TokenColorPalette(palette);
+        this.palette = new ColorPalette();
     }
     getPaletteRules(style) {
         const rules = {
             variable: {
-                foreground: this.palette.Color03.code,
+                foreground: this.palette.variableColor.code,
             },
             "variable.readonly": {
-                foreground: this.palette.Color04.code,
+                foreground: this.palette.constantColor.code,
             },
             "variable.defaultLibrary": {
-                foreground: this.palette.Color14.code,
+                foreground: this.palette.defaultLibraryClassTypeColor.code,
             },
             property: {
-                foreground: this.palette.Color19.code,
+                foreground: this.palette.propertyColor.code,
                 __italic: true,
             },
             parameter: {
-                foreground: this.palette.Color07.code,
+                foreground: this.palette.parameterArgumentColor.code,
                 __italic: true,
             },
             function: {
-                foreground: this.palette.Color02.code,
+                foreground: this.palette.functionCallColor.code,
                 __italic: true,
             },
             "function.declaration": {
-                foreground: this.palette.Color12.code,
+                foreground: this.palette.functionDeclarationColor.code,
             },
             "function.defaultLibrary": {
-                foreground: this.palette.Color01.code,
+                foreground: this.palette.defaultLibraryFunctionColor.code,
                 __italic: true,
             },
             "function.builtin": {
-                foreground: this.palette.Color01.code,
+                foreground: this.palette.defaultLibraryFunctionColor.code,
                 __italic: true,
             },
             method: {
-                foreground: this.palette.Color02.code,
+                foreground: this.palette.functionCallColor.code,
                 __italic: true,
             },
             "method.declaration": {
-                foreground: this.palette.Color12.code,
+                foreground: this.palette.functionDeclarationColor.code,
             },
             "method.defaultLibrary": {
-                foreground: this.palette.Color01.code,
+                foreground: this.palette.defaultLibraryFunctionColor.code,
                 __italic: true,
             },
             "method.builtin": {
-                foreground: this.palette.Color01.code,
+                foreground: this.palette.defaultLibraryFunctionColor.code,
                 __italic: true,
             },
             keyword: {
-                foreground: this.palette.Color20.code,
+                foreground: this.palette.keywordColor.code,
             },
             namespace: {
-                foreground: this.palette.Color15.code,
+                foreground: this.palette.namespaceClassStructColor.code,
                 __italic: true,
             },
             "namespace.defaultLibrary": {
-                foreground: this.palette.Color14.code,
+                foreground: this.palette.defaultLibraryClassTypeColor.code,
                 __italic: true,
             },
             class: {
-                foreground: this.palette.Color15.code,
+                foreground: this.palette.namespaceClassStructColor.code,
                 __italic: true,
             },
             "class.defaultLibrary": {
-                foreground: this.palette.Color14.code,
+                foreground: this.palette.defaultLibraryClassTypeColor.code,
                 __italic: true,
             },
             "class.builtin": {
-                foreground: this.palette.Color14.code,
+                foreground: this.palette.defaultLibraryClassTypeColor.code,
                 __italic: true,
             },
             struct: {
-                foreground: this.palette.Color15.code,
+                foreground: this.palette.namespaceClassStructColor.code,
                 __italic: true,
             },
             type: {
-                foreground: this.palette.Color06.code,
+                foreground: this.palette.typeColor.code,
             },
             "type.defaultLibrary": {
-                foreground: this.palette.Color14.code,
+                foreground: this.palette.defaultLibraryClassTypeColor.code,
                 __italic: true,
             },
             operator: {
-                foreground: this.palette.Color08.code,
+                foreground: this.palette.operatorColor.code,
             },
             string: {
-                foreground: this.palette.Color18.code,
+                foreground: this.palette.stringColor.code,
             },
         };
         if (style.toLowerCase() === "italic") {
