@@ -20,15 +20,15 @@ export class Color {
     }
   }
 
-  toString(): string {
-    return [
-      "",
-      this.description,
-      `![${this.code}](https://via.placeholder.com/23/${this.code.replace("#", "")}/?text=+)`,
-      this.code,
-      "",
-    ].join("|");
-  }
+  // toString(): string {
+  //   return [
+  //     "",
+  //     this.description,
+  //     `![${this.code}](https://via.placeholder.com/23/${this.code.replace("#", "")}/?text=+)`,
+  //     this.code,
+  //     "",
+  //   ].join("|");
+  // }
 }
 
 function hexAlphaToDec(alpha: string): number {
@@ -117,7 +117,7 @@ export class ColorPalette extends BasePalette({
   jsonLevel08Color: colorDescriptor(new Color("#ef7762", "Level 8 JSON key")),
   jsonLevel09Color: colorDescriptor(new Color("#c3ab85", "Level 9 JSON key")),
   jsonLevel10Color: colorDescriptor(new Color("#d9d326", "Level 10 JSON key")),
-  jsonLevel11Color: colorDescriptor(new Color("#e4aa81", "Level 11 JSON key")),
+  jsonLevel11Color: colorDescriptor(new Color("#e4aa81", "Level > 10 JSON key")),
 
   // workbench colors
   background: colorDescriptor(new Color(mix("0")), false),
@@ -176,8 +176,23 @@ export class ColorPalette extends BasePalette({
   ansiYellow: /* .......... */ colorDescriptor(new Color("#d9d326"), false),
 }) {
   toString(): string {
-    return Object.values(this)
-      .map((c) => c.toString())
+    return Object.entries(
+      Object.values(this)
+        .map((c) => [c.code, c.description])
+        .reduce((acc, nv) => {
+          acc[nv[0]] ? (acc[nv[0]] += `, ${nv[1]}`) : (acc[nv[0]] = nv[1]);
+          return acc;
+        }, [])
+    )
+      .map((c) =>
+        ["", c[1], `![${c[0]}](https://via.placeholder.com/23/${c[0].replace("#", "")}/?text=+)`, c[0], ""].join("|")
+      )
       .join("\n");
+
+    // console.log(s);
+    // return s;
+    // return Object.values(this)
+    //   .map((c) => c.toString())
+    //   .join("\n");
   }
 }
