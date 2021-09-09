@@ -148,6 +148,14 @@ export class ColorPalette extends BasePalette({
   statusBarDebuggingBackground: /* ... */ colorDescriptor(new Color("#9b2c2c")),
   statusBarDebuggingForeground: /* ... */ colorDescriptor(new Color("#fdf7f7")),
 
+  // bracket pairs
+  bracketPair1: colorDescriptor(new Color("#f2f28c")),
+  bracketPair2: colorDescriptor(new Color("#c385bc")),
+  bracketPair3: colorDescriptor(new Color("#93ecb8")),
+  bracketPair4: colorDescriptor(new Color("#c3ab85")),
+  bracketPair5: colorDescriptor(new Color("#7dbbe8")),
+  bracketPair6: colorDescriptor(new Color("#ff99b3")),
+
   // terminal colors
   ansiBrightBlack: /* ..... */ colorDescriptor(new Color("#888b92")), // background88
   ansiBrightBlue: /* ...... */ colorDescriptor(new Color("#80bfff")),
