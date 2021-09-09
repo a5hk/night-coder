@@ -19,16 +19,6 @@ export class Color {
       this.#code = hex;
     }
   }
-
-  // toString(): string {
-  //   return [
-  //     "",
-  //     this.description,
-  //     `![${this.code}](https://via.placeholder.com/23/${this.code.replace("#", "")}/?text=+)`,
-  //     this.code,
-  //     "",
-  //   ].join("|");
-  // }
 }
 
 function hexAlphaToDec(alpha: string): number {
@@ -188,11 +178,5 @@ export class ColorPalette extends BasePalette({
         ["", c[1], `![${c[0]}](https://via.placeholder.com/23/${c[0].replace("#", "")}/?text=+)`, c[0], ""].join("|")
       )
       .join("\n");
-
-    // console.log(s);
-    // return s;
-    // return Object.values(this)
-    //   .map((c) => c.toString())
-    //   .join("\n");
   }
 }
