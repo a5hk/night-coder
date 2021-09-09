@@ -160,7 +160,13 @@ export class ColorPalette extends BasePalette({
             acc[nv[0]] ? (acc[nv[0]] += `, ${nv[1]}`) : (acc[nv[0]] = nv[1]);
             return acc;
         }, []))
-            .map((c) => ["", c[1], `![${c[0]}](https://via.placeholder.com/23/${c[0].replace("#", "")}/?text=+)`, c[0], ""].join("|"))
+            .map((c) => [
+            "",
+            c[1],
+            `![${c[0]}](https://via.placeholder.com/23/${c[0].replace("#", "")}/?text=+)`,
+            c[0].toLocaleUpperCase(),
+            "",
+        ].join("|"))
             .join("\n");
     }
 }

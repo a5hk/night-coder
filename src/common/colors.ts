@@ -175,7 +175,13 @@ export class ColorPalette extends BasePalette({
         }, [])
     )
       .map((c) =>
-        ["", c[1], `![${c[0]}](https://via.placeholder.com/23/${c[0].replace("#", "")}/?text=+)`, c[0], ""].join("|")
+        [
+          "",
+          c[1],
+          `![${c[0]}](https://via.placeholder.com/23/${c[0].replace("#", "")}/?text=+)`,
+          c[0].toLocaleUpperCase(),
+          "",
+        ].join("|")
       )
       .join("\n");
   }
