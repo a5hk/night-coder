@@ -4,11 +4,11 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
 var _TextmateTheme_instances, _TextmateTheme_italic;
-import { TokenColorPalette } from "../common/colors.js";
+import { ColorPalette } from "../common/colors.js";
 export class TextmateTheme {
-    constructor(palette = "") {
+    constructor() {
         _TextmateTheme_instances.add(this);
-        this.palette = new TokenColorPalette(palette);
+        this.palette = new ColorPalette();
     }
     getRules(style) {
         const rules = [
@@ -35,7 +35,7 @@ export class TextmateTheme {
                     "variable.scss",
                 ],
                 settings: {
-                    foreground: this.palette.Color03.code,
+                    foreground: this.palette.variableColor.code,
                 },
             },
             {
@@ -56,14 +56,14 @@ export class TextmateTheme {
                     "variable.other.readwrite.module",
                 ],
                 settings: {
-                    foreground: this.palette.Color04.code,
+                    foreground: this.palette.constantColor.code,
                     __italic: true,
                 },
             },
             {
                 scope: ["entity.alias.import"],
                 settings: {
-                    foreground: this.palette.Color04.code,
+                    foreground: this.palette.constantColor.code,
                 },
             },
             {
@@ -76,7 +76,7 @@ export class TextmateTheme {
                     "support.other.namespace",
                 ],
                 settings: {
-                    foreground: this.palette.Color14.code,
+                    foreground: this.palette.defaultLibraryClassTypeColor.code,
                     __italic: true,
                 },
             },
@@ -84,7 +84,7 @@ export class TextmateTheme {
                 name: "default library functions and methods",
                 scope: ["meta.method.declaration.js storage.type.js", "support.function"],
                 settings: {
-                    foreground: this.palette.Color01.code,
+                    foreground: this.palette.defaultLibraryFunctionColor.code,
                     __italic: true,
                 },
             },
@@ -97,14 +97,14 @@ export class TextmateTheme {
                     "meta.attribute.rust",
                 ],
                 settings: {
-                    foreground: this.palette.Color05.code,
+                    foreground: this.palette.miscellaneousColor.code,
                 },
             },
             {
                 name: "non variable constant",
                 scope: ["constant", "support.constant", "keyword.other.unit"],
                 settings: {
-                    foreground: this.palette.Color13.code,
+                    foreground: this.palette.literalConstantColor.code,
                 },
             },
             {
@@ -119,7 +119,7 @@ export class TextmateTheme {
                     "support.type.property-name",
                 ],
                 settings: {
-                    foreground: this.palette.Color19.code,
+                    foreground: this.palette.propertyColor.code,
                     __italic: true,
                 },
             },
@@ -127,7 +127,7 @@ export class TextmateTheme {
                 name: "parameter",
                 scope: ["meta.function-call.arguments", "variable.parameter"],
                 settings: {
-                    foreground: this.palette.Color07.code,
+                    foreground: this.palette.parameterArgumentColor.code,
                     __italic: true,
                 },
             },
@@ -135,7 +135,7 @@ export class TextmateTheme {
                 name: "function, method",
                 scope: ["entity.name.function"],
                 settings: {
-                    foreground: this.palette.Color12.code,
+                    foreground: this.palette.functionDeclarationColor.code,
                 },
             },
             {
@@ -149,7 +149,7 @@ export class TextmateTheme {
                     "meta.function.call entity.name.function",
                 ],
                 settings: {
-                    foreground: this.palette.Color02.code,
+                    foreground: this.palette.functionCallColor.code,
                     __italic: true,
                 },
             },
@@ -169,7 +169,7 @@ export class TextmateTheme {
                     "storage.type.function",
                 ],
                 settings: {
-                    foreground: this.palette.Color20.code,
+                    foreground: this.palette.keywordColor.code,
                 },
             },
             {
@@ -187,7 +187,7 @@ export class TextmateTheme {
                     "entity.other.inherited-class",
                 ],
                 settings: {
-                    foreground: this.palette.Color15.code,
+                    foreground: this.palette.namespaceClassStructColor.code,
                     __italic: true,
                 },
             },
@@ -195,35 +195,35 @@ export class TextmateTheme {
                 name: "logical and comparison operators",
                 scope: ["keyword.operator.comparison", "keyword.operator.logical"],
                 settings: {
-                    foreground: this.palette.Color09.code,
+                    foreground: this.palette.comparisonLogicalOperatorColor.code,
                 },
             },
             {
                 name: "types",
                 scope: ["storage.type", "keyword.type"],
                 settings: {
-                    foreground: this.palette.Color06.code,
+                    foreground: this.palette.typeColor.code,
                 },
             },
             {
                 name: "operators",
                 scope: ["keyword.operator"],
                 settings: {
-                    foreground: this.palette.Color08.code,
+                    foreground: this.palette.operatorColor.code,
                 },
             },
             {
                 name: "String",
                 scope: ["source.elixir.embedded.source", "storage.modifier.import.java", "string.quoted.double", "string"],
                 settings: {
-                    foreground: this.palette.Color18.code,
+                    foreground: this.palette.stringColor.code,
                 },
             },
             {
                 name: "embedded punctuation",
                 scope: ["punctuation.definition.template-expression", "punctuation.section.embedded"],
                 settings: {
-                    foreground: this.palette.Color04.code,
+                    foreground: this.palette.constantColor.code,
                     __italic: true,
                 },
             },
@@ -231,14 +231,14 @@ export class TextmateTheme {
                 name: "punctuation",
                 scope: ["meta.brace", "punctuation"],
                 settings: {
-                    foreground: this.palette.Color11.code,
+                    foreground: this.palette.documentationColor.code,
                 },
             },
             {
                 name: "punctuation keyword",
                 scope: ["punctuation.definition.keyword"],
                 settings: {
-                    foreground: this.palette.Color20.code,
+                    foreground: this.palette.keywordColor.code,
                 },
             },
             {
@@ -250,13 +250,13 @@ export class TextmateTheme {
                     "comment.block.documentation punctuation.definition.comment",
                 ],
                 settings: {
-                    foreground: this.palette.Color11.code,
+                    foreground: this.palette.documentationColor.code,
                 },
             },
             {
                 scope: ["comment", "punctuation.definition.comment", "punctuation.whitespace.comment.leading.graphql"],
                 settings: {
-                    foreground: this.palette.Color10.code,
+                    foreground: this.palette.commentColor.code,
                     fontStyle: "italic",
                 },
             },
@@ -266,14 +266,14 @@ export class TextmateTheme {
                     "meta.jsx.children",
                 ],
                 settings: {
-                    foreground: this.palette.Color03.code,
+                    foreground: this.palette.foregroundColor.code,
                 },
             },
             {
                 name: "l2 json",
                 scope: ["meta.structure.dictionary.value support.type.property-name.json"],
                 settings: {
-                    foreground: this.palette.Color20.code,
+                    foreground: this.palette.jsonLevel02Color.code,
                     __italic: true,
                 },
             },
@@ -281,7 +281,7 @@ export class TextmateTheme {
                 name: "l3 json",
                 scope: ["meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"],
                 settings: {
-                    foreground: this.palette.Color06.code,
+                    foreground: this.palette.jsonLevel03Color.code,
                     __italic: true,
                 },
             },
@@ -291,7 +291,7 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.Color02.code,
+                    foreground: this.palette.jsonLevel04Color.code,
                     __italic: true,
                 },
             },
@@ -301,7 +301,7 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.Color14.code,
+                    foreground: this.palette.jsonLevel05Color.code,
                     __italic: true,
                 },
             },
@@ -311,7 +311,7 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.Color01.code,
+                    foreground: this.palette.jsonLevel06Color.code,
                     __italic: true,
                 },
             },
@@ -321,7 +321,7 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.Color15.code,
+                    foreground: this.palette.jsonLevel07Color.code,
                     __italic: true,
                 },
             },
@@ -331,7 +331,7 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.Color04.code,
+                    foreground: this.palette.jsonLevel08Color.code,
                     __italic: true,
                 },
             },
@@ -341,7 +341,7 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.Color05.code,
+                    foreground: this.palette.jsonLevel09Color.code,
                     __italic: true,
                 },
             },
@@ -351,7 +351,7 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.Color17.code,
+                    foreground: this.palette.jsonLevel10Color.code,
                     __italic: true,
                 },
             },
@@ -361,44 +361,44 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.Color19.code,
+                    foreground: this.palette.jsonLevel11Color.code,
                     __italic: true,
                 },
             },
             {
                 scope: ["meta.tag.metadata", "markup.underline.link"],
                 settings: {
-                    foreground: this.palette.Color20.code,
+                    foreground: this.palette.metaTagColor.code,
                 },
             },
             {
                 scope: ["meta.tag.metadata.link", "string.other.link.title.markdown"],
                 settings: {
-                    foreground: this.palette.Color12.code,
+                    foreground: this.palette.linkTagColor.code,
                 },
             },
             {
                 scope: ["markup.italic"],
                 settings: {
-                    foreground: this.palette.Color09.code,
+                    foreground: this.palette.italicColor.code,
                 },
             },
             {
                 scope: ["punctuation.definition.tag"],
                 settings: {
-                    foreground: this.palette.Color16.code,
+                    foreground: this.palette.tagPunctuationColor.code,
                 },
             },
             {
                 scope: ["meta.tag.inline", "entity.name.tag.js.jsx", "entity.name.tag.tsx"],
                 settings: {
-                    foreground: this.palette.Color01.code,
+                    foreground: this.palette.inlineTagColor.code,
                 },
             },
             {
                 scope: ["meta.tag.object"],
                 settings: {
-                    foreground: this.palette.Color14.code,
+                    foreground: this.palette.objectTagColor.code,
                 },
             },
             {
@@ -408,19 +408,19 @@ export class TextmateTheme {
                     "string.other.link.description.markdown",
                 ],
                 settings: {
-                    foreground: this.palette.Color15.code,
+                    foreground: this.palette.styleTagColor.code,
                 },
             },
             {
                 scope: ["meta.tag.metadata.script", "source.vue entity.name.tag.script.html"],
                 settings: {
-                    foreground: this.palette.Color17.code,
+                    foreground: this.palette.scriptTagColor.code,
                 },
             },
             {
                 scope: ["meta.tag.custom"],
                 settings: {
-                    foreground: this.palette.Color13.code,
+                    foreground: this.palette.customTagColor.code,
                 },
             },
             {
@@ -435,20 +435,20 @@ export class TextmateTheme {
                     "markup.raw.block",
                 ],
                 settings: {
-                    foreground: this.palette.Color19.code,
+                    foreground: this.palette.tagColor.code,
                 },
             },
             {
                 scope: ["entity.other.attribute-name", "meta.selector.css", "source.css.scss entity.name.tag.css"],
                 settings: {
-                    foreground: this.palette.Color02.code,
+                    foreground: this.palette.attributeNameColor.code,
                     __italic: true,
                 },
             },
             {
                 scope: ["heading"],
                 settings: {
-                    foreground: this.palette.Color02.code,
+                    foreground: this.palette.headingColor.code,
                 },
             },
             {
@@ -460,7 +460,7 @@ export class TextmateTheme {
                     "source.vue entity.name.tag.template.html",
                 ],
                 settings: {
-                    foreground: this.palette.Color04.code,
+                    foreground: this.palette.unrecognizedTagColor.code,
                 },
             },
             {

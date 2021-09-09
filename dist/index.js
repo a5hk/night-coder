@@ -1,5 +1,5 @@
 import fs from "fs";
-import { TokenColorPalette } from "./common/colors.js";
+import { ColorPalette } from "./common/colors.js";
 import { TextmateTheme } from "./token/textmate_regular.js";
 import { SemanticTheme } from "./token/semantic_regular.js";
 import { commonWorkbenchColors as commonColors } from "./ui/workbench_common.js";
@@ -35,18 +35,15 @@ function themeWriter(name, ui, semantic, textmate) {
     });
 }
 function generateThemes() {
-    const palettes = [""];
     const styles = ["", "Italic"];
     const contrasts = ["", "Contrast"];
     let uiColors;
-    for (const p of palettes) {
-        const textmateTheme = new TextmateTheme(p);
-        const semanticTheme = new SemanticTheme(p);
-        for (const s of styles) {
-            for (const c of contrasts) {
-                uiColors = c.toLowerCase() === "contrast" ? contrastColors : regularColors;
-                themeWriter(`Night Coder ${p} ${c} ${s}`.replace(/ +/g, " ").trim(), Object.assign(Object.assign({}, commonColors), uiColors), semanticTheme.getPaletteRules(s), textmateTheme.getRules(s));
-            }
+    const textmateTheme = new TextmateTheme();
+    const semanticTheme = new SemanticTheme();
+    for (const s of styles) {
+        for (const c of contrasts) {
+            uiColors = c.toLowerCase() === "contrast" ? contrastColors : regularColors;
+            themeWriter(`Night Coder ${c} ${s}`.replace(/ +/g, " ").trim(), Object.assign(Object.assign({}, commonColors), uiColors), semanticTheme.getPaletteRules(s), textmateTheme.getRules(s));
         }
     }
 }
@@ -69,7 +66,7 @@ A dark theme for Night Coders. It has four variants with different text styles a
 | Scope | Color | Hex |
 |:------|:-----:|:----|
 `;
-    const regularPalette = new TokenColorPalette();
+    const regularPalette = new ColorPalette();
     try {
         fs.writeFileSync(filepath, intro);
         console.log("Header ...");
