@@ -256,7 +256,6 @@
       "name": "property, key",
       "scope": [
         "meta.object-literal.key",
-        "support.type.property-name.json",
         "variable.other.property.js.jsx",
         "variable.other.property.tsx",
         "variable.other.object.property",
@@ -384,6 +383,11 @@
     {
       "scope": ["comment.wildcard", "meta.jsx.children"],
       "settings": { "foreground": "#c6c7ca" }
+    },
+    {
+      "name": "l1 json",
+      "scope": ["support.type.property-name.json"],
+      "settings": { "foreground": "#e4aa81" }
     },
     {
       "name": "l2 json",

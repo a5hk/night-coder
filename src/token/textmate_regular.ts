@@ -127,7 +127,6 @@ export class TextmateTheme {
         name: "property, key",
         scope: [
           "meta.object-literal.key",
-          "support.type.property-name.json",
           "variable.other.property.js.jsx",
           "variable.other.property.tsx",
           "variable.other.object.property",
@@ -287,6 +286,14 @@ export class TextmateTheme {
       },
 
       // JSON
+      {
+        name: "l1 json",
+        scope: ["support.type.property-name.json"],
+        settings: {
+          foreground: this.palette.jsonLevel01Color.code,
+          __italic: true,
+        },
+      },
       {
         name: "l2 json",
         scope: ["meta.structure.dictionary.value support.type.property-name.json"],
