@@ -3,9 +3,9 @@ import path from "path";
 import { ColorPalette } from "./common/colors.js";
 import { TextmateTheme } from "./token/textmate_regular.js";
 import { SemanticTheme } from "./token/semantic_regular.js";
-import { commonWorkbenchColors as commonColors } from "./ui/workbench_common.js";
-import { regularWorkbenchColors as regularColors } from "./ui/workbench_regular.js";
-import { contrastWorkbenchColors as contrastColors } from "./ui/workbench_contrast.js";
+import { commonWorkbenchColors } from "./ui/workbench_common.js";
+import { regularWorkbenchColors } from "./ui/workbench_regular.js";
+import { contrastWorkbenchColors } from "./ui/workbench_contrast.js";
 import { vimColoring } from "./token/vim.js";
 import { VSTheme } from "./manifest/package.js";
 function __italicReject(theme) {
@@ -57,10 +57,10 @@ function vscodeThemesWriter() {
     const semanticTheme = new SemanticTheme(palette);
     for (const s of styles) {
         for (const c of contrasts) {
-            uiColors = c.toLowerCase() === "contrast" ? contrastColors : regularColors;
+            uiColors = c.toLowerCase() === "contrast" ? contrastWorkbenchColors(palette) : regularWorkbenchColors(palette);
             const x = new VSTheme([baseName, c, s].join(" ").trim().replace(/ +/g, " "), "vs-dark");
             const len = themes.push(x);
-            themeWriter((_a = themes[len - 1]) !== null && _a !== void 0 ? _a : x, Object.assign(Object.assign({}, commonColors), uiColors), semanticTheme.getPaletteRules(s), textmateTheme.getRules(s));
+            themeWriter((_a = themes[len - 1]) !== null && _a !== void 0 ? _a : x, Object.assign(Object.assign({}, commonWorkbenchColors(palette)), uiColors), semanticTheme.getPaletteRules(s), textmateTheme.getRules(s));
         }
     }
     manifestWriter(themes);
@@ -143,7 +143,8 @@ function readmeWriter() {
     fileWriter(generateReadme(), "README.md");
 }
 function vimColorScheme() {
-    fs.writeFile("./vim/colors/nightcoder.vim", vimColoring(), (err) => {
+    const palette = new ColorPalette();
+    fs.writeFile("./vim/colors/nightcoder.vim", vimColoring(palette), (err) => {
         if (err) {
             throw err;
         }
