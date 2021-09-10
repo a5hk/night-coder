@@ -2,8 +2,6 @@
 
 A dark theme for Night Coders. It has four variants with different text styles and UI colors.
 
-### Color palette
-
 ![html](screenshot/html.png)
 
 ## Other versions
