@@ -13,8 +13,8 @@ export interface textmateRule {
 export class TextmateTheme {
   palette: ColorPalette;
 
-  constructor() {
-    this.palette = new ColorPalette();
+  constructor(palette: ColorPalette) {
+    this.palette = palette;
   }
 
   #italic(theme: textmateRule[]): textmateRule[] {

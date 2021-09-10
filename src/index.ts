@@ -60,8 +60,9 @@ function vscodeThemesWriter() {
   const contrasts = ["", "Contrast"];
   let uiColors: workbenchColor;
   const themes: VSTheme[] = [];
-  const textmateTheme = new TextmateTheme();
-  const semanticTheme = new SemanticTheme();
+  const palette = new ColorPalette();
+  const textmateTheme = new TextmateTheme(palette);
+  const semanticTheme = new SemanticTheme(palette);
 
   for (const s of styles) {
     for (const c of contrasts) {

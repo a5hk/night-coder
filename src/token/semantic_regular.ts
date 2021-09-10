@@ -7,8 +7,8 @@ export interface semanticRule {
 export class SemanticTheme {
   palette: ColorPalette;
 
-  constructor() {
-    this.palette = new ColorPalette();
+  constructor(palette: ColorPalette) {
+    this.palette = palette;
   }
 
   #italic(theme: semanticRule): semanticRule {

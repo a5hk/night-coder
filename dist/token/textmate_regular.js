@@ -4,11 +4,10 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
 var _TextmateTheme_instances, _TextmateTheme_italic;
-import { ColorPalette } from "../common/colors.js";
 export class TextmateTheme {
-    constructor() {
+    constructor(palette) {
         _TextmateTheme_instances.add(this);
-        this.palette = new ColorPalette();
+        this.palette = palette;
     }
     getRules(style) {
         const rules = [
