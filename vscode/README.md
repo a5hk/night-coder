@@ -32,6 +32,7 @@ A dark theme for Night Coders. It has four variants with different text styles a
 |Keyword, HTML meta tag, Level 2 JSON key|![#c385bc](https://via.placeholder.com/23/c385bc/?text=+)|#C385BC|
 |Script tag, Level 10 JSON key|![#d9d326](https://via.placeholder.com/23/d9d326/?text=+)|#D9D326|
 |Tag punctuation|![#797c83](https://via.placeholder.com/23/797c83/?text=+)|#797C83|
+||![undefined](https://via.placeholder.com/23/undefined/?text=+)|UNDEFINED|
 
 ## Screenshots
 

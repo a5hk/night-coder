@@ -178,6 +178,13 @@ export function colorPaletteFactory(bg = "#030917") {
     ansiWhite: /* ........... */ colorDescriptor(new Color("#acaeb3")),
     ansiYellow: /* .......... */ colorDescriptor(new Color("#d9d326")),
   }) {
+    name: string;
+
+    constructor(name: string) {
+      super();
+      this.name = name;
+    }
+
     toString(): string {
       return Object.entries(
         Object.values(this)

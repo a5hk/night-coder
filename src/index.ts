@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-import { colorPaletteFactory } from "./common/colors.js";
+import { colorPaletteFactory, Palette, Color } from "./common/colors.js";
 import { TextmateTheme, textmateRule } from "./token/textmate_regular.js";
 import { SemanticTheme, semanticRule } from "./token/semantic_regular.js";
 import { commonWorkbenchColors, workbenchColor } from "./ui/workbench_common.js";
@@ -54,30 +54,80 @@ function themeWriter(t: VSTheme, ui: workbenchColor, semantic: semanticRule, tex
   fileWriter(generateTheme(t, ui, semantic, textmate), t.path);
 }
 
+function createThemeVariant(): Palette {
+  const p = new (colorPaletteFactory("#282c34"))("Night Coder Gray");
+
+  p.defaultLibraryFunctionColor = /* ...... */ new Color("#80caff", "Default library function");
+  p.functionCallColor = /* ................ */ new Color("#e6d299", "Function call");
+  p.constantColor = /* .................... */ new Color("#ff9e9e", "Constant");
+  p.miscellaneousColor = /* ............... */ new Color("#d1b485", "Miscellaneous");
+  p.typeColor = /* ........................ */ new Color("#05cbd6", "Type");
+  p.operatorColor = /* .................... */ new Color("#e0e0b8", "Operator");
+  p.comparisonLogicalOperatorColor = /* ... */ new Color("#b8e0c8", "Comparison/Logical operator");
+  p.functionDeclarationColor = /* ......... */ new Color("#85c3ab", "Function declaration");
+  p.literalConstantColor = /* ............. */ new Color("#c4abf7", "Literal constant");
+  p.defaultLibraryClassTypeColor = /* ..... */ new Color("#fc9cc4", "Default library class/type");
+  p.namespaceClassStructColor = /* ........ */ new Color("#9db9e7", "Namespace/Class/Struct");
+  p.stringColor = /* ...................... */ new Color("#8fc78a", "String");
+  p.propertyColor = /* .................... */ new Color("#f0a875", "Property");
+  p.keywordColor = /* ..................... */ new Color("#eea0e5", "Keyword");
+
+  p.tagColor = /* ............... */ new Color("#f0a875", "Tag");
+  p.italicColor = /* ............ */ new Color("#b8e0c8", "Italic");
+  p.headingColor = /* ........... */ new Color("#e6d299", "Heading");
+  p.linkTagColor = /* ........... */ new Color("#42d79e", "HTML link tag");
+  p.metaTagColor = /* ........... */ new Color("#eea0e5", "HTML meta tag");
+  p.styleTagColor = /* .......... */ new Color("#9db9e7", "HTML style tag");
+  p.objectTagColor = /* ......... */ new Color("#fc9cc4", "HTML object tag");
+  p.inlineTagColor = /* ......... */ new Color("#80caff", "HTML inline tag");
+  p.customTagColor = /* ......... */ new Color("#c4abf7", "HTML custom tag");
+  p.scriptTagColor = /* ......... */ new Color("#e0dc52", "Script tag");
+  p.attributeNameColor = /* ..... */ new Color("#e6d299", "Attribute name");
+  p.unrecognizedTagColor = /* ... */ new Color("#ff9e9e", "HTML unrecognized tag");
+
+  p.jsonLevel01Color = new Color("#f0a875", "Level 1 JSON key");
+  p.jsonLevel02Color = new Color("#eea0e5", "Level 2 JSON key");
+  p.jsonLevel03Color = new Color("#05cbd6", "Level 3 JSON key");
+  p.jsonLevel04Color = new Color("#e6d299", "Level 4 JSON key");
+  p.jsonLevel05Color = new Color("#fc9cc4", "Level 5 JSON key");
+  p.jsonLevel06Color = new Color("#80caff", "Level 6 JSON key");
+  p.jsonLevel07Color = new Color("#9db9e7", "Level 7 JSON key");
+  p.jsonLevel08Color = new Color("#ff9e9e", "Level 8 JSON key");
+  p.jsonLevel09Color = new Color("#d1b485", "Level 9 JSON key");
+  p.jsonLevel10Color = new Color("#e0dc52", "Level 10 JSON key");
+  p.jsonLevel11Color = new Color("#f0a875", "Level > 10 JSON key");
+
+  p.contrastBackground = new Color("#1d2025");
+
+  return p;
+}
+
 function vscodeThemesWriter() {
-  const baseName = "Night Coder";
+  // const baseName = ["Night Coder", "Night Coder Dark Blue"];
   const styles = ["", "Italic"];
   const contrasts = ["", "Contrast"];
   let uiColors: workbenchColor;
   const themes: VSTheme[] = [];
-  const palette = new (colorPaletteFactory())();
-  const textmateTheme = new TextmateTheme(palette);
-  const semanticTheme = new SemanticTheme(palette);
+  const palettes = [new (colorPaletteFactory())("Night Coder"), createThemeVariant()];
 
-  for (const s of styles) {
-    for (const c of contrasts) {
-      uiColors = c.toLowerCase() === "contrast" ? contrastWorkbenchColors(palette) : regularWorkbenchColors(palette);
-      const x = new VSTheme([baseName, c, s].join(" ").trim().replace(/ +/g, " "), "vs-dark");
-      const len = themes.push(x);
-      themeWriter(
-        themes[len - 1] ?? x,
-        { ...commonWorkbenchColors(palette), ...uiColors },
-        semanticTheme.getPaletteRules(s),
-        textmateTheme.getRules(s)
-      );
+  for (const p of palettes) {
+    const textmateTheme = new TextmateTheme(p);
+    const semanticTheme = new SemanticTheme(p);
+
+    for (const s of styles) {
+      for (const c of contrasts) {
+        uiColors = c.toLowerCase() === "contrast" ? contrastWorkbenchColors(p) : regularWorkbenchColors(p);
+        const x = new VSTheme([p.name, c, s].join(" ").trim().replace(/ +/g, " "), "vs-dark");
+        const len = themes.push(x);
+        themeWriter(
+          themes[len - 1] ?? x,
+          { ...commonWorkbenchColors(p), ...uiColors },
+          semanticTheme.getPaletteRules(s),
+          textmateTheme.getRules(s)
+        );
+      }
     }
   }
-
   manifestWriter(themes);
   readmeWriter();
 }
@@ -122,7 +172,7 @@ function manifestWriter(t: VSTheme[]) {
 }
 
 function generateReadme(): string {
-  const regularPalette = new (colorPaletteFactory())();
+  const regularPalette = new (colorPaletteFactory())("Night Coder");
   return `# [Night Coder](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
 
 A dark theme for Night Coders. It has four variants with different text styles and UI colors.
@@ -164,7 +214,7 @@ function readmeWriter() {
 }
 
 function vimColorScheme() {
-  const palette = new (colorPaletteFactory())();
+  const palette = new (colorPaletteFactory())("Night Coder");
   fs.writeFile("./vim/colors/nightcoder.vim", vimColoring(palette), (err) => {
     if (err) {
       throw err;
