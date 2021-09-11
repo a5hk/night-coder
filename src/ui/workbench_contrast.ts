@@ -1,7 +1,7 @@
-import { ColorPalette } from "../common/colors.js";
+import { Palette } from "../common/colors.js";
 import { workbenchColor } from "./workbench_common.js";
 
-export function contrastWorkbenchColors(palette: ColorPalette): workbenchColor {
+export function contrastWorkbenchColors(palette: Palette): workbenchColor {
   const colors: workbenchColor = {
     "activityBar.background": /* ............. */ palette.contrastBackground.code,
     "breadcrumb.background": /* .............. */ palette.contrastBackground.code,

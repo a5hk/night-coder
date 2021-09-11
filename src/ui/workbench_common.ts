@@ -1,10 +1,10 @@
-import { ColorPalette } from "../common/colors.js";
+import { Palette } from "../common/colors.js";
 
 export interface workbenchColor {
   [propName: string]: string;
 }
 
-export function commonWorkbenchColors(palette: ColorPalette): workbenchColor {
+export function commonWorkbenchColors(palette: Palette): workbenchColor {
   const colors: workbenchColor = {
     "activityBar.activeBorder": /* .................. */ palette.statusBarBackground.code,
     "activityBar.foreground": /* .................... */ palette.backgroundaa.code,

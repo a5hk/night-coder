@@ -1,4 +1,4 @@
-import { ColorPalette } from "../common/colors.js";
+import { Palette } from "../common/colors.js";
 
 export interface vimRule {
   groups: string[];
@@ -6,7 +6,7 @@ export interface vimRule {
   style?: string;
 }
 
-export function vimColoring(palette: ColorPalette): string {
+export function vimColoring(palette: Palette): string {
   const vRules: vimRule[] = [
     { fg: palette.commentColor.code, groups: ["Comment"], style: "italic" },
     { fg: palette.stringColor.code, groups: ["String", "Character"] },

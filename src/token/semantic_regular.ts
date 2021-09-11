@@ -1,13 +1,13 @@
-import { ColorPalette } from "../common/colors.js";
+import { Palette } from "../common/colors.js";
 
 export interface semanticRule {
   [propName: string]: { foreground?: string; fontStyle?: string; __italic?: boolean };
 }
 
 export class SemanticTheme {
-  palette: ColorPalette;
+  palette: Palette;
 
-  constructor(palette: ColorPalette) {
+  constructor(palette: Palette) {
     this.palette = palette;
   }
 

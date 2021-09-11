@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-import { ColorPalette } from "./common/colors.js";
+import { colorPaletteFactory } from "./common/colors.js";
 import { TextmateTheme, textmateRule } from "./token/textmate_regular.js";
 import { SemanticTheme, semanticRule } from "./token/semantic_regular.js";
 import { commonWorkbenchColors, workbenchColor } from "./ui/workbench_common.js";
@@ -60,7 +60,7 @@ function vscodeThemesWriter() {
   const contrasts = ["", "Contrast"];
   let uiColors: workbenchColor;
   const themes: VSTheme[] = [];
-  const palette = new ColorPalette();
+  const palette = new (colorPaletteFactory())();
   const textmateTheme = new TextmateTheme(palette);
   const semanticTheme = new SemanticTheme(palette);
 
@@ -122,7 +122,7 @@ function manifestWriter(t: VSTheme[]) {
 }
 
 function generateReadme(): string {
-  const regularPalette = new ColorPalette();
+  const regularPalette = new (colorPaletteFactory())();
   return `# [Night Coder](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
 
 A dark theme for Night Coders. It has four variants with different text styles and UI colors.
@@ -164,7 +164,7 @@ function readmeWriter() {
 }
 
 function vimColorScheme() {
-  const palette = new ColorPalette();
+  const palette = new (colorPaletteFactory())();
   fs.writeFile("./vim/colors/nightcoder.vim", vimColoring(palette), (err) => {
     if (err) {
       throw err;
