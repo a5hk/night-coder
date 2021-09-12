@@ -1,6 +1,6 @@
 # [Night Coder](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
 
-A dark theme for Night Coders. It has four variants with different text styles and UI colors.
+A dark theme for Night Coders.
 
 ![html](../screenshot/html.png)
 

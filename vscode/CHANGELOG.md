@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.20.0
+
+- Added gray variant
+
 ## 2.19.0
 
 - Added support for the new bracket pair colorization [see](https://code.visualstudio.com/updates/v1_60#_high-performance-bracket-pair-colorization)

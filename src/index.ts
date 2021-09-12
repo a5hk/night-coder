@@ -164,7 +164,7 @@ function generateManifest(t: VSTheme[]): string {
     name: "night-coder",
     displayName: "Night Coder",
     description: "A dark theme for Night Coders",
-    version: "2.19.0",
+    version: "2.20.0",
     publisher: author,
     author: author,
     license: "MIT",
@@ -198,7 +198,7 @@ function manifestWriter(t: VSTheme[]) {
 function generateReadme(palettes: Palette[]): string {
   return `# [Night Coder](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
 
-A dark theme for Night Coders. It has four variants with different text styles and UI colors.
+A dark theme for Night Coders.
 
 ![html](../screenshot/html.png)
 
