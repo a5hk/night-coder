@@ -183,6 +183,7 @@ export function colorPaletteFactory(bg = "#030917") {
     constructor(name: string) {
       super();
       this.name = name;
+      Object.defineProperty(this, "name", { enumerable: false });
     }
 
     toString(): string {
@@ -204,6 +205,16 @@ export function colorPaletteFactory(bg = "#030917") {
           ].join("|")
         )
         .join("\n");
+    }
+
+    toMarkdownTable(): string {
+      return [
+        `## ${this.name} Color Palette`,
+        "",
+        "| Scope | Color | Hex |",
+        "|:------|:-----:|:----|",
+        this.toString(),
+      ].join("\n");
     }
   };
 }

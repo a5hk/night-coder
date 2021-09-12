@@ -127,7 +127,7 @@ function vscodeThemesWriter() {
         }
     }
     manifestWriter(themes);
-    readmeWriter();
+    readmeWriter(palettes);
 }
 function generateManifest(t) {
     const author = "a5hk";
@@ -165,8 +165,7 @@ function generateManifest(t) {
 function manifestWriter(t) {
     fileWriter(generateManifest(t), "package.json");
 }
-function generateReadme() {
-    const regularPalette = new (colorPaletteFactory())("Night Coder");
+function generateReadme(palettes) {
     return `# [Night Coder](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
 
 A dark theme for Night Coders. It has four variants with different text styles and UI colors.
@@ -177,11 +176,7 @@ A dark theme for Night Coders. It has four variants with different text styles a
 
 - Vim: [/vim/colors/](/vim/colors/)
 
-## Color Palette
-
-| Scope | Color | Hex |
-|:------|:-----:|:----|
-${regularPalette.toString()}
+${palettes.map((p) => p.toMarkdownTable()).join("\n\n")}
 
 ## Screenshots
 
@@ -202,8 +197,8 @@ ${regularPalette.toString()}
 [MIT License](../LICENSE)
 `;
 }
-function readmeWriter() {
-    fileWriter(generateReadme(), "README.md");
+function readmeWriter(palettes) {
+    fileWriter(generateReadme(palettes), "README.md");
 }
 function vimColorScheme() {
     const palette = new (colorPaletteFactory())("Night Coder");
