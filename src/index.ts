@@ -99,6 +99,31 @@ function createThemeVariant(): Palette {
 
   p.contrastBackground = new Color("#1d2025");
 
+  p.bracketPair1 = new Color("#e0e0b8");
+  p.bracketPair2 = new Color("#eea0e5");
+  p.bracketPair3 = new Color("#b8e0c8");
+  p.bracketPair4 = new Color("#d1b485");
+  p.bracketPair5 = new Color("#80caff");
+  p.bracketPair6 = new Color("#fc9cc4");
+
+  p.ansiBrightBlack = p.background88;
+  p.ansiBrightBlue = new Color("#80caff");
+  p.ansiBrightCyan = new Color("#05cbd6");
+  p.ansiBrightGreen = new Color("#8fc78a");
+  p.ansiBrightMagenta = new Color("#fc9cc4");
+  p.ansiBrightRed = new Color("#ff9e9e");
+  p.ansiBrightWhite = p.backgroundee;
+  p.ansiBrightYellow = new Color("#e6d299");
+
+  p.ansiBlack = new Color("#020203");
+  p.ansiBlue = new Color("#9db9e7");
+  // p.ansiCyan = new Color("#");
+  p.ansiGreen = new Color("#42d79e");
+  p.ansiMagenta = new Color("#eea0e5");
+  // p.ansiRed = new Color("#ff7575");
+  p.ansiWhite = p.backgroundc5;
+  p.ansiYellow = new Color("#e0dc52");
+
   return p;
 }
 
