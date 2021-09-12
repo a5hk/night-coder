@@ -6,60 +6,17 @@
   "publisher": "a5hk",
   "author": "a5hk",
   "license": "MIT",
-  "icon": "icon.png",
-  "keywords": [
-    "NightCoder",
-    "Night Coder",
-    "Dark",
-    "Borderless",
-    "Italic",
-    "Contrast"
-  ],
-  "galleryBanner": {
-    "color": "#030917",
-    "theme": "dark"
-  },
-  "engines": {
-    "vscode": "^1.60.0"
-  },
   "homepage": "https://github.com/a5hk/night-coder",
   "repository": {
     "type": "git",
     "url": "https://github.com/a5hk/night-coder"
   },
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "Night Coder",
-        "uiTheme": "vs-dark",
-        "path": "./themes/night-coder-color-theme.json"
-      },
-      {
-        "label": "Night Coder Contrast",
-        "uiTheme": "vs-dark",
-        "path": "./themes/night-coder-contrast-color-theme.json"
-      },
-      {
-        "label": "Night Coder Italic",
-        "uiTheme": "vs-dark",
-        "path": "./themes/night-coder-italic-color-theme.json"
-      },
-      {
-        "label": "Night Coder Contrast Italic",
-        "uiTheme": "vs-dark",
-        "path": "./themes/night-coder-contrast-italic-color-theme.json"
-      }
-    ]
-  },
   "type": "module",
   "scripts": {
     "lint": "eslint ./src/** --ext .ts",
     "build": "tsc --build",
-    "clean": "tsc --build --clean && rm -f ./themes/* ./vim/colors/*.vim",
-    "format": "prettier --write ./themes/*.json",
+    "clean": "tsc --build --clean",
+    "format": "prettier --write ./vscode/themes/*.json ./vscode/package.json",
     "gen": "npm run lint && npm run clean && npm run build && node ./dist/index.js && npm run format",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

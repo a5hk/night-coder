@@ -4,11 +4,10 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
 var _SemanticTheme_instances, _SemanticTheme_italic;
-import { ColorPalette } from "../common/colors.js";
 export class SemanticTheme {
-    constructor() {
+    constructor(palette) {
         _SemanticTheme_instances.add(this);
-        this.palette = new ColorPalette();
+        this.palette = palette;
     }
     getPaletteRules(style) {
         const rules = {

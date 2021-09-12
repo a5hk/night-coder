@@ -1,4 +1,4 @@
-import { ColorPalette } from "../common/colors.js";
+import { Palette } from "../common/colors.js";
 
 export interface textmateRule {
   name?: string;
@@ -11,10 +11,10 @@ export interface textmateRule {
 }
 
 export class TextmateTheme {
-  palette: ColorPalette;
+  palette: Palette;
 
-  constructor() {
-    this.palette = new ColorPalette();
+  constructor(palette: Palette) {
+    this.palette = palette;
   }
 
   #italic(theme: textmateRule[]): textmateRule[] {

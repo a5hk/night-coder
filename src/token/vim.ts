@@ -1,4 +1,4 @@
-import { ColorPalette } from "../common/colors.js";
+import { Palette } from "../common/colors.js";
 
 export interface vimRule {
   groups: string[];
@@ -6,9 +6,21 @@ export interface vimRule {
   style?: string;
 }
 
-const palette = new ColorPalette();
+export function vimColoring(palette: Palette): string {
+  const vRules: vimRule[] = [
+    { fg: palette.commentColor.code, groups: ["Comment"], style: "italic" },
+    { fg: palette.stringColor.code, groups: ["String", "Character"] },
+    { fg: palette.literalConstantColor.code, groups: ["Number", "Boolean", "Float"] },
+    { fg: palette.constantColor.code, groups: ["Constant"] },
+    { fg: palette.functionCallColor.code, groups: ["Function"] },
+    { fg: palette.namespaceClassStructColor.code, groups: ["Identifier"] },
+    { fg: palette.comparisonLogicalOperatorColor.code, groups: ["Operator"] },
+    { fg: palette.keywordColor.code, groups: ["Statement", "PreProc"] },
+    { fg: palette.typeColor.code, groups: ["Type"] },
+    { fg: palette.tagColor.code, groups: ["Tag"] },
+    { fg: palette.miscellaneousColor.code, groups: ["Special"] },
+  ];
 
-export function vimColoring(): string {
   const head = `highlight clear
 if exists("syntax_on")
   syntax reset
@@ -35,17 +47,3 @@ highlight Normal guifg=${palette.foregroundColor.code} guibg=#030917
       .join("\n")
   );
 }
-
-const vRules: vimRule[] = [
-  { fg: palette.commentColor.code, groups: ["Comment"], style: "italic" },
-  { fg: palette.stringColor.code, groups: ["String", "Character"] },
-  { fg: palette.literalConstantColor.code, groups: ["Number", "Boolean", "Float"] },
-  { fg: palette.constantColor.code, groups: ["Constant"] },
-  { fg: palette.functionCallColor.code, groups: ["Function"] },
-  { fg: palette.namespaceClassStructColor.code, groups: ["Identifier"] },
-  { fg: palette.comparisonLogicalOperatorColor.code, groups: ["Operator"] },
-  { fg: palette.keywordColor.code, groups: ["Statement", "PreProc"] },
-  { fg: palette.typeColor.code, groups: ["Type"] },
-  { fg: palette.tagColor.code, groups: ["Tag"] },
-  { fg: palette.miscellaneousColor.code, groups: ["Special"] },
-];

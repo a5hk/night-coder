@@ -2,13 +2,13 @@
 
 A dark theme for Night Coders. It has four variants with different text styles and UI colors.
 
-![html](screenshot/html.png)
+![html](../screenshot/html.png)
 
 ## Other versions
 
 - Vim: [/vim/colors/](/vim/colors/)
 
-## Regular Color Palette
+## Night Coder Color Palette
 
 | Scope | Color | Hex |
 |:------|:-----:|:----|
@@ -33,20 +33,46 @@ A dark theme for Night Coders. It has four variants with different text styles a
 |Script tag, Level 10 JSON key|![#d9d326](https://via.placeholder.com/23/d9d326/?text=+)|#D9D326|
 |Tag punctuation|![#797c83](https://via.placeholder.com/23/797c83/?text=+)|#797C83|
 
+## Night Coder Gray Color Palette
+
+| Scope | Color | Hex |
+|:------|:-----:|:----|
+|Default library function, HTML inline tag, Level 6 JSON key|![#80caff](https://via.placeholder.com/23/80caff/?text=+)|#80CAFF|
+|Function call, Heading, Attribute name, Level 4 JSON key|![#e6d299](https://via.placeholder.com/23/e6d299/?text=+)|#E6D299|
+|Foreground, Variable|![#cecfd1](https://via.placeholder.com/23/cecfd1/?text=+)|#CECFD1|
+|Constant, HTML unrecognized tag, Level 8 JSON key|![#ff9e9e](https://via.placeholder.com/23/ff9e9e/?text=+)|#FF9E9E|
+|Miscellaneous, Level 9 JSON key|![#d1b485](https://via.placeholder.com/23/d1b485/?text=+)|#D1B485|
+|Type, Level 3 JSON key|![#05cbd6](https://via.placeholder.com/23/05cbd6/?text=+)|#05CBD6|
+|Parameter, Argument|![#e9e9ea](https://via.placeholder.com/23/e9e9ea/?text=+)|#E9E9EA|
+|Operator|![#e0e0b8](https://via.placeholder.com/23/e0e0b8/?text=+)|#E0E0B8|
+|Comparison/Logical operator, Italic|![#b8e0c8](https://via.placeholder.com/23/b8e0c8/?text=+)|#B8E0C8|
+|Comment|![#61646a](https://via.placeholder.com/23/61646a/?text=+)|#61646A|
+|Documentation|![#b7b9bb](https://via.placeholder.com/23/b7b9bb/?text=+)|#B7B9BB|
+|Function declaration|![#85c3ab](https://via.placeholder.com/23/85c3ab/?text=+)|#85C3AB|
+|Literal constant, HTML custom tag|![#c4abf7](https://via.placeholder.com/23/c4abf7/?text=+)|#C4ABF7|
+|Default library class/type, HTML object tag, Level 5 JSON key|![#fc9cc4](https://via.placeholder.com/23/fc9cc4/?text=+)|#FC9CC4|
+|Namespace/Class/Struct, HTML style tag, Level 7 JSON key|![#9db9e7](https://via.placeholder.com/23/9db9e7/?text=+)|#9DB9E7|
+|String|![#8fc78a](https://via.placeholder.com/23/8fc78a/?text=+)|#8FC78A|
+|Property, Tag, Level 1 JSON key, Level > 10 JSON key|![#f0a875](https://via.placeholder.com/23/f0a875/?text=+)|#F0A875|
+|Keyword, HTML meta tag, Level 2 JSON key|![#eea0e5](https://via.placeholder.com/23/eea0e5/?text=+)|#EEA0E5|
+|HTML link tag|![#42d79e](https://via.placeholder.com/23/42d79e/?text=+)|#42D79E|
+|Script tag, Level 10 JSON key|![#e0dc52](https://via.placeholder.com/23/e0dc52/?text=+)|#E0DC52|
+|Tag punctuation|![#8c8e93](https://via.placeholder.com/23/8c8e93/?text=+)|#8C8E93|
+
 ## Screenshots
 
 ### JavaScript
 
-![javascript](screenshot/javascript.png)
+![javascript](../screenshot/javascript.png)
 
 ### JSON
 
-![javascript](screenshot/json.png)
+![javascript](../screenshot/json.png)
 
 ### Python
 
-![python](screenshot/python.png)
+![python](../screenshot/python.png)
 
 ## License
 
-[MIT License](LICENSE)
+[MIT License](../LICENSE)
