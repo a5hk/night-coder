@@ -137,7 +137,7 @@ function generateManifest(t) {
         name: "night-coder",
         displayName: "Night Coder",
         description: "A dark theme for Night Coders",
-        version: "2.20.0",
+        version: "2.20.1",
         publisher: author,
         author: author,
         license: "MIT",
@@ -170,7 +170,7 @@ function generateReadme(palettes) {
 
 A dark theme for Night Coders.
 
-![html](../screenshot/palettes.png)
+![html](/screenshot/palettes.png)
 
 ## Other versions
 
@@ -182,19 +182,19 @@ ${palettes.map((p) => p.toMarkdownTable()).join("\n\n")}
 
 ### JavaScript
 
-![javascript](../screenshot/javascript.png)
+![javascript](/screenshot/javascript.png)
 
 ### JSON
 
-![javascript](../screenshot/json.png)
+![javascript](/screenshot/json.png)
 
 ### Python
 
-![python](../screenshot/python.png)
+![python](/screenshot/python.png)
 
 ## License
 
-[MIT License](../LICENSE)
+[MIT License](/LICENSE)
 `;
 }
 function readmeWriter(palettes) {

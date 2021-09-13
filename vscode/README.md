@@ -2,7 +2,7 @@
 
 A dark theme for Night Coders.
 
-![html](../screenshot/palettes.png)
+![html](/screenshot/palettes.png)
 
 ## Other versions
 
@@ -63,16 +63,16 @@ A dark theme for Night Coders.
 
 ### JavaScript
 
-![javascript](../screenshot/javascript.png)
+![javascript](/screenshot/javascript.png)
 
 ### JSON
 
-![javascript](../screenshot/json.png)
+![javascript](/screenshot/json.png)
 
 ### Python
 
-![python](../screenshot/python.png)
+![python](/screenshot/python.png)
 
 ## License
 
-[MIT License](../LICENSE)
+[MIT License](/LICENSE)
