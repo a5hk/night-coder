@@ -164,7 +164,7 @@ function generateManifest(t: VSTheme[]): string {
     name: "night-coder",
     displayName: "Night Coder",
     description: "A dark theme for Night Coders",
-    version: "2.20.1",
+    version: "2.21.0",
     publisher: author,
     author: author,
     license: "MIT",
@@ -196,6 +196,15 @@ function manifestWriter(t: VSTheme[]) {
 }
 
 function generateReadme(palettes: Palette[]): string {
+  const codeBlock = [
+    "```json",
+    `"editor.fontFamily": "'Cascadia Code'",`,
+    `"editor.fontSize": 14.5,`,
+    `"editor.fontLigatures": true,`,
+    `"editor.bracketPairColorization.enabled": true,`,
+    "```",
+  ].join("\n");
+
   return `# [Night Coder](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
 
 A dark theme for Night Coders.
@@ -221,6 +230,10 @@ ${palettes.map((p) => p.toMarkdownTable()).join("\n\n")}
 ### Python
 
 ![python](/screenshot/python.png)
+
+## Preferences shown in the screenshots
+
+${codeBlock}
 
 ## License
 

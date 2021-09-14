@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.21.0
+
+- Custom lightbulb colors
+
 ## 2.20.0
 
 - Added gray variant
@@ -54,7 +58,7 @@
 ## 2.10.0
 
 - Slightly less saturated colors
-- New highlighting rule (thanks to [@dustypomerlea](https://github.com/dustypomerlea)) to better support rust and probably other languages.
+- New highlighting rule to better support rust and probably other languages.
 
 ## 2.9.0
 

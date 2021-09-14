@@ -127,6 +127,8 @@ export function colorPaletteFactory(bg = "#030917") {
         statusBarForeground: colorDescriptor(new Color("#f5fff5")),
         editorInfoForeground: colorDescriptor(new Color("#02cad4")),
         editorErrorForeground: colorDescriptor(new Color("#ff7575")),
+        editorLightBulbForeground: colorDescriptor(new Color("#ef7762")),
+        editorLightBulbAutoFixForeground: colorDescriptor(new Color("#f2f28c")),
         progressBarBackground: colorDescriptor(new Color("#d9d326")),
         inlineValuesForeground: colorDescriptor(new Color(mix("cc", bg))),
         statusBarDebuggingBorder: colorDescriptor(new Color("#770000")),

@@ -73,6 +73,15 @@ A dark theme for Night Coders.
 
 ![python](/screenshot/python.png)
 
+## Preferences shown in the screenshots
+
+```json
+"editor.fontFamily": "'Cascadia Code'",
+"editor.fontSize": 14.5,
+"editor.fontLigatures": true,
+"editor.bracketPairColorization.enabled": true,
+```
+
 ## License
 
 [MIT License](/LICENSE)
