@@ -53,6 +53,8 @@ export function commonWorkbenchColors(palette: Palette): workbenchColor {
     "editorIndentGuide.background": /* .............. */ palette.background33.code,
     "editorInfo.background": /* ..................... */ `${palette.editorInfoForeground.code}33`,
     "editorInfo.foreground": /* ..................... */ palette.editorInfoForeground.code,
+    "editorLightBulb.foreground": /* ................ */ palette.constantColor.code,
+    "editorLightBulbAutoFix.foreground": /* ......... */ palette.operatorColor.code,
     "editorLineNumber.activeForeground": /* ......... */ palette.backgroundaa.code,
     "editorLineNumber.foreground": /* ............... */ palette.background55.code,
     "editorMarkerNavigation.background": /* ......... */ palette.background22.code,
