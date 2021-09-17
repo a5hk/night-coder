@@ -27,3 +27,6 @@ highlight PreProc  guifg=#c385bc
 highlight Type  guifg=#0bc2cb
 highlight Tag  guifg=#e4aa81
 highlight Special  guifg=#c3ab85
+
+hi! link phpStructure Statement
+hi! link phpStorageClass Statement

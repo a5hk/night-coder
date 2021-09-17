@@ -6,6 +6,10 @@ export interface vimRule {
   style?: string;
 }
 
+interface vimLinks {
+  [prop: string]: string[];
+}
+
 export function vimColoring(palette: Palette): string {
   const vRules: vimRule[] = [
     { fg: palette.commentColor.code, groups: ["Comment"], style: "italic" },
@@ -20,6 +24,10 @@ export function vimColoring(palette: Palette): string {
     { fg: palette.tagColor.code, groups: ["Tag"] },
     { fg: palette.miscellaneousColor.code, groups: ["Special"] },
   ];
+
+  const links: vimLinks = {
+    Statement: ["phpStructure", "phpStorageClass"],
+  };
 
   const head = `highlight clear
 if exists("syntax_on")
@@ -44,6 +52,10 @@ highlight Normal guifg=${palette.foregroundColor.code} guibg=#030917
           .map((g) => `highlight ${g} ${r.style ? "cterm=" + r.style + " gui=" + r.style : ""} guifg=${r.fg}`)
           .join("\n");
       })
+      .join("\n") +
+    "\n\n" +
+    Object.keys(links)
+      .map((k) => links[k]?.map((v) => `hi! link ${v} ${k}`).join("\n"))
       .join("\n")
   );
 }

@@ -12,6 +12,9 @@ export function vimColoring(palette) {
         { fg: palette.tagColor.code, groups: ["Tag"] },
         { fg: palette.miscellaneousColor.code, groups: ["Special"] },
     ];
+    const links = {
+        Statement: ["phpStructure", "phpStorageClass"],
+    };
     const head = `highlight clear
 if exists("syntax_on")
   syntax reset
@@ -34,5 +37,9 @@ highlight Normal guifg=${palette.foregroundColor.code} guibg=#030917
                 .map((g) => `highlight ${g} ${r.style ? "cterm=" + r.style + " gui=" + r.style : ""} guifg=${r.fg}`)
                 .join("\n");
         })
+            .join("\n") +
+        "\n\n" +
+        Object.keys(links)
+            .map((k) => { var _a; return (_a = links[k]) === null || _a === void 0 ? void 0 : _a.map((v) => `hi! link ${v} ${k}`).join("\n"); })
             .join("\n"));
 }
