@@ -92,6 +92,7 @@ hi! link Type NCType
 hi! link Tag NCTag
 hi! link csXmlTag NCTag
 hi! link xmlTag NCTag
+hi! link htmlTagName NCTag
 hi! link Special NCMiscellaneous
 hi! link rustAttribute NCMiscellaneous
 hi! link javaAnnotation NCMiscellaneous
@@ -103,6 +104,11 @@ hi! link rubyMethodName NCFunctionDeclaration
 hi! link rustFuncName NCFunctionDeclaration
 hi! link xmlAttrib NCAttributeName
 hi! link cssTagName NCAttributeName
+hi! link htmlArg NCAttributeName
 hi! link cssProp NCProperty
 hi! link cssAtRuleLogical NCComparisonLogicalOperator
 hi! link javaCommentTitle NCDocumentationComment
+hi! link htmlTag NCTagPunctuation
+hi! link htmlTagN NCUnrecognizedTag
+hi! link htmlTitle NCHeading
+hi! link htmlSpecialTagName NCMetaTag
