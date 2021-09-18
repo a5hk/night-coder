@@ -66,16 +66,16 @@ export function vimColoring(palette: Palette): string {
     NCString: ["String", "Character"],
     NCLiteralConstant: ["Number", "Boolean", "Float"],
     NCConstant: ["Constant", "rubyInstanceVariable", "rubyClassVariable"],
-    NCFunctionCall: ["Function"],
-    NCNamespaceClassStruct: ["Identifier", "phpClasses", "rubyModuleName", "rubyClassName"],
+    NCFunctionCall: ["Function", "rustMacro"],
+    NCNamespaceClassStruct: ["Identifier", "phpClasses", "rubyModuleName", "rubyClassName", "rustModPath"],
     NCOperator: ["Operator"],
-    NCKeyword: ["Statement", "PreProc", "phpStructure", "phpStorageClass", "javaScriptFunction"],
+    NCKeyword: ["Statement", "PreProc", "phpStructure", "phpStorageClass", "javaScriptFunction", "rustStorage"],
     NCType: ["Type"],
     NCTag: ["Tag"],
-    NCMiscellaneous: ["Special"],
+    NCMiscellaneous: ["Special", "rustAttribute"],
     NCDefaultLibraryClassType: ["phpIntVar"],
     NCDefaultLibraryFunctionCall: ["phpFunctions"],
-    NCFunctionDeclaration: ["rubyMethodName"],
+    NCFunctionDeclaration: ["rubyMethodName", "rustFuncName"],
   };
 
   const head = `highlight clear
