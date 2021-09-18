@@ -74,6 +74,7 @@ hi! link Statement NCKeyword
 hi! link PreProc NCKeyword
 hi! link phpStructure NCKeyword
 hi! link phpStorageClass NCKeyword
+hi! link javaScriptFunction NCKeyword
 hi! link Type NCType
 hi! link Tag NCTag
 hi! link Special NCMiscellaneous

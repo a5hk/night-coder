@@ -69,7 +69,7 @@ export function vimColoring(palette: Palette): string {
     NCFunctionCall: ["Function"],
     NCNamespaceClassStruct: ["Identifier", "phpClasses", "rubyModuleName", "rubyClassName"],
     NCOperator: ["Operator"],
-    NCKeyword: ["Statement", "PreProc", "phpStructure", "phpStorageClass"],
+    NCKeyword: ["Statement", "PreProc", "phpStructure", "phpStorageClass", "javaScriptFunction"],
     NCType: ["Type"],
     NCTag: ["Tag"],
     NCMiscellaneous: ["Special"],
