@@ -85,12 +85,16 @@ hi! link rustStorage NCKeyword
 hi! link csStorage NCKeyword
 hi! link csModifier NCKeyword
 hi! link csClass NCKeyword
+hi! link javaScopeDecl NCKeyword
+hi! link javaClassDecl NCKeyword
+hi! link javaStorageClass NCKeyword
 hi! link Type NCType
 hi! link Tag NCTag
 hi! link csXmlTag NCTag
 hi! link xmlTag NCTag
 hi! link Special NCMiscellaneous
 hi! link rustAttribute NCMiscellaneous
+hi! link javaAnnotation NCMiscellaneous
 hi! link phpIntVar NCDefaultLibraryClassType
 hi! link cssColor NCDefaultLibraryClassType
 hi! link phpFunctions NCDefaultLibraryFunctionCall
@@ -101,3 +105,4 @@ hi! link xmlAttrib NCAttributeName
 hi! link cssTagName NCAttributeName
 hi! link cssProp NCProperty
 hi! link cssAtRuleLogical NCComparisonLogicalOperator
+hi! link javaCommentTitle NCDocumentationComment

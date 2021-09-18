@@ -68,16 +68,20 @@ export function vimColoring(palette) {
             "csStorage",
             "csModifier",
             "csClass",
+            "javaScopeDecl",
+            "javaClassDecl",
+            "javaStorageClass",
         ],
         NCType: ["Type"],
         NCTag: ["Tag", "csXmlTag", "xmlTag"],
-        NCMiscellaneous: ["Special", "rustAttribute"],
+        NCMiscellaneous: ["Special", "rustAttribute", "javaAnnotation"],
         NCDefaultLibraryClassType: ["phpIntVar", "cssColor"],
         NCDefaultLibraryFunctionCall: ["phpFunctions", "cssFunctionName"],
         NCFunctionDeclaration: ["rubyMethodName", "rustFuncName"],
         NCAttributeName: ["xmlAttrib", "cssTagName"],
         NCProperty: ["cssProp"],
         NCComparisonLogicalOperator: ["cssAtRuleLogical"],
+        NCDocumentationComment: ["javaCommentTitle"],
     };
     const head = `highlight clear
 if exists("syntax_on")
