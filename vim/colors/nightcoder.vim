@@ -61,6 +61,7 @@ hi! link Character NCString
 hi! link Number NCLiteralConstant
 hi! link Boolean NCLiteralConstant
 hi! link Float NCLiteralConstant
+hi! link cssAttr NCLiteralConstant
 hi! link Constant NCConstant
 hi! link rubyInstanceVariable NCConstant
 hi! link rubyClassVariable NCConstant
@@ -74,6 +75,7 @@ hi! link rubyClassName NCNamespaceClassStruct
 hi! link rustModPath NCNamespaceClassStruct
 hi! link csClassType NCNamespaceClassStruct
 hi! link Operator NCOperator
+hi! link cssSelectorOp NCOperator
 hi! link Statement NCKeyword
 hi! link PreProc NCKeyword
 hi! link phpStructure NCKeyword
@@ -90,7 +92,12 @@ hi! link xmlTag NCTag
 hi! link Special NCMiscellaneous
 hi! link rustAttribute NCMiscellaneous
 hi! link phpIntVar NCDefaultLibraryClassType
+hi! link cssColor NCDefaultLibraryClassType
 hi! link phpFunctions NCDefaultLibraryFunctionCall
+hi! link cssFunctionName NCDefaultLibraryFunctionCall
 hi! link rubyMethodName NCFunctionDeclaration
 hi! link rustFuncName NCFunctionDeclaration
 hi! link xmlAttrib NCAttributeName
+hi! link cssTagName NCAttributeName
+hi! link cssProp NCProperty
+hi! link cssAtRuleLogical NCComparisonLogicalOperator

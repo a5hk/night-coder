@@ -46,7 +46,7 @@ export function vimColoring(palette) {
     const links = {
         NCComment: ["Comment"],
         NCString: ["String", "Character"],
-        NCLiteralConstant: ["Number", "Boolean", "Float"],
+        NCLiteralConstant: ["Number", "Boolean", "Float", "cssAttr"],
         NCConstant: ["Constant", "rubyInstanceVariable", "rubyClassVariable", "csInterpolationDelimiter"],
         NCFunctionCall: ["Function", "rustMacro"],
         NCNamespaceClassStruct: [
@@ -57,7 +57,7 @@ export function vimColoring(palette) {
             "rustModPath",
             "csClassType",
         ],
-        NCOperator: ["Operator"],
+        NCOperator: ["Operator", "cssSelectorOp"],
         NCKeyword: [
             "Statement",
             "PreProc",
@@ -72,10 +72,12 @@ export function vimColoring(palette) {
         NCType: ["Type"],
         NCTag: ["Tag", "csXmlTag", "xmlTag"],
         NCMiscellaneous: ["Special", "rustAttribute"],
-        NCDefaultLibraryClassType: ["phpIntVar"],
-        NCDefaultLibraryFunctionCall: ["phpFunctions"],
+        NCDefaultLibraryClassType: ["phpIntVar", "cssColor"],
+        NCDefaultLibraryFunctionCall: ["phpFunctions", "cssFunctionName"],
         NCFunctionDeclaration: ["rubyMethodName", "rustFuncName"],
-        NCAttributeName: ["xmlAttrib"],
+        NCAttributeName: ["xmlAttrib", "cssTagName"],
+        NCProperty: ["cssProp"],
+        NCComparisonLogicalOperator: ["cssAtRuleLogical"],
     };
     const head = `highlight clear
 if exists("syntax_on")
