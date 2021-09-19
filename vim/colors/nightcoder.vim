@@ -30,6 +30,7 @@ highlight NCNamespaceClassStruct  guifg=#859dc3
 highlight NCString  guifg=#84bd7f
 highlight NCProperty  guifg=#e4aa81
 highlight NCKeyword  guifg=#c385bc
+highlight NCPunctuation  guifg=#797c83
 highlight NCTag  guifg=#e4aa81
 highlight NCItalic  guifg=#93ecb8
 highlight NCHeading  guifg=#e0cd94
@@ -58,6 +59,7 @@ highlight NCJsonLevel11  guifg=#e4aa81
 hi! link Comment NCComment
 hi! link String NCString
 hi! link Character NCString
+hi! link yamlPlainScalar NCString
 hi! link Number NCLiteralConstant
 hi! link Boolean NCLiteralConstant
 hi! link Float NCLiteralConstant
@@ -70,6 +72,8 @@ hi! link csInterpolationDelimiter NCConstant
 hi! link elixirVariable NCConstant
 hi! link elixirInterpolationDelimiter NCConstant
 hi! link shDeref NCConstant
+hi! link yamlNodeTag NCConstant
+hi! link yamlAlias NCConstant
 hi! link Function NCFunctionCall
 hi! link rustMacro NCFunctionCall
 hi! link Identifier NCNamespaceClassStruct
@@ -104,6 +108,7 @@ hi! link htmlTagName NCTag
 hi! link Special NCMiscellaneous
 hi! link rustAttribute NCMiscellaneous
 hi! link javaAnnotation NCMiscellaneous
+hi! link yamlDocumentStart NCMiscellaneous
 hi! link phpIntVar NCDefaultLibraryClassType
 hi! link cssColor NCDefaultLibraryClassType
 hi! link phpFunctions NCDefaultLibraryFunctionCall
@@ -122,6 +127,7 @@ hi! link cssProp NCProperty
 hi! link tomlKey NCProperty
 hi! link shSetList NCProperty
 hi! link shVariable NCProperty
+hi! link yamlBlockMappingKey NCProperty
 hi! link cssAtRuleLogical NCComparisonLogicalOperator
 hi! link shOption NCComparisonLogicalOperator
 hi! link javaCommentTitle NCDocumentationComment
@@ -132,3 +138,4 @@ hi! link tomlTable NCHeading
 hi! link htmlSpecialTagName NCMetaTag
 hi! link shArithmetic NCForeground
 hi! link shCommandSub NCForeground
+hi! link yamlBlockCollectionItemStart NCPunctuation

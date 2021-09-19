@@ -18,6 +18,7 @@ export function vimColoring(palette) {
         { fg: palette.stringColor.code, groups: ["NCString"] },
         { fg: palette.propertyColor.code, groups: ["NCProperty"] },
         { fg: palette.keywordColor.code, groups: ["NCKeyword"] },
+        { fg: palette.tagPunctuationColor.code, groups: ["NCPunctuation"] },
         { fg: palette.tagColor.code, groups: ["NCTag"] },
         { fg: palette.italicColor.code, groups: ["NCItalic"] },
         { fg: palette.headingColor.code, groups: ["NCHeading"] },
@@ -45,7 +46,7 @@ export function vimColoring(palette) {
     ];
     const links = {
         NCComment: ["Comment"],
-        NCString: ["String", "Character"],
+        NCString: ["String", "Character", "yamlPlainScalar"],
         NCLiteralConstant: ["Number", "Boolean", "Float", "cssAttr", "elixirAtom"],
         NCConstant: [
             "Constant",
@@ -55,6 +56,8 @@ export function vimColoring(palette) {
             "elixirVariable",
             "elixirInterpolationDelimiter",
             "shDeref",
+            "yamlNodeTag",
+            "yamlAlias",
         ],
         NCFunctionCall: ["Function", "rustMacro"],
         NCNamespaceClassStruct: [
@@ -84,7 +87,7 @@ export function vimColoring(palette) {
         ],
         NCType: ["Type"],
         NCTag: ["Tag", "csXmlTag", "xmlTag", "htmlTagName"],
-        NCMiscellaneous: ["Special", "rustAttribute", "javaAnnotation"],
+        NCMiscellaneous: ["Special", "rustAttribute", "javaAnnotation", "yamlDocumentStart"],
         NCDefaultLibraryClassType: ["phpIntVar", "cssColor"],
         NCDefaultLibraryFunctionCall: ["phpFunctions", "cssFunctionName", "pythonBuiltin", "goBuiltins", "shCmdSubRegion"],
         NCFunctionDeclaration: ["rubyMethodName", "rustFuncName", "elixirFunctionDeclaration", "shFunction"],
@@ -94,6 +97,7 @@ export function vimColoring(palette) {
             "tomlKey",
             "shSetList",
             "shVariable",
+            "yamlBlockMappingKey",
         ],
         NCComparisonLogicalOperator: ["cssAtRuleLogical", "shOption"],
         NCDocumentationComment: ["javaCommentTitle"],
@@ -102,6 +106,7 @@ export function vimColoring(palette) {
         NCHeading: ["htmlTitle", "tomlTable"],
         NCMetaTag: ["htmlSpecialTagName"],
         NCForeground: ["shArithmetic", "shCommandSub"],
+        NCPunctuation: ["yamlBlockCollectionItemStart"],
     };
     const head = `highlight clear
 if exists("syntax_on")
