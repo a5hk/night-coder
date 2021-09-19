@@ -94,7 +94,7 @@ export function vimColoring(palette: Palette): string {
     NCTag: ["Tag", "csXmlTag", "xmlTag", "htmlTagName"],
     NCMiscellaneous: ["Special", "rustAttribute", "javaAnnotation"],
     NCDefaultLibraryClassType: ["phpIntVar", "cssColor"],
-    NCDefaultLibraryFunctionCall: ["phpFunctions", "cssFunctionName"],
+    NCDefaultLibraryFunctionCall: ["phpFunctions", "cssFunctionName", "pythonBuiltin"],
     NCFunctionDeclaration: ["rubyMethodName", "rustFuncName"],
     NCAttributeName: ["xmlAttrib", "cssTagName", "htmlArg"],
     NCProperty: ["cssProp"],

@@ -100,6 +100,7 @@ hi! link phpIntVar NCDefaultLibraryClassType
 hi! link cssColor NCDefaultLibraryClassType
 hi! link phpFunctions NCDefaultLibraryFunctionCall
 hi! link cssFunctionName NCDefaultLibraryFunctionCall
+hi! link pythonBuiltin NCDefaultLibraryFunctionCall
 hi! link rubyMethodName NCFunctionDeclaration
 hi! link rustFuncName NCFunctionDeclaration
 hi! link xmlAttrib NCAttributeName
