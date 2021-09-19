@@ -62,10 +62,13 @@ hi! link Number NCLiteralConstant
 hi! link Boolean NCLiteralConstant
 hi! link Float NCLiteralConstant
 hi! link cssAttr NCLiteralConstant
+hi! link elixirAtom NCLiteralConstant
 hi! link Constant NCConstant
 hi! link rubyInstanceVariable NCConstant
 hi! link rubyClassVariable NCConstant
 hi! link csInterpolationDelimiter NCConstant
+hi! link elixirVariable NCConstant
+hi! link elixirInterpolationDelimiter NCConstant
 hi! link Function NCFunctionCall
 hi! link rustMacro NCFunctionCall
 hi! link Identifier NCNamespaceClassStruct
@@ -74,6 +77,8 @@ hi! link rubyModuleName NCNamespaceClassStruct
 hi! link rubyClassName NCNamespaceClassStruct
 hi! link rustModPath NCNamespaceClassStruct
 hi! link csClassType NCNamespaceClassStruct
+hi! link elixirModuleDeclaration NCNamespaceClassStruct
+hi! link elixirAlias NCNamespaceClassStruct
 hi! link Operator NCOperator
 hi! link cssSelectorOp NCOperator
 hi! link Statement NCKeyword
@@ -103,6 +108,7 @@ hi! link cssFunctionName NCDefaultLibraryFunctionCall
 hi! link pythonBuiltin NCDefaultLibraryFunctionCall
 hi! link rubyMethodName NCFunctionDeclaration
 hi! link rustFuncName NCFunctionDeclaration
+hi! link elixirFunctionDeclaration NCFunctionDeclaration
 hi! link xmlAttrib NCAttributeName
 hi! link cssTagName NCAttributeName
 hi! link htmlArg NCAttributeName

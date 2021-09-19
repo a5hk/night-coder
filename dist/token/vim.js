@@ -46,8 +46,15 @@ export function vimColoring(palette) {
     const links = {
         NCComment: ["Comment"],
         NCString: ["String", "Character"],
-        NCLiteralConstant: ["Number", "Boolean", "Float", "cssAttr"],
-        NCConstant: ["Constant", "rubyInstanceVariable", "rubyClassVariable", "csInterpolationDelimiter"],
+        NCLiteralConstant: ["Number", "Boolean", "Float", "cssAttr", "elixirAtom"],
+        NCConstant: [
+            "Constant",
+            "rubyInstanceVariable",
+            "rubyClassVariable",
+            "csInterpolationDelimiter",
+            "elixirVariable",
+            "elixirInterpolationDelimiter",
+        ],
         NCFunctionCall: ["Function", "rustMacro"],
         NCNamespaceClassStruct: [
             "Identifier",
@@ -56,6 +63,8 @@ export function vimColoring(palette) {
             "rubyClassName",
             "rustModPath",
             "csClassType",
+            "elixirModuleDeclaration",
+            "elixirAlias",
         ],
         NCOperator: ["Operator", "cssSelectorOp"],
         NCKeyword: [
@@ -77,7 +86,7 @@ export function vimColoring(palette) {
         NCMiscellaneous: ["Special", "rustAttribute", "javaAnnotation"],
         NCDefaultLibraryClassType: ["phpIntVar", "cssColor"],
         NCDefaultLibraryFunctionCall: ["phpFunctions", "cssFunctionName", "pythonBuiltin"],
-        NCFunctionDeclaration: ["rubyMethodName", "rustFuncName"],
+        NCFunctionDeclaration: ["rubyMethodName", "rustFuncName", "elixirFunctionDeclaration"],
         NCAttributeName: ["xmlAttrib", "cssTagName", "htmlArg"],
         NCProperty: ["cssProp"],
         NCComparisonLogicalOperator: ["cssAtRuleLogical"],
