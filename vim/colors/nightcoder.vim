@@ -114,9 +114,11 @@ hi! link xmlAttrib NCAttributeName
 hi! link cssTagName NCAttributeName
 hi! link htmlArg NCAttributeName
 hi! link cssProp NCProperty
+hi! link tomlKey NCProperty
 hi! link cssAtRuleLogical NCComparisonLogicalOperator
 hi! link javaCommentTitle NCDocumentationComment
 hi! link htmlTag NCTagPunctuation
 hi! link htmlTagN NCUnrecognizedTag
 hi! link htmlTitle NCHeading
+hi! link tomlTable NCHeading
 hi! link htmlSpecialTagName NCMetaTag

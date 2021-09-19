@@ -106,12 +106,12 @@ export function vimColoring(palette: Palette): string {
     NCDefaultLibraryFunctionCall: ["phpFunctions", "cssFunctionName", "pythonBuiltin", "goBuiltins"],
     NCFunctionDeclaration: ["rubyMethodName", "rustFuncName", "elixirFunctionDeclaration"],
     NCAttributeName: ["xmlAttrib", "cssTagName", "htmlArg"],
-    NCProperty: ["cssProp"],
+    NCProperty: ["cssProp", "tomlKey"],
     NCComparisonLogicalOperator: ["cssAtRuleLogical"],
     NCDocumentationComment: ["javaCommentTitle"],
     NCTagPunctuation: ["htmlTag"],
     NCUnrecognizedTag: ["htmlTagN"],
-    NCHeading: ["htmlTitle"],
+    NCHeading: ["htmlTitle", "tomlTable"],
     NCMetaTag: ["htmlSpecialTagName"],
   };
 
