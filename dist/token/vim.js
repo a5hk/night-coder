@@ -54,6 +54,7 @@ export function vimColoring(palette) {
             "csInterpolationDelimiter",
             "elixirVariable",
             "elixirInterpolationDelimiter",
+            "shDeref",
         ],
         NCFunctionCall: ["Function", "rustMacro"],
         NCNamespaceClassStruct: [
@@ -66,7 +67,7 @@ export function vimColoring(palette) {
             "elixirModuleDeclaration",
             "elixirAlias",
         ],
-        NCOperator: ["Operator", "cssSelectorOp"],
+        NCOperator: ["Operator", "cssSelectorOp", "shVarAssign", "shArithRegion"],
         NCKeyword: [
             "Statement",
             "PreProc",
@@ -85,16 +86,22 @@ export function vimColoring(palette) {
         NCTag: ["Tag", "csXmlTag", "xmlTag", "htmlTagName"],
         NCMiscellaneous: ["Special", "rustAttribute", "javaAnnotation"],
         NCDefaultLibraryClassType: ["phpIntVar", "cssColor"],
-        NCDefaultLibraryFunctionCall: ["phpFunctions", "cssFunctionName", "pythonBuiltin", "goBuiltins"],
-        NCFunctionDeclaration: ["rubyMethodName", "rustFuncName", "elixirFunctionDeclaration"],
+        NCDefaultLibraryFunctionCall: ["phpFunctions", "cssFunctionName", "pythonBuiltin", "goBuiltins", "shCmdSubRegion"],
+        NCFunctionDeclaration: ["rubyMethodName", "rustFuncName", "elixirFunctionDeclaration", "shFunction"],
         NCAttributeName: ["xmlAttrib", "cssTagName", "htmlArg"],
-        NCProperty: ["cssProp", "tomlKey"],
-        NCComparisonLogicalOperator: ["cssAtRuleLogical"],
+        NCProperty: [
+            "cssProp",
+            "tomlKey",
+            "shSetList",
+            "shVariable",
+        ],
+        NCComparisonLogicalOperator: ["cssAtRuleLogical", "shOption"],
         NCDocumentationComment: ["javaCommentTitle"],
         NCTagPunctuation: ["htmlTag"],
         NCUnrecognizedTag: ["htmlTagN"],
         NCHeading: ["htmlTitle", "tomlTable"],
         NCMetaTag: ["htmlSpecialTagName"],
+        NCForeground: ["shArithmetic", "shCommandSub"],
     };
     const head = `highlight clear
 if exists("syntax_on")

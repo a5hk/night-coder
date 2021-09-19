@@ -72,6 +72,7 @@ export function vimColoring(palette: Palette): string {
       "csInterpolationDelimiter",
       "elixirVariable",
       "elixirInterpolationDelimiter",
+      "shDeref",
     ],
     NCFunctionCall: ["Function", "rustMacro"],
     NCNamespaceClassStruct: [
@@ -84,7 +85,7 @@ export function vimColoring(palette: Palette): string {
       "elixirModuleDeclaration",
       "elixirAlias",
     ],
-    NCOperator: ["Operator", "cssSelectorOp"],
+    NCOperator: ["Operator", "cssSelectorOp", "shVarAssign", "shArithRegion"],
     NCKeyword: [
       "Statement",
       "PreProc",
@@ -103,16 +104,23 @@ export function vimColoring(palette: Palette): string {
     NCTag: ["Tag", "csXmlTag", "xmlTag", "htmlTagName"],
     NCMiscellaneous: ["Special", "rustAttribute", "javaAnnotation"],
     NCDefaultLibraryClassType: ["phpIntVar", "cssColor"],
-    NCDefaultLibraryFunctionCall: ["phpFunctions", "cssFunctionName", "pythonBuiltin", "goBuiltins"],
-    NCFunctionDeclaration: ["rubyMethodName", "rustFuncName", "elixirFunctionDeclaration"],
+    NCDefaultLibraryFunctionCall: ["phpFunctions", "cssFunctionName", "pythonBuiltin", "goBuiltins", "shCmdSubRegion"],
+    NCFunctionDeclaration: ["rubyMethodName", "rustFuncName", "elixirFunctionDeclaration", "shFunction"],
     NCAttributeName: ["xmlAttrib", "cssTagName", "htmlArg"],
-    NCProperty: ["cssProp", "tomlKey"],
-    NCComparisonLogicalOperator: ["cssAtRuleLogical"],
+    NCProperty: [
+      "cssProp",
+      "tomlKey",
+      "shSetList", // not consistent with other languages
+      "shVariable", // not consistent with other languages
+    ],
+    NCComparisonLogicalOperator: ["cssAtRuleLogical", "shOption"],
     NCDocumentationComment: ["javaCommentTitle"],
     NCTagPunctuation: ["htmlTag"],
     NCUnrecognizedTag: ["htmlTagN"],
     NCHeading: ["htmlTitle", "tomlTable"],
     NCMetaTag: ["htmlSpecialTagName"],
+    NCForeground: ["shArithmetic", "shCommandSub"],
+    // NCVariable: ["shSetList", "shVariable"],
   };
 
   const head = `highlight clear
