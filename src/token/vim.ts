@@ -65,7 +65,7 @@ export function vimColoring(palette: Palette): string {
     // Statement: ["phpStructure", "phpStorageClass"],
     NCComment: ["Comment"],
     NCString: ["String", "Character", "yamlPlainScalar"],
-    NCLiteralConstant: ["Number", "Boolean", "Float", "cssAttr", "elixirAtom"],
+    NCLiteralConstant: ["Number", "Boolean", "Float", "cssAttr", "elixirAtom", "poHeaderItem"],
     NCConstant: [
       "Constant",
       "rubyInstanceVariable",
@@ -105,7 +105,7 @@ export function vimColoring(palette: Palette): string {
     ],
     NCType: ["Type"],
     NCTag: ["Tag", "csXmlTag", "xmlTag", "htmlTagName", "xmlTagName"],
-    NCMiscellaneous: ["Special", "rustAttribute", "javaAnnotation", "yamlDocumentStart"],
+    NCMiscellaneous: ["Special", "rustAttribute", "javaAnnotation", "yamlDocumentStart", "poCommentSources"],
     NCDefaultLibraryClassType: ["phpIntVar", "cssColor"],
     NCDefaultLibraryFunctionCall: ["phpFunctions", "cssFunctionName", "pythonBuiltin", "goBuiltins", "shCmdSubRegion"],
     NCFunctionDeclaration: ["rubyMethodName", "rustFuncName", "elixirFunctionDeclaration", "shFunction"],

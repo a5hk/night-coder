@@ -65,6 +65,7 @@ hi! link Boolean NCLiteralConstant
 hi! link Float NCLiteralConstant
 hi! link cssAttr NCLiteralConstant
 hi! link elixirAtom NCLiteralConstant
+hi! link poHeaderItem NCLiteralConstant
 hi! link Constant NCConstant
 hi! link rubyInstanceVariable NCConstant
 hi! link rubyClassVariable NCConstant
@@ -110,6 +111,7 @@ hi! link Special NCMiscellaneous
 hi! link rustAttribute NCMiscellaneous
 hi! link javaAnnotation NCMiscellaneous
 hi! link yamlDocumentStart NCMiscellaneous
+hi! link poCommentSources NCMiscellaneous
 hi! link phpIntVar NCDefaultLibraryClassType
 hi! link cssColor NCDefaultLibraryClassType
 hi! link phpFunctions NCDefaultLibraryFunctionCall
