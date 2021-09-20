@@ -150,7 +150,9 @@
     "terminal.border": "#141926",
     "titleBar.activeBackground": "#02050e",
     "titleBar.border": "#030917",
-    "titleBar.inactiveBackground": "#02050e"
+    "titleBar.inactiveBackground": "#02050e",
+    "window.activeBorder": "#006600",
+    "window.inactiveBorder": "#9b2c2c"
   },
   "semanticTokenColors": {
     "variable": { "foreground": "#c6c7ca" },

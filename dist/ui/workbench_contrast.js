@@ -17,6 +17,8 @@ export function contrastWorkbenchColors(palette) {
         "titleBar.activeBackground": palette.contrastBackground.code,
         "titleBar.border": palette.background.code,
         "titleBar.inactiveBackground": palette.contrastBackground.code,
+        "window.activeBorder": palette.statusBarBackground.code,
+        "window.inactiveBorder": palette.statusBarDebuggingBackground.code,
     };
     return colors;
 }

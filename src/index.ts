@@ -164,7 +164,7 @@ function generateManifest(t: VSTheme[]): string {
     name: "night-coder",
     displayName: "Night Coder",
     description: "A dark theme for Night Coders",
-    version: "2.21.0",
+    version: "2.22.0",
     publisher: author,
     author: author,
     license: "MIT",

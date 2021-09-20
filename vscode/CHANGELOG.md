@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.22.0
+
+- Window border for contrast variants
+
 ## 2.21.0
 
 - Custom lightbulb colors
