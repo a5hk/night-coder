@@ -105,6 +105,7 @@ hi! link Tag NCTag
 hi! link csXmlTag NCTag
 hi! link xmlTag NCTag
 hi! link htmlTagName NCTag
+hi! link xmlTagName NCTag
 hi! link Special NCMiscellaneous
 hi! link rustAttribute NCMiscellaneous
 hi! link javaAnnotation NCMiscellaneous
@@ -132,6 +133,7 @@ hi! link cssAtRuleLogical NCComparisonLogicalOperator
 hi! link shOption NCComparisonLogicalOperator
 hi! link javaCommentTitle NCDocumentationComment
 hi! link htmlTag NCTagPunctuation
+hi! link xmlTag NCTagPunctuation
 hi! link htmlTagN NCUnrecognizedTag
 hi! link htmlTitle NCHeading
 hi! link tomlTable NCHeading
