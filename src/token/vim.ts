@@ -35,7 +35,7 @@ export function vimColoring(palette: Palette): string {
     // html / markup
     { fg: palette.tagColor.code, groups: ["NCTag"] },
     { fg: palette.italicColor.code, groups: ["NCItalic"] },
-    { fg: palette.headingColor.code, groups: ["NCHeading"] },
+    { fg: palette.headingColor.code, groups: ["NCHeading"], style: "bold" },
     { fg: palette.linkTagColor.code, groups: ["NCLinkTag"] },
     { fg: palette.metaTagColor.code, groups: ["NCMetaTag"] },
     { fg: palette.styleTagColor.code, groups: ["NCStyleTag"] },

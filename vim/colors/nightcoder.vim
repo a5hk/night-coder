@@ -33,7 +33,7 @@ highlight NCKeyword  guifg=#c385bc
 highlight NCPunctuation  guifg=#797c83
 highlight NCTag  guifg=#e4aa81
 highlight NCItalic  guifg=#93ecb8
-highlight NCHeading  guifg=#e0cd94
+highlight NCHeading cterm=bold gui=bold guifg=#e0cd94
 highlight NCLinkTag  guifg=#85c3ab
 highlight NCMetaTag  guifg=#c385bc
 highlight NCStyleTag  guifg=#859dc3
