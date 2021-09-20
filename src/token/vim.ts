@@ -77,7 +77,7 @@ export function vimColoring(palette: Palette): string {
       "yamlNodeTag",
       "yamlAlias",
     ],
-    NCFunctionCall: ["Function", "rustMacro"],
+    NCFunctionCall: ["Function", "rustMacro", "perlMethod"],
     NCNamespaceClassStruct: [
       "Identifier",
       "phpClasses",
@@ -87,6 +87,8 @@ export function vimColoring(palette: Palette): string {
       "csClassType",
       "elixirModuleDeclaration",
       "elixirAlias",
+      "perlPackageDecl",
+      "perlPackageRef",
     ],
     NCOperator: ["Operator", "cssSelectorOp", "shVarAssign", "shArithRegion"],
     NCKeyword: [
@@ -108,7 +110,14 @@ export function vimColoring(palette: Palette): string {
     NCMiscellaneous: ["Special", "rustAttribute", "javaAnnotation", "yamlDocumentStart", "poCommentSources"],
     NCDefaultLibraryClassType: ["phpIntVar", "cssColor"],
     NCDefaultLibraryFunctionCall: ["phpFunctions", "cssFunctionName", "pythonBuiltin", "goBuiltins", "shCmdSubRegion"],
-    NCFunctionDeclaration: ["rubyMethodName", "rustFuncName", "elixirFunctionDeclaration", "shFunction"],
+    NCFunctionDeclaration: [
+      "rubyMethodName",
+      "rustFuncName",
+      "elixirFunctionDeclaration",
+      "shFunction",
+      "perlSubName",
+      "perlFunctionName",
+    ],
     NCAttributeName: ["xmlAttrib", "cssTagName", "htmlArg"],
     NCProperty: [
       "cssProp",
@@ -125,6 +134,7 @@ export function vimColoring(palette: Palette): string {
     NCMetaTag: ["htmlSpecialTagName"],
     NCForeground: ["shArithmetic", "shCommandSub"],
     NCPunctuation: ["yamlBlockCollectionItemStart"],
+    NCVariable: ["perlVarPlain"],
   };
 
   const head = `highlight clear

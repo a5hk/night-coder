@@ -77,6 +77,7 @@ hi! link yamlNodeTag NCConstant
 hi! link yamlAlias NCConstant
 hi! link Function NCFunctionCall
 hi! link rustMacro NCFunctionCall
+hi! link perlMethod NCFunctionCall
 hi! link Identifier NCNamespaceClassStruct
 hi! link phpClasses NCNamespaceClassStruct
 hi! link rubyModuleName NCNamespaceClassStruct
@@ -85,6 +86,8 @@ hi! link rustModPath NCNamespaceClassStruct
 hi! link csClassType NCNamespaceClassStruct
 hi! link elixirModuleDeclaration NCNamespaceClassStruct
 hi! link elixirAlias NCNamespaceClassStruct
+hi! link perlPackageDecl NCNamespaceClassStruct
+hi! link perlPackageRef NCNamespaceClassStruct
 hi! link Operator NCOperator
 hi! link cssSelectorOp NCOperator
 hi! link shVarAssign NCOperator
@@ -123,6 +126,8 @@ hi! link rubyMethodName NCFunctionDeclaration
 hi! link rustFuncName NCFunctionDeclaration
 hi! link elixirFunctionDeclaration NCFunctionDeclaration
 hi! link shFunction NCFunctionDeclaration
+hi! link perlSubName NCFunctionDeclaration
+hi! link perlFunctionName NCFunctionDeclaration
 hi! link xmlAttrib NCAttributeName
 hi! link cssTagName NCAttributeName
 hi! link htmlArg NCAttributeName
@@ -143,3 +148,4 @@ hi! link htmlSpecialTagName NCMetaTag
 hi! link shArithmetic NCForeground
 hi! link shCommandSub NCForeground
 hi! link yamlBlockCollectionItemStart NCPunctuation
+hi! link perlVarPlain NCVariable
