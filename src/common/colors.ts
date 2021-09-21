@@ -44,9 +44,9 @@ function colorDescriptor(c: Color, enumerable = false) {
   };
 }
 
-function BasePalette<T extends Record<string, unknown>>(
-  descriptors: { [K in keyof T]: () => TypedPropertyDescriptor<T[K]> }
-): new () => T {
+function BasePalette<T extends Record<string, unknown>>(descriptors: {
+  [K in keyof T]: () => TypedPropertyDescriptor<T[K]>;
+}): new () => T {
   return class {
     constructor() {
       let k: keyof T;
@@ -78,6 +78,7 @@ export function colorPaletteFactory(bg = "#030917") {
     ),
     commentColor: /* ..................... */ colorDescriptor(new Color(mix("44", bg), "Comment"), true),
     documentationColor: /* ............... */ colorDescriptor(new Color(mix("aa", bg), "Documentation"), true),
+    annotationColor: /* .................. */ colorDescriptor(new Color("#c3ab85", "Annotation"), true),
     functionDeclarationColor: /* ......... */ colorDescriptor(new Color("#85c3ab", "Function declaration"), true),
     literalConstantColor: /* ............. */ colorDescriptor(new Color("#bfa6f2", "Literal constant"), true),
     defaultLibraryClassTypeColor: /* ..... */ colorDescriptor(new Color("#ff99b3", "Default library class/type"), true),

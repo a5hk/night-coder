@@ -248,9 +248,7 @@
       "name": "undecided",
       "scope": [
         "meta.generic-where-clause.swift",
-        "meta.arguments.attribute.swift",
-        "storage.type.annotation",
-        "meta.attribute.rust"
+        "meta.arguments.attribute.swift"
       ],
       "settings": { "foreground": "#c3ab85" }
     },
@@ -320,7 +318,6 @@
         "entity.name.module",
         "entity.name.scope-resolution",
         "storage.modifier.package.java",
-        "storage.type.class.po",
         "meta.inheritance-clause",
         "entity.other.inherited-class"
       ],
@@ -390,6 +387,16 @@
     {
       "scope": ["comment.wildcard", "meta.jsx.children"],
       "settings": { "foreground": "#c6c7ca" }
+    },
+    {
+      "name": "annotation comments",
+      "scope": [
+        "comment.line.number-sign.flag.po",
+        "comment storage.type.class.po",
+        "storage.type.annotation",
+        "meta.attribute.rust"
+      ],
+      "settings": { "foreground": "#c3ab85" }
     },
     {
       "name": "l1 json",

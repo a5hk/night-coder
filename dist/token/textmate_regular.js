@@ -89,12 +89,7 @@ export class TextmateTheme {
             },
             {
                 name: "undecided",
-                scope: [
-                    "meta.generic-where-clause.swift",
-                    "meta.arguments.attribute.swift",
-                    "storage.type.annotation",
-                    "meta.attribute.rust",
-                ],
+                scope: ["meta.generic-where-clause.swift", "meta.arguments.attribute.swift"],
                 settings: {
                     foreground: this.palette.miscellaneousColor.code,
                 },
@@ -180,7 +175,6 @@ export class TextmateTheme {
                     "entity.name.module",
                     "entity.name.scope-resolution",
                     "storage.modifier.package.java",
-                    "storage.type.class.po",
                     "meta.inheritance-clause",
                     "entity.other.inherited-class",
                 ],
@@ -266,6 +260,16 @@ export class TextmateTheme {
                 settings: {
                     foreground: this.palette.foregroundColor.code,
                 },
+            },
+            {
+                name: "annotation comments",
+                scope: [
+                    "comment.line.number-sign.flag.po",
+                    "comment storage.type.class.po",
+                    "storage.type.annotation",
+                    "meta.attribute.rust",
+                ],
+                settings: { foreground: this.palette.annotationColor.code },
             },
             {
                 name: "l1 json",

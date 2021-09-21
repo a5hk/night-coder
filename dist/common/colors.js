@@ -72,6 +72,7 @@ export function colorPaletteFactory(bg = "#030917") {
         comparisonLogicalOperatorColor: colorDescriptor(new Color("#93ecb8", "Comparison/Logical operator"), true),
         commentColor: colorDescriptor(new Color(mix("44", bg), "Comment"), true),
         documentationColor: colorDescriptor(new Color(mix("aa", bg), "Documentation"), true),
+        annotationColor: colorDescriptor(new Color("#c3ab85", "Annotation"), true),
         functionDeclarationColor: colorDescriptor(new Color("#85c3ab", "Function declaration"), true),
         literalConstantColor: colorDescriptor(new Color("#bfa6f2", "Literal constant"), true),
         defaultLibraryClassTypeColor: colorDescriptor(new Color("#ff99b3", "Default library class/type"), true),
