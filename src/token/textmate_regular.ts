@@ -250,7 +250,11 @@ export class TextmateTheme {
       },
       {
         name: "embedded punctuation",
-        scope: ["punctuation.definition.template-expression", "punctuation.section.embedded"],
+        scope: [
+          "punctuation.definition.template-expression",
+          "punctuation.section.embedded",
+          "punctuation.definition.interpolation",
+        ],
         settings: {
           foreground: this.palette.constantColor.code,
           __italic: true,

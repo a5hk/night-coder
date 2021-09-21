@@ -358,7 +358,8 @@
       "name": "embedded punctuation",
       "scope": [
         "punctuation.definition.template-expression",
-        "punctuation.section.embedded"
+        "punctuation.section.embedded",
+        "punctuation.definition.interpolation"
       ],
       "settings": { "foreground": "#ef7762" }
     },
