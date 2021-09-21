@@ -41,14 +41,13 @@ A dark theme for Night Coders.
 |Function call, Heading, Attribute name, Level 4 JSON key|![#e6d299](https://via.placeholder.com/23/e6d299/?text=+)|#E6D299|
 |Foreground, Variable|![#cecfd1](https://via.placeholder.com/23/cecfd1/?text=+)|#CECFD1|
 |Constant, HTML unrecognized tag, Level 8 JSON key|![#ff9e9e](https://via.placeholder.com/23/ff9e9e/?text=+)|#FF9E9E|
-|Miscellaneous, Level 9 JSON key|![#d1b485](https://via.placeholder.com/23/d1b485/?text=+)|#D1B485|
+|Miscellaneous, Annotation, Level 9 JSON key|![#d1b485](https://via.placeholder.com/23/d1b485/?text=+)|#D1B485|
 |Type, Level 3 JSON key|![#05cbd6](https://via.placeholder.com/23/05cbd6/?text=+)|#05CBD6|
 |Parameter, Argument|![#e9e9ea](https://via.placeholder.com/23/e9e9ea/?text=+)|#E9E9EA|
 |Operator|![#e0e0b8](https://via.placeholder.com/23/e0e0b8/?text=+)|#E0E0B8|
 |Comparison/Logical operator, Italic|![#b8e0c8](https://via.placeholder.com/23/b8e0c8/?text=+)|#B8E0C8|
 |Comment|![#61646a](https://via.placeholder.com/23/61646a/?text=+)|#61646A|
 |Documentation|![#b7b9bb](https://via.placeholder.com/23/b7b9bb/?text=+)|#B7B9BB|
-|Annotation|![#c3ab85](https://via.placeholder.com/23/c3ab85/?text=+)|#C3AB85|
 |Function declaration|![#85c3ab](https://via.placeholder.com/23/85c3ab/?text=+)|#85C3AB|
 |Literal constant, HTML custom tag|![#c4abf7](https://via.placeholder.com/23/c4abf7/?text=+)|#C4ABF7|
 |Default library class/type, HTML object tag, Level 5 JSON key|![#fc9cc4](https://via.placeholder.com/23/fc9cc4/?text=+)|#FC9CC4|

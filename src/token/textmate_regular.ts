@@ -36,9 +36,7 @@ export class TextmateTheme {
           "variable.other.assignment",
           "variable.other.block.crystal",
           "variable.other.block",
-          "variable.other.bracket.shell",
           "variable.other.declaration",
-          "variable.other.normal.shell",
           "variable.other.object.js.jsx",
           "variable.other.object.tsx",
           "variable.other.object",
@@ -70,6 +68,7 @@ export class TextmateTheme {
           "variable.parameter.function.language.special.self",
           "variable.other.readwrite.instance.crystal",
           "variable.other.readwrite.module",
+          "source.shell variable.other",
         ],
         settings: {
           foreground: this.palette.constantColor.code,

@@ -61,6 +61,7 @@ function createThemeVariant(): Palette {
   p.functionCallColor = /* ................ */ new Color("#e6d299", "Function call");
   p.constantColor = /* .................... */ new Color("#ff9e9e", "Constant");
   p.miscellaneousColor = /* ............... */ new Color("#d1b485", "Miscellaneous");
+  p.annotationColor = /* .................. */ new Color("#d1b485", "Annotation");
   p.typeColor = /* ........................ */ new Color("#05cbd6", "Type");
   p.operatorColor = /* .................... */ new Color("#e0e0b8", "Operator");
   p.comparisonLogicalOperatorColor = /* ... */ new Color("#b8e0c8", "Comparison/Logical operator");
