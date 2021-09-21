@@ -72,7 +72,7 @@ export function vimColoring(palette) {
             "perlPackageDecl",
             "perlPackageRef",
         ],
-        NCOperator: ["Operator", "cssSelectorOp", "shVarAssign", "shArithRegion"],
+        NCOperator: ["Operator", "cssSelectorOp", "shVarAssign", "shArithRegion", "awkOperator", "awkExpression"],
         NCKeyword: [
             "Statement",
             "PreProc",
@@ -90,7 +90,7 @@ export function vimColoring(palette) {
         NCType: ["Type"],
         NCTag: ["Tag", "csXmlTag", "xmlTag", "htmlTagName", "xmlTagName"],
         NCMiscellaneous: ["Special", "rustAttribute", "javaAnnotation", "yamlDocumentStart", "poCommentSources"],
-        NCDefaultLibraryClassType: ["phpIntVar", "cssColor"],
+        NCDefaultLibraryClassType: ["phpIntVar", "cssColor", "awkVariables"],
         NCDefaultLibraryFunctionCall: ["phpFunctions", "cssFunctionName", "pythonBuiltin", "goBuiltins", "shCmdSubRegion"],
         NCFunctionDeclaration: [
             "rubyMethodName",
@@ -108,7 +108,7 @@ export function vimColoring(palette) {
             "shVariable",
             "yamlBlockMappingKey",
         ],
-        NCComparisonLogicalOperator: ["cssAtRuleLogical", "shOption"],
+        NCComparisonLogicalOperator: ["cssAtRuleLogical", "shOption", "awkBoolLogic"],
         NCDocumentationComment: ["javaCommentTitle"],
         NCTagPunctuation: ["htmlTag", "xmlTag"],
         NCUnrecognizedTag: ["htmlTagN"],
