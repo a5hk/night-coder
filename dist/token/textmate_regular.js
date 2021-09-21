@@ -205,7 +205,27 @@ export class TextmateTheme {
             },
             {
                 name: "String",
-                scope: ["source.elixir.embedded.source", "storage.modifier.import.java", "string.quoted.double", "string"],
+                scope: [
+                    "source.elixir.embedded.source",
+                    "storage.modifier.import.java",
+                    "string.quoted.double",
+                    "string",
+                    "meta.import entity.name.namespace",
+                    "meta.use entity.name.namespace",
+                    "meta.use entity.name.type",
+                ],
+                settings: {
+                    foreground: this.palette.stringColor.code,
+                },
+            },
+            {
+                name: "Import",
+                scope: [
+                    "storage.modifier.import.java",
+                    "meta.import entity.name.namespace",
+                    "meta.use entity.name.namespace",
+                    "meta.use entity.name.type",
+                ],
                 settings: {
                     foreground: this.palette.stringColor.code,
                 },

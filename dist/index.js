@@ -60,6 +60,7 @@ function createThemeVariant() {
     p.defaultLibraryClassTypeColor = new Color("#fc9cc4", "Default library class/type");
     p.namespaceClassStructColor = new Color("#9db9e7", "Namespace/Class/Struct");
     p.stringColor = new Color("#8fc78a", "String");
+    p.importColor = new Color("#8fc78a", "Import/Require/Use");
     p.propertyColor = new Color("#f0a875", "Property");
     p.keywordColor = new Color("#eea0e5", "Keyword");
     p.tagColor = new Color("#f0a875", "Tag");
