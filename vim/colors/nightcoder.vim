@@ -92,6 +92,8 @@ hi! link Operator NCOperator
 hi! link cssSelectorOp NCOperator
 hi! link shVarAssign NCOperator
 hi! link shArithRegion NCOperator
+hi! link awkOperator NCOperator
+hi! link awkExpression NCOperator
 hi! link Statement NCKeyword
 hi! link PreProc NCKeyword
 hi! link phpStructure NCKeyword
@@ -117,6 +119,7 @@ hi! link yamlDocumentStart NCMiscellaneous
 hi! link poCommentSources NCMiscellaneous
 hi! link phpIntVar NCDefaultLibraryClassType
 hi! link cssColor NCDefaultLibraryClassType
+hi! link awkVariables NCDefaultLibraryClassType
 hi! link phpFunctions NCDefaultLibraryFunctionCall
 hi! link cssFunctionName NCDefaultLibraryFunctionCall
 hi! link pythonBuiltin NCDefaultLibraryFunctionCall
@@ -138,6 +141,7 @@ hi! link shVariable NCProperty
 hi! link yamlBlockMappingKey NCProperty
 hi! link cssAtRuleLogical NCComparisonLogicalOperator
 hi! link shOption NCComparisonLogicalOperator
+hi! link awkBoolLogic NCComparisonLogicalOperator
 hi! link javaCommentTitle NCDocumentationComment
 hi! link htmlTag NCTagPunctuation
 hi! link xmlTag NCTagPunctuation
