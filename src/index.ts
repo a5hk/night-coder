@@ -159,6 +159,12 @@ function vscodeThemesWriter() {
 }
 
 function generateManifest(t: VSTheme[]): string {
+  const version = process.env.npm_package_version;
+
+  if (version == undefined || version.toString().length < 1) {
+    throw new TypeError("Version needed");
+  }
+
   const author = "a5hk";
   const githubURL = "https://github.com/a5hk/night-coder";
   const themes = t.map((t) => t.toManifestFormat());
@@ -166,12 +172,12 @@ function generateManifest(t: VSTheme[]): string {
     name: "night-coder",
     displayName: "Night Coder",
     description: "A dark theme for Night Coders",
-    version: "2.22.0",
+    version: version,
     publisher: author,
     author: author,
     license: "MIT",
     icon: "icon.png",
-    keywords: ["NightCoder", "Night Coder", "Dark", "Borderless", "Italic", "Contrast"],
+    keywords: ["NightCoder", "Night Coder", "Dark", "Borderless", "Italic", "Contrast", "Gray"],
     galleryBanner: {
       color: "#030917",
       theme: "dark",

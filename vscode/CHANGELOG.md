@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.23.0
+
+- Improvements on rust, haskell, and c# highlighting
+
 ## 2.22.0
 
 - Window border for contrast variants
