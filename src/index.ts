@@ -8,6 +8,7 @@ import { commonWorkbenchColors, workbenchColor } from "./ui/workbench_common.js"
 import { regularWorkbenchColors } from "./ui/workbench_regular.js";
 import { contrastWorkbenchColors } from "./ui/workbench_contrast.js";
 import { vimColoring } from "./token/vim.js";
+import { tmTheme } from "./token/bat.js";
 import { VSPackage, VSTheme } from "./manifest/package.js";
 
 /* eslint-disable-next-line  @typescript-eslint/no-explicit-any */
@@ -263,5 +264,15 @@ function vimColorScheme() {
   });
 }
 
+function batColorScheme() {
+  fs.writeFile("./bat/nightcoder.tmTheme", tmTheme(), (err) => {
+    if (err) {
+      throw err;
+    }
+    console.log("Bat color scheme generated.");
+  });
+}
+
 vscodeThemesWriter();
 vimColorScheme();
+batColorScheme();
