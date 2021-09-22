@@ -7,6 +7,7 @@ import { commonWorkbenchColors } from "./ui/workbench_common.js";
 import { regularWorkbenchColors } from "./ui/workbench_regular.js";
 import { contrastWorkbenchColors } from "./ui/workbench_contrast.js";
 import { vimColoring } from "./token/vim.js";
+import { tmTheme } from "./token/bat.js";
 import { VSTheme } from "./manifest/package.js";
 function __italicReject(theme) {
     return JSON.stringify(theme, (k, v) => {
@@ -227,5 +228,14 @@ function vimColorScheme() {
         console.log(`Vim color scheme generated.`);
     });
 }
+function batColorScheme() {
+    fs.writeFile("./bat/nightcoder.tmTheme", tmTheme(), (err) => {
+        if (err) {
+            throw err;
+        }
+        console.log("Bat color scheme generated.");
+    });
+}
 vscodeThemesWriter();
 vimColorScheme();
+batColorScheme();
