@@ -1,8 +1,6 @@
 import fs from "fs";
 import path from "path";
 
-// var format = require('xml-formatter');
-
 import { colorPaletteFactory, Palette, Color } from "./common/colors.js";
 import { TextmateTheme, textmateRule } from "./token/textmate_regular.js";
 import { SemanticTheme, semanticRule } from "./token/semantic_regular.js";
