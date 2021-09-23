@@ -222,7 +222,8 @@ A dark theme for Night Coders.
 
 ## Other versions
 
-- Vim: [/vim/colors/](/vim/colors/)
+- [vim](/vim/colors/)
+- [bat](/bat/)
 
 ${palettes.map((p) => p.toMarkdownTable()).join("\n\n")}
 
