@@ -1,8 +1,11 @@
+import xmlFormatter from "xml-formatter";
+
 import { colorPaletteFactory } from "../common/colors.js";
 import { TextmateTheme } from "./textmate_regular.js";
 
 export function tmTheme(): string {
-  console.log("hi");
+  const palette = new (colorPaletteFactory())("Night Coder");
+  const textmateRule = new TextmateTheme(palette);
 
   const prefix = [
     '<?xml version="1.0" encoding="UTF-8"?>',
@@ -13,10 +16,22 @@ export function tmTheme(): string {
     "<string>Night Coder</string>",
     "<key>settings</key>",
     "<array>",
+    "<dict>",
+    "<key>settings</key>",
+    "<dict>",
+    "<key>background</key>",
+    `<string>${palette.background.code}</string>`,
+    "<key>foreground</key>",
+    `<string>${palette.foregroundColor.code}</string>`,
+    "<key>caret</key>",
+    `<string>${palette.background11.code}</string>`,
+    "<key>invisibles</key>",
+    `<string>${palette.background66.code}</string>`,
+    "<key>selection</key>",
+    `<string>${palette.background33.code}77</string>`,
+    "</dict>",
+    "</dict>",
   ].join("\n");
-
-  const palette = new (colorPaletteFactory())("Night Coder");
-  const textmateRule = new TextmateTheme(palette);
 
   const theme = textmateRule
     .getRules("")
@@ -43,5 +58,5 @@ export function tmTheme(): string {
 
   const suffix = "</array>\n</dict>\n</plist>";
 
-  return `${prefix}\n${theme}\n${suffix}`;
+  return xmlFormatter(`${prefix}\n${theme}\n${suffix}`);
 }
