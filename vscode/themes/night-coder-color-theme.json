@@ -95,6 +95,7 @@
     "scrollbarSlider.activeBackground": "#006600ff",
     "scrollbarSlider.background": "#464b5577",
     "scrollbarSlider.hoverBackground": "#575b6488",
+    "sideBySideEditor.border": "#252a36",
     "statusBar.background": "#006600",
     "statusBar.debuggingBackground": "#9b2c2c",
     "statusBar.debuggingBorder": "#770000",

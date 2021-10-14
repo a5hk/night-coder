@@ -133,6 +133,7 @@ export function colorPaletteFactory(bg = "#030917") {
         editorLightBulbAutoFixForeground: colorDescriptor(new Color("#f2f28c")),
         progressBarBackground: colorDescriptor(new Color("#d9d326")),
         inlineValuesForeground: colorDescriptor(new Color(mix("cc", bg))),
+        sideBySideEditorBorder: colorDescriptor(new Color(mix("22", bg))),
         statusBarDebuggingBorder: colorDescriptor(new Color("#770000")),
         inlineValuesBackground: colorDescriptor(new Color("#c3ab8555")),
         statusBarRemoteBackground: colorDescriptor(new Color("#660066")),

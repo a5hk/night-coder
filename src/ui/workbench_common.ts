@@ -98,6 +98,7 @@ export function commonWorkbenchColors(palette: Palette): workbenchColor {
     "scrollbarSlider.activeBackground": /* .......... */ `${palette.statusBarBackground.code}ff`,
     "scrollbarSlider.background": /* ................ */ `${palette.background44.code}77`,
     "scrollbarSlider.hoverBackground": /* ........... */ `${palette.background55.code}88`,
+    "sideBySideEditor.border": /* ................... */ palette.sideBySideEditorBorder.code,
     "statusBar.background": /* ...................... */ palette.statusBarBackground.code,
     "statusBar.debuggingBackground": /* ............. */ palette.statusBarDebuggingBackground.code,
     "statusBar.debuggingBorder": /* ................. */ palette.statusBarDebuggingBorder.code,

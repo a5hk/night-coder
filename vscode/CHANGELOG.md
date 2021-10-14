@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.24.0
+
+- Added a color for side by side editor border.
+
 ## 2.23.0
 
 - Improvements on rust, haskell, and c# highlighting
