@@ -2,7 +2,7 @@
 
 ## 2.25.0
 
-- Added horizontal and vertical borders for side by side editor border.
+- Added horizontal and vertical borders for side by side editor.
 
 ## 2.24.0
 
