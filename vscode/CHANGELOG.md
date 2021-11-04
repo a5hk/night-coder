@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.25.0
+
+- Added horizontal and vertical borders for side by side editor border.
+
 ## 2.24.0
 
 - Added a color for side by side editor border.
