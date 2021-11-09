@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.26.0
+
+- Change `list.focusBackground` and added outline to better support notifications.
+
 ## 2.25.0
 
 - Added horizontal and vertical borders for side by side editor.
