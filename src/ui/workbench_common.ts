@@ -75,7 +75,7 @@ export function commonWorkbenchColors(palette: Palette): workbenchColor {
     "list.activeSelectionBackground": /* ............ */ palette.background33.code,
     "list.activeSelectionForeground": /* ............ */ palette.backgroundcc.code,
     "quickInputList.focusBackground": /* ............ */ palette.background55.code,
-    "list.focusBackground": /* ...................... */ palette.contrastBackground.code,
+    "list.focusBackground": /* ...................... */ palette.listFocusBackground.code,
     "list.focusForeground": /* ...................... */ palette.backgrounddd.code,
     "list.focusOutline": /* ......................... */ palette.statusBarBackground.code,
     "list.highlightForeground": /* .................. */ palette.backgroundee.code,

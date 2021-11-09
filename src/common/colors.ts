@@ -143,6 +143,7 @@ export function colorPaletteFactory(bg = "#030917") {
     textLinkForeground: /* ................. */ colorDescriptor(new Color("#89b971")),
     statusBarBackground: /* ................ */ colorDescriptor(new Color("#006600")),
     statusBarForeground: /* ................ */ colorDescriptor(new Color("#f5fff5")),
+    listFocusBackground: /* ................ */ colorDescriptor(new Color("#000000f0")),
     editorInfoForeground: /* ............... */ colorDescriptor(new Color("#02cad4")),
     editorErrorForeground: /* .............. */ colorDescriptor(new Color("#ff7575")),
     editorLightBulbForeground: /* .......... */ colorDescriptor(new Color("#ef7762")),
