@@ -1,8 +1,11 @@
 {
   "cSpell.words": [
     "backgrounde",
+    "Builtins",
+    "Cascadia",
     "cterm",
     "ctermfg",
+    "Deref",
     "feijoa",
     "guibg",
     "guifg",
@@ -13,12 +16,5 @@
     "tonys",
     "vim"
   ],
-  "cSpell.ignoreWords": [
-    "backgroundaa",
-    "backgroundbb",
-    "backgroundc",
-    "backgroundcc",
-    "backgrounddd",
-    "backgroundee"
-  ]
+  "cSpell.ignoreWords": ["backgroundaa", "backgroundbb", "backgroundc", "backgroundcc", "backgrounddd", "backgroundee"]
 }

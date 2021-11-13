@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.27.0
+
+- Added notebook support
+
 ## 2.26.0
 
 - Change `list.focusBackground` and added outline to better support notifications.
