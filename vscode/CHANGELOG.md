@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.27.1
+
+- Updated icon
+
 ## 2.27.0
 
 - Added notebook support
