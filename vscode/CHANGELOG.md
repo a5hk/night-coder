@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.28.0
+
+- Added Windows Terminal support
+- Better terminal colors
+
 ## 2.27.2
 
 - Fixed function declaration color in gray variants.

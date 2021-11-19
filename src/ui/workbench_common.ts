@@ -135,7 +135,7 @@ export function commonWorkbenchColors(palette: Palette): workbenchColor {
     "terminal.ansiBrightRed": /* .................... */ palette.ansiBrightRed.code,
     "terminal.ansiBrightWhite": /* .................. */ palette.ansiBrightWhite.code,
     "terminal.ansiBrightYellow": /* ................. */ palette.ansiBrightYellow.code,
-    "terminal.ansiCyan": /* ......................... */ palette.ansiBrightCyan.code,
+    "terminal.ansiCyan": /* ......................... */ palette.ansiCyan.code,
     "terminal.ansiGreen": /* ........................ */ palette.ansiGreen.code,
     "terminal.ansiMagenta": /* ...................... */ palette.ansiMagenta.code,
     "terminal.ansiRed": /* .......................... */ palette.ansiRed.code,
