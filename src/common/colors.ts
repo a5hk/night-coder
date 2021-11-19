@@ -172,7 +172,7 @@ export function colorPaletteFactory(bg = "#030917") {
     // terminal colors
     ansiBrightBlack: /* ..... */ colorDescriptor(new Color("#888b92")), // background88
     ansiBrightBlue: /* ...... */ colorDescriptor(new Color("#80bfff")),
-    ansiBrightCyan: /* ...... */ colorDescriptor(new Color("#0fa5d7")),
+    ansiBrightCyan: /* ...... */ colorDescriptor(new Color("#a0f1f8")),
     ansiBrightGreen: /* ..... */ colorDescriptor(new Color("#89b971")),
     ansiBrightMagenta: /* ... */ colorDescriptor(new Color("#f28ca6")),
     ansiBrightRed: /* ....... */ colorDescriptor(new Color("#ef7b6d")),
@@ -180,6 +180,7 @@ export function colorPaletteFactory(bg = "#030917") {
     ansiBlack: /* ........... */ colorDescriptor(new Color("#353a45")), // background33
     ansiBlue: /* ............ */ colorDescriptor(new Color("#859dc3")),
     ansiBrightYellow: /* .... */ colorDescriptor(new Color("#f5d780")),
+    ansiCyan: /* ............ */ colorDescriptor(new Color("#0fc6d7")),
     ansiGreen: /* ........... */ colorDescriptor(new Color("#85c3ab")),
     ansiMagenta: /* ......... */ colorDescriptor(new Color("#c385bc")),
     ansiRed: /* ............. */ colorDescriptor(new Color("#ff7575")),
