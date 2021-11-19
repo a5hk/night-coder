@@ -175,7 +175,7 @@ export function colorPaletteFactory(bg = "#030917") {
     ansiBrightCyan: /* ...... */ colorDescriptor(new Color("#a0f1f8")),
     ansiBrightGreen: /* ..... */ colorDescriptor(new Color("#89b971")),
     ansiBrightMagenta: /* ... */ colorDescriptor(new Color("#f28ca6")),
-    ansiBrightRed: /* ....... */ colorDescriptor(new Color("#ef7b6d")),
+    ansiBrightRed: /* ....... */ colorDescriptor(new Color("#f18a7e")),
     ansiBrightWhite: /* ..... */ colorDescriptor(new Color("#c5c6c9")), // backgroundc5
     ansiBlack: /* ........... */ colorDescriptor(new Color("#353a45")), // background33
     ansiBlue: /* ............ */ colorDescriptor(new Color("#859dc3")),

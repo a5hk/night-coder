@@ -8,6 +8,7 @@ import { regularWorkbenchColors } from "./ui/workbench_regular.js";
 import { contrastWorkbenchColors } from "./ui/workbench_contrast.js";
 import { vimColoring } from "./token/vim.js";
 import { tmTheme } from "./token/bat.js";
+import { windowsTerminalColors } from "./token/windows-terminal.js";
 import { VSTheme } from "./manifest/package.js";
 function __italicReject(theme) {
     return JSON.stringify(theme, (k, v) => {
@@ -237,6 +238,16 @@ function batColorScheme() {
         console.log("Bat color scheme generated.");
     });
 }
+function windowsTerminalColorScheme() {
+    const palette = new (colorPaletteFactory())("Night Coder");
+    fs.writeFile("./windows-terminal/night-coder.json", windowsTerminalColors(palette), (err) => {
+        if (err) {
+            throw err;
+        }
+        console.log(`Windows Terminal color scheme generated.`);
+    });
+}
 vscodeThemesWriter();
 vimColorScheme();
 batColorScheme();
+windowsTerminalColorScheme();

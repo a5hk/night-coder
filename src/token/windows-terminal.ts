@@ -8,7 +8,7 @@ export function windowsTerminalColors(palette: Palette): string {
   const settings: WindowsTerminalSetting = {
     name: "Night Coder",
     cursorColor: palette.backgroundee.code,
-    selectionBackground: `${palette.background33.code}99`,
+    selectionBackground: `${palette.backgroundee.code}`,
     background: palette.background.code,
     foreground: palette.backgroundc5.code,
 
