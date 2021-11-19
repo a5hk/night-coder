@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.27.2
+
+- Fixed function declaration color in gray variants.
+
 ## 2.27.1
 
 - Updated icon

@@ -171,14 +171,14 @@
     "property": { "foreground": "#f0a875", "fontStyle": "italic" },
     "parameter": { "foreground": "#e9e9ea", "fontStyle": "italic" },
     "function": { "foreground": "#e6d299", "fontStyle": "italic" },
-    "function.declaration": { "foreground": "#85c3ab" },
+    "function.declaration": { "foreground": "#42d79e" },
     "function.defaultLibrary": {
       "foreground": "#80caff",
       "fontStyle": "italic"
     },
     "function.builtin": { "foreground": "#80caff", "fontStyle": "italic" },
     "method": { "foreground": "#e6d299", "fontStyle": "italic" },
-    "method.declaration": { "foreground": "#85c3ab" },
+    "method.declaration": { "foreground": "#42d79e" },
     "method.defaultLibrary": { "foreground": "#80caff", "fontStyle": "italic" },
     "method.builtin": { "foreground": "#80caff", "fontStyle": "italic" },
     "keyword": { "foreground": "#eea0e5" },
@@ -295,7 +295,7 @@
     {
       "name": "function, method",
       "scope": ["entity.name.function"],
-      "settings": { "foreground": "#85c3ab" }
+      "settings": { "foreground": "#42d79e" }
     },
     {
       "name": "function call",

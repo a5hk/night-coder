@@ -49,14 +49,13 @@ A dark theme for Night Coders.
 |Comparison/Logical operator, Italic|![#b8e0c8](https://via.placeholder.com/23/b8e0c8/?text=+)|#B8E0C8|
 |Comment|![#61646a](https://via.placeholder.com/23/61646a/?text=+)|#61646A|
 |Documentation|![#b7b9bb](https://via.placeholder.com/23/b7b9bb/?text=+)|#B7B9BB|
-|Function declaration|![#85c3ab](https://via.placeholder.com/23/85c3ab/?text=+)|#85C3AB|
+|Function declaration, HTML link tag|![#42d79e](https://via.placeholder.com/23/42d79e/?text=+)|#42D79E|
 |Literal constant, HTML custom tag|![#c4abf7](https://via.placeholder.com/23/c4abf7/?text=+)|#C4ABF7|
 |Default library class/type, HTML object tag, Level 5 JSON key|![#fc9cc4](https://via.placeholder.com/23/fc9cc4/?text=+)|#FC9CC4|
 |Namespace/Class/Struct, HTML style tag, Level 7 JSON key|![#9db9e7](https://via.placeholder.com/23/9db9e7/?text=+)|#9DB9E7|
 |String, Import/Require/Use|![#8fc78a](https://via.placeholder.com/23/8fc78a/?text=+)|#8FC78A|
 |Property, Tag, Level 1 JSON key, Level > 10 JSON key|![#f0a875](https://via.placeholder.com/23/f0a875/?text=+)|#F0A875|
 |Keyword, HTML meta tag, Level 2 JSON key|![#eea0e5](https://via.placeholder.com/23/eea0e5/?text=+)|#EEA0E5|
-|HTML link tag|![#42d79e](https://via.placeholder.com/23/42d79e/?text=+)|#42D79E|
 |Script tag, Level 10 JSON key|![#e0dc52](https://via.placeholder.com/23/e0dc52/?text=+)|#E0DC52|
 |Tag punctuation|![#8c8e93](https://via.placeholder.com/23/8c8e93/?text=+)|#8C8E93|
 

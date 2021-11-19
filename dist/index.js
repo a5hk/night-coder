@@ -56,7 +56,7 @@ function createThemeVariant() {
     p.typeColor = new Color("#05cbd6", "Type");
     p.operatorColor = new Color("#e0e0b8", "Operator");
     p.comparisonLogicalOperatorColor = new Color("#b8e0c8", "Comparison/Logical operator");
-    p.functionDeclarationColor = new Color("#85c3ab", "Function declaration");
+    p.functionDeclarationColor = new Color("#42d79e", "Function declaration");
     p.literalConstantColor = new Color("#c4abf7", "Literal constant");
     p.defaultLibraryClassTypeColor = new Color("#fc9cc4", "Default library class/type");
     p.namespaceClassStructColor = new Color("#9db9e7", "Namespace/Class/Struct");
