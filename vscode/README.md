@@ -8,6 +8,7 @@ A dark theme for Night Coders.
 
 - [vim](/vim/colors/)
 - [bat](/bat/)
+- [Windows Terminal](/windows-terminal/)
 
 ## Night Coder Color Palette
 

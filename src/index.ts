@@ -225,6 +225,7 @@ A dark theme for Night Coders.
 
 - [vim](/vim/colors/)
 - [bat](/bat/)
+- [Windows Terminal](/windows-terminal/)
 
 ${palettes.map((p) => p.toMarkdownTable()).join("\n\n")}
 
