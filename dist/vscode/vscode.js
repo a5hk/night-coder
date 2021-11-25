@@ -1,6 +1,6 @@
-import fs from "fs";
 import path from "path";
 import { colorPaletteFactory, Color } from "../common/colors.js";
+import { themeWriter } from "../common/theme-writer.js";
 import { TextmateTheme } from "./textmate_regular.js";
 import { SemanticTheme } from "./semantic_regular.js";
 import { commonWorkbenchColors } from "./workbench_common.js";
@@ -15,21 +15,10 @@ function __italicReject(theme) {
         return v;
     });
 }
-function createDirIfNotExists(dir) {
-    if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir, { recursive: true });
-    }
-}
 function fileWriter(content, filepath) {
-    const baseOutputDir = "./color-themes/vscode";
+    const baseOutputDir = "vscode";
     const p = path.normalize(path.join(baseOutputDir, filepath));
-    createDirIfNotExists(path.dirname(p));
-    fs.writeFile(p, content, (err) => {
-        if (err) {
-            throw err;
-        }
-        console.log(`Generated ${p}.`);
-    });
+    themeWriter(p, content, `Generated ${p}.`);
 }
 function generateTheme(t, ui, semantic, textmate) {
     return __italicReject({
@@ -41,7 +30,7 @@ function generateTheme(t, ui, semantic, textmate) {
         tokenColors: textmate,
     });
 }
-function themeWriter(t, ui, semantic, textmate) {
+function vsThemeWriter(t, ui, semantic, textmate) {
     fileWriter(generateTheme(t, ui, semantic, textmate), t.path);
 }
 function createThemeVariant() {
@@ -123,7 +112,7 @@ export function vscodeThemesWriter() {
                 uiColors = c.toLowerCase() === "contrast" ? contrastWorkbenchColors(p) : regularWorkbenchColors(p);
                 const x = new VSTheme([p.name, c, s].join(" ").trim().replace(/ +/g, " "), "vs-dark");
                 const len = themes.push(x);
-                themeWriter((_a = themes[len - 1]) !== null && _a !== void 0 ? _a : x, Object.assign(Object.assign({}, commonWorkbenchColors(p)), uiColors), semanticTheme.getPaletteRules(s), textmateTheme.getRules(s));
+                vsThemeWriter((_a = themes[len - 1]) !== null && _a !== void 0 ? _a : x, Object.assign(Object.assign({}, commonWorkbenchColors(p)), uiColors), semanticTheme.getPaletteRules(s), textmateTheme.getRules(s));
             }
         }
     }

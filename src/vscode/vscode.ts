@@ -1,7 +1,7 @@
-import fs from "fs";
 import path from "path";
 
 import { colorPaletteFactory, Palette, Color } from "../common/colors.js";
+import { themeWriter } from "../common/theme-writer.js";
 import { TextmateTheme, textmateRule } from "./textmate_regular.js";
 import { SemanticTheme, semanticRule } from "./semantic_regular.js";
 import { commonWorkbenchColors, workbenchColor } from "./workbench_common.js";
@@ -19,23 +19,10 @@ function __italicReject(theme: any): string {
   });
 }
 
-function createDirIfNotExists(dir: string) {
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
-  }
-}
-
 function fileWriter(content: string, filepath: string) {
-  const baseOutputDir = "./color-themes/vscode";
+  const baseOutputDir = "vscode";
   const p = path.normalize(path.join(baseOutputDir, filepath));
-  createDirIfNotExists(path.dirname(p));
-
-  fs.writeFile(p, content, (err) => {
-    if (err) {
-      throw err;
-    }
-    console.log(`Generated ${p}.`);
-  });
+  themeWriter(p, content, `Generated ${p}.`);
 }
 
 function generateTheme(t: VSTheme, ui: workbenchColor, semantic: semanticRule, textmate: textmateRule[]): string {
@@ -49,7 +36,7 @@ function generateTheme(t: VSTheme, ui: workbenchColor, semantic: semanticRule, t
   });
 }
 
-function themeWriter(t: VSTheme, ui: workbenchColor, semantic: semanticRule, textmate: textmateRule[]) {
+function vsThemeWriter(t: VSTheme, ui: workbenchColor, semantic: semanticRule, textmate: textmateRule[]) {
   fileWriter(generateTheme(t, ui, semantic, textmate), t.path);
 }
 
@@ -144,7 +131,7 @@ export function vscodeThemesWriter(): void {
         uiColors = c.toLowerCase() === "contrast" ? contrastWorkbenchColors(p) : regularWorkbenchColors(p);
         const x = new VSTheme([p.name, c, s].join(" ").trim().replace(/ +/g, " "), "vs-dark");
         const len = themes.push(x);
-        themeWriter(
+        vsThemeWriter(
           themes[len - 1] ?? x,
           { ...commonWorkbenchColors(p), ...uiColors },
           semanticTheme.getPaletteRules(s),
