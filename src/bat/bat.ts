@@ -1,3 +1,4 @@
+import fs from "fs";
 import xmlFormatter from "xml-formatter";
 
 import { colorPaletteFactory } from "../common/colors.js";
@@ -62,5 +63,14 @@ export function tmTheme(): string {
     indentation: "  ",
     collapseContent: true,
     lineSeparator: "\n",
+  });
+}
+
+export function batColorScheme(): void {
+  fs.writeFile("./color-themes/bat/nightcoder.tmTheme", tmTheme(), (err) => {
+    if (err) {
+      throw err;
+    }
+    console.log("Bat color scheme generated.");
   });
 }

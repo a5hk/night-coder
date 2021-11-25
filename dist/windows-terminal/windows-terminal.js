@@ -1,3 +1,5 @@
+import fs from "fs";
+import { colorPaletteFactory } from "../common/colors.js";
 export function windowsTerminalColors(palette) {
     const settings = {
         name: "Night Coder",
@@ -23,4 +25,13 @@ export function windowsTerminalColors(palette) {
         brightYellow: palette.ansiBrightYellow.code,
     };
     return JSON.stringify(settings);
+}
+export function windowsTerminalColorScheme() {
+    const palette = new (colorPaletteFactory())("Night Coder");
+    fs.writeFile("./color-themes/windows-terminal/night-coder.json", windowsTerminalColors(palette), (err) => {
+        if (err) {
+            throw err;
+        }
+        console.log(`Windows Terminal color scheme generated.`);
+    });
 }
