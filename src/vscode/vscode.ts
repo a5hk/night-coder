@@ -26,7 +26,7 @@ function createDirIfNotExists(dir: string) {
 }
 
 function fileWriter(content: string, filepath: string) {
-  const baseOutputDir = "./vscode";
+  const baseOutputDir = "./color-themes/vscode";
   const p = path.normalize(path.join(baseOutputDir, filepath));
   createDirIfNotExists(path.dirname(p));
 
@@ -220,9 +220,9 @@ A dark theme for Night Coders.
 
 ## Other versions
 
-- [vim](/vim/colors/)
-- [bat](/bat/)
-- [Windows Terminal](/windows-terminal/)
+- [vim](/color-themes/vim/colors/)
+- [bat](/color-themes/bat/)
+- [Windows Terminal](/color-themes/windows-terminal/)
 
 ${palettes.map((p) => p.toMarkdownTable()).join("\n\n")}
 

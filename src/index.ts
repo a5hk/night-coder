@@ -8,7 +8,7 @@ import { windowsTerminalColors } from "./windows-terminal/windows-terminal.js";
 
 function vimColorScheme() {
   const palette = new (colorPaletteFactory())("Night Coder");
-  fs.writeFile("./vim/colors/nightcoder.vim", vimColoring(palette), (err) => {
+  fs.writeFile("./color-themes/vim/colors/nightcoder.vim", vimColoring(palette), (err) => {
     if (err) {
       throw err;
     }
@@ -17,7 +17,7 @@ function vimColorScheme() {
 }
 
 function batColorScheme() {
-  fs.writeFile("./bat/nightcoder.tmTheme", tmTheme(), (err) => {
+  fs.writeFile("./color-themes/bat/nightcoder.tmTheme", tmTheme(), (err) => {
     if (err) {
       throw err;
     }
@@ -27,7 +27,7 @@ function batColorScheme() {
 
 function windowsTerminalColorScheme() {
   const palette = new (colorPaletteFactory())("Night Coder");
-  fs.writeFile("./windows-terminal/night-coder.json", windowsTerminalColors(palette), (err) => {
+  fs.writeFile("./color-themes/windows-terminal/night-coder.json", windowsTerminalColors(palette), (err) => {
     if (err) {
       throw err;
     }

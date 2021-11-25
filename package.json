@@ -16,7 +16,7 @@
     "lint": "eslint ./src/** --ext .ts",
     "build": "tsc --build",
     "clean": "tsc --build --clean",
-    "format": "prettier --write ./vscode/themes/*.json ./vscode/package.json ./windows-terminal/*.json",
+    "format": "prettier --write ./color-themes/vscode/themes/*.json ./color-themes/vscode/package.json ./color-themes/windows-terminal/*.json",
     "gen": "npm run lint && npm run clean && npm run build && node ./dist/index.js && npm run format",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

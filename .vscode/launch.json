@@ -10,7 +10,7 @@
       "type": "extensionHost",
       "request": "launch",
       "runtimeExecutable": "${execPath}",
-      "args": ["--extensionDevelopmentPath=${workspaceFolder}/vscode"]
+      "args": ["--extensionDevelopmentPath=${workspaceFolder}/color-themes/vscode"]
     }
   ]
 }
