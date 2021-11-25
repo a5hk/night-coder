@@ -72,6 +72,26 @@
         "label": "Night Coder Gray Contrast Italic",
         "uiTheme": "vs-dark",
         "path": "./themes/night-coder-gray-contrast-italic-color-theme.json"
+      },
+      {
+        "label": "Night Coder Warm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/night-coder-warm-color-theme.json"
+      },
+      {
+        "label": "Night Coder Warm Contrast",
+        "uiTheme": "vs-dark",
+        "path": "./themes/night-coder-warm-contrast-color-theme.json"
+      },
+      {
+        "label": "Night Coder Warm Italic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/night-coder-warm-italic-color-theme.json"
+      },
+      {
+        "label": "Night Coder Warm Contrast Italic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/night-coder-warm-contrast-italic-color-theme.json"
       }
     ]
   }
