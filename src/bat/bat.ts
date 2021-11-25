@@ -1,7 +1,8 @@
 import xmlFormatter from "xml-formatter";
 
 import { colorPaletteFactory } from "../common/colors.js";
-import { TextmateTheme } from "./textmate_regular.js";
+import { themeWriter } from "../common/theme-writer.js";
+import { TextmateTheme } from "../vscode/textmate_regular.js";
 
 export function tmTheme(): string {
   const palette = new (colorPaletteFactory())("Night Coder");
@@ -63,4 +64,8 @@ export function tmTheme(): string {
     collapseContent: true,
     lineSeparator: "\n",
   });
+}
+
+export function batColorScheme(): void {
+  themeWriter("bat/nightcoder.tmTheme", tmTheme(), "Bat color scheme generated.");
 }

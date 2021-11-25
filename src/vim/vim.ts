@@ -1,4 +1,5 @@
-import { Palette } from "../common/colors.js";
+import { Palette, colorPaletteFactory } from "../common/colors.js";
+import { themeWriter } from "../common/theme-writer.js";
 
 export interface vimRule {
   groups: string[];
@@ -166,4 +167,9 @@ highlight Normal guifg=${palette.foregroundColor.code} guibg=#030917
       .map((k) => links[k]?.map((v) => `hi! link ${v} ${k}`).join("\n"))
       .join("\n")
   );
+}
+
+export function vimColorScheme(): void {
+  const palette = new (colorPaletteFactory())("Night Coder");
+  themeWriter("vim/colors/nightcoder.vim", vimColoring(palette), "Vim color scheme generated.");
 }
