@@ -60,31 +60,6 @@ A dark theme for Night Coders.
 |Script tag, Level 10 JSON key|![#e0dc52](https://via.placeholder.com/23/e0dc52/?text=+)|#E0DC52|
 |Tag punctuation|![#8c8e93](https://via.placeholder.com/23/8c8e93/?text=+)|#8C8E93|
 
-## Night Coder Warm Color Palette
-
-| Scope | Color | Hex |
-|:------|:-----:|:----|
-|Default library function, HTML inline tag, Level 6 JSON key|![#7dbbe8](https://via.placeholder.com/23/7dbbe8/?text=+)|#7DBBE8|
-|Function call, Heading, Attribute name, Level 4 JSON key|![#e0cd94](https://via.placeholder.com/23/e0cd94/?text=+)|#E0CD94|
-|Foreground, Variable|![#c7c7c6](https://via.placeholder.com/23/c7c7c6/?text=+)|#C7C7C6|
-|Constant, HTML unrecognized tag, Level 8 JSON key|![#ef7762](https://via.placeholder.com/23/ef7762/?text=+)|#EF7762|
-|Miscellaneous, Annotation, Level 9 JSON key|![#c3ab85](https://via.placeholder.com/23/c3ab85/?text=+)|#C3AB85|
-|Type, Level 3 JSON key|![#0bc2cb](https://via.placeholder.com/23/0bc2cb/?text=+)|#0BC2CB|
-|Parameter, Argument|![#e6e6e6](https://via.placeholder.com/23/e6e6e6/?text=+)|#E6E6E6|
-|Operator|![#f2f28c](https://via.placeholder.com/23/f2f28c/?text=+)|#F2F28C|
-|Comparison/Logical operator, Italic|![#93ecb8](https://via.placeholder.com/23/93ecb8/?text=+)|#93ECB8|
-|Comment|![#4b4a48](https://via.placeholder.com/23/4b4a48/?text=+)|#4B4A48|
-|Documentation|![#adadac](https://via.placeholder.com/23/adadac/?text=+)|#ADADAC|
-|Function declaration, HTML link tag|![#85c3ab](https://via.placeholder.com/23/85c3ab/?text=+)|#85C3AB|
-|Literal constant, HTML custom tag|![#bfa6f2](https://via.placeholder.com/23/bfa6f2/?text=+)|#BFA6F2|
-|Default library class/type, HTML object tag, Level 5 JSON key|![#ff99b3](https://via.placeholder.com/23/ff99b3/?text=+)|#FF99B3|
-|Namespace/Class/Struct, HTML style tag, Level 7 JSON key|![#859dc3](https://via.placeholder.com/23/859dc3/?text=+)|#859DC3|
-|String, Import/Require/Use|![#84bd7f](https://via.placeholder.com/23/84bd7f/?text=+)|#84BD7F|
-|Property, Tag, Level 1 JSON key, Level > 10 JSON key|![#e4aa81](https://via.placeholder.com/23/e4aa81/?text=+)|#E4AA81|
-|Keyword, HTML meta tag, Level 2 JSON key|![#c385bc](https://via.placeholder.com/23/c385bc/?text=+)|#C385BC|
-|Script tag, Level 10 JSON key|![#d9d326](https://via.placeholder.com/23/d9d326/?text=+)|#D9D326|
-|Tag punctuation|![#7c7b7a](https://via.placeholder.com/23/7c7b7a/?text=+)|#7C7B7A|
-
 ## Screenshots
 
 ### JavaScript

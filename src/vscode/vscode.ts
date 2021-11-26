@@ -69,7 +69,7 @@ export function vscodeThemesWriter(): void {
     }
   }
   manifestWriter(themes);
-  readmeWriter(palettes);
+  readmeWriter(palettes.slice(0, 2));
 }
 
 function generateManifest(t: VSTheme[]): string {
