@@ -131,7 +131,7 @@ function generateReadme(palettes: Palette[]): string {
 
 A dark theme for Night Coders.
 
-![html](/screenshot/palettes.png)
+![html](/screenshot/demo.gif)
 
 ## Other versions
 

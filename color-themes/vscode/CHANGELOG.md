@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.0.0
+
+- Added a new variant with a warmer background color.
+- Updated gray variant's background color to a real gray color.
+
 ## 2.28.0
 
 - Added Windows Terminal support
