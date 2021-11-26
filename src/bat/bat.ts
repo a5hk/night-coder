@@ -5,7 +5,7 @@ import { themeWriter } from "../common/theme-writer.js";
 import { TextmateTheme } from "../vscode/textmate_regular.js";
 
 export function tmTheme(): string {
-  const palette = new (colorPaletteFactory())("Night Coder");
+  const palette = new (colorPaletteFactory())("Night Coder", "");
   const textmateRule = new TextmateTheme(palette);
 
   const prefix = [

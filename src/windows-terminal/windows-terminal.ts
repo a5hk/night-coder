@@ -36,7 +36,7 @@ export function windowsTerminalColors(palette: Palette): string {
 }
 
 export function windowsTerminalColorScheme(): void {
-  const palette = new (colorPaletteFactory())("Night Coder");
+  const palette = new (colorPaletteFactory())("Night Coder", "");
   themeWriter(
     "windows-terminal/night-coder.json",
     windowsTerminalColors(palette),

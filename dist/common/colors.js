@@ -167,10 +167,12 @@ export function colorPaletteFactory(bg = "#030917") {
         ansiWhite: colorDescriptor(new Color("#acaeb3")),
         ansiYellow: colorDescriptor(new Color("#d9d326")),
     }) {
-        constructor(name) {
+        constructor(name, title) {
             super();
             this.name = name;
+            this.readmeTableTitle = title;
             Object.defineProperty(this, "name", { enumerable: false });
+            Object.defineProperty(this, "readmeTableTitle", { enumerable: false });
         }
         toString() {
             return Object.entries(Object.values(this)
@@ -190,7 +192,7 @@ export function colorPaletteFactory(bg = "#030917") {
         }
         toMarkdownTable() {
             return [
-                `## ${this.name} Color Palette`,
+                `## ${this.readmeTableTitle}`,
                 "",
                 "| Scope | Color | Hex |",
                 "|:------|:-----:|:----|",

@@ -149,6 +149,6 @@ highlight Normal guifg=${palette.foregroundColor.code} guibg=#030917
             .join("\n"));
 }
 export function vimColorScheme() {
-    const palette = new (colorPaletteFactory())("Night Coder");
+    const palette = new (colorPaletteFactory())("Night Coder", "");
     themeWriter("vim/colors/nightcoder.vim", vimColoring(palette), "Vim color scheme generated.");
 }

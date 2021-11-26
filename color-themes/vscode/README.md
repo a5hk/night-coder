@@ -10,7 +10,7 @@ A dark theme for Night Coders.
 - [bat](/color-themes/bat/)
 - [Windows Terminal](/color-themes/windows-terminal/)
 
-## Night Coder Color Palette
+## Main and Warm variants palette
 
 | Scope | Color | Hex |
 |:------|:-----:|:----|
@@ -35,7 +35,7 @@ A dark theme for Night Coders.
 |Script tag, Level 10 JSON key|![#d9d326](https://via.placeholder.com/23/d9d326/?text=+)|#D9D326|
 |Tag punctuation|![#797c83](https://via.placeholder.com/23/797c83/?text=+)|#797C83|
 
-## Night Coder Gray Color Palette
+## Gray variant palette
 
 | Scope | Color | Hex |
 |:------|:-----:|:----|

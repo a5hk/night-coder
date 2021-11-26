@@ -1,6 +1,6 @@
 import { colorPaletteFactory, Color } from "../common/colors.js";
 export function garyVariant() {
-    const p = new (colorPaletteFactory("#282c34"))("Night Coder Gray");
+    const p = new (colorPaletteFactory("#282c34"))("Night Coder Gray", "Gray variant palette");
     p.defaultLibraryFunctionColor = new Color("#80caff", "Default library function");
     p.functionCallColor = new Color("#e6d299", "Function call");
     p.constantColor = new Color("#ff9e9e", "Constant");
