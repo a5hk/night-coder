@@ -221,7 +221,7 @@ export function colorPaletteFactory(bg = "#030917") {
 
     toMarkdownTable(): string {
       return [
-        `## ${this.readmeTableTitle}`,
+        `### ${this.readmeTableTitle}`,
         "",
         "| Scope | Color | Hex |",
         "|:------|:-----:|:----|",

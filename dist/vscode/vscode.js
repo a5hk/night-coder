@@ -118,6 +118,8 @@ A dark theme for Night Coders.
 - [bat](/color-themes/bat/)
 - [Windows Terminal](/color-themes/windows-terminal/)
 
+## Color palettes
+
 ${palettes.map((p) => p.toMarkdownTable()).join("\n\n")}
 
 ## Screenshots

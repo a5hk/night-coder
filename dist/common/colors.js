@@ -192,7 +192,7 @@ export function colorPaletteFactory(bg = "#030917") {
         }
         toMarkdownTable() {
             return [
-                `## ${this.readmeTableTitle}`,
+                `### ${this.readmeTableTitle}`,
                 "",
                 "| Scope | Color | Hex |",
                 "|:------|:-----:|:----|",
