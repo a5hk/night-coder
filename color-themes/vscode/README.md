@@ -41,24 +41,24 @@ A dark theme for Night Coders.
 |:------|:-----:|:----|
 |Default library function, HTML inline tag, Level 6 JSON key|![#80caff](https://via.placeholder.com/23/80caff/?text=+)|#80CAFF|
 |Function call, Heading, Attribute name, Level 4 JSON key|![#e6d299](https://via.placeholder.com/23/e6d299/?text=+)|#E6D299|
-|Foreground, Variable|![#cecfd1](https://via.placeholder.com/23/cecfd1/?text=+)|#CECFD1|
+|Foreground, Variable|![#cfcfcf](https://via.placeholder.com/23/cfcfcf/?text=+)|#CFCFCF|
 |Constant, HTML unrecognized tag, Level 8 JSON key|![#ff9e9e](https://via.placeholder.com/23/ff9e9e/?text=+)|#FF9E9E|
 |Miscellaneous, Annotation, Level 9 JSON key|![#d1b485](https://via.placeholder.com/23/d1b485/?text=+)|#D1B485|
-|Type, Level 3 JSON key|![#05cbd6](https://via.placeholder.com/23/05cbd6/?text=+)|#05CBD6|
-|Parameter, Argument|![#e9e9ea](https://via.placeholder.com/23/e9e9ea/?text=+)|#E9E9EA|
+|Type, Level 3 JSON key|![#04ccd7](https://via.placeholder.com/23/04ccd7/?text=+)|#04CCD7|
+|Parameter, Argument|![#e9e9e9](https://via.placeholder.com/23/e9e9e9/?text=+)|#E9E9E9|
 |Operator|![#e0e0b8](https://via.placeholder.com/23/e0e0b8/?text=+)|#E0E0B8|
 |Comparison/Logical operator, Italic|![#b8e0c8](https://via.placeholder.com/23/b8e0c8/?text=+)|#B8E0C8|
-|Comment|![#61646a](https://via.placeholder.com/23/61646a/?text=+)|#61646A|
-|Documentation|![#b7b9bb](https://via.placeholder.com/23/b7b9bb/?text=+)|#B7B9BB|
+|Comment|![#646464](https://via.placeholder.com/23/646464/?text=+)|#646464|
+|Documentation|![#b9b9b9](https://via.placeholder.com/23/b9b9b9/?text=+)|#B9B9B9|
 |Function declaration, HTML link tag|![#42d79e](https://via.placeholder.com/23/42d79e/?text=+)|#42D79E|
-|Literal constant, HTML custom tag|![#c4abf7](https://via.placeholder.com/23/c4abf7/?text=+)|#C4ABF7|
+|Literal constant, HTML custom tag|![#c5abf7](https://via.placeholder.com/23/c5abf7/?text=+)|#C5ABF7|
 |Default library class/type, HTML object tag, Level 5 JSON key|![#fc9cc4](https://via.placeholder.com/23/fc9cc4/?text=+)|#FC9CC4|
 |Namespace/Class/Struct, HTML style tag, Level 7 JSON key|![#9db9e7](https://via.placeholder.com/23/9db9e7/?text=+)|#9DB9E7|
 |String, Import/Require/Use|![#8fc78a](https://via.placeholder.com/23/8fc78a/?text=+)|#8FC78A|
 |Property, Tag, Level 1 JSON key, Level > 10 JSON key|![#f0a875](https://via.placeholder.com/23/f0a875/?text=+)|#F0A875|
 |Keyword, HTML meta tag, Level 2 JSON key|![#eea0e5](https://via.placeholder.com/23/eea0e5/?text=+)|#EEA0E5|
 |Script tag, Level 10 JSON key|![#e0dc52](https://via.placeholder.com/23/e0dc52/?text=+)|#E0DC52|
-|Tag punctuation|![#8c8e93](https://via.placeholder.com/23/8c8e93/?text=+)|#8C8E93|
+|Tag punctuation|![#8e8e8e](https://via.placeholder.com/23/8e8e8e/?text=+)|#8E8E8E|
 
 ## Screenshots
 

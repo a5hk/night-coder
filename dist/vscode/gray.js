@@ -1,16 +1,16 @@
 import { colorPaletteFactory, Color } from "../common/colors.js";
 export function garyVariant() {
-    const p = new (colorPaletteFactory("#282c34"))("Night Coder Gray", "Gray variant palette");
+    const p = new (colorPaletteFactory("#2c2c2c"))("Night Coder Gray", "Gray variant palette");
     p.defaultLibraryFunctionColor = new Color("#80caff", "Default library function");
     p.functionCallColor = new Color("#e6d299", "Function call");
     p.constantColor = new Color("#ff9e9e", "Constant");
     p.miscellaneousColor = new Color("#d1b485", "Miscellaneous");
     p.annotationColor = new Color("#d1b485", "Annotation");
-    p.typeColor = new Color("#05cbd6", "Type");
+    p.typeColor = new Color("#04ccd7", "Type");
     p.operatorColor = new Color("#e0e0b8", "Operator");
     p.comparisonLogicalOperatorColor = new Color("#b8e0c8", "Comparison/Logical operator");
     p.functionDeclarationColor = new Color("#42d79e", "Function declaration");
-    p.literalConstantColor = new Color("#c4abf7", "Literal constant");
+    p.literalConstantColor = new Color("#c5abf7", "Literal constant");
     p.defaultLibraryClassTypeColor = new Color("#fc9cc4", "Default library class/type");
     p.namespaceClassStructColor = new Color("#9db9e7", "Namespace/Class/Struct");
     p.stringColor = new Color("#8fc78a", "String");
@@ -25,13 +25,13 @@ export function garyVariant() {
     p.styleTagColor = new Color("#9db9e7", "HTML style tag");
     p.objectTagColor = new Color("#fc9cc4", "HTML object tag");
     p.inlineTagColor = new Color("#80caff", "HTML inline tag");
-    p.customTagColor = new Color("#c4abf7", "HTML custom tag");
+    p.customTagColor = new Color("#c5abf7", "HTML custom tag");
     p.scriptTagColor = new Color("#e0dc52", "Script tag");
     p.attributeNameColor = new Color("#e6d299", "Attribute name");
     p.unrecognizedTagColor = new Color("#ff9e9e", "HTML unrecognized tag");
     p.jsonLevel01Color = new Color("#f0a875", "Level 1 JSON key");
     p.jsonLevel02Color = new Color("#eea0e5", "Level 2 JSON key");
-    p.jsonLevel03Color = new Color("#05cbd6", "Level 3 JSON key");
+    p.jsonLevel03Color = new Color("#04ccd7", "Level 3 JSON key");
     p.jsonLevel04Color = new Color("#e6d299", "Level 4 JSON key");
     p.jsonLevel05Color = new Color("#fc9cc4", "Level 5 JSON key");
     p.jsonLevel06Color = new Color("#80caff", "Level 6 JSON key");
@@ -40,7 +40,7 @@ export function garyVariant() {
     p.jsonLevel09Color = new Color("#d1b485", "Level 9 JSON key");
     p.jsonLevel10Color = new Color("#e0dc52", "Level 10 JSON key");
     p.jsonLevel11Color = new Color("#f0a875", "Level > 10 JSON key");
-    p.contrastBackground = new Color("#1d2025");
+    p.contrastBackground = new Color("#262626");
     p.bracketPair1 = new Color("#e0e0b8");
     p.bracketPair2 = new Color("#eea0e5");
     p.bracketPair3 = new Color("#b8e0c8");
@@ -49,7 +49,7 @@ export function garyVariant() {
     p.bracketPair6 = new Color("#fc9cc4");
     p.ansiBrightBlack = p.background88;
     p.ansiBrightBlue = new Color("#80caff");
-    p.ansiBrightCyan = new Color("#05cbd6");
+    p.ansiBrightCyan = new Color("#04ccd7");
     p.ansiBrightGreen = new Color("#8fc78a");
     p.ansiBrightMagenta = new Color("#fc9cc4");
     p.ansiBrightRed = new Color("#ff9e9e");
