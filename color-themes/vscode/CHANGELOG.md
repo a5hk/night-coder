@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.1
+
+- Fixed color of CSS colors.
+
 ## 3.0.0
 
 - Added a new variant with a warmer background color.

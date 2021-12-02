@@ -85,7 +85,7 @@ export class TextmateTheme {
         name: "default library",
         scope: [
           "support.variable",
-          "support.constant.color.w3c-standard-color-name",
+          "support.constant.color",
           "support.type",
           "support.class",
           "support.other.namespace",

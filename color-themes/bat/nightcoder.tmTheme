@@ -58,7 +58,7 @@
         <key>name</key>
         <string>default library</string>
         <key>scope</key>
-        <string>support.variable, support.constant.color.w3c-standard-color-name, support.type, support.class, support.other.namespace</string>
+        <string>support.variable, support.constant.color, support.type, support.class, support.other.namespace</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
