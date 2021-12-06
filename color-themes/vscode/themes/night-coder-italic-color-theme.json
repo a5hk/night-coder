@@ -100,7 +100,7 @@
     "progressBar.background": "#d9d326",
     "sash.hoverBorder": "#006600",
     "scrollbar.shadow": "#14192600",
-    "scrollbarSlider.activeBackground": "#006600ff",
+    "scrollbarSlider.activeBackground": "#00660066",
     "scrollbarSlider.background": "#464b5577",
     "scrollbarSlider.hoverBackground": "#575b6488",
     "sideBySideEditor.horizontalBorder": "#252a36",

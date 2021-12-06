@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.2
+
+- Semi-Transparent active scrollbar
+
 ## 3.0.1
 
 - Fixed color of CSS colors.

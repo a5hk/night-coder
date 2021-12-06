@@ -97,7 +97,7 @@ export function commonWorkbenchColors(palette) {
         "progressBar.background": palette.progressBarBackground.code,
         "sash.hoverBorder": palette.statusBarBackground.code,
         "scrollbar.shadow": `${palette.background11.code}00`,
-        "scrollbarSlider.activeBackground": `${palette.statusBarBackground.code}ff`,
+        "scrollbarSlider.activeBackground": `${palette.statusBarBackground.code}66`,
         "scrollbarSlider.background": `${palette.background44.code}77`,
         "scrollbarSlider.hoverBackground": `${palette.background55.code}88`,
         "sideBySideEditor.horizontalBorder": palette.sideBySideEditorBorder.code,
