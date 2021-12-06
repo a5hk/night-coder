@@ -188,7 +188,7 @@
     "type": { "foreground": "#0bc2cb" },
     "type.defaultLibrary": { "foreground": "#ff99b3" },
     "operator": { "foreground": "#f2f28c" },
-    "string": { "foreground": "#84bd7f" }
+    "string": { "foreground": "#8dbf82" }
   },
   "tokenColors": [
     {
@@ -361,7 +361,7 @@
         "meta.use entity.name.namespace",
         "meta.use entity.name.type"
       ],
-      "settings": { "foreground": "#84bd7f" }
+      "settings": { "foreground": "#8dbf82" }
     },
     {
       "name": "Import",
@@ -371,7 +371,7 @@
         "meta.use entity.name.namespace",
         "meta.use entity.name.type"
       ],
-      "settings": { "foreground": "#84bd7f" }
+      "settings": { "foreground": "#8dbf82" }
     },
     {
       "name": "embedded punctuation",

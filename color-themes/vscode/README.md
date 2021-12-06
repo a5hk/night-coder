@@ -31,7 +31,7 @@ A dark theme for Night Coders.
 |Literal constant, HTML custom tag|![#bfa6f2](https://via.placeholder.com/23/bfa6f2/?text=+)|#BFA6F2|
 |Default library class/type, HTML object tag, Level 5 JSON key|![#ff99b3](https://via.placeholder.com/23/ff99b3/?text=+)|#FF99B3|
 |Namespace/Class/Struct, HTML style tag, Level 7 JSON key|![#859dc3](https://via.placeholder.com/23/859dc3/?text=+)|#859DC3|
-|String, Import/Require/Use|![#84bd7f](https://via.placeholder.com/23/84bd7f/?text=+)|#84BD7F|
+|String, Import/Require/Use|![#8dbf82](https://via.placeholder.com/23/8dbf82/?text=+)|#8DBF82|
 |Property, Tag, Level 1 JSON key, Level > 10 JSON key|![#e4aa81](https://via.placeholder.com/23/e4aa81/?text=+)|#E4AA81|
 |Keyword, HTML meta tag, Level 2 JSON key|![#c385bc](https://via.placeholder.com/23/c385bc/?text=+)|#C385BC|
 |Script tag, Level 10 JSON key|![#d9d326](https://via.placeholder.com/23/d9d326/?text=+)|#D9D326|

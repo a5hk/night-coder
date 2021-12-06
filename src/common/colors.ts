@@ -85,8 +85,8 @@ export function colorPaletteFactory(bg = "#030917") {
     literalConstantColor: /* ............. */ colorDescriptor(new Color("#bfa6f2", "Literal constant"), true),
     defaultLibraryClassTypeColor: /* ..... */ colorDescriptor(new Color("#ff99b3", "Default library class/type"), true),
     namespaceClassStructColor: /* ........ */ colorDescriptor(new Color("#859dc3", "Namespace/Class/Struct"), true),
-    stringColor: /* ...................... */ colorDescriptor(new Color("#84bd7f", "String"), true),
-    importColor: /* ...................... */ colorDescriptor(new Color("#84bd7f", "Import/Require/Use"), true),
+    stringColor: /* ...................... */ colorDescriptor(new Color("#8dbf82", "String"), true),
+    importColor: /* ...................... */ colorDescriptor(new Color("#8dbf82", "Import/Require/Use"), true),
     propertyColor: /* .................... */ colorDescriptor(new Color("#e4aa81", "Property"), true),
     keywordColor: /* ..................... */ colorDescriptor(new Color("#c385bc", "Keyword"), true),
 
