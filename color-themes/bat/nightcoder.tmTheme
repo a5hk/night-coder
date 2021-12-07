@@ -522,7 +522,7 @@
         <key>name</key>
         <string></string>
         <key>scope</key>
-        <string>meta.tag.structure, meta.tag, entity.name.tag.yaml, keyword.key.toml, markup.fenced_code.block, markup.inline.raw.string, fenced_code.block.language, markup.raw.block</string>
+        <string>meta.tag.structure, meta.tag, entity.name.tag.yaml, keyword.key.toml, markup.fenced_code.block, markup.inline.raw.string, fenced_code.block.language, markup.raw.block, keyword.other.definition.ini</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -544,7 +544,7 @@
         <key>name</key>
         <string></string>
         <key>scope</key>
-        <string>heading</string>
+        <string>heading, entity.name.section.group-title</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>

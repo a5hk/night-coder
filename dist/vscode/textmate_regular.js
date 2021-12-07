@@ -466,6 +466,7 @@ export class TextmateTheme {
                     "markup.inline.raw.string",
                     "fenced_code.block.language",
                     "markup.raw.block",
+                    "keyword.other.definition.ini",
                 ],
                 settings: {
                     foreground: this.palette.tagColor.code,
@@ -479,7 +480,10 @@ export class TextmateTheme {
                 },
             },
             {
-                scope: ["heading"],
+                scope: [
+                    "heading",
+                    "entity.name.section.group-title",
+                ],
                 settings: {
                     foreground: this.palette.headingColor.code,
                 },

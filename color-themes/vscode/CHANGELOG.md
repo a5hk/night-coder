@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.1.0
+
+- Better support for ini files
+- Minor change in strings color
+
 ## 3.0.2
 
 - Semi-Transparent active scrollbar

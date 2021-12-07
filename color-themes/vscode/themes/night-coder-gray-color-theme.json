@@ -537,7 +537,8 @@
         "markup.fenced_code.block",
         "markup.inline.raw.string",
         "fenced_code.block.language",
-        "markup.raw.block"
+        "markup.raw.block",
+        "keyword.other.definition.ini"
       ],
       "settings": { "foreground": "#f0a875" }
     },
@@ -549,7 +550,10 @@
       ],
       "settings": { "foreground": "#e6d299" }
     },
-    { "scope": ["heading"], "settings": { "foreground": "#e6d299" } },
+    {
+      "scope": ["heading", "entity.name.section.group-title"],
+      "settings": { "foreground": "#e6d299" }
+    },
     {
       "scope": [
         "invalid.illegal.tag-handle.yaml",
