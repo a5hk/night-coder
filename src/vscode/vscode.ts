@@ -141,7 +141,7 @@ A dark theme for Night Coders.
 
 ## Color palettes
 
-- [Color Palettes](/color-themes/ColorPalette.md)
+- [Color Palettes](/color-themes/vscode/ColorPalette.md)
 
 ## Screenshots
 
