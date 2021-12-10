@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2.1
+
+- Fixed some errors in readme
+
 ## 3.2.0
 
 - Redesigned contrast versions

@@ -59,7 +59,8 @@ export function vscodeThemesWriter() {
         }
     }
     manifestWriter(themes);
-    readmeWriter(palettes.slice(0, 2));
+    readmeWriter();
+    colorPaletteMapWriter(palettes);
 }
 function generateManifest(t) {
     const version = process.env.npm_package_version;
@@ -101,7 +102,7 @@ function generateManifest(t) {
 function manifestWriter(t) {
     fileWriter(generateManifest(t), "package.json");
 }
-function generateReadme(palettes) {
+function generateReadme() {
     const codeBlock = [
         "```json",
         `"editor.fontFamily": "'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace",`,
@@ -124,7 +125,7 @@ A dark theme for Night Coders.
 
 ## Color palettes
 
-${palettes.map((p) => p.toMarkdownTable()).join("\n\n")}
+- [Color Palettes](/color-themes/ColorPalette.md)
 
 ## Screenshots
 
@@ -153,6 +154,17 @@ ${codeBlock}
 [MIT License](/LICENSE)
 `;
 }
-function readmeWriter(palettes) {
-    fileWriter(generateReadme(palettes), "README.md");
+function readmeWriter() {
+    fileWriter(generateReadme(), "README.md");
+}
+function generateColorPaletteMap(palettes) {
+    return `# [Night Coder](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
+
+## Color palettes
+
+${palettes.map((p) => p.toMarkdownTable()).join("\n\n")}
+`;
+}
+function colorPaletteMapWriter(palettes) {
+    fileWriter(generateColorPaletteMap(palettes), "ColorPalette.md");
 }
