@@ -11,7 +11,6 @@ export function contrastWorkbenchColors(palette) {
         "sideBar.border": palette.background22.code,
         "sideBarSectionHeader.background": palette.background22.code,
         "sideBySideEditor.verticalBorder": palette.sideBySideEditorBorder.code,
-        "tab.activeBackground": palette.background1a.code,
         "tab.activeBorder": palette.tabActiveBorder.code,
         "tab.border": palette.background11.code,
         "tab.inactiveBackground": palette.contrastBackground.code,
