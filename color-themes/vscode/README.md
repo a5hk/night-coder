@@ -64,23 +64,27 @@ A dark theme for Night Coders.
 
 ## Screenshots
 
-### JavaScript
+### JavaScript (Night Coder)
 
-![javascript](/screenshot/javascript.png)
+![javascript](/screenshot/n-javascript.png)
 
-### JSON
+### JSON (Night Coder Contrast)
 
-![javascript](/screenshot/json.png)
+![json](/screenshot/nc-json.png)
 
-### Python
+### Python (Night Coder Warm Italic)
 
-![python](/screenshot/python.png)
+![python](/screenshot/nwi-python.png)
+
+### Go (Night Coder Gray Contrast Italic)
+
+![python](/screenshot/ngci-go.png)
 
 ## Preferences shown in the screenshots
 
 ```json
-"editor.fontFamily": "'Cascadia Code'",
-"editor.fontSize": 14.5,
+"editor.fontFamily": "'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace",
+"editor.fontSize": 14,
 "editor.fontLigatures": true,
 "editor.bracketPairColorization.enabled": true,
 ```

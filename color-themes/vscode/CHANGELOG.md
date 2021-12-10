@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.2.0
+
+- Redesigned contrast versions
+- Minor change in active tab's background color
+
 ## 3.1.0
 
 - Better support for ini files

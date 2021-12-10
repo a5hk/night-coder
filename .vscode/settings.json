@@ -16,5 +16,17 @@
     "tonys",
     "vim"
   ],
-  "cSpell.ignoreWords": ["backgroundaa", "backgroundbb", "backgroundc", "backgroundcc", "backgrounddd", "backgroundee"]
+  "cSpell.ignoreWords": [
+    "Consolas",
+    "Fira",
+    "Vazir",
+    "backgroundaa",
+    "backgroundbb",
+    "backgroundc",
+    "backgroundcc",
+    "backgrounddd",
+    "backgroundee",
+    "monospace",
+    "ngci"
+  ]
 }
