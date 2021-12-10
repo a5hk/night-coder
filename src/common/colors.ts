@@ -121,6 +121,7 @@ export function colorPaletteFactory(bg = "#030917") {
     // workbench colors
     background: colorDescriptor(new Color(mix("0", bg))),
     background11: colorDescriptor(new Color(mix("11", bg))),
+    background1a: colorDescriptor(new Color(mix("1a", bg))),
     background22: colorDescriptor(new Color(mix("22", bg))),
     background25: colorDescriptor(new Color(mix("25", bg))),
     background33: colorDescriptor(new Color(mix("33", bg))),
@@ -138,8 +139,9 @@ export function colorPaletteFactory(bg = "#030917") {
     backgrounde5: colorDescriptor(new Color(mix("e5", bg))),
     backgroundee: colorDescriptor(new Color(mix("ee", bg))),
 
-    contrastBackground: colorDescriptor(new Color("#02050e")),
+    contrastBackground: colorDescriptor(new Color("#030612")),
 
+    tabActiveBorder: /* .................... */ colorDescriptor(new Color("#009900")),
     textLinkForeground: /* ................. */ colorDescriptor(new Color("#89b971")),
     statusBarBackground: /* ................ */ colorDescriptor(new Color("#006600")),
     statusBarForeground: /* ................ */ colorDescriptor(new Color("#f5fff5")),
