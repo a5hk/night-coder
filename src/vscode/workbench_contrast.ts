@@ -3,7 +3,6 @@ import { workbenchColor } from "./workbench_common.js";
 
 export function contrastWorkbenchColors(palette: Palette): workbenchColor {
   const colors: workbenchColor = {
-    "activityBar.background": /* ............. */ palette.background.code,
     "activityBar.border": /* ................. */ palette.background22.code,
     "breadcrumb.background": /* .............. */ palette.background.code,
     "editorGroup.border": /* ................. */ palette.background22.code,
@@ -20,9 +19,7 @@ export function contrastWorkbenchColors(palette: Palette): workbenchColor {
     "tab.border": /* ......................... */ palette.background11.code,
     "tab.inactiveBackground": /* ............. */ palette.contrastBackground.code,
     "terminal.border": /* .................... */ palette.background22.code,
-    "titleBar.activeBackground": /* .......... */ palette.background.code,
     "titleBar.border": /* .................... */ palette.background22.code,
-    "titleBar.inactiveBackground": /* ........ */ palette.contrastBackground.code,
     "window.activeBorder": /* ................ */ palette.statusBarBackground.code,
     "window.inactiveBorder": /* .............. */ palette.statusBarDebuggingBackground.code,
   };

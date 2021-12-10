@@ -3,7 +3,6 @@ import { themeWriter } from "../common/theme-writer.js";
 import { TextmateTheme } from "./textmate_regular.js";
 import { SemanticTheme } from "./semantic_regular.js";
 import { commonWorkbenchColors } from "./workbench_common.js";
-import { regularWorkbenchColors } from "./workbench_regular.js";
 import { contrastWorkbenchColors } from "./workbench_contrast.js";
 import { VSTheme } from "./package.js";
 import { mainVariant } from "./main.js";
@@ -47,10 +46,15 @@ export function vscodeThemesWriter() {
         const semanticTheme = new SemanticTheme(p);
         for (const s of styles) {
             for (const c of contrasts) {
-                uiColors = c.toLowerCase() === "contrast" ? contrastWorkbenchColors(p) : regularWorkbenchColors(p);
+                if (c.toLowerCase() === "contrast") {
+                    uiColors = Object.assign(Object.assign({}, commonWorkbenchColors(p)), contrastWorkbenchColors(p));
+                }
+                else {
+                    uiColors = commonWorkbenchColors(p);
+                }
                 const x = new VSTheme([p.name, c, s].join(" ").trim().replace(/ +/g, " "), "vs-dark");
                 const len = themes.push(x);
-                vsThemeWriter((_a = themes[len - 1]) !== null && _a !== void 0 ? _a : x, Object.assign(Object.assign({}, commonWorkbenchColors(p)), uiColors), semanticTheme.getPaletteRules(s), textmateTheme.getRules(s));
+                vsThemeWriter((_a = themes[len - 1]) !== null && _a !== void 0 ? _a : x, uiColors, semanticTheme.getPaletteRules(s), textmateTheme.getRules(s));
             }
         }
     }

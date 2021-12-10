@@ -1,6 +1,5 @@
 export function contrastWorkbenchColors(palette) {
     const colors = {
-        "activityBar.background": palette.background.code,
         "activityBar.border": palette.background22.code,
         "breadcrumb.background": palette.background.code,
         "editorGroup.border": palette.background22.code,
@@ -17,9 +16,7 @@ export function contrastWorkbenchColors(palette) {
         "tab.border": palette.background11.code,
         "tab.inactiveBackground": palette.contrastBackground.code,
         "terminal.border": palette.background22.code,
-        "titleBar.activeBackground": palette.background.code,
         "titleBar.border": palette.background22.code,
-        "titleBar.inactiveBackground": palette.contrastBackground.code,
         "window.activeBorder": palette.statusBarBackground.code,
         "window.inactiveBorder": palette.statusBarDebuggingBackground.code,
     };
