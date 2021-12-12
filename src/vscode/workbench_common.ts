@@ -124,7 +124,7 @@ export function commonWorkbenchColors(palette: Palette): workbenchColor {
     "statusBarItem.hoverBackground": /* ............. */ `${palette.background11.code}44`,
     "statusBarItem.remoteBackground": /* ............ */ palette.statusBarRemoteBackground.code,
     "statusBarItem.remoteForeground": /* ............ */ palette.statusBarRemoteForeground.code,
-    "tab.activeBackground": /* ...................... */ palette.background1a.code,
+    "tab.activeBackground": /* ...................... */ palette.background22.code,
     "tab.activeForeground": /* ...................... */ palette.backgrounddd.code,
     "tab.activeModifiedBorder": /* .................. */ palette.statusBarNoFolderBackground.code,
     "tab.border": /* ................................ */ palette.background.code,
