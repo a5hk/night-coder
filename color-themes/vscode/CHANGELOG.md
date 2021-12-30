@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.3.0
+
+- Minor color adjustments
+
 ## 3.2.2
 
 - Reverted active tab's background color to its original value

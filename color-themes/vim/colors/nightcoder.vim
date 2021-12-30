@@ -10,11 +10,11 @@ endif
 set background=dark
 let colors_name="nightcoder"
 
-highlight Normal guifg=#c6c7ca guibg=#030917
+highlight Normal guifg=#c1c2c6 guibg=#030917
 
 highlight NCDefaultLibraryFunctionCall  guifg=#7dbbe8
-highlight NCFunctionCall  guifg=#e0cd94
-highlight NCVariable  guifg=#c6c7ca
+highlight NCFunctionCall  guifg=#ddc888
+highlight NCVariable  guifg=#c1c2c6
 highlight NCConstant  guifg=#ef7762
 highlight NCMiscellaneous  guifg=#c3ab85
 highlight NCType  guifg=#0bc2cb
@@ -26,31 +26,31 @@ highlight NCDocumentationComment  guifg=#abadb2
 highlight NCFunctionDeclaration  guifg=#85c3ab
 highlight NCLiteralConstant  guifg=#bfa6f2
 highlight NCDefaultLibraryClassType  guifg=#ff99b3
-highlight NCNamespaceClassStruct  guifg=#859dc3
+highlight NCNamespaceClassStruct  guifg=#829dc9
 highlight NCString  guifg=#8dbf82
 highlight NCProperty  guifg=#e4aa81
-highlight NCKeyword  guifg=#c385bc
+highlight NCKeyword  guifg=#c982c1
 highlight NCPunctuation  guifg=#797c83
 highlight NCTag  guifg=#e4aa81
 highlight NCItalic  guifg=#93ecb8
-highlight NCHeading cterm=bold gui=bold guifg=#e0cd94
+highlight NCHeading cterm=bold gui=bold guifg=#ddc888
 highlight NCLinkTag  guifg=#85c3ab
-highlight NCMetaTag  guifg=#c385bc
-highlight NCStyleTag  guifg=#859dc3
+highlight NCMetaTag  guifg=#c982c1
+highlight NCStyleTag  guifg=#829dc9
 highlight NCObjectTag  guifg=#ff99b3
 highlight NCInlineTag  guifg=#7dbbe8
 highlight NCCustomTag  guifg=#bfa6f2
 highlight NCScriptTag  guifg=#d9d326
-highlight NCAttributeName  guifg=#e0cd94
+highlight NCAttributeName  guifg=#ddc888
 highlight NCTagPunctuation  guifg=#797c83
 highlight NCUnrecognizedTag  guifg=#ef7762
 highlight NCJsonLevel01  guifg=#e4aa81
-highlight NCJsonLevel02  guifg=#c385bc
+highlight NCJsonLevel02  guifg=#c982c1
 highlight NCJsonLevel03  guifg=#0bc2cb
-highlight NCJsonLevel04  guifg=#e0cd94
+highlight NCJsonLevel04  guifg=#ddc888
 highlight NCJsonLevel05  guifg=#ff99b3
 highlight NCJsonLevel06  guifg=#7dbbe8
-highlight NCJsonLevel07  guifg=#859dc3
+highlight NCJsonLevel07  guifg=#829dc9
 highlight NCJsonLevel08  guifg=#ef7762
 highlight NCJsonLevel09  guifg=#c3ab85
 highlight NCJsonLevel10  guifg=#d9d326

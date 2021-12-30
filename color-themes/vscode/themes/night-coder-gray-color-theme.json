@@ -22,7 +22,7 @@
     "editor.findMatchBorder": "#53ac53",
     "editor.findMatchHighlightBackground": "#56565677",
     "editor.foldBackground": "#0066001f",
-    "editor.foreground": "#cfcfcf",
+    "editor.foreground": "#cbcbcb",
     "editor.inlineValuesBackground": "#c3ab8555",
     "editor.inlineValuesForeground": "#d5d5d5",
     "editor.lineHighlightBackground": "#56565677",
@@ -156,7 +156,7 @@
     "focusBorder": "#2c2c2c"
   },
   "semanticTokenColors": {
-    "variable": { "foreground": "#cfcfcf" },
+    "variable": { "foreground": "#cbcbcb" },
     "variable.readonly": { "foreground": "#ff9e9e" },
     "variable.defaultLibrary": { "foreground": "#fc9cc4" },
     "property": { "foreground": "#f0a875" },
@@ -202,7 +202,7 @@
         "variable.other",
         "variable.scss"
       ],
-      "settings": { "foreground": "#cfcfcf" }
+      "settings": { "foreground": "#cbcbcb" }
     },
     {
       "name": "special variables",
@@ -403,7 +403,7 @@
     },
     {
       "scope": ["comment.wildcard", "meta.jsx.children"],
-      "settings": { "foreground": "#cfcfcf" }
+      "settings": { "foreground": "#cbcbcb" }
     },
     {
       "name": "annotation comments",
