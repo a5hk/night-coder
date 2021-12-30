@@ -131,7 +131,7 @@ function generateReadme(): string {
 
 A dark theme for Night Coders.
 
-![html](/screenshot/demo.gif)
+![html](/screenshot/html.png)
 
 ## Other versions
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.3.1
+
+- Fixed readme
+
 ## 3.3.0
 
 - Minor color adjustments
