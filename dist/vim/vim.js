@@ -132,6 +132,11 @@ endif
 set background=dark
 let colors_name="nightcoder"
 
+highlight clear CursorLine
+set cursorline
+highlight LineNr guifg=${palette.background55.code}
+highlight CursorLineNr cterm=bold gui=bold guifg=${palette.backgroundaa.code}
+
 highlight Normal guifg=${palette.foregroundColor.code} guibg=#030917
 
 `;

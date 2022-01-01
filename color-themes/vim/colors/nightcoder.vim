@@ -10,6 +10,11 @@ endif
 set background=dark
 let colors_name="nightcoder"
 
+highlight clear CursorLine
+set cursorline
+highlight LineNr guifg=#575b64
+highlight CursorLineNr cterm=bold gui=bold guifg=#abadb2
+
 highlight Normal guifg=#c1c2c6 guibg=#030917
 
 highlight NCDefaultLibraryFunctionCall  guifg=#7dbbe8
