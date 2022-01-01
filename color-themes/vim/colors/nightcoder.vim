@@ -13,7 +13,7 @@ let colors_name="nightcoder"
 highlight clear CursorLine
 set cursorline
 highlight LineNr guifg=#575b64
-highlight CursorLineNr cterm=bold gui=bold guifg=#abadb2
+highlight CursorLineNr cterm=NONE gui=NONE guifg=#abadb2
 
 highlight Normal guifg=#c1c2c6 guibg=#030917
 
