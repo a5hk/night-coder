@@ -262,16 +262,9 @@ export class TextmateTheme {
       },
       {
         name: "punctuation",
-        scope: ["meta.brace", "punctuation"],
+        scope: ["meta.brace"],
         settings: {
           foreground: this.palette.documentationColor.code,
-        },
-      },
-      {
-        name: "punctuation keyword",
-        scope: ["punctuation.definition.keyword"],
-        settings: {
-          foreground: this.palette.keywordColor.code,
         },
       },
       {

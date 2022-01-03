@@ -375,13 +375,8 @@
     },
     {
       "name": "punctuation",
-      "scope": ["meta.brace", "punctuation"],
+      "scope": ["meta.brace"],
       "settings": { "foreground": "#b9b9b9" }
-    },
-    {
-      "name": "punctuation keyword",
-      "scope": ["punctuation.definition.keyword"],
-      "settings": { "foreground": "#eea0e5" }
     },
     {
       "name": "documentation comments",
