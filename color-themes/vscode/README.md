@@ -1,5 +1,7 @@
 # [Night Coder](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
 
+[![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-060?style=for-the-badge&labelColor=030917)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder)
+
 A dark theme for Night Coders.
 
 ![html](/screenshot/html.png)
@@ -16,19 +18,19 @@ A dark theme for Night Coders.
 
 ## Screenshots
 
-### JavaScript (Night Coder)
+### JavaScript [(Night Coder)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder)
 
 ![javascript](/screenshot/n-javascript.png)
 
-### JSON (Night Coder Contrast)
+### JSON [(Night Coder Contrast)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Contrast)
 
 ![json](/screenshot/nc-json.png)
 
-### Python (Night Coder Warm Italic)
+### Python [(Night Coder Warm Italic)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Warm%20Italic)
 
 ![python](/screenshot/nwi-python.png)
 
-### Go (Night Coder Gray Contrast Italic)
+### Go [(Night Coder Gray Contrast Italic)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Gray%20Contrast%20Italic)
 
 ![python](/screenshot/ngci-go.png)
 

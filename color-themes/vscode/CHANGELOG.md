@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.4.1
+
+- Added preview links in readme
+
 ## 3.4.0
 
 - More punctuations are now the same color as their parent token

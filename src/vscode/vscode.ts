@@ -117,6 +117,10 @@ function manifestWriter(t: VSTheme[]) {
   fileWriter(generateManifest(t), "package.json");
 }
 
+function previewURL(theme: string): string {
+  return `(https://vscode.dev/theme/a5hk.night-coder/${encodeURIComponent(theme)})`;
+}
+
 function generateReadme(): string {
   const codeBlock = [
     "```json",
@@ -128,6 +132,10 @@ function generateReadme(): string {
   ].join("\n");
 
   return `# [Night Coder](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
+
+[![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-060?style=for-the-badge&labelColor=030917)]${previewURL(
+    "Night Coder"
+  )}
 
 A dark theme for Night Coders.
 
@@ -145,19 +153,19 @@ A dark theme for Night Coders.
 
 ## Screenshots
 
-### JavaScript (Night Coder)
+### JavaScript [(Night Coder)]${previewURL("Night Coder")}
 
 ![javascript](/screenshot/n-javascript.png)
 
-### JSON (Night Coder Contrast)
+### JSON [(Night Coder Contrast)]${previewURL("Night Coder Contrast")}
 
 ![json](/screenshot/nc-json.png)
 
-### Python (Night Coder Warm Italic)
+### Python [(Night Coder Warm Italic)]${previewURL("Night Coder Warm Italic")}
 
 ![python](/screenshot/nwi-python.png)
 
-### Go (Night Coder Gray Contrast Italic)
+### Go [(Night Coder Gray Contrast Italic)]${previewURL("Night Coder Gray Contrast Italic")}
 
 ![python](/screenshot/ngci-go.png)
 
