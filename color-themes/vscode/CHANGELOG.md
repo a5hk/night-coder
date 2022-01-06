@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.4.2
+
+- Updated logo
+
 ## 3.4.1
 
 - Added preview links in readme
