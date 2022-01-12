@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.4.3
+
+- Updated links in extension package
+
 ## 3.4.2
 
 - Updated logo

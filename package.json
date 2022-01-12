@@ -2,7 +2,7 @@
   "name": "night-coder",
   "displayName": "Night Coder",
   "description": "A dark theme for Night Coders",
-  "version": "3.4.2",
+  "version": "3.4.3",
   "publisher": "a5hk",
   "author": "a5hk",
   "license": "MIT",
@@ -18,6 +18,7 @@
     "clean": "tsc --build --clean",
     "format": "prettier --write ./color-themes/vscode/themes/*.json ./color-themes/vscode/package.json ./color-themes/windows-terminal/*.json",
     "gen": "npm run lint && npm run clean && npm run build && node ./dist/index.js && npm run format",
+    "vspack": "node ./scripts/package.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

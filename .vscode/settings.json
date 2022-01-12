@@ -15,7 +15,8 @@
     "pink",
     "termguicolors",
     "tonys",
-    "vim"
+    "vim",
+    "vspack"
   ],
   "cSpell.ignoreWords": [
     "Consolas",
