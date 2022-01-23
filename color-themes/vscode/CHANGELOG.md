@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.5.0
+
+- Updated red color to be a bit lighter.
+
 ## 3.4.3
 
 - Updated links in extension package

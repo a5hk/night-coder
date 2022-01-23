@@ -53,7 +53,7 @@
     "editorIndentGuide.background": "#3a3938",
     "editorInfo.background": "#02cad433",
     "editorInfo.foreground": "#02cad4",
-    "editorLightBulb.foreground": "#ef7762",
+    "editorLightBulb.foreground": "#f1836f",
     "editorLightBulbAutoFix.foreground": "#f2f28c",
     "editorLineNumber.activeForeground": "#adadac",
     "editorLineNumber.foreground": "#5b5a59",
@@ -167,7 +167,7 @@
   },
   "semanticTokenColors": {
     "variable": { "foreground": "#c2c2c1" },
-    "variable.readonly": { "foreground": "#ef7762" },
+    "variable.readonly": { "foreground": "#f1836f" },
     "variable.defaultLibrary": { "foreground": "#ff99b3" },
     "property": { "foreground": "#e4aa81", "fontStyle": "italic" },
     "parameter": { "foreground": "#e6e6e6", "fontStyle": "italic" },
@@ -238,11 +238,11 @@
         "variable.other.readwrite.module",
         "source.shell variable.other"
       ],
-      "settings": { "foreground": "#ef7762", "fontStyle": "italic" }
+      "settings": { "foreground": "#f1836f", "fontStyle": "italic" }
     },
     {
       "scope": ["entity.alias.import"],
-      "settings": { "foreground": "#ef7762" }
+      "settings": { "foreground": "#f1836f" }
     },
     {
       "name": "default library",
@@ -387,7 +387,7 @@
         "punctuation.section.embedded",
         "punctuation.definition.interpolation"
       ],
-      "settings": { "foreground": "#ef7762", "fontStyle": "italic" }
+      "settings": { "foreground": "#f1836f", "fontStyle": "italic" }
     },
     {
       "name": "punctuation",
@@ -478,7 +478,7 @@
       "scope": [
         "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
       ],
-      "settings": { "foreground": "#ef7762", "fontStyle": "italic" }
+      "settings": { "foreground": "#f1836f", "fontStyle": "italic" }
     },
     {
       "name": "l9 json",
@@ -573,7 +573,7 @@
         "meta.tag.other.unrecognized",
         "source.vue entity.name.tag.template.html"
       ],
-      "settings": { "foreground": "#ef7762" }
+      "settings": { "foreground": "#f1836f" }
     },
     {
       "scope": ["markup.bold", "punctuation.definition.bold"],

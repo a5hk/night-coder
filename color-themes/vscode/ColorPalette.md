@@ -9,7 +9,7 @@
 |Default library function, HTML inline tag, Level 6 JSON key|![#7dbbe8](https://via.placeholder.com/23/7dbbe8/?text=+)|#7DBBE8|
 |Function call, Heading, Attribute name, Level 4 JSON key|![#ddc888](https://via.placeholder.com/23/ddc888/?text=+)|#DDC888|
 |Foreground, Variable|![#c1c2c6](https://via.placeholder.com/23/c1c2c6/?text=+)|#C1C2C6|
-|Constant, HTML unrecognized tag, Level 8 JSON key|![#ef7762](https://via.placeholder.com/23/ef7762/?text=+)|#EF7762|
+|Constant, HTML unrecognized tag, Level 8 JSON key|![#f1836f](https://via.placeholder.com/23/f1836f/?text=+)|#F1836F|
 |Miscellaneous, Annotation, Level 9 JSON key|![#c3ab85](https://via.placeholder.com/23/c3ab85/?text=+)|#C3AB85|
 |Type, Level 3 JSON key|![#0bc2cb](https://via.placeholder.com/23/0bc2cb/?text=+)|#0BC2CB|
 |Parameter, Argument|![#e5e6e7](https://via.placeholder.com/23/e5e6e7/?text=+)|#E5E6E7|
@@ -59,7 +59,7 @@
 |Default library function, HTML inline tag, Level 6 JSON key|![#7dbbe8](https://via.placeholder.com/23/7dbbe8/?text=+)|#7DBBE8|
 |Function call, Heading, Attribute name, Level 4 JSON key|![#ddc888](https://via.placeholder.com/23/ddc888/?text=+)|#DDC888|
 |Foreground, Variable|![#c2c2c1](https://via.placeholder.com/23/c2c2c1/?text=+)|#C2C2C1|
-|Constant, HTML unrecognized tag, Level 8 JSON key|![#ef7762](https://via.placeholder.com/23/ef7762/?text=+)|#EF7762|
+|Constant, HTML unrecognized tag, Level 8 JSON key|![#f1836f](https://via.placeholder.com/23/f1836f/?text=+)|#F1836F|
 |Miscellaneous, Annotation, Level 9 JSON key|![#c3ab85](https://via.placeholder.com/23/c3ab85/?text=+)|#C3AB85|
 |Type, Level 3 JSON key|![#0bc2cb](https://via.placeholder.com/23/0bc2cb/?text=+)|#0BC2CB|
 |Parameter, Argument|![#e6e6e6](https://via.placeholder.com/23/e6e6e6/?text=+)|#E6E6E6|
