@@ -55,8 +55,8 @@ export function tmTheme() {
         .join("\n");
     const suffix = "</array>\n</dict>\n</plist>";
     return xmlFormatter(`${prefix}\n${theme}\n${suffix}`, {
-        indentation: "  ",
         collapseContent: true,
+        indentation: "  ",
         lineSeparator: "\n",
     });
 }

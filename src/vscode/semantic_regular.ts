@@ -22,92 +22,93 @@ export class SemanticTheme {
 
   getPaletteRules(style: string): semanticRule {
     const rules: semanticRule = {
-      variable: {
-        foreground: this.palette.variableColor.code,
+      class: {
+        __italic: true,
+        foreground: this.palette.namespaceClassStructColor.code,
       },
-      "variable.readonly": {
-        foreground: this.palette.constantColor.code,
-      },
-      "variable.defaultLibrary": {
+      "class.builtin": {
+        __italic: true,
+        foreground: this.palette.defaultLibraryClassTypeColor.code,
+      }, // python
+      "class.defaultLibrary": {
+        __italic: true,
         foreground: this.palette.defaultLibraryClassTypeColor.code,
       },
-      property: {
-        foreground: this.palette.propertyColor.code,
-        __italic: true,
-      },
-      parameter: {
-        foreground: this.palette.parameterArgumentColor.code,
-        __italic: true,
-      },
+
       function: {
-        foreground: this.palette.functionCallColor.code,
         __italic: true,
+        foreground: this.palette.functionCallColor.code,
       },
+      "function.builtin": {
+        __italic: true,
+        foreground: this.palette.defaultLibraryFunctionColor.code,
+      }, // python
       "function.declaration": {
         foreground: this.palette.functionDeclarationColor.code,
       },
       "function.defaultLibrary": {
-        foreground: this.palette.defaultLibraryFunctionColor.code,
         __italic: true,
+        foreground: this.palette.defaultLibraryFunctionColor.code,
       },
-      "function.builtin": {
-        foreground: this.palette.defaultLibraryFunctionColor.code,
-        __italic: true,
-      }, // python
+      keyword: {
+        foreground: this.palette.keywordColor.code,
+      },
       method: {
-        foreground: this.palette.functionCallColor.code,
         __italic: true,
+        foreground: this.palette.functionCallColor.code,
       },
+      "method.builtin": {
+        __italic: true,
+        foreground: this.palette.defaultLibraryFunctionColor.code,
+      }, // python
       "method.declaration": {
         foreground: this.palette.functionDeclarationColor.code,
       },
       "method.defaultLibrary": {
-        foreground: this.palette.defaultLibraryFunctionColor.code,
         __italic: true,
-      },
-      "method.builtin": {
         foreground: this.palette.defaultLibraryFunctionColor.code,
-        __italic: true,
-      }, // python
-      keyword: {
-        foreground: this.palette.keywordColor.code,
       },
       namespace: {
-        foreground: this.palette.namespaceClassStructColor.code,
         __italic: true,
+        foreground: this.palette.namespaceClassStructColor.code,
       },
       "namespace.defaultLibrary": {
+        __italic: true,
         foreground: this.palette.defaultLibraryClassTypeColor.code,
-        __italic: true,
       },
-      class: {
-        foreground: this.palette.namespaceClassStructColor.code,
-        __italic: true,
+      operator: {
+        foreground: this.palette.operatorColor.code,
       },
-      "class.defaultLibrary": {
-        foreground: this.palette.defaultLibraryClassTypeColor.code,
+      parameter: {
         __italic: true,
+        foreground: this.palette.parameterArgumentColor.code,
       },
-      "class.builtin": {
-        foreground: this.palette.defaultLibraryClassTypeColor.code,
+      property: {
         __italic: true,
-      }, // python
+        foreground: this.palette.propertyColor.code,
+      },
+      string: {
+        foreground: this.palette.stringColor.code,
+      },
       struct: {
-        foreground: this.palette.namespaceClassStructColor.code,
         __italic: true,
+        foreground: this.palette.namespaceClassStructColor.code,
       },
       type: {
         foreground: this.palette.typeColor.code,
       },
       "type.defaultLibrary": {
-        foreground: this.palette.defaultLibraryClassTypeColor.code,
         __italic: true,
+        foreground: this.palette.defaultLibraryClassTypeColor.code,
       },
-      operator: {
-        foreground: this.palette.operatorColor.code,
+      variable: {
+        foreground: this.palette.variableColor.code,
       },
-      string: {
-        foreground: this.palette.stringColor.code,
+      "variable.defaultLibrary": {
+        foreground: this.palette.defaultLibraryClassTypeColor.code,
+      },
+      "variable.readonly": {
+        foreground: this.palette.constantColor.code,
       },
     };
 

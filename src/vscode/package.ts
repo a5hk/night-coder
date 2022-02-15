@@ -1,7 +1,7 @@
 interface VSThemeManifest {
   label: string;
-  uiTheme: string;
   path: string;
+  uiTheme: string;
 }
 
 export class VSTheme {
@@ -20,8 +20,8 @@ export class VSTheme {
   toManifestFormat(): VSThemeManifest {
     return {
       label: this.label,
-      uiTheme: this.uiTheme,
       path: this.path,
+      uiTheme: this.uiTheme,
     };
   }
 }

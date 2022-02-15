@@ -7,12 +7,13 @@ interface WindowsTerminalSetting {
 
 export function windowsTerminalColors(palette: Palette): string {
   const settings: WindowsTerminalSetting = {
-    name: "Night Coder",
-    cursorColor: palette.backgroundee.code,
-    selectionBackground: `${palette.backgroundee.code}`,
     background: palette.background.code,
+    cursorColor: palette.backgroundee.code,
     foreground: palette.backgroundc5.code,
+    name: "Night Coder",
+    selectionBackground: `${palette.backgroundee.code}`,
 
+    // eslint-disable-next-line sort-keys
     black: palette.ansiBlack.code,
     blue: palette.ansiBlue.code,
     cyan: palette.ansiCyan.code,
@@ -22,6 +23,7 @@ export function windowsTerminalColors(palette: Palette): string {
     white: palette.ansiWhite.code,
     yellow: palette.ansiYellow.code,
 
+    // eslint-disable-next-line sort-keys
     brightBlack: palette.ansiBrightBlack.code,
     brightBlue: palette.ansiBrightBlue.code,
     brightCyan: palette.ansiBrightCyan.code,

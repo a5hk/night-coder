@@ -54,8 +54,8 @@ export class TextmateTheme {
                     "source.shell variable.other",
                 ],
                 settings: {
-                    foreground: this.palette.constantColor.code,
                     __italic: true,
+                    foreground: this.palette.constantColor.code,
                 },
             },
             {
@@ -74,16 +74,16 @@ export class TextmateTheme {
                     "support.other.namespace",
                 ],
                 settings: {
-                    foreground: this.palette.defaultLibraryClassTypeColor.code,
                     __italic: true,
+                    foreground: this.palette.defaultLibraryClassTypeColor.code,
                 },
             },
             {
                 name: "default library functions and methods",
                 scope: ["meta.method.declaration.js storage.type.js", "support.function"],
                 settings: {
-                    foreground: this.palette.defaultLibraryFunctionColor.code,
                     __italic: true,
+                    foreground: this.palette.defaultLibraryFunctionColor.code,
                 },
             },
             {
@@ -111,16 +111,16 @@ export class TextmateTheme {
                     "support.type.property-name",
                 ],
                 settings: {
-                    foreground: this.palette.propertyColor.code,
                     __italic: true,
+                    foreground: this.palette.propertyColor.code,
                 },
             },
             {
                 name: "parameter",
                 scope: ["meta.function-call.arguments", "variable.parameter"],
                 settings: {
-                    foreground: this.palette.parameterArgumentColor.code,
                     __italic: true,
+                    foreground: this.palette.parameterArgumentColor.code,
                 },
             },
             {
@@ -141,8 +141,8 @@ export class TextmateTheme {
                     "meta.function.call entity.name.function",
                 ],
                 settings: {
-                    foreground: this.palette.functionCallColor.code,
                     __italic: true,
+                    foreground: this.palette.functionCallColor.code,
                 },
             },
             {
@@ -178,8 +178,8 @@ export class TextmateTheme {
                     "entity.other.inherited-class",
                 ],
                 settings: {
-                    foreground: this.palette.namespaceClassStructColor.code,
                     __italic: true,
+                    foreground: this.palette.namespaceClassStructColor.code,
                 },
             },
             {
@@ -238,8 +238,8 @@ export class TextmateTheme {
                     "punctuation.definition.interpolation",
                 ],
                 settings: {
-                    foreground: this.palette.constantColor.code,
                     __italic: true,
+                    foreground: this.palette.constantColor.code,
                 },
             },
             {
@@ -264,8 +264,8 @@ export class TextmateTheme {
             {
                 scope: ["comment", "punctuation.definition.comment", "punctuation.whitespace.comment.leading.graphql"],
                 settings: {
-                    foreground: this.palette.commentColor.code,
                     fontStyle: "italic",
+                    foreground: this.palette.commentColor.code,
                 },
             },
             {
@@ -291,24 +291,24 @@ export class TextmateTheme {
                 name: "l1 json",
                 scope: ["support.type.property-name.json"],
                 settings: {
-                    foreground: this.palette.jsonLevel01Color.code,
                     __italic: true,
+                    foreground: this.palette.jsonLevel01Color.code,
                 },
             },
             {
                 name: "l2 json",
                 scope: ["meta.structure.dictionary.value support.type.property-name.json"],
                 settings: {
-                    foreground: this.palette.jsonLevel02Color.code,
                     __italic: true,
+                    foreground: this.palette.jsonLevel02Color.code,
                 },
             },
             {
                 name: "l3 json",
                 scope: ["meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"],
                 settings: {
-                    foreground: this.palette.jsonLevel03Color.code,
                     __italic: true,
+                    foreground: this.palette.jsonLevel03Color.code,
                 },
             },
             {
@@ -317,8 +317,8 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.jsonLevel04Color.code,
                     __italic: true,
+                    foreground: this.palette.jsonLevel04Color.code,
                 },
             },
             {
@@ -327,8 +327,8 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.jsonLevel05Color.code,
                     __italic: true,
+                    foreground: this.palette.jsonLevel05Color.code,
                 },
             },
             {
@@ -337,8 +337,8 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.jsonLevel06Color.code,
                     __italic: true,
+                    foreground: this.palette.jsonLevel06Color.code,
                 },
             },
             {
@@ -347,8 +347,8 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.jsonLevel07Color.code,
                     __italic: true,
+                    foreground: this.palette.jsonLevel07Color.code,
                 },
             },
             {
@@ -357,8 +357,8 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.jsonLevel08Color.code,
                     __italic: true,
+                    foreground: this.palette.jsonLevel08Color.code,
                 },
             },
             {
@@ -367,8 +367,8 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.jsonLevel09Color.code,
                     __italic: true,
+                    foreground: this.palette.jsonLevel09Color.code,
                 },
             },
             {
@@ -377,8 +377,8 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.jsonLevel10Color.code,
                     __italic: true,
+                    foreground: this.palette.jsonLevel10Color.code,
                 },
             },
             {
@@ -387,8 +387,8 @@ export class TextmateTheme {
                     "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json",
                 ],
                 settings: {
-                    foreground: this.palette.jsonLevel11Color.code,
                     __italic: true,
+                    foreground: this.palette.jsonLevel11Color.code,
                 },
             },
             {
@@ -468,8 +468,8 @@ export class TextmateTheme {
             {
                 scope: ["entity.other.attribute-name", "meta.selector.css", "source.css.scss entity.name.tag.css"],
                 settings: {
-                    foreground: this.palette.attributeNameColor.code,
                     __italic: true,
+                    foreground: this.palette.attributeNameColor.code,
                 },
             },
             {
