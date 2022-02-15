@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.6.0
+
+- Added support for Symbol icons, colors generally match token colors
+
 ## 3.5.0
 
 - Updated red color to be a bit lighter.
