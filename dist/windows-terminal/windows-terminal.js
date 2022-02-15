@@ -2,11 +2,11 @@ import { colorPaletteFactory } from "../common/colors.js";
 import { themeWriter } from "../common/theme-writer.js";
 export function windowsTerminalColors(palette) {
     const settings = {
-        name: "Night Coder",
-        cursorColor: palette.backgroundee.code,
-        selectionBackground: `${palette.backgroundee.code}`,
         background: palette.background.code,
+        cursorColor: palette.backgroundee.code,
         foreground: palette.backgroundc5.code,
+        name: "Night Coder",
+        selectionBackground: `${palette.backgroundee.code}`,
         black: palette.ansiBlack.code,
         blue: palette.ansiBlue.code,
         cyan: palette.ansiCyan.code,

@@ -9,8 +9,8 @@ export class VSTheme {
     toManifestFormat() {
         return {
             label: this.label,
-            uiTheme: this.uiTheme,
             path: this.path,
+            uiTheme: this.uiTheme,
         };
     }
 }

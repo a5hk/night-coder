@@ -1,9 +1,9 @@
 {
-  "name": "Night Coder",
-  "cursorColor": "#eeeff0",
-  "selectionBackground": "#eeeff0",
   "background": "#030917",
+  "cursorColor": "#eeeff0",
   "foreground": "#c6c7ca",
+  "name": "Night Coder",
+  "selectionBackground": "#eeeff0",
   "black": "#353a45",
   "blue": "#829dc9",
   "cyan": "#0fc6d7",

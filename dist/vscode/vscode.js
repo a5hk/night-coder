@@ -24,9 +24,9 @@ function fileWriter(content, filepath) {
 function generateTheme(t, ui, semantic, textmate) {
     return __italicReject({
         $schema: "vscode://schemas/color-theme",
-        semanticHighlighting: true,
-        name: t.label,
         colors: ui,
+        name: t.label,
+        semanticHighlighting: true,
         semanticTokenColors: semantic,
         tokenColors: textmate,
     });
@@ -71,31 +71,21 @@ function generateManifest(t) {
     const githubURL = "https://github.com/a5hk/night-coder";
     const themes = t.map((t) => t.toManifestFormat());
     const p = {
-        name: "night-coder",
-        displayName: "Night Coder",
-        description: "A dark theme for Night Coders",
-        version: version,
-        publisher: author,
         author: author,
-        license: "MIT",
+        categories: ["Themes"],
+        contributes: { themes: themes },
+        description: "A dark theme for Night Coders",
+        displayName: "Night Coder",
+        engines: { vscode: "^1.60.0" },
+        galleryBanner: { color: "#030917", theme: "dark" },
+        homepage: githubURL,
         icon: "icon.png",
         keywords: ["NightCoder", "Night Coder", "Dark", "Borderless", "Italic", "Contrast", "Gray"],
-        galleryBanner: {
-            color: "#030917",
-            theme: "dark",
-        },
-        engines: {
-            vscode: "^1.60.0",
-        },
-        homepage: githubURL,
-        repository: {
-            type: "git",
-            url: githubURL,
-        },
-        categories: ["Themes"],
-        contributes: {
-            themes: themes,
-        },
+        license: "MIT",
+        name: "night-coder",
+        publisher: author,
+        repository: { type: "git", url: githubURL },
+        version: version,
     };
     return JSON.stringify(p);
 }
