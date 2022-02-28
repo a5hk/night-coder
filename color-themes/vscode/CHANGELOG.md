@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.7.1
+
+- Fixed word borders and backgrounds
+
 ## 3.7.0
 
 - Modified selection background and border
