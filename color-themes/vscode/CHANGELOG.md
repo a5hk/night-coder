@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.7.0
+
+- Modified selection background and border
+
 ## 3.6.0
 
 - Added support for Symbol icons, colors generally match token colors
