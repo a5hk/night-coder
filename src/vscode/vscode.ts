@@ -126,7 +126,11 @@ function generateReadme(): string {
     "Night Coder"
   )}
 
-A dark theme for Night Coders.
+A dark theme for Night Coders. There are two main variants:
+- **Night Coder**
+- **Night Coder Warm** The lively and happier version, inspired by [Mayukai Sunset](https://marketplace.visualstudio.com/items?itemName=GulajavaMinistudio.mayukaithemevsc)
+
+Each of these main variants, has contrast and italic versions.
 
 ![html](/screenshot/demo.gif)
 
