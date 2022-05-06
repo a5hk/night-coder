@@ -4,7 +4,7 @@
 
 A dark theme for Night Coders.
 
-![html](/screenshot/html.png)
+![html](/screenshot/demo.gif)
 
 ## Other versions
 
@@ -22,17 +22,13 @@ A dark theme for Night Coders.
 
 ![javascript](/screenshot/n-javascript.png)
 
+### Python [(Night Coder Warm Contrast)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Warm%20Contrast)
+
+![python](/screenshot/nwc-python.png)
+
 ### JSON [(Night Coder Contrast)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Contrast)
 
 ![json](/screenshot/nc-json.png)
-
-### Python [(Night Coder Warm Italic)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Warm%20Italic)
-
-![python](/screenshot/nwi-python.png)
-
-### Go [(Night Coder Gray Contrast Italic)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Gray%20Contrast%20Italic)
-
-![python](/screenshot/ngci-go.png)
 
 ## Preferences shown in the screenshots
 

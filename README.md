@@ -2,7 +2,7 @@
 
 A dark theme for Night Coders.
 
-![html](screenshot/html.png)
+![html](screenshot/demo.gif)
 
 ## Other versions
 

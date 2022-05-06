@@ -6,7 +6,6 @@ import { commonWorkbenchColors } from "./workbench_common.js";
 import { contrastWorkbenchColors } from "./workbench_contrast.js";
 import { VSTheme } from "./package.js";
 import { mainVariant } from "./main.js";
-import { garyVariant } from "./gray.js";
 import { warmVariant } from "./warm.js";
 function __italicReject(theme) {
     return JSON.stringify(theme, (k, v) => {
@@ -40,7 +39,7 @@ export function vscodeThemesWriter() {
     const contrasts = ["", "Contrast"];
     let uiColors;
     const themes = [];
-    const palettes = [mainVariant(), garyVariant(), warmVariant()];
+    const palettes = [mainVariant(), warmVariant()];
     for (const p of palettes) {
         const textmateTheme = new TextmateTheme(p);
         const semanticTheme = new SemanticTheme(p);
@@ -80,7 +79,7 @@ function generateManifest(t) {
         galleryBanner: { color: "#030917", theme: "dark" },
         homepage: githubURL,
         icon: "icon.png",
-        keywords: ["NightCoder", "Night Coder", "Dark", "Borderless", "Italic", "Contrast", "Gray"],
+        keywords: ["NightCoder", "Night Coder", "Dark", "Borderless", "Italic", "Contrast", "Warm"],
         license: "MIT",
         name: "night-coder",
         publisher: author,
@@ -110,7 +109,7 @@ function generateReadme() {
 
 A dark theme for Night Coders.
 
-![html](/screenshot/html.png)
+![html](/screenshot/demo.gif)
 
 ## Other versions
 
@@ -128,17 +127,13 @@ A dark theme for Night Coders.
 
 ![javascript](/screenshot/n-javascript.png)
 
+### Python [(Night Coder Warm Contrast)]${previewURL("Night Coder Warm Contrast")}
+
+![python](/screenshot/nwc-python.png)
+
 ### JSON [(Night Coder Contrast)]${previewURL("Night Coder Contrast")}
 
 ![json](/screenshot/nc-json.png)
-
-### Python [(Night Coder Warm Italic)]${previewURL("Night Coder Warm Italic")}
-
-![python](/screenshot/nwi-python.png)
-
-### Go [(Night Coder Gray Contrast Italic)]${previewURL("Night Coder Gray Contrast Italic")}
-
-![python](/screenshot/ngci-go.png)
 
 ## Preferences shown in the screenshots
 

@@ -26,26 +26,6 @@
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Gray",
-        "path": "./themes/night-coder-gray-color-theme.json",
-        "uiTheme": "vs-dark"
-      },
-      {
-        "label": "Night Coder Gray Contrast",
-        "path": "./themes/night-coder-gray-contrast-color-theme.json",
-        "uiTheme": "vs-dark"
-      },
-      {
-        "label": "Night Coder Gray Italic",
-        "path": "./themes/night-coder-gray-italic-color-theme.json",
-        "uiTheme": "vs-dark"
-      },
-      {
-        "label": "Night Coder Gray Contrast Italic",
-        "path": "./themes/night-coder-gray-contrast-italic-color-theme.json",
-        "uiTheme": "vs-dark"
-      },
-      {
         "label": "Night Coder Warm",
         "path": "./themes/night-coder-warm-color-theme.json",
         "uiTheme": "vs-dark"
@@ -85,7 +65,7 @@
     "Borderless",
     "Italic",
     "Contrast",
-    "Gray"
+    "Warm"
   ],
   "license": "MIT",
   "name": "night-coder",
@@ -94,5 +74,5 @@
     "type": "git",
     "url": "https://github.com/a5hk/night-coder"
   },
-  "version": "3.7.1"
+  "version": "4.0.0"
 }

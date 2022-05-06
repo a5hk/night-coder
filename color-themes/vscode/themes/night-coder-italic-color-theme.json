@@ -522,7 +522,11 @@
       "settings": { "foreground": "#c982c1" }
     },
     {
-      "scope": ["meta.tag.metadata.link", "string.other.link.title.markdown"],
+      "scope": [
+        "meta.tag.metadata.link",
+        "string.other.link.title.markdown",
+        "string.other.link.description.markdown"
+      ],
       "settings": { "foreground": "#85c3ab" }
     },
     { "scope": ["markup.italic"], "settings": { "foreground": "#93ecb8" } },
@@ -542,8 +546,7 @@
     {
       "scope": [
         "meta.tag.metadata.style",
-        "source.vue entity.name.tag.style.html",
-        "string.other.link.description.markdown"
+        "source.vue entity.name.tag.style.html"
       ],
       "settings": { "foreground": "#829dc9" }
     },

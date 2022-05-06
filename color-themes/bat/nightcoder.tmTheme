@@ -423,7 +423,7 @@
         <key>name</key>
         <string></string>
         <key>scope</key>
-        <string>meta.tag.metadata.link, string.other.link.title.markdown</string>
+        <string>meta.tag.metadata.link, string.other.link.title.markdown, string.other.link.description.markdown</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -478,7 +478,7 @@
         <key>name</key>
         <string></string>
         <key>scope</key>
-        <string>meta.tag.metadata.style, source.vue entity.name.tag.style.html, string.other.link.description.markdown</string>
+        <string>meta.tag.metadata.style, source.vue entity.name.tag.style.html</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>

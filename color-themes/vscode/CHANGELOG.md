@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.0.0
+
+- Reworked warm variant
+- Removed gray variant
+- Minor changes to markdown highlighting
+
 ## 3.7.1
 
 - Fixed word borders and backgrounds

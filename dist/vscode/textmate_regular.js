@@ -398,7 +398,7 @@ export class TextmateTheme {
                 },
             },
             {
-                scope: ["meta.tag.metadata.link", "string.other.link.title.markdown"],
+                scope: ["meta.tag.metadata.link", "string.other.link.title.markdown", "string.other.link.description.markdown"],
                 settings: {
                     foreground: this.palette.linkTagColor.code,
                 },
@@ -428,11 +428,7 @@ export class TextmateTheme {
                 },
             },
             {
-                scope: [
-                    "meta.tag.metadata.style",
-                    "source.vue entity.name.tag.style.html",
-                    "string.other.link.description.markdown",
-                ],
+                scope: ["meta.tag.metadata.style", "source.vue entity.name.tag.style.html"],
                 settings: {
                     foreground: this.palette.styleTagColor.code,
                 },
