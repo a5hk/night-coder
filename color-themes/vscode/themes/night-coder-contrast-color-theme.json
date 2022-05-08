@@ -243,6 +243,8 @@
     {
       "name": "special variables",
       "scope": [
+        "constant.other.caps",
+        "source.shell variable.other",
         "variable.language.self",
         "variable.language.special.self",
         "variable.language.super",
@@ -255,8 +257,7 @@
         "variable.other.readwrite.instance.ruby",
         "variable.parameter.function.language.special.self",
         "variable.other.readwrite.instance.crystal",
-        "variable.other.readwrite.module",
-        "source.shell variable.other"
+        "variable.other.readwrite.module"
       ],
       "settings": { "foreground": "#f1836f" }
     },

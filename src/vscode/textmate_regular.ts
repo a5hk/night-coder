@@ -55,6 +55,8 @@ export class TextmateTheme {
       {
         name: "special variables",
         scope: [
+          "constant.other.caps",
+          "source.shell variable.other",
           "variable.language.self",
           "variable.language.special.self",
           "variable.language.super",
@@ -68,7 +70,6 @@ export class TextmateTheme {
           "variable.parameter.function.language.special.self",
           "variable.other.readwrite.instance.crystal",
           "variable.other.readwrite.module",
-          "source.shell variable.other",
         ],
         settings: {
           __italic: true,

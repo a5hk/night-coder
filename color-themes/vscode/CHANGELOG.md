@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.2
+
+- Fixed Python constants
+
 ## 4.0.1
 
 - Updated readme
