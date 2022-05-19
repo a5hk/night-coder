@@ -5,8 +5,8 @@ import { SemanticTheme } from "./semantic_regular.js";
 import { commonWorkbenchColors } from "./workbench_common.js";
 import { contrastWorkbenchColors } from "./workbench_contrast.js";
 import { VSTheme } from "./package.js";
-import { mainVariant } from "./main.js";
-import { warmVariant } from "./warm.js";
+import { mainPalette } from "../common/main-palette.js";
+import { warmPalette } from "../common/warm-palette.js";
 function __italicReject(theme) {
     return JSON.stringify(theme, (k, v) => {
         if (k === "__italic") {
@@ -39,7 +39,7 @@ export function vscodeThemesWriter() {
     const contrasts = ["", "Contrast"];
     let uiColors;
     const themes = [];
-    const palettes = [mainVariant(), warmVariant()];
+    const palettes = [mainPalette, warmPalette];
     for (const p of palettes) {
         const textmateTheme = new TextmateTheme(p);
         const semanticTheme = new SemanticTheme(p);

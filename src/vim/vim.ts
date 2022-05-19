@@ -1,4 +1,6 @@
-import { Palette, colorPaletteFactory } from "../common/colors.js";
+import { Palette } from "../common/colors.js";
+import { mainPalette } from "../common/main-palette.js";
+import { warmPalette } from "../common/warm-palette.js";
 import { themeWriter } from "../common/theme-writer.js";
 
 export interface vimRule {
@@ -155,7 +157,7 @@ set cursorline
 highlight LineNr guifg=${palette.background55.code}
 highlight CursorLineNr cterm=NONE gui=NONE guifg=${palette.backgroundaa.code}
 
-highlight Normal guifg=${palette.foregroundColor.code} guibg=#030917
+highlight Normal guifg=${palette.foregroundColor.code} guibg=${palette.background.code}
 
 `;
   return (
@@ -175,6 +177,11 @@ highlight Normal guifg=${palette.foregroundColor.code} guibg=#030917
 }
 
 export function vimColorScheme(): void {
-  const palette = new (colorPaletteFactory())("Night Coder", "");
-  themeWriter("vim/colors/nightcoder.vim", vimColoring(palette), "Vim color scheme generated.");
+  // const palette = new (colorPaletteFactory())("Night Coder", "");
+  themeWriter("vim/colors/nightcoder.vim", vimColoring(mainPalette), "Vim color scheme generated.");
+  themeWriter(
+    "vim/colors/nightcoder-warm.vim",
+    vimColoring(warmPalette),
+    "Warm variant of Vim color scheme generated."
+  );
 }
