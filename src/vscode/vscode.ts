@@ -47,7 +47,6 @@ export function vscodeThemesWriter(): void {
   let uiColors: workbenchColor;
   const themes: VSTheme[] = [];
   const palettes = [mainPalette, warmPalette];
-  // const palettes = [mainVariant(), warmVariant()];
 
   for (const p of palettes) {
     const textmateTheme = new TextmateTheme(p);
