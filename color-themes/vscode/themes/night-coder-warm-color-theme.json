@@ -123,7 +123,7 @@
     "symbolIcon.classForeground": "#ffbe1a",
     "symbolIcon.colorForeground": "#b999fa",
     "symbolIcon.constantForeground": "#57c79c",
-    "symbolIcon.constructorForeground": "#ff808a",
+    "symbolIcon.constructorForeground": "#ff8595",
     "symbolIcon.enumeratorForeground": "#ffbe1a",
     "symbolIcon.enumeratorMemberForeground": "#f4b271",
     "symbolIcon.fieldForeground": "#f4b271",
@@ -142,7 +142,7 @@
     "symbolIcon.stringForeground": "#99c270",
     "symbolIcon.structForeground": "#ffbe1a",
     "symbolIcon.textForeground": "#99c270",
-    "symbolIcon.typeParameterForeground": "#ff808a",
+    "symbolIcon.typeParameterForeground": "#ff8595",
     "symbolIcon.unitForeground": "#b999fa",
     "symbolIcon.variableForeground": "#e7e7e7",
     "tab.activeBackground": "#2f3236",
@@ -201,7 +201,7 @@
     "property": { "foreground": "#f4b271" },
     "string": { "foreground": "#99c270" },
     "struct": { "foreground": "#ffbe1a" },
-    "type": { "foreground": "#ff808a" },
+    "type": { "foreground": "#ff8595" },
     "type.defaultLibrary": { "foreground": "#ffbe1a" },
     "variable": { "foreground": "#c4c5c6" },
     "variable.defaultLibrary": { "foreground": "#ffbe1a" },
@@ -361,7 +361,7 @@
     {
       "name": "types",
       "scope": ["storage.type", "keyword.type"],
-      "settings": { "foreground": "#ff808a" }
+      "settings": { "foreground": "#ff8595" }
     },
     {
       "name": "operators",
@@ -475,7 +475,7 @@
       "scope": [
         "meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value meta.structure.dictionary.value support.type.property-name.json"
       ],
-      "settings": { "foreground": "#ff808a" }
+      "settings": { "foreground": "#ff8595" }
     },
     {
       "name": "l7 json",

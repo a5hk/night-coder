@@ -16,7 +16,7 @@ export function warmVariant(): Palette {
   p.namespaceClassStructColor = new Color("#ffbe1a", "Namespace/Class/Struct");
   p.propertyColor = new Color("#f4b271", "Property");
   p.stringColor = new Color("#99c270", "String");
-  p.typeColor = new Color("#ff808a", "Type");
+  p.typeColor = new Color("#ff8595", "Type");
 
   // markup
   p.attributeNameColor = new Color("#e9de63", "Attribute name");
@@ -36,7 +36,7 @@ export function warmVariant(): Palette {
   p.jsonLevel03Color = new Color("#e9de63", "Level 3 JSON key");
   p.jsonLevel04Color = new Color("#ff7566", "Level 4 JSON key");
   p.jsonLevel05Color = new Color("#ffbe1a", "Level 5 JSON key");
-  p.jsonLevel06Color = new Color("#ff808a", "Level 6 JSON key");
+  p.jsonLevel06Color = new Color("#ff8595", "Level 6 JSON key");
   p.jsonLevel07Color = new Color("#c3ab85", "Level 7 JSON key");
   p.jsonLevel08Color = new Color("#57c79c", "Level 8 JSON key");
   p.jsonLevel09Color = new Color("#e9de63", "Level 9 JSON key");

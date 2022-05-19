@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.3
+
+- Made type color more distinguishable in warm variant
+
 ## 4.0.2
 
 - Fixed Python constants

@@ -46,7 +46,7 @@
 |Operator|![#f2f28c](https://via.placeholder.com/23/f2f28c/?text=+)|#F2F28C|
 |Parameter, Argument|![#e7e7e7](https://via.placeholder.com/23/e7e7e7/?text=+)|#E7E7E7|
 |Property, Tag, HTML unrecognized tag, Level 1 JSON key, Level > 10 JSON key|![#f4b271](https://via.placeholder.com/23/f4b271/?text=+)|#F4B271|
-|Type, Level 6 JSON key|![#ff808a](https://via.placeholder.com/23/ff808a/?text=+)|#FF808A|
+|Type, Level 6 JSON key|![#ff8595](https://via.placeholder.com/23/ff8595/?text=+)|#FF8595|
 |Script tag|![#d9d326](https://via.placeholder.com/23/d9d326/?text=+)|#D9D326|
 |HTML style tag|![#829dc9](https://via.placeholder.com/23/829dc9/?text=+)|#829DC9|
 |Tag punctuation|![#7f8183](https://via.placeholder.com/23/7f8183/?text=+)|#7F8183|
