@@ -11,6 +11,10 @@ A dark theme for Night Coders.
 - [bat](/color-themes/bat/): A port of the color scheme for [bat](https://github.com/sharkdp/bat)
 - [Windows Terminal](/color-themes/windows-terminal): A port for [Windows Terminal](https://github.com/microsoft/terminal)
 
+## How to contribute
+
+[Contribution Guide](/CONTRIBUTING.md)
+
 ## License
 
 [MIT License](LICENSE)
