@@ -8,4 +8,6 @@ True color support is required.
 
 Screenshot of Windows Terminal (and WSL)
 
-![html](/screenshot/vim.png)
+|         Night Coder          |        Night Coder Warm        |
+| :--------------------------: | :----------------------------: |
+| ![ruby](/screenshot/vim.png) | ![ruby](/screenshot/vim-w.png) |
