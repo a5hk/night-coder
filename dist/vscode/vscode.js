@@ -1,9 +1,9 @@
 import path from "path";
 import { themeWriter } from "../common/theme-writer.js";
-import { TextmateTheme } from "./textmate_regular.js";
-import { SemanticTheme } from "./semantic_regular.js";
-import { commonWorkbenchColors } from "./workbench_common.js";
-import { contrastWorkbenchColors } from "./workbench_contrast.js";
+import { TextmateTheme } from "./textmate-regular.js";
+import { SemanticTheme } from "./semantic-regular.js";
+import { commonWorkbenchColors } from "./workbench-common.js";
+import { contrastWorkbenchColors } from "./workbench-contrast.js";
 import { VSTheme } from "./package.js";
 import { mainPalette } from "../common/main-palette.js";
 import { warmPalette } from "../common/warm-palette.js";

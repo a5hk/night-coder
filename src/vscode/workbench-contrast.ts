@@ -1,5 +1,5 @@
 import { Palette } from "../common/colors.js";
-import { workbenchColor } from "./workbench_common.js";
+import { workbenchColor } from "./workbench-common.js";
 
 export function contrastWorkbenchColors(palette: Palette): workbenchColor {
   const colors: workbenchColor = {

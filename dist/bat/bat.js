@@ -1,7 +1,7 @@
 import xmlFormatter from "xml-formatter";
 import { colorPaletteFactory } from "../common/colors.js";
 import { themeWriter } from "../common/theme-writer.js";
-import { TextmateTheme } from "../vscode/textmate_regular.js";
+import { TextmateTheme } from "../vscode/textmate-regular.js";
 export function tmTheme() {
     const palette = new (colorPaletteFactory())("Night Coder", "");
     const textmateRule = new TextmateTheme(palette);

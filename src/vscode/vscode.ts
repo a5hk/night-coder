@@ -2,10 +2,10 @@ import path from "path";
 
 import { Palette } from "../common/colors.js";
 import { themeWriter } from "../common/theme-writer.js";
-import { TextmateTheme, textmateRule } from "./textmate_regular.js";
-import { SemanticTheme, semanticRule } from "./semantic_regular.js";
-import { commonWorkbenchColors, workbenchColor } from "./workbench_common.js";
-import { contrastWorkbenchColors } from "./workbench_contrast.js";
+import { TextmateTheme, textmateRule } from "./textmate-regular.js";
+import { SemanticTheme, semanticRule } from "./semantic-regular.js";
+import { commonWorkbenchColors, workbenchColor } from "./workbench-common.js";
+import { contrastWorkbenchColors } from "./workbench-contrast.js";
 import { VSPackage, VSTheme } from "./package.js";
 import { mainPalette } from "../common/main-palette.js";
 import { warmPalette } from "../common/warm-palette.js";

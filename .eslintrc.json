@@ -11,5 +11,7 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint"],
-  "rules": { "sort-keys": ["error", "asc", { "caseSensitive": true, "natural": false, "minKeys": 2 }] }
+  "rules": {
+    "sort-keys": ["error", "asc", { "caseSensitive": true, "natural": false, "minKeys": 2 }]
+  }
 }
