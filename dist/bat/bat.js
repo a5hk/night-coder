@@ -1,9 +1,9 @@
 import xmlFormatter from "xml-formatter";
-import { colorPaletteFactory } from "../common/colors.js";
+import { mainPalette } from "../common/main-palette.js";
+import { warmPalette } from "../common/warm-palette.js";
 import { themeWriter } from "../common/theme-writer.js";
 import { TextmateTheme } from "../vscode/textmate-regular.js";
-export function tmTheme() {
-    const palette = new (colorPaletteFactory())("Night Coder", "");
+export function tmTheme(palette) {
     const textmateRule = new TextmateTheme(palette);
     const prefix = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -11,7 +11,7 @@ export function tmTheme() {
         '<plist version="1.0">',
         "<dict>",
         "<key>name</key>",
-        "<string>Night Coder</string>",
+        `<string>${palette.fullName()}</string>`,
         "<key>settings</key>",
         "<array>",
         "<dict>",
@@ -61,5 +61,6 @@ export function tmTheme() {
     });
 }
 export function batColorScheme() {
-    themeWriter("bat/nightcoder.tmTheme", tmTheme(), "Bat color scheme generated.");
+    themeWriter("bat/nightcoder.tmTheme", tmTheme(mainPalette), "Main bat color scheme generated.");
+    themeWriter("bat/nightcoder-warm.tmTheme", tmTheme(warmPalette), "Warm bat color scheme generated.");
 }

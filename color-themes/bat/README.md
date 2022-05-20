@@ -3,8 +3,12 @@ This is an early release and might change in future.
 
 ## Screenshots
 
-### TypeScript
+Screenshot of Windows Terminal (and WSL), displaying some Typescript code.
 
-Screenshot of Windows Terminal (and WSL)
+### Main variant
 
-![html](/screenshot/bat.png)
+![typescript](/screenshot/bat.png)
+
+### Warm variant
+
+![typescript](/screenshot/bat-warm.png)
