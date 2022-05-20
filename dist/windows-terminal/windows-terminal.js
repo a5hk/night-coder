@@ -1,11 +1,12 @@
-import { colorPaletteFactory } from "../common/colors.js";
 import { themeWriter } from "../common/theme-writer.js";
+import { mainPalette } from "../common/main-palette.js";
+import { warmPalette } from "../common/warm-palette.js";
 export function windowsTerminalColors(palette) {
     const settings = {
         background: palette.background.code,
         cursorColor: palette.backgroundee.code,
         foreground: palette.backgroundc5.code,
-        name: "Night Coder",
+        name: palette.fullName(),
         selectionBackground: `${palette.backgroundee.code}`,
         black: palette.ansiBlack.code,
         blue: palette.ansiBlue.code,
@@ -27,6 +28,6 @@ export function windowsTerminalColors(palette) {
     return JSON.stringify(settings);
 }
 export function windowsTerminalColorScheme() {
-    const palette = new (colorPaletteFactory())("Night Coder", "");
-    themeWriter("windows-terminal/night-coder.json", windowsTerminalColors(palette), "Windows Terminal color scheme generated.");
+    themeWriter(`windows-terminal/${mainPalette.fullName().toLowerCase().replace(/ /g, "-")}.json`, windowsTerminalColors(mainPalette), "Windows Terminal color scheme generated.");
+    themeWriter(`windows-terminal/${warmPalette.fullName().toLowerCase().replace(/ /g, "-")}.json`, windowsTerminalColors(warmPalette), "Windows Terminal color scheme generated (warm).");
 }

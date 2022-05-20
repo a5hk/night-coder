@@ -60,7 +60,7 @@ export function vscodeThemesWriter(): void {
           uiColors = commonWorkbenchColors(p);
         }
 
-        const x = new VSTheme([p.name, c, s].join(" ").trim().replace(/ +/g, " "), "vs-dark");
+        const x = new VSTheme([p.fullName(), c, s].join(" ").trim().replace(/ +/g, " "), "vs-dark");
         const len = themes.push(x);
         vsThemeWriter(themes[len - 1] ?? x, uiColors, semanticTheme.getPaletteRules(s), textmateTheme.getRules(s));
       }

@@ -1,6 +1,6 @@
 import { colorPaletteFactory, Color } from "./colors.js";
 export function warmVariant() {
-    const p = new (colorPaletteFactory("#0f1317"))("Night Coder Warm", "Warm variant");
+    const p = new (colorPaletteFactory("#0f1317"))("Night Coder", "Warm");
     p.contrastBackground = new Color("#0a0d0f");
     p.constantColor = new Color("#57c79c", "Constant");
     p.defaultLibraryClassTypeColor = new Color("#ffbe1a");

@@ -1,5 +1,7 @@
-import { Palette, colorPaletteFactory } from "../common/colors.js";
+import { Palette } from "../common/colors.js";
 import { themeWriter } from "../common/theme-writer.js";
+import { mainPalette } from "../common/main-palette.js";
+import { warmPalette } from "../common/warm-palette.js";
 
 interface WindowsTerminalSetting {
   [prop: string]: string;
@@ -10,7 +12,7 @@ export function windowsTerminalColors(palette: Palette): string {
     background: palette.background.code,
     cursorColor: palette.backgroundee.code,
     foreground: palette.backgroundc5.code,
-    name: "Night Coder",
+    name: palette.fullName(),
     selectionBackground: `${palette.backgroundee.code}`,
 
     // eslint-disable-next-line sort-keys
@@ -38,10 +40,14 @@ export function windowsTerminalColors(palette: Palette): string {
 }
 
 export function windowsTerminalColorScheme(): void {
-  const palette = new (colorPaletteFactory())("Night Coder", "");
   themeWriter(
-    "windows-terminal/night-coder.json",
-    windowsTerminalColors(palette),
+    `windows-terminal/${mainPalette.fullName().toLowerCase().replace(/ /g, "-")}.json`,
+    windowsTerminalColors(mainPalette),
     "Windows Terminal color scheme generated."
+  );
+  themeWriter(
+    `windows-terminal/${warmPalette.fullName().toLowerCase().replace(/ /g, "-")}.json`,
+    windowsTerminalColors(warmPalette),
+    "Windows Terminal color scheme generated (warm)."
   );
 }

@@ -44,11 +44,9 @@ function colorDescriptor(c: Color, enumerable = false) {
   };
 }
 
-function BasePalette<T extends Record<string, unknown>>(
-  descriptors: {
-    [K in keyof T]: () => TypedPropertyDescriptor<T[K]>;
-  }
-): new () => T {
+function BasePalette<T extends Record<string, unknown>>(descriptors: {
+  [K in keyof T]: () => TypedPropertyDescriptor<T[K]>;
+}): new () => T {
   return class {
     constructor() {
       let k: keyof T;
@@ -197,14 +195,18 @@ export function colorPaletteFactory(bg = "#030917") {
     ansiYellow: /* .......... */ colorDescriptor(new Color("#d9d326")),
   }) {
     name: string;
-    readmeTableTitle: string;
+    variant: string;
 
     constructor(name: string, title: string) {
       super();
       this.name = name;
-      this.readmeTableTitle = title;
+      this.variant = title;
       Object.defineProperty(this, "name", { enumerable: false });
-      Object.defineProperty(this, "readmeTableTitle", { enumerable: false });
+      Object.defineProperty(this, "variant", { enumerable: false });
+    }
+
+    fullName(): string {
+      return [this.name, this.variant].filter((s) => s !== "Main").join(" ");
     }
 
     toString(): string {
@@ -230,7 +232,7 @@ export function colorPaletteFactory(bg = "#030917") {
 
     toMarkdownTable(): string {
       return [
-        `### ${this.readmeTableTitle}`,
+        `### ${this.variant} variant`,
         "",
         "| Scope | Color | Hex |",
         "|:------|:-----:|:----|",

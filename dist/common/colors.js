@@ -172,9 +172,12 @@ export function colorPaletteFactory(bg = "#030917") {
         constructor(name, title) {
             super();
             this.name = name;
-            this.readmeTableTitle = title;
+            this.variant = title;
             Object.defineProperty(this, "name", { enumerable: false });
-            Object.defineProperty(this, "readmeTableTitle", { enumerable: false });
+            Object.defineProperty(this, "variant", { enumerable: false });
+        }
+        fullName() {
+            return [this.name, this.variant].filter((s) => s !== "Main").join(" ");
         }
         toString() {
             return Object.entries(Object.values(this)
@@ -194,7 +197,7 @@ export function colorPaletteFactory(bg = "#030917") {
         }
         toMarkdownTable() {
             return [
-                `### ${this.readmeTableTitle}`,
+                `### ${this.variant} variant`,
                 "",
                 "| Scope | Color | Hex |",
                 "|:------|:-----:|:----|",
