@@ -7,6 +7,7 @@ import { contrastWorkbenchColors } from "./workbench-contrast.js";
 import { VSTheme } from "./package.js";
 import { mainPalette } from "../common/main-palette.js";
 import { warmPalette } from "../common/warm-palette.js";
+import { grayPalette } from "../common/gray-palette.js";
 function __italicReject(theme) {
     return JSON.stringify(theme, (k, v) => {
         if (k === "__italic") {
@@ -39,7 +40,7 @@ export function vscodeThemesWriter() {
     const contrasts = ["", "Contrast"];
     let uiColors;
     const themes = [];
-    const palettes = [mainPalette, warmPalette];
+    const palettes = [mainPalette, warmPalette, grayPalette];
     for (const p of palettes) {
         const textmateTheme = new TextmateTheme(p);
         const semanticTheme = new SemanticTheme(p);
@@ -107,8 +108,9 @@ function generateReadme() {
 
 [![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-060?style=for-the-badge&labelColor=030917)]${previewURL("Night Coder")}
 
-A dark theme for Night Coders. There are two main variants:
-- **Night Coder**
+A dark theme for Night Coders. There are three main variants:
+- **Night Coder** The first and main variant
+- **Night Coder Gray** For those who prefer a little lighter background
 - **Night Coder Warm** The lively and happier version, inspired by [Mayukai Sunset](https://marketplace.visualstudio.com/items?itemName=GulajavaMinistudio.mayukaithemevsc)
 
 Each of these main variants, has contrast and italic versions.
@@ -135,9 +137,9 @@ Each of these main variants, has contrast and italic versions.
 
 ![python](/screenshot/nwc-python.png)
 
-### JSON [(Night Coder Contrast)]${previewURL("Night Coder Contrast")}
+### JSON [(Night Coder Gray Contrast Italic)]${previewURL("Night Coder Gray Contrast Italic")}
 
-![json](/screenshot/nc-json.png)
+![json](/screenshot/ngci-json.png)
 
 ## Preferences shown in the screenshots
 

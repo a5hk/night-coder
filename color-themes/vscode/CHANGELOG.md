@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.1.0
+
+- Added previously removed gray variant
+
 ## 4.0.3
 
 - Made type color more distinguishable in warm variant

@@ -2,8 +2,9 @@
 
 [![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-060?style=for-the-badge&labelColor=030917)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder)
 
-A dark theme for Night Coders. There are two main variants:
-- **Night Coder**
+A dark theme for Night Coders. There are three main variants:
+- **Night Coder** The first and main variant
+- **Night Coder Gray** For those who prefer a little lighter background
 - **Night Coder Warm** The lively and happier version, inspired by [Mayukai Sunset](https://marketplace.visualstudio.com/items?itemName=GulajavaMinistudio.mayukaithemevsc)
 
 Each of these main variants, has contrast and italic versions.
@@ -30,9 +31,9 @@ Each of these main variants, has contrast and italic versions.
 
 ![python](/screenshot/nwc-python.png)
 
-### JSON [(Night Coder Contrast)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Contrast)
+### JSON [(Night Coder Gray Contrast Italic)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Gray%20Contrast%20Italic)
 
-![json](/screenshot/nc-json.png)
+![json](/screenshot/ngci-json.png)
 
 ## Preferences shown in the screenshots
 

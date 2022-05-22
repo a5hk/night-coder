@@ -44,6 +44,26 @@
         "label": "Night Coder Warm Contrast Italic",
         "path": "./themes/night-coder-warm-contrast-italic-color-theme.json",
         "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Night Coder Gray",
+        "path": "./themes/night-coder-gray-color-theme.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Night Coder Gray Contrast",
+        "path": "./themes/night-coder-gray-contrast-color-theme.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Night Coder Gray Italic",
+        "path": "./themes/night-coder-gray-italic-color-theme.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Night Coder Gray Contrast Italic",
+        "path": "./themes/night-coder-gray-contrast-italic-color-theme.json",
+        "uiTheme": "vs-dark"
       }
     ]
   },
@@ -74,5 +94,5 @@
     "type": "git",
     "url": "https://github.com/a5hk/night-coder"
   },
-  "version": "4.0.3"
+  "version": "4.1.0"
 }
