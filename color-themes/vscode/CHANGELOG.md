@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.1.1
+
+- Fixed wrong demo gif in README
+
 ## 4.1.0
 
 - Added previously removed gray variant
