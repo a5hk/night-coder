@@ -1,6 +1,6 @@
 import { colorPaletteFactory, Palette, Color } from "./colors.js";
 
-export function grayVariant(): Palette {
+function grayVariant(): Palette {
   const p = new (colorPaletteFactory("#2c2c2c"))("Night Coder", "Gray");
   p.contrastBackground = new Color("#262626");
 

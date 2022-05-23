@@ -1,5 +1,5 @@
 import { colorPaletteFactory, Color } from "./colors.js";
-export function grayVariant() {
+function grayVariant() {
     const p = new (colorPaletteFactory("#2c2c2c"))("Night Coder", "Gray");
     p.contrastBackground = new Color("#262626");
     p.defaultLibraryFunctionColor = new Color("#80caff", "Default library function");
