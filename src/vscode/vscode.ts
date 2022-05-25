@@ -73,12 +73,6 @@ export function vscodeThemesWriter(): void {
 }
 
 function generateManifest(t: VSTheme[]): string {
-  const version = process.env.npm_package_version;
-
-  if (version == undefined || version.toString().length < 1) {
-    throw new TypeError("Version needed");
-  }
-
   const author = "a5hk";
   const githubURL = "https://github.com/a5hk/night-coder";
   const themes = t.map((t) => t.toManifestFormat());
@@ -97,7 +91,7 @@ function generateManifest(t: VSTheme[]): string {
     name: /* ............ */ "night-coder",
     publisher: /* ....... */ author,
     repository: /* ...... */ { type: "git", url: githubURL },
-    version: /* ......... */ version,
+    version: /* ......... */ "4.1.1",
   };
 
   return JSON.stringify(p);
