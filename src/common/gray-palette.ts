@@ -1,4 +1,4 @@
-import { colorPaletteFactory, Palette, Color } from "./colors.js";
+import { colorPaletteFactory, Palette, Color, registerPalette } from "./colors.js";
 
 function grayVariant(): Palette {
   const p = new (colorPaletteFactory("#2c2c2c"))("Night Coder", "Gray");
@@ -75,4 +75,4 @@ function grayVariant(): Palette {
   return p;
 }
 
-export const grayPalette = grayVariant();
+registerPalette(grayVariant());

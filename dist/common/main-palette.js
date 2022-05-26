@@ -1,6 +1,6 @@
-import { colorPaletteFactory } from "./colors.js";
+import { colorPaletteFactory, registerPalette } from "./colors.js";
 function mainVariant() {
     const p = new (colorPaletteFactory())("Night Coder", "Main");
     return p;
 }
-export const mainPalette = mainVariant();
+registerPalette(mainVariant());

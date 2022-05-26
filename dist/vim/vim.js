@@ -1,5 +1,4 @@
-import { mainPalette } from "../common/main-palette.js";
-import { warmPalette } from "../common/warm-palette.js";
+import { getPalettes } from "../common/colors.js";
 import { themeWriter } from "../common/theme-writer.js";
 export function vimColoring(palette) {
     const vRules = [
@@ -131,7 +130,7 @@ if has("termguicolors")
 endif
 
 set background=dark
-let colors_name="nightcoder"
+let colors_name="${palette.fullName()}"
 
 highlight clear CursorLine
 set cursorline
@@ -155,6 +154,8 @@ highlight Normal guifg=${palette.foregroundColor.code} guibg=${palette.backgroun
             .join("\n"));
 }
 export function vimColorScheme() {
-    themeWriter("vim/colors/nightcoder.vim", vimColoring(mainPalette), "Vim color scheme generated.");
-    themeWriter("vim/colors/nightcoder-warm.vim", vimColoring(warmPalette), "Warm variant of Vim color scheme generated.");
+    const palettes = getPalettes();
+    for (const p of palettes) {
+        themeWriter(`vim/colors/${p.filename()}.vim`, vimColoring(p), "Vim color scheme generated.");
+    }
 }

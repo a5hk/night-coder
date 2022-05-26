@@ -12,3 +12,7 @@ Screenshot of Windows Terminal (and WSL), displaying some Typescript code.
 ### Warm variant
 
 ![typescript](/screenshot/bat-warm.png)
+
+### Gray variant
+
+![typescript](/screenshot/bat-gray.png)

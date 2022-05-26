@@ -1,6 +1,5 @@
+import { getPalettes } from "../common/colors.js";
 import { themeWriter } from "../common/theme-writer.js";
-import { mainPalette } from "../common/main-palette.js";
-import { warmPalette } from "../common/warm-palette.js";
 export function windowsTerminalColors(palette) {
     const settings = {
         background: palette.background.code,
@@ -28,6 +27,8 @@ export function windowsTerminalColors(palette) {
     return JSON.stringify(settings);
 }
 export function windowsTerminalColorScheme() {
-    themeWriter(`windows-terminal/${mainPalette.fullName().toLowerCase().replace(/ /g, "-")}.json`, windowsTerminalColors(mainPalette), "Windows Terminal color scheme generated.");
-    themeWriter(`windows-terminal/${warmPalette.fullName().toLowerCase().replace(/ /g, "-")}.json`, windowsTerminalColors(warmPalette), "Windows Terminal color scheme generated (warm).");
+    const palettes = getPalettes();
+    for (const p of palettes) {
+        themeWriter(`windows-terminal/${p.filename()}.json`, windowsTerminalColors(p), "Windows Terminal color scheme generated.");
+    }
 }

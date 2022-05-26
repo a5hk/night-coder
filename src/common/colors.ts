@@ -209,6 +209,10 @@ export function colorPaletteFactory(bg = "#030917") {
       return [this.name, this.variant].filter((s) => s !== "Main").join(" ");
     }
 
+    filename(): string {
+      return this.fullName().trim().toLowerCase().replace(/ +/g, "-");
+    }
+
     toString(): string {
       return Object.entries(
         Object.values(this)
@@ -243,3 +247,13 @@ export function colorPaletteFactory(bg = "#030917") {
 }
 
 export type Palette = InstanceType<ReturnType<typeof colorPaletteFactory>>;
+const availablePalettes: Palette[] = [];
+
+// Palette defining files must import this and register the palette
+export function registerPalette(p: Palette) {
+  availablePalettes.push(p);
+}
+
+export function getPalettes() {
+  return availablePalettes;
+}

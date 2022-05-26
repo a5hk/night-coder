@@ -179,6 +179,9 @@ export function colorPaletteFactory(bg = "#030917") {
         fullName() {
             return [this.name, this.variant].filter((s) => s !== "Main").join(" ");
         }
+        filename() {
+            return this.fullName().trim().toLowerCase().replace(/ +/g, "-");
+        }
         toString() {
             return Object.entries(Object.values(this)
                 .map((c) => [c.code, c.description])
@@ -205,4 +208,11 @@ export function colorPaletteFactory(bg = "#030917") {
             ].join("\n");
         }
     };
+}
+const availablePalettes = [];
+export function registerPalette(p) {
+    availablePalettes.push(p);
+}
+export function getPalettes() {
+    return availablePalettes;
 }

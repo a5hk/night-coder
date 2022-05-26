@@ -1,4 +1,4 @@
-import { colorPaletteFactory, Color } from "./colors.js";
+import { colorPaletteFactory, Color, registerPalette } from "./colors.js";
 function grayVariant() {
     const p = new (colorPaletteFactory("#2c2c2c"))("Night Coder", "Gray");
     p.contrastBackground = new Color("#262626");
@@ -63,4 +63,4 @@ function grayVariant() {
     p.ansiYellow = new Color("#e0dc52");
     return p;
 }
-export const grayPalette = grayVariant();
+registerPalette(grayVariant());

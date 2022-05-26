@@ -1,4 +1,4 @@
-import { colorPaletteFactory, Color } from "./colors.js";
+import { colorPaletteFactory, Color, registerPalette } from "./colors.js";
 function warmVariant() {
     const p = new (colorPaletteFactory("#0f1317"))("Night Coder", "Warm");
     p.contrastBackground = new Color("#0a0d0f");
@@ -36,4 +36,4 @@ function warmVariant() {
     p.jsonLevel11Color = new Color("#f4b271", "Level > 10 JSON key");
     return p;
 }
-export const warmPalette = warmVariant();
+registerPalette(warmVariant());

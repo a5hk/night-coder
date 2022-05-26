@@ -1,15 +1,12 @@
 import path from "path";
 
-import { Palette } from "../common/colors.js";
+import { Palette, getPalettes } from "../common/colors.js";
 import { themeWriter } from "../common/theme-writer.js";
 import { TextmateTheme, textmateRule } from "./textmate-regular.js";
 import { SemanticTheme, semanticRule } from "./semantic-regular.js";
 import { commonWorkbenchColors, workbenchColor } from "./workbench-common.js";
 import { contrastWorkbenchColors } from "./workbench-contrast.js";
 import { VSPackage, VSTheme } from "./package.js";
-import { mainPalette } from "../common/main-palette.js";
-import { warmPalette } from "../common/warm-palette.js";
-import { grayPalette } from "../common/gray-palette.js";
 
 /* eslint-disable-next-line  @typescript-eslint/no-explicit-any */
 function __italicReject(theme: any): string {
@@ -47,7 +44,7 @@ export function vscodeThemesWriter(): void {
   const contrasts = ["", "Contrast"];
   let uiColors: workbenchColor;
   const themes: VSTheme[] = [];
-  const palettes = [mainPalette, warmPalette, grayPalette];
+  const palettes = getPalettes();
 
   for (const p of palettes) {
     const textmateTheme = new TextmateTheme(p);

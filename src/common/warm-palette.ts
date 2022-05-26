@@ -1,4 +1,4 @@
-import { colorPaletteFactory, Palette, Color } from "./colors.js";
+import { colorPaletteFactory, Palette, Color, registerPalette } from "./colors.js";
 
 function warmVariant(): Palette {
   const p = new (colorPaletteFactory("#0f1317"))("Night Coder", "Warm");
@@ -45,4 +45,4 @@ function warmVariant(): Palette {
   return p;
 }
 
-export const warmPalette = warmVariant();
+registerPalette(warmVariant());
