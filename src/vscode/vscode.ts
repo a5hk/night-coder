@@ -88,7 +88,7 @@ function generateManifest(t: VSTheme[]): string {
     name: /* ............ */ "night-coder",
     publisher: /* ....... */ author,
     repository: /* ...... */ { type: "git", url: githubURL },
-    version: /* ......... */ "4.1.1",
+    version: /* ......... */ "4.2.0",
   };
 
   return JSON.stringify(p);

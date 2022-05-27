@@ -1,8 +1,8 @@
 {
-  "name": "night-coder",
-  "displayName": "Night Coder",
-  "description": "A dark theme for Night Coders",
-  "version": "4.1.1",
+  "name": "night-coder-theme-generator",
+  "displayName": "Night Coder theme generator",
+  "description": "A theme generator to create dark themes",
+  "version": "4.2.0",
   "publisher": "a5hk",
   "author": "a5hk",
   "license": "MIT",
