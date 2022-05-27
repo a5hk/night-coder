@@ -35,13 +35,13 @@
 |Comment|![#4f5255](https://via.placeholder.com/23/4f5255/?text=+)|#4F5255|
 |Comparison/Logical operator, Italic|![#93ecb8](https://via.placeholder.com/23/93ecb8/?text=+)|#93ECB8|
 |Constant, HTML inline tag, HTML link tag, Level 2 JSON key, Level 8 JSON key|![#57c79c](https://via.placeholder.com/23/57c79c/?text=+)|#57C79C|
-|Namespace/Class/Struct, Level 5 JSON key|![#ffbe1a](https://via.placeholder.com/23/ffbe1a/?text=+)|#FFBE1A|
+|Namespace/Class/Struct, Level 5 JSON key|![#dfca9f](https://via.placeholder.com/23/dfca9f/?text=+)|#DFCA9F|
 |Function call, Attribute name, Heading, Level 3 JSON key, Level 9 JSON key|![#e9de63](https://via.placeholder.com/23/e9de63/?text=+)|#E9DE63|
 |Documentation|![#afb0b2](https://via.placeholder.com/23/afb0b2/?text=+)|#AFB0B2|
 |Foreground, Variable|![#c4c5c6](https://via.placeholder.com/23/c4c5c6/?text=+)|#C4C5C6|
 |Function declaration, Level 4 JSON key, Level 10 JSON key|![#ff7566](https://via.placeholder.com/23/ff7566/?text=+)|#FF7566|
 |Import/Require/Use, String|![#99c270](https://via.placeholder.com/23/99c270/?text=+)|#99C270|
-|Keyword, HTML meta tag, HTML object tag|![#fb905b](https://via.placeholder.com/23/fb905b/?text=+)|#FB905B|
+|Keyword, HTML meta tag, HTML object tag|![#ff8833](https://via.placeholder.com/23/ff8833/?text=+)|#FF8833|
 |Literal constant, HTML custom tag|![#b999fa](https://via.placeholder.com/23/b999fa/?text=+)|#B999FA|
 |Operator|![#f2f28c](https://via.placeholder.com/23/f2f28c/?text=+)|#F2F28C|
 |Parameter, Argument|![#e7e7e7](https://via.placeholder.com/23/e7e7e7/?text=+)|#E7E7E7|
