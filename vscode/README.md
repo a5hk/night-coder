@@ -13,27 +13,27 @@ Each of these main variants, has contrast and italic versions.
 
 ## Other versions
 
-- [vim](/color-themes/vim/colors/)
-- [bat](/color-themes/bat/)
-- [Windows Terminal](/color-themes/windows-terminal/)
+- [vim](../vim/colors/)
+- [bat](../bat/)
+- [Windows Terminal](../windows-terminal/)
 
 ## Color palettes
 
-- [Color Palettes](/color-themes/vscode/ColorPalette.md)
+- [Color Palettes](ColorPalette.md)
 
 ## Screenshots
 
 ### JavaScript [(Night Coder)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder)
 
-![javascript](/screenshot/n-javascript.png)
+![javascript](../screenshot/n-javascript.png)
 
 ### Python [(Night Coder Warm Contrast)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Warm%20Contrast)
 
-![python](/screenshot/nwc-python.png)
+![python](../screenshot/nwc-python.png)
 
 ### JSON [(Night Coder Gray Contrast Italic)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Gray%20Contrast%20Italic)
 
-![json](/screenshot/ngci-json.png)
+![json](../screenshot/ngci-json.png)
 
 ## Preferences shown in the screenshots
 
@@ -46,4 +46,4 @@ Each of these main variants, has contrast and italic versions.
 
 ## License
 
-[MIT License](/LICENSE)
+[MIT License](LICENSE)
