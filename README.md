@@ -13,7 +13,7 @@ A dark theme for Night Coders.
 
 ## How to contribute
 
-[Contribution Guide](/CONTRIBUTING.md)
+[Contribution Guide](https://github.com/a5hk/theme-generator/blob/master/CONTRIBUTING.md)
 
 ## License
 
