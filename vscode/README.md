@@ -9,7 +9,7 @@ A dark theme for Night Coders. There are three main variants:
 
 Each of these main variants, has contrast and italic versions.
 
-![html](/screenshot/demo.gif)
+![html](../screenshot/demo.gif)
 
 ## Other versions
 
