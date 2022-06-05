@@ -9,6 +9,7 @@
     "badge.background": "#006600",
     "button.background": "#646464",
     "button.foreground": "#d5d5d5",
+    "button.hoverBackground": "#565656",
     "button.secondaryBackground": "#565656",
     "button.secondaryForeground": "#c7c7c7",
     "debugToolBar.background": "#646464",
