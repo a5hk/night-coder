@@ -12,6 +12,8 @@
     "button.hoverBackground": "#3f4245",
     "button.secondaryBackground": "#3f4245",
     "button.secondaryForeground": "#bfc0c1",
+    "commandCenter.background": "#1f2326",
+    "commandCenter.border": "#0f1317",
     "debugToolBar.background": "#4f5255",
     "diffEditor.insertedTextBackground": "#00660033",
     "disabledForeground": "#7f8183",

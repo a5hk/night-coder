@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.3.0
+
+- Customized Command Center colors
+
 ## 4.2.0
 
 - Modified some colors in warm variant the most noticeable one is class and namespace color.
