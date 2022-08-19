@@ -80,6 +80,8 @@
     "gitDecoration.modifiedResourceForeground": "#e2c08d",
     "gitDecoration.untrackedResourceForeground": "#73c991",
     "input.background": "#1f2326",
+    "inputOption.activeBackground": "#4f5255",
+    "inputOption.hoverBackground": "#3f4245",
     "list.activeSelectionBackground": "#3f4245",
     "list.activeSelectionForeground": "#cfd0d1",
     "list.focusBackground": "#000000f0",

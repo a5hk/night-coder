@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.3.2
+
+- More contrasted colors for input options
+
 ## 4.3.0
 
 - Customized Command Center colors
