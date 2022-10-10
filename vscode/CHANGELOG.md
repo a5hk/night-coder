@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.4.0
+
+- Customized code action color
+
 ## 4.3.2
 
 - More contrasted colors for input options
