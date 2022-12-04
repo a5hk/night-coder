@@ -23,9 +23,9 @@ Each of these main variants, has contrast and italic versions.
 
 ![javascript](/screenshot/n-javascript.png)
 
-### Python [(Night Coder Warm Contrast)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Warm%20Contrast)
+### Python [(Night Coder Warm)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Warm)
 
-![python](/screenshot/nwc-python.png)
+![python](/screenshot/nw-python.png)
 
 ### JSON [(Night Coder Gray Contrast Italic)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Gray%20Contrast%20Italic)
 

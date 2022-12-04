@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.4.1
+
+- Corrected a mistake in Readme
+
 ## 4.4.0
 
 - Customized code action color
