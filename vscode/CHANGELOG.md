@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.4.3
+
+- Default error color
+- Unexpected bracket color
+
 ## 4.4.1
 
 - Corrected a mistake in Readme
