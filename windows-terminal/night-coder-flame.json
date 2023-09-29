@@ -1,0 +1,23 @@
+{
+  "background": "#0f1317",
+  "cursorColor": "#efeff0",
+  "foreground": "#c8c9ca",
+  "name": "Night Coder Flame",
+  "selectionBackground": "#efeff0",
+  "black": "#353a45",
+  "blue": "#829dc9",
+  "cyan": "#0fc6d7",
+  "green": "#85c3ab",
+  "purple": "#c982c1",
+  "red": "#ff7575",
+  "white": "#acaeb3",
+  "yellow": "#d9d326",
+  "brightBlack": "#888b92",
+  "brightBlue": "#80bfff",
+  "brightCyan": "#a0f1f8",
+  "brightGreen": "#89b971",
+  "brightPurple": "#f28ca6",
+  "brightRed": "#f18a7e",
+  "brightWhite": "#c5c6c9",
+  "brightYellow": "#f5d780"
+}
