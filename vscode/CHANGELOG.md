@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.5.0
+
+- Fixed some issues with TypeScript highlighting
+- Renamed color schemes
+
 ## 4.4.3
 
 - Default error color

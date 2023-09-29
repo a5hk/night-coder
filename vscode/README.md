@@ -3,11 +3,11 @@
 [![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-060?style=for-the-badge&labelColor=030917)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder)
 
 A dark theme for Night Coders. There are three main variants:
-- **Night Coder** The first and main variant
-- **Night Coder Gray** For those who prefer a little lighter background
-- **Night Coder Warm** The lively and happier version, inspired by [Mayukai Sunset](https://marketplace.visualstudio.com/items?itemName=GulajavaMinistudio.mayukaithemevsc)
+- **Night Coder Ember** A color scheme with a very dark blue background and variety of cold and warm colors.
+- **Night Coder Smoke** For those who prefer a little lighter background.
+- **Night Coder Flame** A color scheme that evokes the intensity and warmth of fire, with shades of red, orange, and yellow that create a vibrant and energetic mood, inspired by [Mayukai Sunset](https://marketplace.visualstudio.com/items?itemName=GulajavaMinistudio.mayukaithemevsc)
 
-Each of these main variants, has contrast and italic versions.
+Each of these main variants, has contrast and italic versions. Built using [Theme Generator](https://github.com/a5hk/theme-generator)
 
 ![html](/screenshot/demo.gif)
 
@@ -19,15 +19,15 @@ Each of these main variants, has contrast and italic versions.
 
 ## Screenshots
 
-### JavaScript [(Night Coder)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder)
+### JavaScript [(Night Coder Ember)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Ember)
 
 ![javascript](/screenshot/n-javascript.png)
 
-### Python [(Night Coder Warm)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Warm)
+### Python [(Night Coder Flame)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Flame)
 
 ![python](/screenshot/nw-python.png)
 
-### JSON [(Night Coder Gray Contrast Italic)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Gray%20Contrast%20Italic)
+### JSON [(Night Coder Smoke Contrast Italic)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Smoke%20Contrast%20Italic)
 
 ![json](/screenshot/ngci-json.png)
 

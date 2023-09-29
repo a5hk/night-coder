@@ -368,7 +368,9 @@
         "keyword storage.type",
         "storage.modifier",
         "storage.type.class",
-        "storage.type.function"
+        "storage.type.function",
+        "storage.type.interface",
+        "storage.type.type"
       ],
       "settings": { "foreground": "#eea0e5" }
     },

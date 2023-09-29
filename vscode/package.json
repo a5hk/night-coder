@@ -6,62 +6,62 @@
   "contributes": {
     "themes": [
       {
-        "label": "Night Coder",
+        "label": "Night Coder Ember",
         "path": "./themes/night-coder-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Contrast",
+        "label": "Night Coder Ember Contrast",
         "path": "./themes/night-coder-contrast-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Italic",
+        "label": "Night Coder Ember Italic",
         "path": "./themes/night-coder-italic-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Contrast Italic",
+        "label": "Night Coder Ember Contrast Italic",
         "path": "./themes/night-coder-contrast-italic-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Warm",
+        "label": "Night Coder Flame",
         "path": "./themes/night-coder-warm-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Warm Contrast",
+        "label": "Night Coder Flame Contrast",
         "path": "./themes/night-coder-warm-contrast-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Warm Italic",
+        "label": "Night Coder Flame Italic",
         "path": "./themes/night-coder-warm-italic-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Warm Contrast Italic",
+        "label": "Night Coder Flame Contrast Italic",
         "path": "./themes/night-coder-warm-contrast-italic-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Gray",
+        "label": "Night Coder Smoke",
         "path": "./themes/night-coder-gray-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Gray Contrast",
+        "label": "Night Coder Smoke Contrast",
         "path": "./themes/night-coder-gray-contrast-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Gray Italic",
+        "label": "Night Coder Smoke Italic",
         "path": "./themes/night-coder-gray-italic-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Gray Contrast Italic",
+        "label": "Night Coder Smoke Contrast Italic",
         "path": "./themes/night-coder-gray-contrast-italic-color-theme.json",
         "uiTheme": "vs-dark"
       }
@@ -94,5 +94,5 @@
     "type": "git",
     "url": "https://github.com/a5hk/night-coder"
   },
-  "version": "4.4.3"
+  "version": "4.5.0"
 }
