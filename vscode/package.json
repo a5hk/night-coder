@@ -7,62 +7,62 @@
     "themes": [
       {
         "label": "Night Coder Ember",
-        "path": "./themes/night-coder-color-theme.json",
+        "path": "./themes/night-coder-ember-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
         "label": "Night Coder Ember Contrast",
-        "path": "./themes/night-coder-contrast-color-theme.json",
+        "path": "./themes/night-coder-ember-contrast-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
         "label": "Night Coder Ember Italic",
-        "path": "./themes/night-coder-italic-color-theme.json",
+        "path": "./themes/night-coder-ember-italic-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
         "label": "Night Coder Ember Contrast Italic",
-        "path": "./themes/night-coder-contrast-italic-color-theme.json",
+        "path": "./themes/night-coder-ember-contrast-italic-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
         "label": "Night Coder Flame",
-        "path": "./themes/night-coder-warm-color-theme.json",
+        "path": "./themes/night-coder-flame-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
         "label": "Night Coder Flame Contrast",
-        "path": "./themes/night-coder-warm-contrast-color-theme.json",
+        "path": "./themes/night-coder-flame-contrast-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
         "label": "Night Coder Flame Italic",
-        "path": "./themes/night-coder-warm-italic-color-theme.json",
+        "path": "./themes/night-coder-flame-italic-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
         "label": "Night Coder Flame Contrast Italic",
-        "path": "./themes/night-coder-warm-contrast-italic-color-theme.json",
+        "path": "./themes/night-coder-flame-contrast-italic-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
         "label": "Night Coder Smoke",
-        "path": "./themes/night-coder-gray-color-theme.json",
+        "path": "./themes/night-coder-smoke-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
         "label": "Night Coder Smoke Contrast",
-        "path": "./themes/night-coder-gray-contrast-color-theme.json",
+        "path": "./themes/night-coder-smoke-contrast-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
         "label": "Night Coder Smoke Italic",
-        "path": "./themes/night-coder-gray-italic-color-theme.json",
+        "path": "./themes/night-coder-smoke-italic-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
         "label": "Night Coder Smoke Contrast Italic",
-        "path": "./themes/night-coder-gray-contrast-italic-color-theme.json",
+        "path": "./themes/night-coder-smoke-contrast-italic-color-theme.json",
         "uiTheme": "vs-dark"
       }
     ]
@@ -94,5 +94,5 @@
     "type": "git",
     "url": "https://github.com/a5hk/night-coder"
   },
-  "version": "4.5.0"
+  "version": "4.5.1"
 }
