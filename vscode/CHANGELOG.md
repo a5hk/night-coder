@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.5.2
+
+- New icon
+
 ## 4.5.0
 
 - Fixed some issues with TypeScript highlighting
