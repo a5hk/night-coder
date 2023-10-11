@@ -5,14 +5,14 @@ This is an early release and might change in future.
 
 Screenshot of Windows Terminal (and WSL), displaying some Typescript code.
 
-### Main variant
+### Night Coder Ember
 
 ![typescript](/screenshot/bat.png)
 
-### Warm variant
+### Night Coder Flame
 
 ![typescript](/screenshot/bat-warm.png)
 
-### Gray variant
+### Night Coder Smoke
 
 ![typescript](/screenshot/bat-gray.png)

@@ -8,6 +8,6 @@ True color support is required.
 
 Screenshot of Windows Terminal (and WSL)
 
-|         Night Coder          |        Night Coder Warm        |        Night Coder Gray        |
+|      Night Coder Ember       |       Night Coder Flame        |       Night Coder Smoke        |
 | :--------------------------: | :----------------------------: | :----------------------------: |
 | ![ruby](/screenshot/vim.png) | ![ruby](/screenshot/vim-w.png) | ![ruby](/screenshot/vim-g.png) |
