@@ -67,7 +67,7 @@
       }
     ]
   },
-  "description": "A dark theme for Night Coders",
+  "description": "The dark side of coding.",
   "displayName": "Night Coder",
   "engines": {
     "vscode": "^1.60.0"
@@ -94,5 +94,5 @@
     "type": "git",
     "url": "https://github.com/a5hk/night-coder"
   },
-  "version": "4.5.5"
+  "version": "4.5.6"
 }
