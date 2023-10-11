@@ -1,7 +1,5 @@
 # [Night Coder](https://marketplace.visualstudio.com/items?itemName=a5hk.night-coder)
 
-[![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-060?style=for-the-badge&labelColor=030917)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder)
-
 A dark theme for Night Coders. There are three main variants:
 - **Night Coder Ember** A color scheme with a very dark blue background and variety of cold and warm colors.
 - **Night Coder Smoke** For those who prefer a little lighter background.
