@@ -168,7 +168,7 @@
         <key>name</key>
         <string>logical and comparison operators</string>
         <key>scope</key>
-        <string>keyword.operator.comparison, keyword.operator.logical</string>
+        <string>keyword.operator.comparison, keyword.operator.logical, keyword.operator.relational</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>

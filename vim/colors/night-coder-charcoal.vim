@@ -8,58 +8,58 @@ if has("termguicolors")
 endif
 
 set background=dark
-let colors_name="Night Coder Smoke"
+let colors_name="Night Coder Charcoal"
 
 highlight clear CursorLine
 set cursorline
-highlight LineNr guifg=#727272
-highlight CursorLineNr cterm=NONE gui=NONE guifg=#b9b9b9
+highlight LineNr guifg=#555555
+highlight CursorLineNr cterm=NONE gui=NONE guifg=#aaaaaa
 
-highlight Normal guifg=#cbcbcb guibg=#2c2c2c
+highlight Normal guifg=#c0c0c0 guibg=#000000
 
-highlight NCDefaultLibraryFunctionCall  guifg=#80caff
-highlight NCFunctionCall  guifg=#e6d299
-highlight NCVariable  guifg=#cbcbcb
-highlight NCConstant  guifg=#ff9e9e
-highlight NCMiscellaneous  guifg=#d1b485
-highlight NCType  guifg=#04ccd7
-highlight NCParameter  guifg=#e9e9e9
-highlight NCOperator  guifg=#e0e0b8
-highlight NCComparisonLogicalOperator  guifg=#b8e0c8
-highlight NCComment cterm=italic gui=italic guifg=#646464
-highlight NCDocumentationComment  guifg=#b9b9b9
-highlight NCFunctionDeclaration  guifg=#42d79e
-highlight NCLiteralConstant  guifg=#c5abf7
-highlight NCDefaultLibraryClassType  guifg=#fc9cc4
-highlight NCNamespaceClassStruct  guifg=#9db9e7
-highlight NCString  guifg=#8fc78a
-highlight NCProperty  guifg=#f0a875
-highlight NCKeyword  guifg=#eea0e5
-highlight NCPunctuation  guifg=#8e8e8e
-highlight NCTag  guifg=#f0a875
-highlight NCItalic  guifg=#b8e0c8
-highlight NCHeading cterm=bold gui=bold guifg=#e6d299
-highlight NCLinkTag  guifg=#42d79e
-highlight NCMetaTag  guifg=#eea0e5
-highlight NCStyleTag  guifg=#9db9e7
-highlight NCObjectTag  guifg=#fc9cc4
-highlight NCInlineTag  guifg=#80caff
-highlight NCCustomTag  guifg=#c5abf7
-highlight NCScriptTag  guifg=#e0dc52
-highlight NCAttributeName  guifg=#e6d299
-highlight NCTagPunctuation  guifg=#8e8e8e
-highlight NCUnrecognizedTag  guifg=#ff9e9e
-highlight NCJsonLevel01  guifg=#f0a875
-highlight NCJsonLevel02  guifg=#eea0e5
-highlight NCJsonLevel03  guifg=#04ccd7
-highlight NCJsonLevel04  guifg=#e6d299
-highlight NCJsonLevel05  guifg=#fc9cc4
-highlight NCJsonLevel06  guifg=#80caff
-highlight NCJsonLevel07  guifg=#9db9e7
-highlight NCJsonLevel08  guifg=#ff9e9e
-highlight NCJsonLevel09  guifg=#d1b485
-highlight NCJsonLevel10  guifg=#e0dc52
-highlight NCJsonLevel11  guifg=#f0a875
+highlight NCDefaultLibraryFunctionCall  guifg=#f7d6a1
+highlight NCFunctionCall  guifg=#c9be9c
+highlight NCVariable  guifg=#c0c0c0
+highlight NCConstant  guifg=#f18983
+highlight NCMiscellaneous  guifg=#d5bc95
+highlight NCType  guifg=#b6c9e7
+highlight NCParameter  guifg=#d5d5d5
+highlight NCOperator  guifg=#ffffcc
+highlight NCComparisonLogicalOperator  guifg=#bef4d4
+highlight NCComment cterm=italic gui=italic guifg=#444444
+highlight NCDocumentationComment  guifg=#aaaaaa
+highlight NCFunctionDeclaration  guifg=#9cc9b8
+highlight NCLiteralConstant  guifg=#c0a8f0
+highlight NCDefaultLibraryClassType  guifg=#8caad9
+highlight NCNamespaceClassStruct  guifg=#b6c9e7
+highlight NCString  guifg=#a6bc94
+highlight NCProperty  guifg=#dbb294
+highlight NCKeyword  guifg=#d2accd
+highlight NCPunctuation  guifg=#777777
+highlight NCTag  guifg=#dbb294
+highlight NCItalic  guifg=#bef4d4
+highlight NCHeading cterm=bold gui=bold guifg=#c9be9c
+highlight NCLinkTag  guifg=#9cc9b8
+highlight NCMetaTag  guifg=#d2accd
+highlight NCStyleTag  guifg=#b6c9e7
+highlight NCObjectTag  guifg=#8caad9
+highlight NCInlineTag  guifg=#f7d6a1
+highlight NCCustomTag  guifg=#c0a8f0
+highlight NCScriptTag  guifg=#dbd994
+highlight NCAttributeName  guifg=#c9be9c
+highlight NCTagPunctuation  guifg=#777777
+highlight NCUnrecognizedTag  guifg=#f18983
+highlight NCJsonLevel01  guifg=#dbb294
+highlight NCJsonLevel02  guifg=#d2accd
+highlight NCJsonLevel03  guifg=#f18983
+highlight NCJsonLevel04  guifg=#8caad9
+highlight NCJsonLevel05  guifg=#c9be9c
+highlight NCJsonLevel06  guifg=#9cc9b8
+highlight NCJsonLevel07  guifg=#dbd994
+highlight NCJsonLevel08  guifg=#dbb294
+highlight NCJsonLevel09  guifg=#dbb294
+highlight NCJsonLevel10  guifg=#dbb294
+highlight NCJsonLevel11  guifg=#dbb294
 
 hi! link xmlAttrib NCAttributeName
 hi! link cssTagName NCAttributeName

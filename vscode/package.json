@@ -16,16 +16,6 @@
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Ember Italic",
-        "path": "./themes/night-coder-ember-italic-color-theme.json",
-        "uiTheme": "vs-dark"
-      },
-      {
-        "label": "Night Coder Ember Contrast Italic",
-        "path": "./themes/night-coder-ember-contrast-italic-color-theme.json",
-        "uiTheme": "vs-dark"
-      },
-      {
         "label": "Night Coder Flame",
         "path": "./themes/night-coder-flame-color-theme.json",
         "uiTheme": "vs-dark"
@@ -36,33 +26,23 @@
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Flame Italic",
-        "path": "./themes/night-coder-flame-italic-color-theme.json",
+        "label": "Night Coder Ash",
+        "path": "./themes/night-coder-ash-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Flame Contrast Italic",
-        "path": "./themes/night-coder-flame-contrast-italic-color-theme.json",
+        "label": "Night Coder Ash Contrast",
+        "path": "./themes/night-coder-ash-contrast-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Smoke",
-        "path": "./themes/night-coder-smoke-color-theme.json",
+        "label": "Night Coder Charcoal",
+        "path": "./themes/night-coder-charcoal-color-theme.json",
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Night Coder Smoke Contrast",
-        "path": "./themes/night-coder-smoke-contrast-color-theme.json",
-        "uiTheme": "vs-dark"
-      },
-      {
-        "label": "Night Coder Smoke Italic",
-        "path": "./themes/night-coder-smoke-italic-color-theme.json",
-        "uiTheme": "vs-dark"
-      },
-      {
-        "label": "Night Coder Smoke Contrast Italic",
-        "path": "./themes/night-coder-smoke-contrast-italic-color-theme.json",
+        "label": "Night Coder Charcoal Contrast",
+        "path": "./themes/night-coder-charcoal-contrast-color-theme.json",
         "uiTheme": "vs-dark"
       }
     ]
@@ -81,11 +61,7 @@
   "keywords": [
     "NightCoder",
     "Night Coder",
-    "Dark",
-    "Borderless",
-    "Italic",
-    "Contrast",
-    "Warm"
+    "Dark"
   ],
   "license": "MIT",
   "name": "night-coder",
@@ -94,5 +70,5 @@
     "type": "git",
     "url": "https://github.com/a5hk/night-coder"
   },
-  "version": "4.5.7"
+  "version": "5.0.0"
 }

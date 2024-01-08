@@ -385,7 +385,10 @@
     },
     {
       "name": "logical and comparison operators",
-      "scope": ["keyword.operator.comparison", "keyword.operator.logical"],
+      "scope": [
+        "keyword.operator.comparison",
+        "keyword.operator.logical, keyword.operator.relational"
+      ],
       "settings": { "foreground": "#93ecb8" }
     },
     {

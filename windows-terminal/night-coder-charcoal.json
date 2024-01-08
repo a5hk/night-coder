@@ -1,0 +1,23 @@
+{
+  "background": "#000000",
+  "cursorColor": "#eeeeee",
+  "foreground": "#c5c5c5",
+  "name": "Night Coder Charcoal",
+  "selectionBackground": "#eeeeee",
+  "black": "#969696",
+  "blue": "#9999ff",
+  "cyan": "#00cccc",
+  "green": "#00b300",
+  "purple": "#ff80ff",
+  "red": "#ff6666",
+  "white": "#cccccc",
+  "yellow": "#b2b300",
+  "brightBlack": "#b0b0b0",
+  "brightBlue": "#ccccff",
+  "brightCyan": "#00ffff",
+  "brightGreen": "#00d100",
+  "brightPurple": "#ffccff",
+  "brightRed": "#ff9999",
+  "brightWhite": "#e6e6e6",
+  "brightYellow": "#e5e600"
+}
