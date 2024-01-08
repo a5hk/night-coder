@@ -30,9 +30,9 @@ Each of these main variants, has a contrast version. Built using [Theme Generato
 
 ![json](/screenshot/vscode-ash-contrast-json.png)
 
-### JSON [(Night Coder Charcoal)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Ash%20Charcoal)
+### Ruby [(Night Coder Charcoal)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Ash%20Charcoal)
 
-![json](/screenshot/vscode-charcoal-ruby.png)
+![ruby](/screenshot/vscode-charcoal-ruby.png)
 
 ## License
 
