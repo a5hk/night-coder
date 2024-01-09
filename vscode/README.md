@@ -20,11 +20,11 @@ Each of these main variants, has a contrast version. Built using [Theme Generato
 
 ### JavaScript [(Night Coder Ember)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Ember)
 
-![javascript](/screenshot/n-javascript.png)
+![javascript](/screenshot/vscode-ember-javascript.png)
 
 ### Python [(Night Coder Flame)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Flame)
 
-![python](/screenshot/nw-python.png)
+![python](/screenshot/vscode-flame-python.png)
 
 ### JSON [(Night Coder Ash Contrast)](https://vscode.dev/theme/a5hk.night-coder/Night%20Coder%20Ash%20Contrast)
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## 5.0.0
+
+- Removed italic variants
+- Added a new pure black variant: Charcoal
+- Renamed Smoke to Ash
+- Some other minor improvments
+
 ## 4.5.2
 
 - New icon
