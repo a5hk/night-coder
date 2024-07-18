@@ -1,5 +1,10 @@
 # Changelog
 
+## 5.1.0
+
+- Modified folded ranges colors
+- Customized terminal sticky scroll color
+
 ## 5.0.0
 
 - Removed italic variants
