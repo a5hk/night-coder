@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.2.0
+
+- Added editorListAction colors
+
 ## 5.1.0
 
 - Modified folded ranges colors
