@@ -36,7 +36,7 @@
     "editor.wordHighlightStrongBackground": "#c7c7c722",
     "editor.wordHighlightStrongBorder": "#8e8e8e",
     "editorActionList.background": "#3a3a3a",
-    "editorActionList.focusFackground": "#c7c7c7",
+    "editorActionList.focusForeground": "#c7c7c7",
     "editorActionList.foreground": "#b9b9b9",
     "editorBracketHighlight.foreground1": "#e0e0b8",
     "editorBracketHighlight.foreground2": "#eea0e5",
