@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.0.0
+
+- Removed deprecated colors
+
 ## 5.2.0
 
 - Added editorListAction colors
