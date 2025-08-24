@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.0.1
+
+- Fixed an [issue](https://github.com/a5hk/paper/issues/2) with borders in contrast version
+
 ## 6.0.0
 
 - Removed deprecated colors

@@ -203,6 +203,7 @@
     "widget.shadow": "#14192600",
     "activityBar.border": "#252a36",
     "breadcrumb.background": "#030917",
+    "diffEditor.border": "#252a36",
     "editorGroupHeader.tabsBorder": "#252a36",
     "panel.background": "#030612",
     "sideBar.border": "#252a36",
